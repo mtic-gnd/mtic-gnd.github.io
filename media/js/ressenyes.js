@@ -21,6 +21,9 @@ var CONFIG = {
         valoracio: null,        // p. ex. 5.0
         total: null,            // p. ex. 12
         ressenyes: [
+            { autor: "Laia Caldú Martí", estrelles: 5, text: "Tot correcte! Molt professional! :)", quan: "fa 5 mesos" },
+            { autor: "Pepi Mulet", estrelles: 5, text: "Super contenta per la compra Però el que vull destacar especialment és el tracte del venedor. Ha estat molt atent, amable i professional en tot moment. Ha respost ràpidament als meus dubtes i m’ha ajudat en tot el que he necessitat. És un plaer trobar venedors així, que es preocupen pels seus clients.moltes gracies", quan: "fa 1 dia" },
+            { autor: "Mònica Miró", estrelles: 5, text: "La meva experiència ha estat molt positiva tant en la rapidesa amb la que m’ha solucionat el problema com amb el tracte rebut. Repetirem😉", quan: "fa 1 dia" },
             // { autor: "Nom Cognom", estrelles: 5, text: "Text de la ressenya…", quan: "fa 2 setmanes" },
         ]
     }
