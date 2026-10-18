@@ -1,15 +1,15 @@
 {
  "categories": [
   {
-   "count": 1,
+   "count": 2,
    "layout": "page",
    "name": "Tinta i tòner",
    "slug": "tinta-i-toner"
   }
  ],
- "count": 1,
+ "count": 2,
  "currency": "EUR",
- "generated_at": "2026-10-18 18:41:06",
+ "generated_at": "2026-10-18 18:53:58",
  "products": [
   {
    "availability": "on_order",
@@ -17,8 +17,10 @@
    "brand": "HP",
    "category": "tinta-i-toner",
    "ean": "199764692870",
-   "featured": false,
-   "image_source": null,
+   "featured": true,
+   "images": [
+    "/media/botiga/tin-hp-ch561ee.jpg"
+   ],
    "kind": "product",
    "layout": "page",
    "model": "CH561EE",
@@ -28,9 +30,33 @@
    "published_at": "2026-10-18 18:40:09",
    "ref": "TIN-HP-CH561EE",
    "slug": "hp-cartucho-301-negro",
+   "summary": "aaaaaaaaa",
+   "unit": "u",
+   "updated_at": "2026-10-18 18:49:50",
+   "vat_pct": 21
+  },
+  {
+   "availability": "on_order",
+   "body": null,
+   "brand": "HP",
+   "category": "tinta-i-toner",
+   "ean": "199764692955",
+   "featured": false,
+   "images": [
+    "/media/botiga/tin-hp-ch562ee.jpg"
+   ],
+   "kind": "product",
+   "layout": "page",
+   "model": "CH562EE",
+   "name": "HP Cartucho 301 Color",
+   "price": 26.23,
+   "price_with_vat": 31.74,
+   "published_at": "2026-10-18 18:50:21",
+   "ref": "TIN-HP-CH562EE",
+   "slug": "hp-cartucho-301-color",
    "summary": null,
    "unit": "u",
-   "updated_at": "2026-10-18 18:40:09",
+   "updated_at": "2026-10-18 18:50:21",
    "vat_pct": 21
   }
  ]
