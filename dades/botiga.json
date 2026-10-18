@@ -9,32 +9,8 @@
  ],
  "count": 2,
  "currency": "EUR",
- "generated_at": "2026-10-18 18:53:58",
+ "generated_at": "2026-10-18 19:20:31",
  "products": [
-  {
-   "availability": "on_order",
-   "body": null,
-   "brand": "HP",
-   "category": "tinta-i-toner",
-   "ean": "199764692870",
-   "featured": true,
-   "images": [
-    "/media/botiga/tin-hp-ch561ee.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "CH561EE",
-   "name": "HP Cartucho 301 Negro",
-   "price": 21.34,
-   "price_with_vat": 25.82,
-   "published_at": "2026-10-18 18:40:09",
-   "ref": "TIN-HP-CH561EE",
-   "slug": "hp-cartucho-301-negro",
-   "summary": "aaaaaaaaa",
-   "unit": "u",
-   "updated_at": "2026-10-18 18:49:50",
-   "vat_pct": 21
-  },
   {
    "availability": "on_order",
    "body": null,
@@ -57,6 +33,30 @@
    "summary": null,
    "unit": "u",
    "updated_at": "2026-10-18 18:50:21",
+   "vat_pct": 21
+  },
+  {
+   "availability": "on_order",
+   "body": null,
+   "brand": "HP",
+   "category": "tinta-i-toner",
+   "ean": "199764692870",
+   "featured": false,
+   "images": [
+    "/media/botiga/tin-hp-ch561ee.jpg"
+   ],
+   "kind": "product",
+   "layout": "page",
+   "model": "CH561EE",
+   "name": "HP Cartucho 301 - Negre",
+   "price": 21.34,
+   "price_with_vat": 25.82,
+   "published_at": "2026-10-18 18:40:09",
+   "ref": "TIN-HP-CH561EE",
+   "slug": "hp-cartucho-301-negre",
+   "summary": null,
+   "unit": "u",
+   "updated_at": "2026-10-18 19:00:29",
    "vat_pct": 21
   }
  ]
