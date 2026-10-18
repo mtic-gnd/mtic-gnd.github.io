@@ -60,11 +60,12 @@ def adreca_de(nom, defecte):
     return valor
 
 
+# L'adreça de l'ERP: la que truca aquest programa i la que s'escriu a les
+# pàgines perquè el navegador del visitant refresqui els preus. És la mateixa
+# perquè les dues portes viuen al mateix nom, cadascuna al seu camí:
+#   api.mtic.cat/api/public/*  el navegador de qualsevol
+#   api.mtic.cat/api/build/*   només aquest programa, amb la clau
 API = adreca_de("MTIC_API", "https://api.mtic.cat")
-# L'adreça que escriurà la pàgina per refrescar els preus. És una altra variable
-# perquè generant des de GitHub es pot haver d'entrar per una porta i el
-# visitant per una altra.
-API_PUBLICA = adreca_de("MTIC_API_PUBLICA", "https://api.mtic.cat")
 TOKEN = os.environ.get("MTIC_TOKEN", "")
 TEMPS_ESPERA = 60
 MIDA_MAXIMA_FOTO = 6 * 1024 * 1024
@@ -300,7 +301,7 @@ def pagina(idioma, url, url_altre, titol, descripcio, cos, seccio="serveis",
     <link rel="canonical" href="{DOMINI}{url}">
     {idiomes}
     <meta name="theme-color" content="#5e17eb">
-    <meta name="mtic-api" content="{API_PUBLICA}">
+    <meta name="mtic-api" content="{API}">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="{DOMINI}{url}">
