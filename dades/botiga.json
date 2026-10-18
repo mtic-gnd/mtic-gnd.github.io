@@ -21,7 +21,7 @@
  ],
  "count": 19,
  "currency": "EUR",
- "generated_at": "2026-10-18 22:37:54",
+ "generated_at": "2026-10-18 23:18:20",
  "products": [
   {
    "availability": "on_order",
@@ -67,7 +67,7 @@
    "layout": "page",
    "model": "DTXG2128GB",
    "name": "Pendrive Kingston DataTraveler Exodia Gen2 USB 3.2 128 GB",
-   "offer": false,
+   "offer": true,
    "price": 9.91,
    "price_with_vat": 11.99,
    "published_at": "2026-10-18 21:28:36",
@@ -77,7 +77,7 @@
    "slug": "pendrive-128gb-kingston-datatraveler-exodia-gen2-usb-3-2",
    "summary": "Memòria USB Kingston de 128 GB amb interfície USB 3.2 per guardar i transferir fitxers.",
    "unit": "u",
-   "updated_at": "2026-10-18 21:39:20",
+   "updated_at": "2026-10-18 23:16:39",
    "vat_pct": 21
   },
   {
