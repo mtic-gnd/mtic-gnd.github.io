@@ -22,6 +22,7 @@ Si canvies styles.css o main.js, puja VERSIO perquè els navegadors
 descarreguin la versió nova.
 """
 import datetime
+import json
 import os
 import re
 import subprocess
@@ -29,7 +30,7 @@ import sys
 
 ARREL = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMINI = "https://mtic.cat"
-VERSIO = "2026101805"
+VERSIO = "2026101815"
 MAPS = "https://www.google.com/maps?cid=5369165064477127583"
 INSTAGRAM = "https://www.instagram.com/mtic.gandesa/"
 TEL = "+34711550872"
@@ -63,6 +64,7 @@ ICONA_MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-
 TXT = {
     "ca": {
         "inici": ("/", "Inici"), "serveis": ("/serveis.html", "Serveis"),
+        "botiga": ("/botiga/", "Botiga"), "articles": ("/articles/", "Articles"),
         "sobre": ("/sobre-nosaltres.html", "Sobre nosaltres"), "contacte": ("/contacte.html", "Contacte"),
         "altre_idioma": ("es", "Castellano"), "marca_aria": "mtic, anar a l'inici",
         "obre_menu": "Obre el menú", "nav_aria": "Navegació principal",
@@ -85,6 +87,7 @@ TXT = {
     },
     "es": {
         "inici": ("/es/", "Inicio"), "serveis": ("/es/servicios.html", "Servicios"),
+        "botiga": ("/es/tienda/", "Tienda"), "articles": ("/es/articulos/", "Artículos"),
         "sobre": ("/es/sobre-nosotros.html", "Sobre nosotros"), "contacte": ("/es/contacto.html", "Contacto"),
         "altre_idioma": ("ca", "Català"), "marca_aria": "mtic, ir al inicio",
         "obre_menu": "Abrir el menú", "nav_aria": "Navegación principal",
@@ -118,7 +121,7 @@ def fitxer(url):
 def capcalera(idioma, seccio, url_altre):
     t = TXT[idioma]
     enllacos = []
-    for clau in ("inici", "serveis", "sobre", "contacte"):
+    for clau in ("inici", "serveis", "botiga", "articles", "sobre", "contacte"):
         href, nom = t[clau]
         actual = ' aria-current="page"' if clau == seccio else ""
         enllacos.append(f'                <a href="{href}"{actual}>{nom}</a>')
@@ -275,6 +278,38 @@ def data_modificacio(cami):
         return avui
 
 
+def pagines_generades():
+    """
+    Les pàgines que escriu `eines/genera.py` (botiga i articles).
+
+    Les deixa anotades a dades/pagines.json perquè el sitemap el segueixi
+    fent un sol programa: així `python3 eines/web.py` tot sol continua
+    deixant el sitemap sencer, sense haver de parlar amb l'ERP.
+    """
+    cami = os.path.join(ARREL, "dades", "pagines.json")
+    if not os.path.exists(cami):
+        return []
+    with open(cami, encoding="utf-8") as f:
+        try:
+            dades = json.load(f)
+        except ValueError:
+            return []
+    return [(p.get("ca"), p.get("es")) for p in dades if p.get("ca") or p.get("es")]
+
+
+def entrada_sitemap(url, ca, es):
+    linies = ["  <url>",
+              f"    <loc>{DOMINI}{url}</loc>",
+              f"    <lastmod>{data_modificacio(fitxer(url))}</lastmod>"]
+    # Els hreflang només si de debò hi ha les dues versions
+    if ca and es:
+        linies += [f'    <xhtml:link rel="alternate" hreflang="ca" href="{DOMINI}{ca}"/>',
+                   f'    <xhtml:link rel="alternate" hreflang="es" href="{DOMINI}{es}"/>',
+                   f'    <xhtml:link rel="alternate" hreflang="x-default" href="{DOMINI}{ca}"/>']
+    linies.append("  </url>")
+    return linies
+
+
 def sitemap():
     linies = ['<?xml version="1.0" encoding="UTF-8"?>',
               '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
@@ -283,13 +318,13 @@ def sitemap():
             if not indexable:
                 continue
             url = (ca, es)[idx]
-            linies += ["  <url>",
-                       f"    <loc>{DOMINI}{url}</loc>",
-                       f"    <lastmod>{data_modificacio(fitxer(url))}</lastmod>",
-                       f'    <xhtml:link rel="alternate" hreflang="ca" href="{DOMINI}{ca}"/>',
-                       f'    <xhtml:link rel="alternate" hreflang="es" href="{DOMINI}{es}"/>',
-                       f'    <xhtml:link rel="alternate" hreflang="x-default" href="{DOMINI}{ca}"/>',
-                       "  </url>"]
+            linies += entrada_sitemap(url, ca, es)
+
+    for ca, es in pagines_generades():
+        for url in (ca, es):
+            if url and os.path.exists(fitxer(url)):
+                linies += entrada_sitemap(url, ca, es)
+
     linies.append("</urlset>")
     with open(os.path.join(ARREL, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write("\n".join(linies) + "\n")

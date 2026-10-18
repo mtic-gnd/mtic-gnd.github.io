@@ -1,0 +1,55 @@
+# Posa al dia la botiga i els articles de mtic.cat.
+#
+# Va a buscar a l'ERP què hi ha publicat, n'escriu les pàgines i, si han
+# canviat, fa el commit. GitHub Pages es refà sola.
+#
+# El sentit de la informació és ERP -> aquí, i no al revés: l'ERP no puja res
+# enlloc ni guarda cap clau de GitHub. Només contesta quan el truquen, i
+# només a qui porta la clau de generació.
+#
+# Cal configurar al repositori:
+#   Settings > Secrets and variables > Actions
+#     Secret   MTIC_TOKEN         la clau de WEB_BUILD_TOKEN de l'ERP
+#     Variable MTIC_API           https://api.mtic.cat   (on truca aquesta feina)
+#     Variable MTIC_API_PUBLICA   https://api.mtic.cat   (el que s'escriu a les
+#                                 pàgines perquè el navegador refresqui els preus)
+name: Genera la botiga i els articles
+
+on:
+  schedule:
+    # Cada hora, al minut 17: a l'hora en punt hi ha cua a GitHub
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+# Dues execucions alhora es trepitjarien el commit
+concurrency:
+  group: genera-web
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  genera:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Genera les pàgines
+        env:
+          MTIC_API: ${{ vars.MTIC_API }}
+          MTIC_API_PUBLICA: ${{ vars.MTIC_API_PUBLICA }}
+          MTIC_TOKEN: ${{ secrets.MTIC_TOKEN }}
+        run: python3 eines/genera.py
+
+      - name: Desa el que hagi canviat
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Res de nou."
+            exit 0
+          fi
+          git config user.name "mtic (automàtic)"
+          git config user.email "info@mtic.cat"
+          git add -A
+          git commit -m "Botiga i articles al dia ($(date +%d/%m/%Y\ %H:%M))"
+          git push
