@@ -70,6 +70,14 @@ TOKEN = os.environ.get("MTIC_TOKEN", "")
 TEMPS_ESPERA = 60
 MIDA_MAXIMA_FOTO = 6 * 1024 * 1024
 
+# Les menes d'imatge que es publiquen, i com s'anomena el fitxer de cadascuna
+EXTENSIONS = {
+    "image/jpeg": ".jpg",
+    "image/png": ".png",
+    "image/webp": ".webp",
+    "image/gif": ".gif",
+}
+
 # Les seccions noves, en els dos idiomes.
 RUTES = {
     "botiga": {"ca": "/botiga/", "es": "/es/tienda/"},
@@ -295,31 +303,43 @@ def baixa_foto(url, nom):
     """
     if not url or not (url.startswith("/") or re.match(r"^https?://", url, re.I)):
         return None
-    extensio = os.path.splitext(url.split("?")[0])[1].lower()
-    if extensio not in (".jpg", ".jpeg", ".png", ".webp", ".gif"):
-        extensio = ".jpg"
-    desti = os.path.join(FOTOS, nom + extensio)
-    public = f"/media/botiga/{nom}{extensio}"
 
-    if os.path.exists(desti):
-        return public
+    # Si ja la tenim amb qualsevol extensió, no es torna a demanar
+    for provada in EXTENSIONS.values():
+        if os.path.exists(os.path.join(FOTOS, nom + provada)):
+            return f"/media/botiga/{nom}{provada}"
 
-    os.makedirs(FOTOS, exist_ok=True)
-    peticio = urllib.request.Request(url, headers={"User-Agent": "mtic-web/1.0"})
-    # Si la foto porta la clau de l'ERP a dins és perquè ve de la seva porta
     if url.startswith("/"):
-        peticio = urllib.request.Request(f"{API}{url}", headers={"Authorization": f"Bearer {TOKEN}"})
+        # Una adreça d'aquest ERP: la foto la serveix ell, darrere la clau
+        peticio = urllib.request.Request(f"{API}{url}", headers=capcaleres())
+    else:
+        peticio = urllib.request.Request(url, headers={"User-Agent": "mtic-web/1.0"})
+
     try:
         with urllib.request.urlopen(peticio, timeout=TEMPS_ESPERA) as resposta:
             dades = resposta.read(MIDA_MAXIMA_FOTO + 1)
+            tipus = (resposta.headers.get("content-type") or "").split(";")[0].strip().lower()
     except (OSError, urllib.error.HTTPError):
         return None          # una foto que falla no atura la generació
     if not dades or len(dades) > MIDA_MAXIMA_FOTO:
         return None
 
-    with open(desti, "wb") as f:
+    """
+    L'extensió surt del que diu el servidor i, si no ho diu, de l'adreça.
+
+    Les fotos que serveix l'ERP vénen per una adreça sense extensió
+    (/api/build/foto/12): mirant només l'adreça, un PNG acabava desat com a
+    .jpg. El navegador ho aguanta, però el fitxer mentiria sobre què és.
+    """
+    extensio = EXTENSIONS.get(tipus)
+    if not extensio:
+        del_url = os.path.splitext(url.split("?")[0])[1].lower()
+        extensio = del_url if del_url in EXTENSIONS.values() else ".jpg"
+
+    os.makedirs(FOTOS, exist_ok=True)
+    with open(os.path.join(FOTOS, nom + extensio), "wb") as f:
         f.write(dades)
-    return public
+    return f"/media/botiga/{nom}{extensio}"
 
 
 # ----------------------------------------------------------------- pàgina
@@ -652,19 +672,25 @@ def main():
     # Les fotos, un cop: la mateixa serveix per a les dues llengües
     fotos_per_ref = {}
     for producte in cataleg["products"]:
-        nom_foto = re.sub(r"[^a-z0-9]+", "-", producte["ref"].lower()).strip("-")
-        baixada = baixa_foto(producte.get("image_source"), nom_foto)
-        fotos_per_ref[producte["ref"]] = [baixada] if baixada else []
+        arrel = re.sub(r"[^a-z0-9]+", "-", producte["ref"].lower()).strip("-")
+        baixades = []
+        for n, origen in enumerate(producte.get("images") or [], start=1):
+            # Compte amb el nom: `local` ja vol dir «sense xarxa» aquí dins
+            copia = baixa_foto(origen, arrel if n == 1 else f"{arrel}-{n}")
+            if copia:
+                baixades.append(copia)
+        fotos_per_ref[producte["ref"]] = baixades
 
         """
-        L'adreça d'origen es canvia per la còpia nostra ABANS de desar el json.
+        Les adreces d'origen es canvien per les còpies nostres ABANS de desar
+        el json.
 
-        Aquest repositori és PÚBLIC, i `image_source` és sovint una adreça del
-        majorista: desant-la aquí, el que no volem que surti a l'HTML acabaria
-        igualment publicat, i a més amb historial. Un cop la foto és baixada ja
-        no la necessitem per a res.
+        Aquest repositori és PÚBLIC, i les adreces solen ser de casa del
+        majorista: desant-les aquí, el que no volem que surti a l'HTML acabaria
+        igualment publicat, i a més amb historial. Un cop les fotos són
+        baixades, d'on venien ja no fa cap falta.
         """
-        producte["image_source"] = baixada
+        producte["images"] = baixades
 
     if not local:
         desa_json("botiga.json", cataleg)
