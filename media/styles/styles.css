@@ -379,3 +379,5 @@ p { max-width: 68ch; }
 .treballs figure img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radi); background: var(--superficie); }
 .treballs figcaption { font-size: .92rem; color: var(--text-suau); margin-top: .55rem; }
 .mes-treballs { margin-top: 1.25rem; }
+.treballs { align-items: start; }
+.treballs figure.quadrada img { aspect-ratio: 1 / 1; }
