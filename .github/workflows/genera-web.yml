@@ -9,10 +9,13 @@
 #
 # Cal configurar al repositori:
 #   Settings > Secrets and variables > Actions
-#     Secret   MTIC_TOKEN         la clau de WEB_BUILD_TOKEN de l'ERP
-#     Variable MTIC_API           https://api.mtic.cat   (on truca aquesta feina)
-#     Variable MTIC_API_PUBLICA   https://api.mtic.cat   (el que s'escriu a les
-#                                 pàgines perquè el navegador refresqui els preus)
+#     Secret   MTIC_TOKEN         la clau de WEB_BUILD_TOKEN de l'ERP  [CAL]
+#
+#   I, NOMÉS si les adreces no són les de sempre, a la pestanya «Variables»:
+#     Variable MTIC_API           on truca aquesta feina
+#     Variable MTIC_API_PUBLICA   el que s'escriu a les pàgines perquè el
+#                                 navegador del visitant refresqui els preus
+#   Si no hi són, totes dues valen https://api.mtic.cat.
 name: Genera la botiga i els articles
 
 on:

@@ -42,11 +42,29 @@ DOMINI = web.DOMINI
 DADES = os.path.join(ARREL, "dades")
 FOTOS = os.path.join(ARREL, "media", "botiga")
 
-API = os.environ.get("MTIC_API", "https://api.mtic.cat").rstrip("/")
+def adreca_de(nom, defecte):
+    """
+    Una adreça que ve de l'entorn, amb el valor per defecte de debò.
+
+    Una variable BUIDA ha de valer com si no hi fos. GitHub la posa igualment
+    encara que no s'hagi definit al repositori, i llavors arriba una cadena
+    buida: `os.environ.get(nom, defecte)` no fa servir el defecte, l'adreça
+    queda en «/api/build/cataleg» i peta amb un error que no diu res del que
+    passa de debò.
+    """
+    valor = (os.environ.get(nom) or "").strip().rstrip("/")
+    if not valor:
+        return defecte
+    if not re.match(r"^https?://", valor, re.I):
+        sys.exit(f"{nom} ha de començar per https:// i ara hi diu {valor!r}")
+    return valor
+
+
+API = adreca_de("MTIC_API", "https://api.mtic.cat")
 # L'adreça que escriurà la pàgina per refrescar els preus. És una altra variable
 # perquè generant des de GitHub es pot haver d'entrar per una porta i el
 # visitant per una altra.
-API_PUBLICA = os.environ.get("MTIC_API_PUBLICA", "https://api.mtic.cat").rstrip("/")
+API_PUBLICA = adreca_de("MTIC_API_PUBLICA", "https://api.mtic.cat")
 TOKEN = os.environ.get("MTIC_TOKEN", "")
 TEMPS_ESPERA = 60
 MIDA_MAXIMA_FOTO = 6 * 1024 * 1024
