@@ -140,4 +140,32 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/contacto.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/contacte.html"/>
   </url>
+  <url>
+    <loc>https://mtic.cat/botiga/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/botiga/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/tienda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/botiga/"/>
+  </url>
+  <url>
+    <loc>https://mtic.cat/es/tienda/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/botiga/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/tienda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/botiga/"/>
+  </url>
+  <url>
+    <loc>https://mtic.cat/articles/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/articles/"/>
+  </url>
+  <url>
+    <loc>https://mtic.cat/es/articulos/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/articles/"/>
+  </url>
 </urlset>
