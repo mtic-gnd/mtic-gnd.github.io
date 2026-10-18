@@ -1,5 +1,25 @@
 /* mtic · Serveis Informàtics i Digitals — full d'estils */
 
+/* Tipografia allotjada a la mateixa web (Archivo variable, llicència OFL a /media/fonts/OFL.txt) */
+@font-face {
+    font-family: "Archivo";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+    font-stretch: 62% 125%;
+    src: url("/media/fonts/archivo-latin-ext.woff2") format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: "Archivo";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+    font-stretch: 62% 125%;
+    src: url("/media/fonts/archivo-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
     --violeta: #5e17eb;
     --violeta-fosc: #3f0aa8;
@@ -295,6 +315,24 @@ p { max-width: 68ch; }
 .wa-flotant:hover { background: #178a45; color: #fff; }
 .wa-flotant svg { width: 28px; height: 28px; }
 
+/* Botó del peu per reobrir les cookies */
+.peu .legal button { font: inherit; color: #e4e1ea; background: none; border: 0; padding: 0; cursor: pointer; }
+.peu .legal button:hover { color: #fff; text-decoration: underline; }
+
+/* Avís de cookies */
+.avis-cookies {
+    position: fixed; left: 18px; right: 18px; bottom: 18px; z-index: 70;
+    max-width: 560px; padding: 1.25rem 1.4rem;
+    background: #fff; color: var(--text); border: 1px solid var(--linia); border-radius: var(--radi);
+    box-shadow: 0 18px 40px -12px rgba(0,0,0,.35); font-size: .95rem;
+}
+.avis-cookies p { margin-bottom: 1rem; }
+.avis-cookies .botons { gap: .6rem; }
+.avis-cookies .boto, .avis-cookies .boto-linia { padding: .6rem 1.1rem; font-size: .95rem; }
+
+/* Bloc d'informació destacada (cita prèvia, etc.) */
+.avis-cita { margin-top: 1rem; padding: .9rem 1.1rem; border-left: 4px solid var(--violeta); background: var(--lila); border-radius: 0 var(--radi) var(--radi) 0; }
+
 /* ---------- 404 ---------- */
 .error { text-align: center; padding: 7rem 0; }
 .error .xifra { font-size: clamp(6rem, 20vw, 11rem); font-weight: 900; font-stretch: 125%; color: var(--violeta); line-height: 1; }
@@ -329,3 +367,22 @@ p { max-width: 68ch; }
     .peu .container { grid-template-columns: 1fr; }
     .llista-serveis li { grid-template-columns: 1fr; gap: .9rem; }
 }
+
+/* Taules dels textos legals */
+.text-llarg table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: .95rem; }
+.text-llarg th, .text-llarg td { text-align: left; vertical-align: top; padding: .6rem .75rem; border-bottom: 1px solid var(--linia); }
+.text-llarg th { color: var(--negre); background: var(--superficie); }
+
+/* Treballs recents (fotos del taller) */
+.seccio.treballs-seccio { padding-top: 0; }
+.treballs { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 300px)); gap: 1.25rem; margin-top: 1.5rem; }
+.treballs figure img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radi); background: var(--superficie); }
+.treballs figcaption { font-size: .92rem; color: var(--text-suau); margin-top: .55rem; }
+.mes-treballs { margin-top: 1.25rem; }
+.treballs { align-items: start; }
+.treballs figure.quadrada img { aspect-ratio: 1 / 1; }
+
+/* Foto del taller (Sobre nosaltres) */
+.foto-taller { max-width: 960px; }
+.foto-taller img { width: 100%; height: auto; border-radius: var(--radi); }
+.foto-taller figcaption { font-size: .92rem; color: var(--text-suau); margin-top: .6rem; }

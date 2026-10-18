@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-520567YS7Q"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-520567YS7Q');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sobre nosaltres: Manel Clúa, tècnic informàtic de Gandesa | mtic</title>
     <meta name="description" content="mtic és el projecte de Manel Clúa, tècnic informàtic de Gandesa. Un servei proper, honest i de confiança per a particulars i empreses de la Terra Alta.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://mtic.cat/sobre-nosaltres.html">
+    <!-- idiomes:inici -->
+    <link rel="alternate" hreflang="ca" href="https://mtic.cat/sobre-nosaltres.html">
+    <link rel="alternate" hreflang="es" href="https://mtic.cat/es/sobre-nosotros.html">
+    <link rel="alternate" hreflang="x-default" href="https://mtic.cat/sobre-nosaltres.html">
+    <!-- idiomes:fi -->
     <meta name="theme-color" content="#5e17eb">
 
     <meta property="og:type" content="website">
@@ -29,17 +26,16 @@
     <meta property="og:site_name" content="mtic">
     <meta name="twitter:card" content="summary_large_image">
 
+    <!-- comú:inici · generat per eines/web.py, no l'editis a mà -->
     <link rel="icon" href="/media/favicon/favicon.ico?v=20260918" sizes="any">
     <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png?v=20260918" sizes="96x96">
     <link rel="apple-touch-icon" href="/media/favicon/apple-touch-icon.png?v=20260918">
     <link rel="manifest" href="/media/favicon/site.webmanifest?v=20260918">
     <meta name="apple-mobile-web-app-title" content="mtic">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&display=swap">
-    <link rel="stylesheet" href="/media/styles/styles.css?v=20261018">
-    <script src="/media/js/main.js?v=20260918" defer></script>
+    <link rel="preload" href="/media/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/media/styles/styles.css?v=2026101805">
+    <script src="/media/js/main.js?v=2026101805" defer></script>
+    <!-- comú:fi -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,6 +68,12 @@
     "@type": "Person",
     "name": "Manel Clúa",
     "jobTitle": "Tècnic informàtic",
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Tècnic en Sistemes Microinformàtics i Xarxes (CFGM SMX)",
+      "credentialCategory": "Cicle formatiu de grau mitjà"
+    },
+    "knowsAbout": ["Reparació d'ordinadors", "Recuperació de dades", "Xarxes i WiFi", "Desenvolupament web"],
     "worksFor": {
       "@id": "https://mtic.cat/#negoci"
     },
@@ -99,7 +101,7 @@
                 <a href="/serveis.html">Serveis</a>
                 <a href="/sobre-nosaltres.html" aria-current="page">Sobre nosaltres</a>
                 <a href="/contacte.html">Contacte</a>
-                <a class="idioma" href="/es/" hreflang="es" lang="es">Castellano</a>
+                <a class="idioma" href="/es/sobre-nosotros.html" hreflang="es" lang="es">Castellano</a>
                 <a class="boto" href="tel:+34711550872"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> 711 55 08 72</a>
             </nav>
         </div>
@@ -125,6 +127,7 @@
                     <li>Pressupost a mida per a cada cas, gratuït i sense compromís.</li>
                     <li>Explicacions clares: sabràs què li passa al teu equip i per què.</li>
                     <li>Si no val la pena reparar-lo, t'ho dic abans de cobrar-te res.</li>
+                    <li>Atenc amb cita prèvia al taller de Gandesa, a domicili per tota la Terra Alta o a distància.</li>
                 </ul>
             </div>
             <figure>
@@ -133,6 +136,21 @@
                     <img src="/media/images/reparacio.jpg" alt="Manel Clúa reparant un portàtil al taller de mtic a Gandesa" width="1200" height="900" loading="lazy">
                 </picture>
                 <figcaption>Al taller, canviant components d'un portàtil.</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="seccio gris" aria-labelledby="taller-titol">
+        <div class="container">
+            <div class="cap-seccio">
+                <h2 id="taller-titol">El taller</h2>
+                <p>Aquí és on reparo, munto i reviso els equips. Hi atenc amb cita prèvia: truca o escriu per WhatsApp i quedem.</p>
+            </div>
+            <figure class="foto-taller" style="margin-top:1.5rem">
+                <picture>
+                    <source type="image/webp" srcset="/media/images/taller-mtic-720.webp 720w, /media/images/taller-mtic-1200.webp 1200w" sizes="(max-width: 1000px) 92vw, 960px">
+                    <img src="/media/images/taller-mtic.jpg" alt="Taller de mtic a Gandesa, amb dues pantalles, un ordinador muntat i eines penjades al tauler" width="1200" height="900" loading="lazy" decoding="async">
+                </picture>
+                <figcaption>El taller de mtic a Gandesa.</figcaption>
             </figure>
         </div>
     </section>
@@ -164,7 +182,7 @@
                     <li><a href="https://wa.me/34711550872" target="_blank" rel="noopener">WhatsApp</a></li>
                     <li><a href="mailto:info@mtic.cat">info@mtic.cat</a></li>
                     <li>Dilluns a divendres, 9:00–19:00</li>
-                    <li>Gandesa, Terra Alta (Tarragona)</li>
+                    <li>Taller a Gandesa, amb cita prèvia</li>
                 </ul>
             </div>
             <div>
@@ -173,7 +191,8 @@
                     <li><a href="/reparacio-ordinadors.html">Reparació d'ordinadors</a></li>
                     <li><a href="/recuperacio-dades.html">Recuperació de dades</a></li>
                     <li><a href="/venda-ordinadors.html">Venda d'ordinadors</a></li>
-                    <li><a href="/manteniment-informatic.html">Manteniment i WiFi</a></li>
+                    <li><a href="/manteniment-informatic.html">Manteniment informàtic</a></li>
+                    <li><a href="/xarxes-wifi.html">Xarxes i WiFi</a></li>
                     <li><a href="/pagines-web.html">Pàgines web</a></li>
                 </ul>
             </div>
@@ -182,14 +201,17 @@
                 <ul>
                     <li><a href="/sobre-nosaltres.html">Sobre nosaltres</a></li>
                     <li><a href="/contacte.html">Contacte</a></li>
-                    <li><a href="https://www.google.com/maps?cid=5369165064477127583" target="_blank" rel="noopener">Com arribar-hi</a></li>
+                    <li><a href="https://www.google.com/maps?cid=5369165064477127583" target="_blank" rel="noopener">Fitxa de Google</a></li>
                     <li><a href="https://www.instagram.com/mtic.gandesa/" target="_blank" rel="noopener">Instagram</a></li>
                 </ul>
             </div>
             <div class="legal">
                 <span>© <span data-any>2026</span> mtic, Serveis Informàtics i Digitals. Gandesa, Tarragona.</span>
+                <a href="/avis-legal.html">Avís legal</a>
                 <a href="/privacitat.html">Privacitat</a>
+                <a href="/cookies.html">Galetes</a>
                 <a href="/termes.html">Termes i condicions</a>
+                <button type="button" data-obre-cookies>Configura les galetes</button>
             </div>
         </div>
     </footer>
