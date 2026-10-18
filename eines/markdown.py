@@ -39,7 +39,11 @@ def en_linia(text):
     escrit, perquè una cita comença per «>» i, escapant-ho tot d'entrada,
     el «>» ja no hi era quan tocava mirar-lo.
     """
-    text = html.escape(str(text), quote=False)
+    # quote=True, i no és un detall: el text acaba dins d'atributs (alt="…",
+    # href="…"). Amb una cometa sense escapar, un peu de foto com
+    #   ![Foto " onerror=alert(1) x](/a.jpg)
+    # se surt de l'atribut i el navegador executa el que hi hagi darrere.
+    text = html.escape(str(text), quote=True)
     trossos = []
 
     def guarda(m):

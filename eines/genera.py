@@ -129,6 +129,20 @@ def esc(valor):
     return html.escape("" if valor is None else str(valor), quote=True)
 
 
+def json_ld(dades):
+    r"""
+    Les dades estructurades, dins d'un <script> i sense poder-ne sortir.
+
+    `json.dumps` no escapa els «<», i el navegador tanca un <script> en veure
+    «</script>» encara que sigui dins d'una cadena. Un article que es digués
+    «Tòner </script><script>…» injectaria el que volgués a la pàgina. Amb els
+    tres caràcters escapats en \uXXXX el JSON continua sent el mateix i ja no
+    hi ha manera de sortir-ne.
+    """
+    brut = json.dumps(dades, ensure_ascii=False, indent=1)
+    return brut.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+
+
 def euros(valor):
     """1234.5 -> 1.234,50 €, a l'espanyola."""
     sencer, decimals = f"{float(valor):.2f}".split(".")
@@ -152,6 +166,21 @@ def demana(ruta):
                  + (" · la clau no és bona" if e.code == 401 else ""))
     except OSError as e:
         sys.exit(f"No s'ha pogut parlar amb l'ERP ({e})")
+
+
+RE_SLUG = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,98}[a-z0-9])?$")
+
+
+def slug_segur(slug):
+    """
+    L'adreça decideix el NOM DEL FITXER que s'escriu, i ve de la xarxa.
+
+    L'ERP només en fa de lletres, xifres i guions, però aquí no ens ho podem
+    creure sense mirar-ho: un «../../index» escriuria a sobre d'una pàgina del
+    lloc, i un amb cometes se sortiria de l'atribut href. El que no encaixi es
+    deixa estar i es diu per pantalla.
+    """
+    return bool(slug) and bool(RE_SLUG.match(str(slug)))
 
 
 def desa_json(nom, dades):
@@ -191,7 +220,13 @@ def baixa_foto(url, nom):
     Si ja la tenim, no es torna a demanar: el manual d'Infortisa demana
     justament això, no repetir descàrregues del que ja s'ha baixat.
     """
-    if not url:
+    """
+    Només http(s). `urllib` també sap obrir file:// i ftp://, i l'adreça surt
+    d'un fitxer que escriu el majorista: amb un file:///etc/passwd per imatge,
+    això llegiria un fitxer del servidor i el desaria en un repositori públic
+    fent veure que és una foto.
+    """
+    if not url or not (url.startswith("/") or re.match(r"^https?://", url, re.I)):
         return None
     extensio = os.path.splitext(url.split("?")[0])[1].lower()
     if extensio not in (".jpg", ".jpeg", ".png", ".webp", ".gif"):
@@ -359,8 +394,7 @@ def fitxa_producte(idioma, producte, categories, fotos):
         </div>
     </section>"""
 
-    extra = ('    <script type="application/ld+json">\n'
-             + json.dumps(schema, ensure_ascii=False, indent=1) + "\n    </script>\n")
+    extra = ('    <script type="application/ld+json">\n' + json_ld(schema) + "\n    </script>\n")
     return url, pagina(idioma, url, url_altre,
                        f"{producte['name']} · mtic",
                        producte.get("summary") or f"{producte['name']}. {t['botiga_descripcio']}",
@@ -396,7 +430,7 @@ def index_botiga(idioma, cataleg, fotos_per_ref):
 
     filtres = [f'<button type="button" class="filtre actiu" data-filtra="">{t["categoria_tot"]}</button>']
     filtres += [f'<button type="button" class="filtre" data-filtra="{esc(c["slug"])}">{esc(c["name"])} '
-                f'<span>{c["count"]}</span></button>' for c in cataleg["categories"]]
+                f'<span>{esc(c["count"])}</span></button>' for c in cataleg["categories"]]
 
     # Dues llistes i no una: les famílies que no mereixen fitxa pròpia són
     # files amples, i barrejades amb les targetes quedaven estretes i amb el
@@ -489,8 +523,7 @@ def fitxa_article(idioma, post):
         </div>
     </section>"""
 
-    extra = ('    <script type="application/ld+json">\n'
-             + json.dumps(schema, ensure_ascii=False, indent=1) + "\n    </script>\n")
+    extra = ('    <script type="application/ld+json">\n' + json_ld(schema) + "\n    </script>\n")
     return url, pagina(idioma, url, url_altre, f"{post['title']} · mtic", resum, cos,
                        seccio="articles", imatge=post.get("cover_image"), dades_extra=extra)
 
@@ -540,6 +573,14 @@ def main():
         cataleg, articles = llegeix_json("botiga.json"), llegeix_json("articles.json")
     else:
         cataleg, articles = demana("/api/build/cataleg"), demana("/api/build/articles")
+
+    # El que tingui una adreça rara no es dibuixa: vegeu slug_segur()
+    for nom, llista, clau in (("producte", cataleg["products"], "slug"),
+                              ("article", articles["posts"], "slug")):
+        dolents = [x for x in llista if not slug_segur(x.get(clau))]
+        for x in dolents:
+            print(f"  ! {nom} amb adreça no vàlida, no es publica: {x.get(clau)!r}")
+            llista.remove(x)
 
     # Les fotos, un cop: la mateixa serveix per a les dues llengües
     fotos_per_ref = {}
