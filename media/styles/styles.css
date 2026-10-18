@@ -381,3 +381,8 @@ p { max-width: 68ch; }
 .mes-treballs { margin-top: 1.25rem; }
 .treballs { align-items: start; }
 .treballs figure.quadrada img { aspect-ratio: 1 / 1; }
+
+/* Foto del taller (Sobre nosaltres) */
+.foto-taller { max-width: 960px; }
+.foto-taller img { width: 100%; height: auto; border-radius: var(--radi); }
+.foto-taller figcaption { font-size: .92rem; color: var(--text-suau); margin-top: .6rem; }
