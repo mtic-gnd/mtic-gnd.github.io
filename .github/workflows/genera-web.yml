@@ -9,10 +9,10 @@
 #
 # Cal configurar al repositori:
 #   Settings > Secrets and variables > Actions
-#     Secret   MTIC_TOKEN         la clau de WEB_BUILD_TOKEN de l'ERP
-#     Variable MTIC_API           https://api.mtic.cat   (on truca aquesta feina)
-#     Variable MTIC_API_PUBLICA   https://api.mtic.cat   (el que s'escriu a les
-#                                 pàgines perquè el navegador refresqui els preus)
+#     Secret   MTIC_TOKEN         la clau de WEB_BUILD_TOKEN de l'ERP  [CAL]
+#
+#   I, NOMÉS si l'adreça no és la de sempre, a la pestanya «Variables»:
+#     Variable MTIC_API           on és l'ERP. Si no hi és, https://api.mtic.cat
 name: Genera la botiga i els articles
 
 on:
@@ -38,7 +38,6 @@ jobs:
       - name: Genera les pàgines
         env:
           MTIC_API: ${{ vars.MTIC_API }}
-          MTIC_API_PUBLICA: ${{ vars.MTIC_API_PUBLICA }}
           MTIC_TOKEN: ${{ secrets.MTIC_TOKEN }}
         run: python3 eines/genera.py
 

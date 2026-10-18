@@ -42,11 +42,30 @@ DOMINI = web.DOMINI
 DADES = os.path.join(ARREL, "dades")
 FOTOS = os.path.join(ARREL, "media", "botiga")
 
-API = os.environ.get("MTIC_API", "https://api.mtic.cat").rstrip("/")
-# L'adreça que escriurà la pàgina per refrescar els preus. És una altra variable
-# perquè generant des de GitHub es pot haver d'entrar per una porta i el
-# visitant per una altra.
-API_PUBLICA = os.environ.get("MTIC_API_PUBLICA", "https://api.mtic.cat").rstrip("/")
+def adreca_de(nom, defecte):
+    """
+    Una adreça que ve de l'entorn, amb el valor per defecte de debò.
+
+    Una variable BUIDA ha de valer com si no hi fos. GitHub la posa igualment
+    encara que no s'hagi definit al repositori, i llavors arriba una cadena
+    buida: `os.environ.get(nom, defecte)` no fa servir el defecte, l'adreça
+    queda en «/api/build/cataleg» i peta amb un error que no diu res del que
+    passa de debò.
+    """
+    valor = (os.environ.get(nom) or "").strip().rstrip("/")
+    if not valor:
+        return defecte
+    if not re.match(r"^https?://", valor, re.I):
+        sys.exit(f"{nom} ha de començar per https:// i ara hi diu {valor!r}")
+    return valor
+
+
+# L'adreça de l'ERP: la que truca aquest programa i la que s'escriu a les
+# pàgines perquè el navegador del visitant refresqui els preus. És la mateixa
+# perquè les dues portes viuen al mateix nom, cadascuna al seu camí:
+#   api.mtic.cat/api/public/*  el navegador de qualsevol
+#   api.mtic.cat/api/build/*   només aquest programa, amb la clau
+API = adreca_de("MTIC_API", "https://api.mtic.cat")
 TOKEN = os.environ.get("MTIC_TOKEN", "")
 TEMPS_ESPERA = 60
 MIDA_MAXIMA_FOTO = 6 * 1024 * 1024
@@ -282,7 +301,7 @@ def pagina(idioma, url, url_altre, titol, descripcio, cos, seccio="serveis",
     <link rel="canonical" href="{DOMINI}{url}">
     {idiomes}
     <meta name="theme-color" content="#5e17eb">
-    <meta name="mtic-api" content="{API_PUBLICA}">
+    <meta name="mtic-api" content="{API}">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="{DOMINI}{url}">
