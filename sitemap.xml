@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mtic.cat/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://mtic.cat/serveis.html</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://mtic.cat/reparacio-ordinadors.html</loc>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://mtic.cat/sobre-nosaltres.html</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://mtic.cat/contacte.html</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
 </urlset>
