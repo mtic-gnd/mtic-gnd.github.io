@@ -31,10 +31,10 @@
     <link rel="manifest" href="/media/favicon/site.webmanifest?v=20260918">
     <meta name="apple-mobile-web-app-title" content="mtic">
     <link rel="preload" href="/media/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/media/styles/styles.css?v=2026101815">
-    <script src="/media/js/main.js?v=2026101815" defer></script>
+    <link rel="stylesheet" href="/media/styles/styles.css?v=202610182014">
+    <script src="/media/js/main.js?v=202610182014" defer></script>
     <!-- comú:fi -->
-    <script src="/media/js/botiga.js?v=2026101815" defer></script>
+    <script src="/media/js/botiga.js?v=202610182014" defer></script>
 </head>
 <body>
     <a class="salta" href="#contingut">Salta al contingut</a>
@@ -70,9 +70,14 @@
 
     <section class="seccio">
         <div class="container">
+            <div class="cercador">
+                <input id="cerca-botiga" type="search" data-cerca-botiga aria-label="Busca un producte o una referència"
+                       placeholder="Busca un producte o una referència" autocomplete="off">
+            </div>
             <div class="filtres">
                 <button type="button" class="filtre actiu" data-filtra="">Tot</button><button type="button" class="filtre" data-filtra="emmagatzematge-extern">Emmagatzematge extern <span>4</span></button><button type="button" class="filtre" data-filtra="impresores">Impresores <span>1</span></button><button type="button" class="filtre" data-filtra="tinta-i-toner">Tinta i tòner <span>14</span></button>
             </div>
+            <p class="cap-resultat" hidden data-cap-resultat>Cap producte amb aquest nom.</p>
             <div class="graella-botiga">
                 <a class="article-botiga" href="/botiga/cartucho-de-tinta-reciclado-karkemis-hp-n-301-xl-alta-capacidad-multipack-negro.html" data-categoria="tinta-i-toner"><img src="/media/botiga/tin-kar-10050068.jpg" alt="Multipack de cartutxos de tinta reciclats Karkemis HP 301XL Alta Capacitat Negre + Tricolor" loading="lazy"><span class="nom">Multipack de cartutxos de tinta reciclats Karkemis HP 301XL Alta Capacitat Negre + Tricolor</span><span class="preu" data-preu-ref="TIN-KAR-10050068"><strong data-preu>30,00 €</strong></span></a>
                 <a class="article-botiga" href="/botiga/pendrive-128gb-kingston-datatraveler-exodia-gen2-usb-3-2.html" data-categoria="emmagatzematge-extern"><img src="/media/botiga/ext-kin-dtxg2128.jpg" alt="Pendrive Kingston DataTraveler Exodia Gen2 USB 3.2 128 GB" loading="lazy"><span class="nom">Pendrive Kingston DataTraveler Exodia Gen2 USB 3.2 128 GB</span><span class="preu" data-preu-ref="EXT-KIN-DTXG2128"><strong data-preu>11,99 €</strong></span></a>

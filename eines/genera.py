@@ -112,6 +112,12 @@ T = {
         "llegir": "Llegir",
         "wa_text": "Hola! M'interessa {nom} ({ref})",
         "categoria_tot": "Tot",
+        "destacat": "Destacat",
+        "oferta": "Oferta",
+        "afegir": "Afegeix",
+        "cerca": "Busca un producte o una referència",
+        "cap_resultat": "Cap producte amb aquest nom.",
+        "nomes_ofertes": "Ofertes",
     },
     "es": {
         "botiga_titol": "Tienda · ordenadores, tóners y accesorios en Gandesa",
@@ -140,8 +146,17 @@ T = {
         "llegir": "Leer",
         "wa_text": "¡Hola! Me interesa {nom} ({ref})",
         "categoria_tot": "Todo",
+        "destacat": "Destacado",
+        "oferta": "Oferta",
+        "afegir": "Añadir",
+        "cerca": "Busca un producto o una referencia",
+        "cap_resultat": "Ningún producto con ese nombre.",
+        "nomes_ofertes": "Ofertas",
     },
 }
+
+ESTRELLA = ('<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="12" height="12">'
+            '<path d="M12 2l3 6.5 7 .9-5 4.8 1.2 7L12 17.8 5.8 21.2 7 14.2 2 9.4l7-.9z"/></svg>')
 
 ESTAT = {
     "in_stock": "tenim",
@@ -410,10 +425,12 @@ def fitxa_producte(idioma, producte, categories, fotos):
 
     galeria = ""
     if fotos:
-        mines = "".join(
-            f'<button type="button" class="mini" data-foto="{esc(f)}">'
+        # Totes les fotos tenen miniatura, també la primera: sense ella, un
+        # cop en canviaves no hi havia manera de tornar a la d'entrada.
+        mines = "" if len(fotos) < 2 else "".join(
+            f'<button type="button" class="mini{" actiu" if n == 0 else ""}" data-foto="{esc(f)}">'
             f'<img src="{esc(f)}" alt="" loading="lazy" width="64" height="64"></button>'
-            for f in fotos[1:6])
+            for n, f in enumerate(fotos[:6]))
         galeria = (
             '<figure class="foto-producte">\n'
             f'                <img id="foto-gran" src="{esc(fotos[0])}" alt="{esc(producte["name"])}" loading="eager">\n'
@@ -459,8 +476,10 @@ def fitxa_producte(idioma, producte, categories, fotos):
                 <div class="producte-dades">
                     <h1>{esc(producte['name'])}</h1>
                     {f'<p class="entradeta">{esc(producte["summary"])}</p>' if producte.get('summary') else ''}
+                    {distintius(idioma, producte)}
                     <p class="preu" data-preu-ref="{esc(producte['ref'])}">
                         <strong data-preu>{euros(preu)}</strong>
+                        {f'<s class="abans">{euros(producte["pvpr_with_vat"])}</s>' if producte.get('pvpr_with_vat') else ''}
                         <span class="preu-nota">{t['preu_iva']} · <span data-preu-sense>{euros(producte['price'])}</span> {t['preu_sense']}</span>
                     </p>
                     <p class="estat" data-estat-ref="{esc(producte['ref'])}"
@@ -468,6 +487,7 @@ def fitxa_producte(idioma, producte, categories, fotos):
                        data-unknown="{esc(t['preguntar'])}">{esc(estat)}</p>
                     <p class="botons">
                         <a class="boto" href="{wa}" target="_blank" rel="noopener">{t['demana']}</a>
+                        {boto_afegir(idioma, producte)}
                         <a class="boto-linia" href="{contacte}">{t['contacta']}</a>
                     </p>
                     <p class="ref-petita">{t['ref']}: <code>{esc(producte['ref'])}</code></p>
@@ -488,25 +508,71 @@ def fitxa_producte(idioma, producte, categories, fotos):
                        cos, seccio="botiga", imatge=fotos[0] if fotos else None, dades_extra=extra)
 
 
-def targeta(idioma, producte, fotos, amb_enllac):
+def preu_html(producte, classe="preu"):
+    """
+    El preu tal com es veu: el que es paga i, si n'hi ha, el que costava.
+
+    El preu recomanat només arriba aquí si és més alt que el meu —l'ERP ja
+    ho mira—, així que si hi és, es ratlla.
+    """
+    ref = esc(producte["ref"])
+    parts = [f'<strong data-preu>{euros(producte["price_with_vat"])}</strong>']
+    if producte.get("pvpr_with_vat"):
+        parts.append(f'<s class="abans">{euros(producte["pvpr_with_vat"])}</s>')
+    return f'<span class="{classe}" data-preu-ref="{ref}">' + "".join(parts) + "</span>"
+
+
+def distintius(idioma, producte):
+    """Els distintius que van a sobre de la foto: destacat i oferta."""
     t = T[idioma]
+    fora = []
+    if producte.get("featured"):
+        fora.append(f'<span class="marca destacat">{ESTRELLA} {t["destacat"]}</span>')
+    if producte.get("offer"):
+        fora.append(f'<span class="marca oferta">{t["oferta"]}</span>')
+    return f'<span class="marques">{"".join(fora)}</span>' if fora else ""
+
+
+def boto_afegir(idioma, producte):
+    """El botó d'afegir-lo al carro. El carro viu al navegador de qui mira."""
+    t = T[idioma]
+    return (f'<button type="button" class="boto-linia afegir" data-carro-afegeix'
+            f' data-ref="{esc(producte["ref"])}" data-nom="{esc(producte["name"])}"'
+            f' data-preu="{producte["price_with_vat"]:.2f}">{t["afegir"]}</button>')
+
+
+def targeta(idioma, producte, fotos, amb_enllac):
+    """
+    Una targeta del llistat.
+
+    No és un enllaç per fora: a dins hi ha el botó d'afegir al carro, i un
+    botó dins d'un enllaç no es pot fer. L'enllaç envolta la foto i el nom,
+    que és el que es clica per anar a la fitxa.
+    """
     url = f"{RUTES['botiga'][idioma]}{producte['slug']}.html"
     foto = fotos[0] if fotos else None
     nom = esc(producte["name"])
-    preu = (f'<span class="preu" data-preu-ref="{esc(producte["ref"])}">'
-            f'<strong data-preu>{euros(producte["price_with_vat"])}</strong></span>')
     imatge = (f'<img src="{esc(foto)}" alt="{nom}" loading="lazy">' if foto
               else '<span class="sense-foto" aria-hidden="true"></span>')
+    # Per al cercador: el que s'hi busca, tot junt i sense accents dolents
+    cerca = esc(f'{producte["name"]} {producte["ref"]} {producte.get("brand") or ""}'.lower())
+
+    dades = (f'data-categoria="{esc(producte.get("category") or "")}" data-cerca="{cerca}"'
+             f'{" data-destacat" if producte.get("featured") else ""}'
+             f'{" data-oferta" if producte.get("offer") else ""}')
 
     if amb_enllac:
-        return (f'<a class="article-botiga" href="{url}" data-categoria="{esc(producte.get("category") or "")}">'
-                f'{imatge}<span class="nom">{nom}</span>{preu}</a>')
-    # Les famílies que no mereixen fitxa pròpia: només la fila, amb el seu botó
-    wa = esc("https://wa.me/34711550872?text=" + urllib.parse.quote(
-        t["wa_text"].format(nom=producte["name"], ref=producte["ref"])))
-    return (f'<div class="article-botiga fila" data-categoria="{esc(producte.get("category") or "")}">'
-            f'{imatge}<span class="nom">{nom}</span>{preu}'
-            f'<a class="boto-linia" href="{wa}" target="_blank" rel="noopener">{t["demana"]}</a></div>')
+        return (f'<div class="article-botiga" {dades}>'
+                f'<a class="cap" href="{url}">'
+                f'<span class="foto">{imatge}{distintius(idioma, producte)}</span>'
+                f'<span class="nom">{nom}</span></a>'
+                f'{preu_html(producte)}{boto_afegir(idioma, producte)}</div>')
+
+    # Les famílies que no mereixen fitxa pròpia: només la fila
+    return (f'<div class="article-botiga fila" {dades}>'
+            f'<span class="foto">{imatge}</span>'
+            f'<span class="nom">{nom}</span>'
+            f'{preu_html(producte)}{boto_afegir(idioma, producte)}</div>')
 
 
 def index_botiga(idioma, cataleg, fotos_per_ref):
@@ -516,6 +582,8 @@ def index_botiga(idioma, cataleg, fotos_per_ref):
     categories = {c["slug"]: c for c in cataleg["categories"]}
 
     filtres = [f'<button type="button" class="filtre actiu" data-filtra="">{t["categoria_tot"]}</button>']
+    if any(p.get("offer") for p in cataleg["products"]):
+        filtres.append(f'<button type="button" class="filtre" data-filtra="oferta">{t["nomes_ofertes"]}</button>')
     filtres += [f'<button type="button" class="filtre" data-filtra="{esc(c["slug"])}">{esc(c["name"])} '
                 f'<span>{esc(c["count"])}</span></button>' for c in cataleg["categories"]]
 
@@ -542,9 +610,14 @@ def index_botiga(idioma, cataleg, fotos_per_ref):
 
     <section class="seccio">
         <div class="container">
+            <div class="cercador">
+                <input id="cerca-botiga" type="search" data-cerca-botiga aria-label="{t['cerca']}"
+                       placeholder="{t['cerca']}" autocomplete="off">
+            </div>
             <div class="filtres">
                 {"".join(filtres)}
             </div>
+            <p class="cap-resultat" hidden data-cap-resultat>{t['cap_resultat']}</p>
             <div class="graella-botiga">
                 {graella}
             </div>
