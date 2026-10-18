@@ -36,6 +36,11 @@ var CONFIG = {
     var zonaLlista = arrel.querySelector("[data-llista]");
     var zonaFont = arrel.querySelector("[data-font]");
 
+    var ES = (document.documentElement.lang || "ca").indexOf("es") === 0;
+    var TXT = ES
+        ? { de5: " de 5 estrellas", una: " reseña", diverses: " reseñas", aGoogle: " en Google", nomesGoogle: "en Google" }
+        : { de5: " de 5 estrelles", una: " ressenya", diverses: " ressenyes", aGoogle: " a Google", nomesGoogle: "a Google" };
+
     var ESTRELLA = '<svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.8l-5.4 2.9 1.2-5.9L1.4 7.7l6-.7z"/></svg>';
 
     function esc(s) {
@@ -46,14 +51,14 @@ var CONFIG = {
     function estrelles(n) {
         var h = "";
         for (var i = 1; i <= 5; i++) h += i <= Math.round(n) ? ESTRELLA : ESTRELLA.replace("<svg", '<svg class="buida"');
-        return '<span class="estrelles" role="img" aria-label="' + n + ' de 5 estrelles">' + h + "</span>";
+        return '<span class="estrelles" role="img" aria-label="' + n + TXT.de5 + '">' + h + "</span>";
     }
     function nota(valor, total) {
         if (!valor) return;
         var v = Number(valor).toFixed(1).replace(".", ",");
         zonaNota.innerHTML =
             '<div class="nota-google"><span class="xifra">' + v + '</span><div>' + estrelles(valor) +
-            '<div class="detall">' + (total ? total + (total == 1 ? " ressenya" : " ressenyes") + " a Google" : "a Google") + "</div></div></div>";
+            '<div class="detall">' + (total ? total + (total == 1 ? TXT.una : TXT.diverses) + TXT.aGoogle : TXT.nomesGoogle) + "</div></div></div>";
     }
     function targeta(r) {
         var foto = r.foto
@@ -80,7 +85,7 @@ var CONFIG = {
 
     // Mode automàtic (Google Places API New). Només es crida quan la secció és a prop de la pantalla.
     function automatic() {
-        fetch("https://places.googleapis.com/v1/places/" + CONFIG.placeId + "?languageCode=ca", {
+        fetch("https://places.googleapis.com/v1/places/" + CONFIG.placeId + "?languageCode=" + (ES ? "es" : "ca"), {
             headers: {
                 "X-Goog-Api-Key": CONFIG.clauApi,
                 "X-Goog-FieldMask": "rating,userRatingCount,reviews"
