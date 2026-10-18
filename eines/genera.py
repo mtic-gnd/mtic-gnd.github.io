@@ -540,8 +540,6 @@ def main():
         cataleg, articles = llegeix_json("botiga.json"), llegeix_json("articles.json")
     else:
         cataleg, articles = demana("/api/build/cataleg"), demana("/api/build/articles")
-        desa_json("botiga.json", cataleg)
-        desa_json("articles.json", articles)
 
     # Les fotos, un cop: la mateixa serveix per a les dues llengües
     fotos_per_ref = {}
@@ -549,6 +547,20 @@ def main():
         nom_foto = re.sub(r"[^a-z0-9]+", "-", producte["ref"].lower()).strip("-")
         baixada = baixa_foto(producte.get("image_source"), nom_foto)
         fotos_per_ref[producte["ref"]] = [baixada] if baixada else []
+
+        """
+        L'adreça d'origen es canvia per la còpia nostra ABANS de desar el json.
+
+        Aquest repositori és PÚBLIC, i `image_source` és sovint una adreça del
+        majorista: desant-la aquí, el que no volem que surti a l'HTML acabaria
+        igualment publicat, i a més amb historial. Un cop la foto és baixada ja
+        no la necessitem per a res.
+        """
+        producte["image_source"] = baixada
+
+    if not local:
+        desa_json("botiga.json", cataleg)
+        desa_json("articles.json", articles)
 
     canvis = []
     pagines = []          # per al sitemap: (url_ca, url_es)
