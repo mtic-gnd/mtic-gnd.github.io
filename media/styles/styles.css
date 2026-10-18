@@ -72,6 +72,7 @@ p { max-width: 68ch; }
 .menu a:hover { background: var(--superficie); color: var(--negre); }
 .menu a[aria-current="page"] { color: var(--violeta); }
 .menu .boto { margin-left: .5rem; }
+.menu a.idioma { font-size: .9rem; color: var(--text-suau); }
 .menu-obre { display: none; background: none; border: 0; padding: .5rem; cursor: pointer; color: var(--negre); }
 
 /* ---------- Botons ---------- */
@@ -140,6 +141,8 @@ p { max-width: 68ch; }
 }
 .llista-serveis li:last-child { border-bottom: 1px solid var(--linia); }
 .llista-serveis h3 { margin-bottom: .4rem; }
+.llista-serveis h3 a { color: inherit; text-decoration: none; }
+.llista-serveis h3 a:hover { color: var(--violeta); text-decoration: underline; }
 .icona {
     width: 56px; height: 56px; border-radius: 14px;
     display: grid; place-items: center;
@@ -273,7 +276,7 @@ p { max-width: 68ch; }
 
 /* ---------- Peu ---------- */
 .peu { background: var(--negre); color: #b5b1bd; padding: 3.5rem 0 2rem; font-size: .95rem; }
-.peu .container { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2.5rem; }
+.peu .container { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; }
 .peu h2 { font-size: 1rem; font-stretch: 100%; color: #fff; margin-bottom: .9rem; letter-spacing: 0; }
 .peu ul { list-style: none; padding: 0; display: grid; gap: .45rem; }
 .peu a { color: #e4e1ea; text-decoration: none; }
