@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mtic.cat/</loc>
     <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/"/>
   </url>
   <url>
     <loc>https://mtic.cat/serveis.html</loc>
     <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/serveis.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/serveis.html"/>
   </url>
   <url>
     <loc>https://mtic.cat/reparacio-ordinadors.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/reparacio-ordinadors.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/reparacion-ordenadores.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/reparacio-ordinadors.html"/>
+  </url>
+  <url>
+    <loc>https://mtic.cat/recuperacio-dades.html</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://mtic.cat/venda-ordinadors.html</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://mtic.cat/manteniment-informatic.html</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://mtic.cat/pagines-web.html</loc>
     <lastmod>2026-10-18</lastmod>
   </url>
   <url>
@@ -19,5 +44,26 @@
   <url>
     <loc>https://mtic.cat/contacte.html</loc>
     <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://mtic.cat/es/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/"/>
+  </url>
+  <url>
+    <loc>https://mtic.cat/es/servicios.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/serveis.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/serveis.html"/>
+  </url>
+  <url>
+    <loc>https://mtic.cat/es/reparacion-ordenadores.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/reparacio-ordinadors.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/reparacion-ordenadores.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/reparacio-ordinadors.html"/>
   </url>
 </urlset>
