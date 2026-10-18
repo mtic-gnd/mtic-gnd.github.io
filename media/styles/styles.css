@@ -372,3 +372,10 @@ p { max-width: 68ch; }
 .text-llarg table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: .95rem; }
 .text-llarg th, .text-llarg td { text-align: left; vertical-align: top; padding: .6rem .75rem; border-bottom: 1px solid var(--linia); }
 .text-llarg th { color: var(--negre); background: var(--superficie); }
+
+/* Treballs recents (fotos del taller) */
+.seccio.treballs-seccio { padding-top: 0; }
+.treballs { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 300px)); gap: 1.25rem; margin-top: 1.5rem; }
+.treballs figure img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radi); background: var(--superficie); }
+.treballs figcaption { font-size: .92rem; color: var(--text-suau); margin-top: .55rem; }
+.mes-treballs { margin-top: 1.25rem; }
