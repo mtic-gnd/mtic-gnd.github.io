@@ -388,6 +388,15 @@ p { max-width: 68ch; }
 .foto-taller figcaption { font-size: .92rem; color: var(--text-suau); margin-top: .6rem; }
 
 /* ---------- Botiga ---------- */
+/*
+ * Amagar vol dir amagar.
+ *
+ * El navegador ja fa `[hidden] { display: none }`, però qualsevol regla amb
+ * classe la guanya: les targetes de la botiga són `display: flex` i el filtre
+ * de categories les marcava com a amagades sense que passés res.
+ */
+[hidden] { display: none !important; }
+
 .filtres { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
 .filtre {
     border: 1px solid var(--linia); background: #fff; border-radius: 999px;
