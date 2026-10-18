@@ -169,20 +169,68 @@ def euros(valor):
     return f"{milers},{decimals} €"
 
 
+def capcaleres():
+    """
+    Les capçaleres de cada crida.
+
+    L'agent d'usuari és de debò i no el de Python a seques: pel camí hi ha
+    Cloudflare, i un «Python-urllib/3.12» que ve d'un centre de dades té tots
+    els números de semblar un robot i que el parin abans d'arribar.
+
+    Si algun dia hi ha Cloudflare Access davant de la porta de generació, el
+    seu testimoni de servei va a les dues capçaleres de sota. Si no n'hi ha,
+    no s'envien i no molesten.
+    """
+    capsaleres = {
+        "Authorization": f"Bearer {TOKEN}",
+        "Accept": "application/json",
+        "User-Agent": "mtic-web/1.0 (+https://mtic.cat)",
+    }
+    access_id = os.environ.get("CF_ACCESS_CLIENT_ID", "").strip()
+    access_secret = os.environ.get("CF_ACCESS_CLIENT_SECRET", "").strip()
+    if access_id and access_secret:
+        capsaleres["CF-Access-Client-Id"] = access_id
+        capsaleres["CF-Access-Client-Secret"] = access_secret
+    return capsaleres
+
+
+def explica_error(e, ruta):
+    """
+    Qui ha dit que no, i per què.
+
+    Importa distingir-ho: els codis de l'ERP són 401 (la clau no val) i 503
+    (no n'hi ha cap de configurada). Qualsevol altra cosa ve de Cloudflare, i
+    llavors la petició no ha arribat ni a casa. Dir-ho malament fa buscar on
+    no toca, que és el que passava abans.
+    """
+    de_cloudflare = bool(e.headers.get("cf-ray") or e.headers.get("cf-mitigated"))
+    qui = "Cloudflare" if de_cloudflare else "L'ERP"
+    pistes = {
+        401: "la clau de generació no és bona (WEB_BUILD_TOKEN i MTIC_TOKEN han de ser iguals)",
+        403: "una regla de seguretat ha parat la petició abans d'arribar a l'ERP. "
+             "Mira Security > Events al tauler de Cloudflare: hi dirà quina. "
+             "Sol ser el Bot Fight Mode, la Browser Integrity Check o Access.",
+        404: "aquesta adreça no la publica el túnel. Comprova el camí de la ruta de api.mtic.cat.",
+        503: "l'ERP no té cap clau de generació configurada (WEB_BUILD_TOKEN al .env)",
+    }
+    ray = e.headers.get("cf-ray")
+    return "\n".join(filter(None, [
+        f"{qui} ha contestat {e.code} a {ruta}",
+        f"  · {pistes[e.code]}" if e.code in pistes else None,
+        f"  · Ray ID {ray}" if ray else None,
+    ]))
+
+
 def demana(ruta):
     """Una crida a l'ERP amb la clau de generació."""
     if not TOKEN:
         sys.exit("Falta MTIC_TOKEN: sense clau, l'ERP no dona el catàleg.")
-    peticio = urllib.request.Request(
-        f"{API}{ruta}",
-        headers={"Authorization": f"Bearer {TOKEN}", "Accept": "application/json"},
-    )
+    peticio = urllib.request.Request(f"{API}{ruta}", headers=capcaleres())
     try:
         with urllib.request.urlopen(peticio, timeout=TEMPS_ESPERA) as resposta:
             return json.loads(resposta.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
-        sys.exit(f"L'ERP ha contestat {e.code} a {ruta}"
-                 + (" · la clau no és bona" if e.code == 401 else ""))
+        sys.exit(explica_error(e, ruta))
     except OSError as e:
         sys.exit(f"No s'ha pogut parlar amb l'ERP ({e})")
 

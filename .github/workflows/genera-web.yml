@@ -39,6 +39,10 @@ jobs:
         env:
           MTIC_API: ${{ vars.MTIC_API }}
           MTIC_TOKEN: ${{ secrets.MTIC_TOKEN }}
+          # Només si la porta de generació va darrere de Cloudflare Access.
+          # Si els secrets no hi són, no s'envia res i no molesten.
+          CF_ACCESS_CLIENT_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
+          CF_ACCESS_CLIENT_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
         run: python3 eines/genera.py
 
       - name: Desa el que hagi canviat
