@@ -313,7 +313,7 @@ def baixa_foto(url, nom):
     """
     Es baixa una foto del majorista i la desa a /media/botiga.
 
-    Si ja la tenim, no es torna a demanar: el manual d'Infortisa demana
+    Si ja la tenim, no es torna a demanar: el manual del majorista demana
     justament això, no repetir descàrregues del que ja s'ha baixat.
     """
     """
