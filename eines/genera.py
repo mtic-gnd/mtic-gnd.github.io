@@ -118,6 +118,12 @@ T = {
         "cerca": "Busca un producte o una referència",
         "cap_resultat": "Cap producte amb aquest nom.",
         "nomes_ofertes": "Ofertes",
+        "des_de": "des de",
+        "variants": "Tria el que necessites",
+        "variant": "Model",
+        "preu_col": "Preu",
+        "estat_col": "Disponibilitat",
+        "wa_variant": "Hola! M'interessa {nom}, {variant} ({ref})",
     },
     "es": {
         "botiga_titol": "Tienda · ordenadores, tóners y accesorios en Gandesa",
@@ -152,6 +158,12 @@ T = {
         "cerca": "Busca un producto o una referencia",
         "cap_resultat": "Ningún producto con ese nombre.",
         "nomes_ofertes": "Ofertas",
+        "des_de": "desde",
+        "variants": "Elige el que necesitas",
+        "variant": "Modelo",
+        "preu_col": "Precio",
+        "estat_col": "Disponibilidad",
+        "wa_variant": "¡Hola! Me interesa {nom}, {variant} ({ref})",
     },
 }
 
@@ -318,6 +330,17 @@ def baixa_foto(url, nom):
     """
     if not url or not (url.startswith("/") or re.match(r"^https?://", url, re.I)):
         return None
+
+    """
+    Una foto que ja és nostra no es torna a baixar.
+
+    Les famílies ensenyen les fotos de les seves variants, i aquelles ja
+    s'han baixat abans amb el nom de la referència. Sense això es tornaven a
+    demanar amb un altre nom i quedaven desades dues vegades, i generant en
+    local —on les adreces ja són les còpies— no es trobaven mai.
+    """
+    if url.startswith("/media/") and os.path.exists(os.path.join(ARREL, url.lstrip("/"))):
+        return url
 
     # Si ja la tenim amb qualsevol extensió, no es torna a demanar
     for provada in EXTENSIONS.values():
@@ -508,6 +531,146 @@ def fitxa_producte(idioma, producte, categories, fotos):
                        cos, seccio="botiga", imatge=fotos[0] if fotos else None, dades_extra=extra)
 
 
+def fitxa_familia(idioma, familia, categories, fotos):
+    """
+    La pàgina d'una família: una de sola, amb les variants a dins.
+
+    Un cartutx de tinta no és un article, és sis: l'Epson 604 ve en negre,
+    cian, magenta, groc i en dos multipacks. Sis fitxes que deien gairebé el
+    mateix no són sis pàgines —per a qui mira és soroll i per a Google és
+    contingut duplicat—, així que és una, amb una taula de variants on cada
+    fila porta el seu preu, el seu estoc i el seu botó.
+    """
+    t = T[idioma]
+    altre = "es" if idioma == "ca" else "ca"
+    url = f"{RUTES['botiga'][idioma]}{familia['slug']}.html"
+    url_altre = f"{RUTES['botiga'][altre]}{familia['slug']}.html"
+    categoria = categories.get(familia.get("category")) or {}
+    nom = familia["name"]
+
+    galeria = ""
+    if fotos:
+        mines = "" if len(fotos) < 2 else "".join(
+            f'<button type="button" class="mini{" actiu" if n == 0 else ""}" data-foto="{esc(f)}">'
+            f'<img src="{esc(f)}" alt="" loading="lazy" width="64" height="64"></button>'
+            for n, f in enumerate(fotos[:6]))
+        galeria = (
+            '<figure class="foto-producte">\n'
+            f'                <img id="foto-gran" src="{esc(fotos[0])}" alt="{esc(nom)}" loading="eager">\n'
+            + (f'                <div class="mines">{mines}</div>\n' if mines else "")
+            + "            </figure>"
+        )
+
+    files = []
+    for v in familia["variants"]:
+        wa = esc("https://wa.me/34711550872?text=" + urllib.parse.quote(
+            t["wa_variant"].format(nom=nom, variant=v["variant"], ref=v["ref"])))
+        estat = t[ESTAT.get(v.get("availability"), "preguntar")]
+        files.append(f"""                    <tr>
+                        <th scope="row">
+                            <span class="variant-nom">{esc(v["variant"])}</span>
+                            <code>{esc(v["ref"])}</code>
+                        </th>
+                        <td>{preu_html(v, "preu")}</td>
+                        <td class="estat" data-estat-ref="{esc(v["ref"])}"
+                            data-in_stock="{esc(t['tenim'])}" data-on_order="{esc(t['demanar'])}"
+                            data-unknown="{esc(t['preguntar'])}">{esc(estat)}</td>
+                        <td class="accions">
+                            {boto_afegir(idioma, {**v, "name": f"{nom} · {v['variant']}"})}
+                            <a class="boto-wa" href="{wa}" target="_blank" rel="noopener"
+                               aria-label="{esc(t['demana'])}">{t['demana']}</a>
+                        </td>
+                    </tr>""")
+
+    contacte = "/contacte.html" if idioma == "ca" else "/es/contacto.html"
+    cos_md = markdown.a_html(familia.get("body") or "") if familia.get("body") else ""
+
+    """
+    Per a Google, una família és un ProductGroup amb les seves variants a
+    dins: així entén que són el mateix article en models diferents i no sis
+    productes que es repeteixen.
+    """
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "ProductGroup",
+        "name": nom,
+        "description": familia.get("summary") or familia.get("body") or nom,
+        "brand": {"@type": "Brand", "name": familia["brand"]} if familia.get("brand") else None,
+        "image": [f"{DOMINI}{f}" for f in fotos] or None,
+        "url": f"{DOMINI}{url}",
+        "hasVariant": [{
+            "@type": "Product",
+            "name": f"{nom} · {v['variant']}",
+            "sku": v["ref"],
+            "offers": {
+                "@type": "Offer",
+                "url": f"{DOMINI}{url}",
+                "priceCurrency": "EUR",
+                "price": f"{v['price_with_vat']:.2f}",
+                "availability": "https://schema.org/InStock" if v.get("availability") == "in_stock"
+                                else "https://schema.org/PreOrder",
+                "seller": {"@type": "LocalBusiness", "name": "mtic"},
+            },
+        } for v in familia["variants"]],
+    }
+    schema = {k: v for k, v in schema.items() if v is not None}
+
+    cos = f"""        <section class="seccio">
+        <div class="container">
+            <nav class="molles" aria-label="{'Molles de pa' if idioma == 'ca' else 'Migas de pan'}">
+                <a href="{'/' if idioma == 'ca' else '/es/'}">{t['inici']}</a><span>·</span>
+                <a href="{RUTES['botiga'][idioma]}">{'Botiga' if idioma == 'ca' else 'Tienda'}</a>
+                {f'<span>·</span><span>{esc(categoria.get("name", ""))}</span>' if categoria else ''}
+            </nav>
+
+            <div class="producte">
+            {galeria}
+                <div class="producte-dades">
+                    <h1>{esc(nom)}</h1>
+                    {f'<p class="entradeta">{esc(familia["summary"])}</p>' if familia.get('summary') else ''}
+                    {distintius(idioma, familia)}
+                    <p class="preu des-de">
+                        <span class="des-de-text">{t['des_de']}</span>
+                        <strong>{euros(familia['price_from_with_vat'])}</strong>
+                        <span class="preu-nota">{t['preu_iva']}</span>
+                    </p>
+                    <p class="botons">
+                        <a class="boto-linia" href="{contacte}">{t['contacta']}</a>
+                    </p>
+                </div>
+            </div>
+
+            <h2 class="variants-titol">{t['variants']}</h2>
+            <div class="taula-variants">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">{t['variant']}</th>
+                            <th scope="col">{t['preu_col']}</th>
+                            <th scope="col">{t['estat_col']}</th>
+                            <th scope="col"><span class="nomes-lectors">{t['afegir']}</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+{chr(10).join(files)}
+                    </tbody>
+                </table>
+            </div>
+
+            {f'<div class="text-llarg descripcio-producte">{cos_md}</div>' if cos_md else ''}
+
+            <p class="actualitzat">{t['orientatiu'].format(data=datetime.date.today().strftime('%d/%m/%Y'))}</p>
+            <p><a href="{RUTES['botiga'][idioma]}">← {t['tornar']}</a></p>
+        </div>
+    </section>"""
+
+    extra = ('    <script type="application/ld+json">\n' + json_ld(schema) + "\n    </script>\n")
+    return url, pagina(idioma, url, url_altre,
+                       f"{nom} · mtic",
+                       familia.get("summary") or f"{nom}. {t['botiga_descripcio']}",
+                       cos, seccio="botiga", imatge=fotos[0] if fotos else None, dades_extra=extra)
+
+
 def preu_html(producte, classe="preu"):
     """
     El preu tal com es veu: el que es paga i, si n'hi ha, el que costava.
@@ -575,14 +738,49 @@ def targeta(idioma, producte, fotos, amb_enllac):
             f'{preu_html(producte)}{boto_afegir(idioma, producte)}</div>')
 
 
-def index_botiga(idioma, cataleg, fotos_per_ref):
+def targeta_familia(idioma, familia, fotos):
+    """
+    Una família al llistat: una targeta, no sis.
+
+    El preu és el de la variant més barata, amb el «des de» al davant. Porta
+    la referència d'aquella variant perquè el preu es refresqui sol com el de
+    qualsevol altra targeta.
+    """
+    t = T[idioma]
+    url = f"{RUTES['botiga'][idioma]}{familia['slug']}.html"
+    foto = fotos[0] if fotos else None
+    nom = esc(familia["name"])
+    imatge = (f'<img src="{esc(foto)}" alt="{nom}" loading="lazy">' if foto
+              else '<span class="sense-foto" aria-hidden="true"></span>')
+
+    # Al cercador s'hi ha de poder trobar per qualsevol de les variants
+    paraules = " ".join([familia["name"], familia.get("brand") or ""]
+                        + [f'{v["variant"]} {v["ref"]}' for v in familia["variants"]])
+    dades = (f'data-categoria="{esc(familia.get("category") or "")}" data-cerca="{esc(paraules.lower())}"'
+             f'{" data-destacat" if familia.get("featured") else ""}'
+             f'{" data-oferta" if familia.get("offer") else ""}')
+
+    barata = min(familia["variants"], key=lambda v: v["price_with_vat"])
+    preu = (f'<span class="preu" data-preu-ref="{esc(barata["ref"])}">'
+            f'<span class="des-de-text">{t["des_de"]}</span> '
+            f'<strong data-preu>{euros(familia["price_from_with_vat"])}</strong></span>')
+
+    return (f'<div class="article-botiga" {dades}>'
+            f'<a class="cap" href="{url}">'
+            f'<span class="foto">{imatge}{distintius(idioma, familia)}</span>'
+            f'<span class="nom">{nom}</span></a>'
+            f'{preu}'
+            f'<a class="boto-linia afegir" href="{url}">{t["variants"]}</a></div>')
+
+
+def index_botiga(idioma, cataleg, fotos_per_ref, fotos_per_familia):
     t = T[idioma]
     url = RUTES["botiga"][idioma]
     url_altre = RUTES["botiga"]["es" if idioma == "ca" else "ca"]
     categories = {c["slug"]: c for c in cataleg["categories"]}
 
     filtres = [f'<button type="button" class="filtre actiu" data-filtra="">{t["categoria_tot"]}</button>']
-    if any(p.get("offer") for p in cataleg["products"]):
+    if any(p.get("offer") for p in cataleg["products"] + (cataleg.get("groups") or [])):
         filtres.append(f'<button type="button" class="filtre" data-filtra="oferta">{t["nomes_ofertes"]}</button>')
     filtres += [f'<button type="button" class="filtre" data-filtra="{esc(c["slug"])}">{esc(c["name"])} '
                 f'<span>{esc(c["count"])}</span></button>' for c in cataleg["categories"]]
@@ -591,6 +789,11 @@ def index_botiga(idioma, cataleg, fotos_per_ref):
     # files amples, i barrejades amb les targetes quedaven estretes i amb el
     # botó sortint per fora de la caixa.
     fitxes, files = [], []
+
+    # Les famílies van primer: són una pàgina sencera i no una fila
+    for familia in cataleg.get("groups") or []:
+        fitxes.append(targeta_familia(idioma, familia, fotos_per_familia.get(familia["slug"], [])))
+
     for producte in cataleg["products"]:
         amb_fitxa = (categories.get(producte.get("category")) or {}).get("layout", "page") == "page"
         (fitxes if amb_fitxa else files).append(
@@ -736,6 +939,7 @@ def main():
 
     # El que tingui una adreça rara no es dibuixa: vegeu slug_segur()
     for nom, llista, clau in (("producte", cataleg["products"], "slug"),
+                              ("família", cataleg.setdefault("groups", []), "slug"),
                               ("article", articles["posts"], "slug")):
         dolents = [x for x in llista if not slug_segur(x.get(clau))]
         for x in dolents:
@@ -765,6 +969,19 @@ def main():
         """
         producte["images"] = baixades
 
+    # Les de les famílies, igual: la pàgina de la família té la seva pròpia
+    # foto i no la d'una variant qualsevol
+    fotos_per_familia = {}
+    for familia in cataleg["groups"]:
+        arrel = re.sub(r"[^a-z0-9]+", "-", familia["slug"].lower()).strip("-")
+        baixades = []
+        for n, origen in enumerate(familia.get("images") or [], start=1):
+            copia = baixa_foto(origen, f"fam-{arrel}" if n == 1 else f"fam-{arrel}-{n}")
+            if copia:
+                baixades.append(copia)
+        fotos_per_familia[familia["slug"]] = baixades
+        familia["images"] = baixades
+
     if not local:
         desa_json("botiga.json", cataleg)
         desa_json("articles.json", articles)
@@ -773,7 +990,7 @@ def main():
     pagines = []          # per al sitemap: (url_ca, url_es)
 
     for idioma in ("ca", "es"):
-        url, text = index_botiga(idioma, cataleg, fotos_per_ref)
+        url, text = index_botiga(idioma, cataleg, fotos_per_ref, fotos_per_familia)
         if escriu(url, text):
             canvis.append(url)
         url, text = index_articles(idioma, [p for p in articles["posts"] if p["lang"] == idioma])
@@ -790,6 +1007,17 @@ def main():
         urls = {}
         for idioma in ("ca", "es"):
             url, text = fitxa_producte(idioma, producte, categories, fotos_per_ref.get(producte["ref"], []))
+            urls[idioma] = url
+            if escriu(url, text):
+                canvis.append(url)
+        pagines.append((urls["ca"], urls["es"]))
+
+    # Les pàgines de família
+    for familia in cataleg["groups"]:
+        urls = {}
+        for idioma in ("ca", "es"):
+            url, text = fitxa_familia(idioma, familia, categories,
+                                      fotos_per_familia.get(familia["slug"], []))
             urls[idioma] = url
             if escriu(url, text):
                 canvis.append(url)

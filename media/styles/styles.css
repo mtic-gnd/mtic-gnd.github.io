@@ -543,3 +543,43 @@ a.article-botiga:hover { border-color: var(--violeta); }
     .carro-boto { bottom: 5rem; }
     .carro-panell { right: .5rem; left: .5rem; bottom: 8.5rem; width: auto; }
 }
+
+/* ------------------------------------------------------------ famílies
+   Una família és una pàgina amb les variants en una taula: cada fila
+   porta el seu preu, el seu estoc i el seu botó. A mòbil la taula es
+   desfà en targetes, que quatre columnes en 360 px no caben. */
+.des-de-text { font-size: .8em; font-weight: 500; color: var(--text-suau); }
+.preu.des-de { display: flex; align-items: baseline; gap: .4rem; flex-wrap: wrap; }
+
+.variants-titol { margin: 2.5rem 0 1rem; font-size: 1.25rem; }
+.taula-variants { border: 1px solid var(--linia); border-radius: var(--radi); overflow: hidden; }
+.taula-variants table { width: 100%; border-collapse: collapse; }
+.taula-variants th, .taula-variants td { padding: .85rem 1rem; text-align: left; vertical-align: middle; }
+.taula-variants thead th {
+    font-size: .78rem; text-transform: uppercase; letter-spacing: .03em;
+    color: var(--text-suau); background: var(--superficie); font-weight: 600;
+}
+.taula-variants tbody tr + tr { border-top: 1px solid var(--linia); }
+.taula-variants tbody th { font-weight: 600; }
+.taula-variants .variant-nom { display: block; }
+.taula-variants code { font-size: .8rem; color: var(--text-suau); font-weight: 400; }
+.taula-variants .preu { font-weight: 800; white-space: nowrap; }
+.taula-variants .estat { font-size: .9rem; color: var(--text-suau); }
+.taula-variants .accions { text-align: right; white-space: nowrap; }
+.taula-variants .accions .afegir { margin-right: .4rem; }
+.taula-variants .boto-wa { font-size: .85rem; text-decoration: underline; }
+
+.nomes-lectors {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+@media (max-width: 680px) {
+    .taula-variants thead { display: none; }
+    .taula-variants tbody tr { display: grid; grid-template-columns: 1fr auto; gap: .35rem 1rem; padding: .9rem 1rem; }
+    .taula-variants th, .taula-variants td { padding: 0; }
+    .taula-variants tbody th { grid-column: 1; }
+    .taula-variants .preu { grid-column: 2; grid-row: 1; text-align: right; }
+    .taula-variants .estat { grid-column: 1 / -1; }
+    .taula-variants .accions { grid-column: 1 / -1; text-align: left; margin-top: .35rem; }
+}
