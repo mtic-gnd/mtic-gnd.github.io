@@ -27,7 +27,7 @@
  ],
  "count": 20,
  "currency": "EUR",
- "generated_at": "2026-10-19 10:16:10",
+ "generated_at": "2026-10-19 12:46:38",
  "products": [
   {
    "availability": "on_order",
@@ -112,9 +112,9 @@
    "pvpr_with_vat": 495,
    "ref": "POR-LEN-82YU019L",
    "slug": "portatil-lenovo-v15-g4-amn-ryzen-3-7320u-8-gb-ram-512-gb-ssd-15-6-windows-11",
-   "summary": "Portàtil Lenovo V15 G4 AMN amb AMD Ryzen 3 7320U, 8 GB de RAM, SSD de 512 GB, pantalla Full HD de 15,6” i Windows 11 Home.",
+   "summary": "Ideal per a estudiants, ús domèstic i oficina, perfecte per treballar, estudiar i realitzar les tasques informàtiques del dia a dia amb Windows 11 Home.",
    "unit": "u",
-   "updated_at": "2026-10-19 08:18:07",
+   "updated_at": "2026-10-19 10:56:32",
    "vat_pct": 21
   },
   {
