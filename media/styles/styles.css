@@ -545,41 +545,32 @@ a.article-botiga:hover { border-color: var(--violeta); }
 }
 
 /* ------------------------------------------------------------ famílies
-   Una família és una pàgina amb les variants en una taula: cada fila
-   porta el seu preu, el seu estoc i el seu botó. A mòbil la taula es
-   desfà en targetes, que quatre columnes en 360 px no caben. */
+   Una família és una pàgina amb un desplegable: es tria el model i
+   canvien la foto, el preu i la disponibilitat. Una taula de cinc files
+   per quatre columnes no cabia al mòbil i obligava a comparar-ho tot de
+   cop; comprant no es compara, es tria el color que s'ha acabat. */
 .des-de-text { font-size: .8em; font-weight: 500; color: var(--text-suau); }
 .preu.des-de { display: flex; align-items: baseline; gap: .4rem; flex-wrap: wrap; }
 
-.variants-titol { margin: 2.5rem 0 1rem; font-size: 1.25rem; }
-.taula-variants { border: 1px solid var(--linia); border-radius: var(--radi); overflow: hidden; }
-.taula-variants table { width: 100%; border-collapse: collapse; }
-.taula-variants th, .taula-variants td { padding: .85rem 1rem; text-align: left; vertical-align: middle; }
-.taula-variants thead th {
-    font-size: .78rem; text-transform: uppercase; letter-spacing: .03em;
-    color: var(--text-suau); background: var(--superficie); font-weight: 600;
+.tria { margin: 1.25rem 0 1rem; }
+.tria label {
+    display: block; margin-bottom: .4rem;
+    font-size: .8rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: .04em; color: var(--text-suau);
 }
-.taula-variants tbody tr + tr { border-top: 1px solid var(--linia); }
-.taula-variants tbody th { font-weight: 600; }
-.taula-variants .variant-nom { display: block; }
-.taula-variants code { font-size: .8rem; color: var(--text-suau); font-weight: 400; }
-.taula-variants .preu { font-weight: 800; white-space: nowrap; }
-.taula-variants .estat { font-size: .9rem; color: var(--text-suau); }
-.taula-variants .accions { text-align: right; white-space: nowrap; }
-.taula-variants .accions .afegir { margin-right: .4rem; }
-.taula-variants .boto-wa { font-size: .85rem; text-decoration: underline; }
+.tria select {
+    width: 100%; max-width: 24rem;
+    padding: .75rem 2.5rem .75rem 1rem;
+    font: inherit; font-weight: 600; color: var(--negre);
+    background: var(--fons); border: 2px solid var(--linia);
+    border-radius: var(--radi); cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b6773' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right .85rem center;
+    background-size: 1.1rem;
+}
+.tria select:hover { border-color: var(--violeta); }
+.tria select:focus-visible { outline: 3px solid var(--violeta); outline-offset: 2px; }
 
-.nomes-lectors {
-    position: absolute; width: 1px; height: 1px; overflow: hidden;
-    clip: rect(0 0 0 0); white-space: nowrap;
-}
-
-@media (max-width: 680px) {
-    .taula-variants thead { display: none; }
-    .taula-variants tbody tr { display: grid; grid-template-columns: 1fr auto; gap: .35rem 1rem; padding: .9rem 1rem; }
-    .taula-variants th, .taula-variants td { padding: 0; }
-    .taula-variants tbody th { grid-column: 1; }
-    .taula-variants .preu { grid-column: 2; grid-row: 1; text-align: right; }
-    .taula-variants .estat { grid-column: 1 / -1; }
-    .taula-variants .accions { grid-column: 1 / -1; text-align: left; margin-top: .35rem; }
-}
+.producte-dades .abans[hidden] { display: none; }

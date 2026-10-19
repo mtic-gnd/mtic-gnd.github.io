@@ -21,6 +21,33 @@
         return valor.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
     }
 
+    /*
+     * Els preus que ha contestat l'ERP, guardats.
+     *
+     * A les pàgines de família el desplegable canvia de referència sense
+     * recarregar, i llavors el preu d'aquella l'ha de treure d'aquí: tornar
+     * a demanar-los cada vegada seria demanar el mateix cinc cops.
+     */
+    var PREUS = null;
+
+    function pintaPreus() {
+        if (!PREUS) return;
+
+        document.querySelectorAll('[data-preu-ref]').forEach(function (caixa) {
+            var nou = PREUS[caixa.dataset.preuRef];
+            if (!nou) return;
+            var gran = caixa.querySelector('[data-preu]');
+            var petit = caixa.querySelector('[data-preu-sense]');
+            if (gran) gran.textContent = diners(nou.price_with_vat);
+            if (petit) petit.textContent = diners(nou.price);
+        });
+
+        document.querySelectorAll('[data-estat-ref]').forEach(function (el) {
+            var nou = PREUS[el.dataset.estatRef];
+            if (nou && el.dataset[nou.availability]) el.textContent = el.dataset[nou.availability];
+        });
+    }
+
     function preus() {
         var caixes = document.querySelectorAll('[data-preu-ref]');
         if (!API || !caixes.length) return;
@@ -29,23 +56,9 @@
             .then(function (r) { return r.ok ? r.json() : null; })
             .then(function (dades) {
                 if (!dades || !dades.products) return;
-
-                var per_ref = {};
-                dades.products.forEach(function (p) { per_ref[p.ref] = p; });
-
-                caixes.forEach(function (caixa) {
-                    var nou = per_ref[caixa.dataset.preuRef];
-                    if (!nou) return;
-                    var gran = caixa.querySelector('[data-preu]');
-                    var petit = caixa.querySelector('[data-preu-sense]');
-                    if (gran) gran.textContent = diners(nou.price_with_vat);
-                    if (petit) petit.textContent = diners(nou.price);
-                });
-
-                document.querySelectorAll('[data-estat-ref]').forEach(function (el) {
-                    var nou = per_ref[el.dataset.estatRef];
-                    if (nou && el.dataset[nou.availability]) el.textContent = el.dataset[nou.availability];
-                });
+                PREUS = {};
+                dades.products.forEach(function (p) { PREUS[p.ref] = p; });
+                pintaPreus();
             })
             .catch(function () { /* el preu imprès ja serveix */ });
     }
@@ -53,10 +66,10 @@
     function galeria() {
         var gran = document.getElementById('foto-gran');
         if (!gran) return;
-        document.querySelectorAll('[data-foto]').forEach(function (boto) {
+        document.querySelectorAll('.mini[data-foto]').forEach(function (boto) {
             boto.addEventListener('click', function () {
                 gran.src = boto.dataset.foto;
-                document.querySelectorAll('[data-foto]').forEach(function (b) {
+                document.querySelectorAll('.mini[data-foto]').forEach(function (b) {
                     b.classList.toggle('actiu', b === boto);
                 });
             });
@@ -270,7 +283,77 @@
         });
     }
 
-    function engega() { preus(); galeria(); filtres(); carro(); }
+    /*
+     * El desplegable d'una família.
+     *
+     * Una taula de cinc files amb quatre columnes no cap en un mòbil, i
+     * comprant no es compara tot de cop: es tria el color que s'ha acabat.
+     * En triar-lo canvien la foto, el preu, la disponibilitat, la
+     * referència i els dos botons, que si no afegirien al carro el color
+     * que hi havia abans.
+     */
+    function variants() {
+        var tria = document.querySelector('[data-variants]');
+        var caixa = document.querySelector('[data-familia]');
+        if (!tria || !caixa) return;
+
+        var gran = document.getElementById('foto-gran');
+        var preu = caixa.querySelector('[data-preu-ref]');
+        var abans = caixa.querySelector('[data-pvpr]');
+        var estat = caixa.querySelector('[data-estat-ref]');
+        var wa = caixa.querySelector('[data-wa]');
+        var afegeix = caixa.querySelector('[data-carro-afegeix]');
+        var refVista = caixa.querySelector('code[data-ref]');
+
+        function canvia() {
+            var opcio = tria.options[tria.selectedIndex];
+            if (!opcio) return;
+            var d = opcio.dataset;
+            var ref = opcio.value;
+
+            if (gran && d.vFoto) {
+                gran.src = d.vFoto;
+                document.querySelectorAll('.mini[data-foto]').forEach(function (b) {
+                    b.classList.toggle('actiu', b.dataset.foto === d.vFoto);
+                });
+            }
+
+            if (preu) {
+                preu.dataset.preuRef = ref;
+                preu.querySelector('[data-preu]').textContent = diners(Number(d.vPreu));
+                var sense = preu.querySelector('[data-preu-sense]');
+                if (sense) sense.textContent = diners(Number(d.vSense));
+            }
+            if (abans) {
+                abans.hidden = !d.vPvpr;
+                if (d.vPvpr) abans.textContent = diners(Number(d.vPvpr));
+            }
+            if (estat) {
+                estat.dataset.estatRef = ref;
+                estat.textContent = estat.dataset[d.vEstat] || estat.dataset.unknown || '';
+            }
+            if (refVista) refVista.textContent = ref;
+
+            if (wa) {
+                wa.href = 'https://wa.me/34711550872?text=' + encodeURIComponent(
+                    (document.documentElement.lang === 'es'
+                        ? '¡Hola! Me interesa ' : 'Hola! M\'interessa ') + d.vNom + ' (' + ref + ')');
+            }
+            if (afegeix) {
+                afegeix.dataset.ref = ref;
+                afegeix.dataset.nom = d.vNom;
+                afegeix.dataset.preu = d.vPreu;
+            }
+
+            // I si l'ERP ja ha contestat, el preu bo és el seu
+            pintaPreus();
+        }
+
+        tria.addEventListener('change', canvia);
+        canvia();
+    }
+
+    function engega() { preus(); galeria(); variants(); filtres(); carro(); }
 
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', engega);
     else engega();

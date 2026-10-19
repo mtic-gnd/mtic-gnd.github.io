@@ -34,13 +34,7 @@
    "brand": "Epson",
    "category": "tinta-i-toner",
    "featured": false,
-   "images": [
-    "/media/botiga/fam-cartutx-de-tinta-epson-604.jpg",
-    "/media/botiga/fam-cartutx-de-tinta-epson-604-2.jpg",
-    "/media/botiga/fam-cartutx-de-tinta-epson-604-3.jpg",
-    "/media/botiga/fam-cartutx-de-tinta-epson-604-4.jpg",
-    "/media/botiga/fam-cartutx-de-tinta-epson-604-5.jpg"
-   ],
+   "images": [],
    "name": "Cartutx de tinta Epson 604",
    "offer": false,
    "price_from": 8.68,
@@ -57,7 +51,7 @@
      "ean": "8715946707808",
      "featured": false,
      "images": [
-      "https://recursos.infortisa.com/ccicto0917/CCICTO0917_800.jpg"
+      "/media/botiga/tin-eps-c13t10g2.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -85,7 +79,7 @@
      "ean": "8715946707860",
      "featured": false,
      "images": [
-      "https://recursos.infortisa.com/ccicto0920/CCICTO0920_800.jpg"
+      "/media/botiga/tin-eps-c13t10g4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -113,7 +107,7 @@
      "ean": "8715946707839",
      "featured": false,
      "images": [
-      "https://recursos.infortisa.com/ccicto0919/CCICTO0919_800.jpg"
+      "/media/botiga/tin-eps-c13t10g3.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -141,7 +135,7 @@
      "ean": "8715946707778",
      "featured": false,
      "images": [
-      "https://recursos.infortisa.com/ccicto0918/CCICTO0918_800.jpg"
+      "/media/botiga/tin-eps-c13t10g1.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -169,7 +163,7 @@
      "ean": "8715946707891",
      "featured": false,
      "images": [
-      "https://recursos.infortisa.com/ccicto0921/CCICTO0921_800.jpg"
+      "/media/botiga/tin-eps-c13t10g6.jpg"
      ],
      "kind": "product",
      "layout": "page",
