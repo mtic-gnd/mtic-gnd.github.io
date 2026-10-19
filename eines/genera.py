@@ -29,6 +29,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -172,6 +173,17 @@ ESTAT = {
 
 
 # ------------------------------------------------------------- utilitats
+
+def ordenable(text):
+    """
+    Com s'ordena un nom.
+
+    Sense accents i en minúscules, que si no «Òptic» va després de «Zebra»
+    i «àmbit» no va amb els de la a.
+    """
+    pla = unicodedata.normalize("NFD", str(text or ""))
+    return "".join(c for c in pla if unicodedata.category(c) != "Mn").lower()
+
 
 def esc(valor):
     return html.escape("" if valor is None else str(valor), quote=True)
@@ -837,16 +849,30 @@ def index_botiga(idioma, cataleg, fotos_per_ref, fotos_per_familia):
     # Dues llistes i no una: les famílies que no mereixen fitxa pròpia són
     # files amples, i barrejades amb les targetes quedaven estretes i amb el
     # botó sortint per fora de la caixa.
-    fitxes, files = [], []
+    """
+    L'ordre: primer el que està destacat, i dins de cada grup, per nom.
 
-    # Les famílies van primer: són una pàgina sencera i no una fila
+    Les famílies i els productes van a la mateixa reixa i s'ordenen junts.
+    Posant les famílies al davant per sistema, un producte destacat acabava
+    després d'una família que no ho era, i llavors «destacat» no vol dir res.
+    """
+    fitxes, files = [], []
+    targetes = []
+
     for familia in cataleg.get("groups") or []:
-        fitxes.append(targeta_familia(idioma, familia, fotos_per_familia.get(familia["slug"], [])))
+        targetes.append((0 if familia.get("featured") else 1, ordenable(familia["name"]),
+                         targeta_familia(idioma, familia, fotos_per_familia.get(familia["slug"], []))))
 
     for producte in cataleg["products"]:
         amb_fitxa = (categories.get(producte.get("category")) or {}).get("layout", "page") == "page"
-        (fitxes if amb_fitxa else files).append(
-            targeta(idioma, producte, fotos_per_ref.get(producte["ref"], []), amb_fitxa))
+        html = targeta(idioma, producte, fotos_per_ref.get(producte["ref"], []), amb_fitxa)
+        if amb_fitxa:
+            targetes.append((0 if producte.get("featured") else 1, ordenable(producte["name"]), html))
+        else:
+            files.append(html)
+
+    targetes.sort(key=lambda x: (x[0], x[1]))
+    fitxes = [html for _, _, html in targetes]
 
     graella = "\n                ".join(fitxes)
     llistat = "\n                ".join(files)
