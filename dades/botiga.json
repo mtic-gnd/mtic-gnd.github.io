@@ -19,15 +19,15 @@
    "slug": "portatils-i-equips"
   },
   {
-   "count": 6,
+   "count": 5,
    "layout": "page",
    "name": "Tinta i tòner",
    "slug": "tinta-i-toner"
   }
  ],
- "count": 12,
+ "count": 11,
  "currency": "EUR",
- "generated_at": "2026-10-19 17:54:12",
+ "generated_at": "2026-10-19 19:28:45",
  "groups": [
   {
    "body": "El cartutx de tinta Epson 604 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAbans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora Epson.",
@@ -362,8 +362,8 @@
     "/media/botiga/tin-hp-3ym60ae.jpg",
     "/media/botiga/tin-hp-3ym61ae.jpg",
     "/media/botiga/tin-hp-3ym63ae.jpg",
-    "/media/botiga/tin-hp-6zd17ae.jpg",
-    "/media/botiga/tin-hp-3ym62ae.jpg"
+    "/media/botiga/tin-hp-3ym62ae.jpg",
+    "/media/botiga/tin-hp-6zd17ae.jpg"
    ],
    "name": "Cartutx de tinta HP 305",
    "offer": false,
@@ -462,34 +462,6 @@
      "body": "El cartutx de tinta HP 305 és una opció pràctica per imprimir documents, treballs, factures i altres materials d'ús quotidià, tant a casa com a l'oficina.\r\n\r\nAbans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP i selecciona la variant que necessitis.",
      "brand": "HP",
      "category": "tinta-i-toner",
-     "ean": "195161166969",
-     "featured": false,
-     "images": [
-      "/media/botiga/tin-hp-6zd17ae.jpg"
-     ],
-     "kind": "product",
-     "layout": "page",
-     "model": "6ZD17AE",
-     "name": "Multipack de cartutxos de tinta HP 305 Negre + Color",
-     "offer": false,
-     "price": 21.4,
-     "price_with_vat": 25.89,
-     "published_at": "2026-10-18 19:26:01",
-     "pvpr": null,
-     "pvpr_with_vat": null,
-     "ref": "TIN-HP-6ZD17AE",
-     "slug": "hp-cartucho-multipack-305-negro-color",
-     "summary": "Cartutx de tinta HP 305 per imprimir documents, textos i treballs amb bona qualitat i definició.",
-     "unit": "u",
-     "updated_at": "2026-10-19 17:49:31",
-     "variant": "Multipack (negre + color)",
-     "vat_pct": 21
-    },
-    {
-     "availability": "on_order",
-     "body": "El cartutx de tinta HP 305 és una opció pràctica per imprimir documents, treballs, factures i altres materials d'ús quotidià, tant a casa com a l'oficina.\r\n\r\nAbans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP i selecciona la variant que necessitis.",
-     "brand": "HP",
-     "category": "tinta-i-toner",
      "ean": "193905429271",
      "featured": false,
      "images": [
@@ -500,8 +472,8 @@
      "model": "3YM62AE",
      "name": "Cartutx de tinta HP 305XL Negre",
      "offer": false,
-     "price": 22.31,
-     "price_with_vat": 27,
+     "price": 19.83,
+     "price_with_vat": 23.99,
      "published_at": "2026-10-19 17:47:21",
      "pvpr": null,
      "pvpr_with_vat": null,
@@ -509,8 +481,36 @@
      "slug": "cartutx-de-tinta-hp-305xl-negre",
      "summary": "Cartutx de tinta HP 305 per imprimir documents, textos i treballs amb bona qualitat i definició.",
      "unit": "u",
-     "updated_at": "2026-10-19 17:51:16",
+     "updated_at": "2026-10-19 18:40:11",
      "variant": "Negre XL",
+     "vat_pct": 21
+    },
+    {
+     "availability": "on_order",
+     "body": "El cartutx de tinta HP 305 és una opció pràctica per imprimir documents, treballs, factures i altres materials d'ús quotidià, tant a casa com a l'oficina.\r\n\r\nAbans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP i selecciona la variant que necessitis.",
+     "brand": "HP",
+     "category": "tinta-i-toner",
+     "ean": "195161166969",
+     "featured": false,
+     "images": [
+      "/media/botiga/tin-hp-6zd17ae.jpg"
+     ],
+     "kind": "product",
+     "layout": "page",
+     "model": "6ZD17AE",
+     "name": "Multipack de cartutxos de tinta HP 305 Negre + Color",
+     "offer": false,
+     "price": 21.48,
+     "price_with_vat": 25.99,
+     "published_at": "2026-10-18 19:26:01",
+     "pvpr": null,
+     "pvpr_with_vat": null,
+     "ref": "TIN-HP-6ZD17AE",
+     "slug": "hp-cartucho-multipack-305-negro-color",
+     "summary": "Cartutx de tinta HP 305 per imprimir documents, textos i treballs amb bona qualitat i definició.",
+     "unit": "u",
+     "updated_at": "2026-10-19 18:40:31",
+     "variant": "Multipack (negre + color)",
      "vat_pct": 21
     }
    ]
@@ -616,6 +616,80 @@
      "vat_pct": 21
     }
    ]
+  },
+  {
+   "body": "El cartutx de tinta HP 305 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAquest model està disponible en versions originals i compatibles, segons l'opció seleccionada. Abans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP.\r\n\r\nSobre els cartutxos compatibles\r\nEls cartutxos compatibles no són productes originals del fabricant de la impressora. Tanmateix, són productes seleccionats i recomanats per nosaltres perquè oferim alternatives que considerem de qualitat i adequades per a l'ús habitual. La compatibilitat depèn del model d'impressora; comprova-la abans de fer la compra.",
+   "brand": "KARKEMIS",
+   "category": "tinta-i-toner",
+   "featured": false,
+   "images": [
+    "/media/botiga/tin-kar-10050514.jpg"
+   ],
+   "name": "Cartutx de tinta reciclat Karkemis HP 305",
+   "offer": false,
+   "price_from": 16.52,
+   "price_from_with_vat": 19.99,
+   "slug": "cartutx-de-tinta-reciclat-karkemis-hp-305",
+   "summary": "Cartutx de tinta HP 305 per imprimir documents, textos i treballs amb bona qualitat d'impressió.",
+   "updated_at": "2026-10-19 18:42:19",
+   "variants": [
+    {
+     "availability": "on_order",
+     "body": null,
+     "brand": "KARKEMIS",
+     "category": "tinta-i-toner",
+     "ean": "8435634600227",
+     "featured": false,
+     "images": [
+      "/media/botiga/tin-kar-10050514.jpg"
+     ],
+     "kind": "product",
+     "layout": "page",
+     "model": "10050514",
+     "name": "Cartucho de Tinta Reciclado Karkemis HP nº305 XL Alta Capacidad/ Tricolor",
+     "offer": false,
+     "price": 16.52,
+     "price_with_vat": 19.99,
+     "published_at": "2026-10-19 17:47:41",
+     "pvpr": null,
+     "pvpr_with_vat": null,
+     "ref": "TIN-KAR-10050514",
+     "slug": "cartucho-de-tinta-reciclado-karkemis-hp-n-305-xl-alta-capacidad-tricolor",
+     "summary": null,
+     "unit": "u",
+     "updated_at": "2026-10-19 18:42:19",
+     "variant": "Color XL",
+     "vat_pct": 21
+    },
+    {
+     "availability": "on_order",
+     "body": null,
+     "brand": "KARKEMIS",
+     "category": "tinta-i-toner",
+     "ean": "8435634600210",
+     "featured": false,
+     "images": [
+      "/media/botiga/tin-kar-10050513.jpg"
+     ],
+     "kind": "product",
+     "layout": "page",
+     "model": "10050513",
+     "name": "Cartucho de Tinta Reciclado Karkemis HP nº305 XL Alta Capacidad/ Negro",
+     "offer": false,
+     "price": 16.52,
+     "price_with_vat": 19.99,
+     "published_at": "2026-10-19 17:47:41",
+     "pvpr": null,
+     "pvpr_with_vat": null,
+     "ref": "TIN-KAR-10050513",
+     "slug": "cartucho-de-tinta-reciclado-karkemis-hp-n-305-xl-alta-capacidad-negro",
+     "summary": null,
+     "unit": "u",
+     "updated_at": "2026-10-19 18:42:19",
+     "variant": "Negre XL",
+     "vat_pct": 21
+    }
+   ]
   }
  ],
  "products": [
@@ -661,7 +735,8 @@
     "/media/botiga/por-len-82yu019l-2.jpg",
     "/media/botiga/por-len-82yu019l-3.jpg",
     "/media/botiga/por-len-82yu019l-4.jpg",
-    "/media/botiga/por-len-82yu019l-5.jpg"
+    "/media/botiga/por-len-82yu019l-5.jpg",
+    "/media/botiga/por-len-82yu019l-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -678,60 +753,6 @@
    "summary": "Ideal per a estudiants, ús domèstic i oficina, perfecte per treballar, estudiar i realitzar les tasques informàtiques del dia a dia amb Windows 11 Home.",
    "unit": "u",
    "updated_at": "2026-10-19 16:35:15",
-   "vat_pct": 21
-  },
-  {
-   "availability": "on_order",
-   "body": null,
-   "brand": "KARKEMIS",
-   "category": "tinta-i-toner",
-   "ean": "8435634600210",
-   "featured": false,
-   "images": [
-    "/media/botiga/tin-kar-10050513.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "10050513",
-   "name": "Cartucho de Tinta Reciclado Karkemis HP nº305 XL Alta Capacidad/ Negro",
-   "offer": false,
-   "price": 16.52,
-   "price_with_vat": 19.99,
-   "published_at": "2026-10-19 17:47:41",
-   "pvpr": null,
-   "pvpr_with_vat": null,
-   "ref": "TIN-KAR-10050513",
-   "slug": "cartucho-de-tinta-reciclado-karkemis-hp-n-305-xl-alta-capacidad-negro",
-   "summary": null,
-   "unit": "u",
-   "updated_at": "2026-10-19 17:51:30",
-   "vat_pct": 21
-  },
-  {
-   "availability": "on_order",
-   "body": null,
-   "brand": "KARKEMIS",
-   "category": "tinta-i-toner",
-   "ean": "8435634600227",
-   "featured": false,
-   "images": [
-    "/media/botiga/tin-kar-10050514.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "10050514",
-   "name": "Cartucho de Tinta Reciclado Karkemis HP nº305 XL Alta Capacidad/ Tricolor",
-   "offer": false,
-   "price": 16.52,
-   "price_with_vat": 19.99,
-   "published_at": "2026-10-19 17:47:41",
-   "pvpr": null,
-   "pvpr_with_vat": null,
-   "ref": "TIN-KAR-10050514",
-   "slug": "cartucho-de-tinta-reciclado-karkemis-hp-n-305-xl-alta-capacidad-tricolor",
-   "summary": null,
-   "unit": "u",
-   "updated_at": "2026-10-19 17:51:36",
    "vat_pct": 21
   },
   {
@@ -826,7 +847,8 @@
    "ean": "8436546592754",
    "featured": false,
    "images": [
-    "/media/botiga/ext-tec-tec30061.jpg"
+    "/media/botiga/ext-tec-tec30061.jpg",
+    "/media/botiga/ext-tec-tec30061-2.jpg"
    ],
    "kind": "product",
    "layout": "page",
