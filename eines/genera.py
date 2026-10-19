@@ -929,6 +929,49 @@ def index_articles(idioma, posts):
 
 # ------------------------------------------------------------------ main
 
+def neteja_orfes(esperades):
+    """
+    Treu les pàgines que ja no hauria d'haver-hi.
+
+    Una fitxa és un fitxer, i canviar el títol d'un producte li canvia
+    l'adreça: la pàgina vella es quedava al seu lloc per sempre, amb el preu
+    del dia que es va escriure. Això no és només brutícia: és una pàgina
+    nostra, pública i indexable, que diu un preu que ja no és veritat, i a
+    Google li sembla contingut duplicat de la bona.
+
+    Només es mira dins de les carpetes de la botiga i dels articles, només
+    els .html que hi ha just a dins, i mai l'índex.
+    """
+    """
+    I si no s'espera res, no es treu res.
+
+    Una resposta buida de l'ERP —mig trencada, o amb un error que no ha fet
+    petar res— esborraria la botiga sencera. Buidar-la de debò es fa
+    despublicant els productes un per un, i llavors ja no quedaria cap
+    pàgina a mig camí.
+    """
+    if not esperades:
+        return []
+
+    fora = []
+    carpetes = [RUTES[s][i] for s in ("botiga", "articles") for i in ("ca", "es")]
+
+    for carpeta in carpetes:
+        cami = os.path.join(ARREL, carpeta.strip("/"))
+        if not os.path.isdir(cami):
+            continue
+        for nom in sorted(os.listdir(cami)):
+            if not nom.endswith(".html") or nom == "index.html":
+                continue
+            url = f"{carpeta}{nom}"
+            if url in esperades:
+                continue
+            os.remove(os.path.join(cami, nom))
+            fora.append(url)
+
+    return fora
+
+
 def main():
     local = "--local" in sys.argv
 
@@ -988,6 +1031,7 @@ def main():
 
     canvis = []
     pagines = []          # per al sitemap: (url_ca, url_es)
+    esperades = set()     # el que ha d'existir; la resta, fora
 
     for idioma in ("ca", "es"):
         url, text = index_botiga(idioma, cataleg, fotos_per_ref, fotos_per_familia)
@@ -1008,6 +1052,7 @@ def main():
         for idioma in ("ca", "es"):
             url, text = fitxa_producte(idioma, producte, categories, fotos_per_ref.get(producte["ref"], []))
             urls[idioma] = url
+            esperades.add(url)
             if escriu(url, text):
                 canvis.append(url)
         pagines.append((urls["ca"], urls["es"]))
@@ -1019,12 +1064,14 @@ def main():
             url, text = fitxa_familia(idioma, familia, categories,
                                       fotos_per_familia.get(familia["slug"], []))
             urls[idioma] = url
+            esperades.add(url)
             if escriu(url, text):
                 canvis.append(url)
         pagines.append((urls["ca"], urls["es"]))
 
     for post in articles["posts"]:
         url, text = fitxa_article(post["lang"], post)
+        esperades.add(url)
         if escriu(url, text):
             canvis.append(url)
         parella = post.get("translation")
@@ -1035,11 +1082,16 @@ def main():
             # Un article només en castellà també ha de sortir al sitemap
             pagines.append((None, url))
 
+    orfes = neteja_orfes(esperades)
+
     # El sitemap el fa web.py: aquí només se li diu quines pàgines hi ha més
     desa_json("pagines.json", [{"ca": ca, "es": es} for ca, es in pagines])
     web.main()
 
-    print(f"{len(canvis)} pàgines generades o canviades.")
+    for o in orfes:
+        print(f"  − {o} (ja no hi ha res que hi correspongui)")
+    print(f"{len(canvis)} pàgines generades o canviades" +
+          (f", {len(orfes)} tretes." if orfes else "."))
     for c in canvis[:40]:
         print("  ·", c)
     if len(canvis) > 40:
