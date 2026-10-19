@@ -27,10 +27,10 @@
  ],
  "count": 10,
  "currency": "EUR",
- "generated_at": "2026-10-19 17:13:54",
+ "generated_at": "2026-10-19 17:29:37",
  "groups": [
   {
-   "body": null,
+   "body": "El cartutx de tinta Epson 604 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAbans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora Epson.",
    "brand": "Epson",
    "category": "tinta-i-toner",
    "featured": false,
@@ -46,8 +46,8 @@
    "price_from": 8.68,
    "price_from_with_vat": 10.5,
    "slug": "cartutx-de-tinta-epson-604",
-   "summary": null,
-   "updated_at": "2026-10-19 17:05:34",
+   "summary": "Cartutx de tinta Epson 604 per imprimir documents i textos amb bona qualitat i llegibilitat.",
+   "updated_at": "2026-10-19 17:27:45",
    "variants": [
     {
      "availability": "on_order",
@@ -73,7 +73,7 @@
      "slug": "epson-cartucho-604-cyan",
      "summary": "Cartutx de tinta Epson 604 de color cian per imprimir documents, gràfics i imatges en color.",
      "unit": "u",
-     "updated_at": "2026-10-19 17:05:34",
+     "updated_at": "2026-10-19 17:27:45",
      "variant": "Cian",
      "vat_pct": 21
     },
@@ -101,7 +101,7 @@
      "slug": "epson-cartucho-604-amarillo",
      "summary": "Cartutx de tinta Epson 604 de color groc per imprimir imatges i documents en color.",
      "unit": "u",
-     "updated_at": "2026-10-19 17:05:34",
+     "updated_at": "2026-10-19 17:27:45",
      "variant": "Groc",
      "vat_pct": 21
     },
@@ -129,7 +129,7 @@
      "slug": "epson-cartucho-604-magenta",
      "summary": "Cartutx de tinta Epson 604 de color magenta per a impressions en color.",
      "unit": "u",
-     "updated_at": "2026-10-19 17:05:34",
+     "updated_at": "2026-10-19 17:27:45",
      "variant": "Magenta",
      "vat_pct": 21
     },
@@ -157,7 +157,7 @@
      "slug": "epson-cartucho-604-negro",
      "summary": "Cartutx de tinta Epson 604 negre per imprimir textos i documents amb claredat.",
      "unit": "u",
-     "updated_at": "2026-10-19 17:05:34",
+     "updated_at": "2026-10-19 17:27:45",
      "variant": "Negre",
      "vat_pct": 21
     },
@@ -185,14 +185,14 @@
      "slug": "epson-cartucho-multipack-604",
      "summary": "Pack de cartutxos de tinta Epson 604 amb els colors necessaris per a les impressions del dia a dia.",
      "unit": "u",
-     "updated_at": "2026-10-19 17:05:34",
+     "updated_at": "2026-10-19 17:27:45",
      "variant": "Multipack (groc, cian, magenta i negre)",
      "vat_pct": 21
     }
    ]
   },
   {
-   "body": null,
+   "body": "El cartutx de tinta HP 301 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAquest model està disponible en versions originals i compatibles, segons l'opció seleccionada. Abans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP.",
    "brand": "HP",
    "category": "tinta-i-toner",
    "featured": false,
@@ -208,8 +208,8 @@
    "price_from": 20.65,
    "price_from_with_vat": 24.99,
    "slug": "cartutx-de-tinta-hp-301",
-   "summary": null,
-   "updated_at": "2026-10-19 16:59:40",
+   "summary": "Cartutx de tinta HP 301 per imprimir documents, textos i treballs amb bona qualitat d'impressió.",
+   "updated_at": "2026-10-19 17:28:06",
    "variants": [
     {
      "availability": "on_order",
@@ -235,8 +235,8 @@
      "slug": "hp-cartucho-301-negre",
      "summary": "Cartutx de tinta negra HP 301 per imprimir textos i documents amb una bona llegibilitat.",
      "unit": "u",
-     "updated_at": "2026-10-19 16:59:40",
-     "variant": "Cartutx de tinta HP 301 Negre",
+     "updated_at": "2026-10-19 17:28:06",
+     "variant": "Negre",
      "vat_pct": 21
     },
     {
@@ -263,8 +263,8 @@
      "slug": "hp-cartucho-301-color",
      "summary": "Cartutx de tinta HP 301 de color per imprimir documents i imatges amb colors vius.",
      "unit": "u",
-     "updated_at": "2026-10-19 16:59:40",
-     "variant": "Cartutx de tinta HP 301 Color",
+     "updated_at": "2026-10-19 17:28:06",
+     "variant": "Color",
      "vat_pct": 21
     },
     {
@@ -291,8 +291,8 @@
      "slug": "hp-cartucho-301xl-color",
      "summary": "Cartutx de tinta HP 301XL de color, amb més capacitat per a les teves impressions en color.",
      "unit": "u",
-     "updated_at": "2026-10-19 16:59:40",
-     "variant": "Cartutx de tinta HP 301XL Color",
+     "updated_at": "2026-10-19 17:28:06",
+     "variant": "Color XL",
      "vat_pct": 21
     },
     {
@@ -319,8 +319,8 @@
      "slug": "hp-cartucho-301xl-negro",
      "summary": "Cartutx de tinta negra HP 301XL, amb més capacitat per imprimir els teus documents habituals.",
      "unit": "u",
-     "updated_at": "2026-10-19 16:59:40",
-     "variant": "Cartutx de tinta HP 301XL Negre",
+     "updated_at": "2026-10-19 17:28:06",
+     "variant": "Negre XL",
      "vat_pct": 21
     },
     {
@@ -347,14 +347,14 @@
      "slug": "hp-cartucho-multipack-301-negro-color",
      "summary": "Pack de cartutxos HP 301 amb tinta negra i de color per cobrir les necessitats d'impressió del dia a dia.",
      "unit": "u",
-     "updated_at": "2026-10-19 16:59:40",
-     "variant": "Multipack de cartutxos de tinta HP 301 Negre + Color",
+     "updated_at": "2026-10-19 17:28:06",
+     "variant": "Multipack (negre + color)",
      "vat_pct": 21
     }
    ]
   },
   {
-   "body": null,
+   "body": "El cartutx de tinta HP 301 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAquest model està disponible en versions originals i compatibles, segons l'opció seleccionada. Abans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP.\r\n\r\n### Sobre els cartutxos compatibles\r\n\r\nEls cartutxos compatibles no són productes originals del fabricant de la impressora. Tanmateix, són productes seleccionats i recomanats per nosaltres perquè oferim alternatives que considerem de qualitat i adequades per a l'ús habitual. La compatibilitat depèn del model d'impressora; comprova-la abans de fer la compra.",
    "brand": "KARKEMIS",
    "category": "tinta-i-toner",
    "featured": true,
@@ -366,8 +366,8 @@
    "price_from": 13.21,
    "price_from_with_vat": 15.98,
    "slug": "cartutx-de-tinta-reciclat-karkemis-hp-301",
-   "summary": null,
-   "updated_at": "2026-10-19 17:04:48",
+   "summary": "Cartutx de tinta HP 301 per imprimir documents, textos i treballs amb bona qualitat d'impressió.",
+   "updated_at": "2026-10-19 17:29:24",
    "variants": [
     {
      "availability": "on_order",
@@ -393,7 +393,7 @@
      "slug": "cartucho-de-tinta-reciclado-karkemis-hp-n-301-xl-alta-capacidad-negro",
      "summary": "Cartutx de tinta negra reciclat Karkemis HP 301XL d'alta capacitat per imprimir documents i textos.",
      "unit": "u",
-     "updated_at": "2026-10-19 17:04:48",
+     "updated_at": "2026-10-19 17:29:24",
      "variant": "Negre XL",
      "vat_pct": 21
     },
@@ -421,7 +421,7 @@
      "slug": "cartucho-de-tinta-reciclado-karkemis-hp-n-301-xl-alta-capacidad-tricolor",
      "summary": "Cartutx de tinta tricolor reciclat Karkemis HP 301XL d'alta capacitat per imprimir imatges i documents en color.",
      "unit": "u",
-     "updated_at": "2026-10-19 17:04:48",
+     "updated_at": "2026-10-19 17:29:24",
      "variant": "Tricolor XL",
      "vat_pct": 21
     },
@@ -449,7 +449,7 @@
      "slug": "cartucho-de-tinta-reciclado-karkemis-hp-n-301-xl-alta-capacidad-multipack-negro",
      "summary": "Multipack de cartutxos de tinta reciclats Karkemis compatibles amb HP 301XL, amb tinta negra i tricolor d'alta capacitat.",
      "unit": "u",
-     "updated_at": "2026-10-19 17:04:48",
+     "updated_at": "2026-10-19 17:29:24",
      "variant": "Multipack XL (negre + tricolor)",
      "vat_pct": 21
     }
@@ -547,7 +547,7 @@
   },
   {
    "availability": "on_order",
-   "body": "El multipack HP 305 Negre + Color inclou cartutxos de tinta negra i de color per cobrir diferents necessitats d'impressió. És una opció pràctica per imprimir documents de text, gràfics i imatges tant a casa com a l'oficina. Abans de comprar-lo, verifica que el model HP 305 sigui compatible amb la teva impressora.",
+   "body": "El cartutx de tinta HP 305 és una opció pràctica per imprimir documents, treballs, factures i altres materials d'ús quotidià, tant a casa com a l'oficina.\r\n\r\nAbans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP i selecciona la variant que necessitis.",
    "brand": "HP",
    "category": "tinta-i-toner",
    "ean": "195161166969",
@@ -567,9 +567,9 @@
    "pvpr_with_vat": null,
    "ref": "TIN-HP-6ZD17AE",
    "slug": "hp-cartucho-multipack-305-negro-color",
-   "summary": "Pack de cartutxos HP 305 amb tinta negra i de color per imprimir documents i imatges.",
+   "summary": "Cartutx de tinta HP 305 per imprimir documents, textos i treballs amb bona qualitat i definició.",
    "unit": "u",
-   "updated_at": "2026-10-18 21:43:42",
+   "updated_at": "2026-10-19 17:28:39",
    "vat_pct": 21
   },
   {
