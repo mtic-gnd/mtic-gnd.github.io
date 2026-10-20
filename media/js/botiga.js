@@ -304,6 +304,8 @@
         var wa = caixa.querySelector('[data-wa]');
         var afegeix = caixa.querySelector('[data-carro-afegeix]');
         var refVista = caixa.querySelector('code[data-ref]');
+        var eanLinia = caixa.querySelector('[data-ean-linia]');
+        var eanVista = caixa.querySelector('code[data-ean]');
 
         function canvia() {
             var opcio = tria.options[tria.selectedIndex];
@@ -333,6 +335,11 @@
                 estat.textContent = estat.dataset[d.vEstat] || estat.dataset.unknown || '';
             }
             if (refVista) refVista.textContent = ref;
+            // Una variant sense codi de barres no n'ensenya cap
+            if (eanLinia) {
+                eanLinia.hidden = !d.vEan;
+                if (eanVista) eanVista.textContent = d.vEan || '';
+            }
 
             if (wa) {
                 wa.href = 'https://wa.me/34711550872?text=' + encodeURIComponent(
