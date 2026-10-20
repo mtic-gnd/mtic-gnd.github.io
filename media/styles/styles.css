@@ -443,6 +443,9 @@ a.article-botiga:hover { border-color: var(--violeta); }
 .preu-nota { display: block; font-size: .95rem; color: var(--text-suau); margin-top: .35rem; }
 .estat { color: var(--text); margin-bottom: 1.5rem; }
 .ref-petita { font-size: .9rem; color: var(--text-suau); margin-top: 1.25rem; }
+/* El codi de barres, just sota la referència: la mateixa cosa dita d'una
+   altra manera, i per això la mateixa línia petita i no un bloc propi. */
+.ref-petita .ean { display: block; margin-top: .15rem; }
 .descripcio-producte { margin-top: 3rem; }
 
 /* ---------- Articles ---------- */

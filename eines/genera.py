@@ -105,6 +105,7 @@ T = {
         "demanar": "Te'l porto en 24-48 h",
         "preguntar": "Pregunta'm disponibilitat",
         "ref": "Referència",
+        "ean": "EAN",
         "orientatiu": "Preus orientatius, revisats el {data}. Confirma'm disponibilitat abans de comprar.",
         "cap": "Encara no hi ha res publicat.",
         "tornar": "Tornar a la botiga",
@@ -142,6 +143,7 @@ T = {
         "demanar": "Te lo traigo en 24-48 h",
         "preguntar": "Pregúntame disponibilidad",
         "ref": "Referencia",
+        "ean": "EAN",
         "orientatiu": "Precios orientativos, revisados el {data}. Confírmame disponibilidad antes de comprar.",
         "cap": "Todavía no hay nada publicado.",
         "tornar": "Volver a la tienda",
@@ -443,6 +445,39 @@ def pagina(idioma, url, url_altre, titol, descripcio, cos, seccio="serveis",
 
 # ----------------------------------------------------------------- botiga
 
+def ean_linia(idioma, producte, viu=False):
+    """
+    El codi de barres, sota la referència.
+
+    La referència és la meva i l'EAN és el del fabricant: qui compara preus
+    busca per l'EAN, i qui té el producte a la mà el pot llegir de la caixa.
+    Va a la mateixa línia petita i en una segona ratlla, perquè és la mateixa
+    cosa dita de dues maneres i no mereix un bloc propi.
+
+    A la fitxa d'una família canvia amb la variant triada, i d'una que no en
+    tingui no s'ha d'ensenyar res: per això la ratlla hi és sempre, amagada,
+    i el javascript només la mostra.
+    """
+    ean = producte.get("ean")
+    if not ean and not viu:
+        return ""
+    marques = ' data-ean-linia' + ('' if ean else ' hidden') if viu else ''
+    return (f'<span class="ean"{marques}>{T[idioma]["ean"]}: '
+            f'<code{" data-ean" if viu else ""}>{esc(ean or "")}</code></span>')
+
+
+def gtin(ean):
+    """
+    L'EAN per a Google, amb el nom que li toca segons el que mesura.
+
+    schema.org té una propietat per llargada —gtin8, gtin12, gtin13, gtin14—
+    i posar-ne una que no quadri val menys que no dir-ne res: Search Console
+    ho marca com a error i la fitxa es queda sense codi igualment.
+    """
+    digits = re.sub(r"\D", "", str(ean or ""))
+    return {8: "gtin8", 12: "gtin12", 13: "gtin13", 14: "gtin14"}.get(len(digits)), digits
+
+
 def fitxa_producte(idioma, producte, categories, fotos):
     t = T[idioma]
     altre = "es" if idioma == "ca" else "ca"
@@ -477,6 +512,7 @@ def fitxa_producte(idioma, producte, categories, fotos):
         "@type": "Product",
         "name": producte["name"],
         "sku": producte["ref"],
+        **({gtin(producte["ean"])[0]: gtin(producte["ean"])[1]} if gtin(producte.get("ean"))[0] else {}),
         "description": producte.get("summary") or producte.get("body") or producte["name"],
         "brand": {"@type": "Brand", "name": producte["brand"]} if producte.get("brand") else None,
         "image": [f"{DOMINI}{f}" for f in fotos] or None,
@@ -519,7 +555,7 @@ def fitxa_producte(idioma, producte, categories, fotos):
                         {boto_afegir(idioma, producte)}
                         <a class="boto-linia" href="{contacte}">{t['contacta']}</a>
                     </p>
-                    <p class="ref-petita">{t['ref']}: <code>{esc(producte['ref'])}</code></p>
+                    <p class="ref-petita">{t['ref']}: <code>{esc(producte['ref'])}</code>{ean_linia(idioma, producte)}</p>
                 </div>
             </div>
 
@@ -626,6 +662,8 @@ def fitxa_familia(idioma, familia, categories, fotos, fotos_per_ref):
             f'data-v-estat="{esc(v.get("availability") or "unknown")}"',
             f'data-v-nom="{esc(nom)} · {esc(v["_etiqueta"])}"',
         ]
+        if v.get("ean"):
+            dades.append(f'data-v-ean="{esc(v["ean"])}"')
         if v.get("pvpr_with_vat"):
             dades.append(f'data-v-pvpr="{v["pvpr_with_vat"]:.2f}"')
         if v["_foto"]:
@@ -658,6 +696,7 @@ def fitxa_familia(idioma, familia, categories, fotos, fotos_per_ref):
             "@type": "Product",
             "name": f"{nom} · {v['_etiqueta']}",
             "sku": v["ref"],
+            **({gtin(v["ean"])[0]: gtin(v["ean"])[1]} if gtin(v.get("ean"))[0] else {}),
             "image": f"{DOMINI}{v['_foto']}" if v["_foto"] else None,
             "offers": {
                 "@type": "Offer",
@@ -714,7 +753,7 @@ def fitxa_familia(idioma, familia, categories, fotos, fotos_per_ref):
                                 data-preu="{primera['price_with_vat']:.2f}">{t['afegir']}</button>
                         <a class="boto-linia" href="{contacte}">{t['contacta']}</a>
                     </p>
-                    <p class="ref-petita">{t['ref']}: <code data-ref>{esc(primera['ref'])}</code></p>
+                    <p class="ref-petita">{t['ref']}: <code data-ref>{esc(primera['ref'])}</code>{ean_linia(idioma, primera, viu=True)}</p>
                 </div>
             </div>
 
