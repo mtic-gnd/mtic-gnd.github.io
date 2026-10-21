@@ -75,7 +75,7 @@
  ],
  "count": 86,
  "currency": "EUR",
- "generated_at": "2026-10-21 20:39:28",
+ "generated_at": "2026-10-22 00:21:37",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -86,7 +86,8 @@
     "/media/botiga/acc-log-98100047.jpg",
     "/media/botiga/acc-log-98100047-2.jpg",
     "/media/botiga/acc-log-98100047-3.jpg",
-    "/media/botiga/acc-log-98100047-4.jpg"
+    "/media/botiga/acc-log-98100047-4.jpg",
+    "/media/botiga/acc-log-98100047-5.jpg"
    ],
    "name": "Auriculars amb micròfon Logitech USB",
    "offer": false,
@@ -107,7 +108,8 @@
       "/media/botiga/acc-log-98100047.jpg",
       "/media/botiga/acc-log-98100047-2.jpg",
       "/media/botiga/acc-log-98100047-3.jpg",
-      "/media/botiga/acc-log-98100047-4.jpg"
+      "/media/botiga/acc-log-98100047-4.jpg",
+      "/media/botiga/acc-log-98100047-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -137,7 +139,8 @@
      "images": [
       "/media/botiga/acc-log-98100010.jpg",
       "/media/botiga/acc-log-98100010-2.jpg",
-      "/media/botiga/acc-log-98100010-3.jpg"
+      "/media/botiga/acc-log-98100010-3.jpg",
+      "/media/botiga/acc-log-98100010-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -169,7 +172,8 @@
     "/media/botiga/tlf-ven-fhkb0-2.jpg",
     "/media/botiga/tlf-ven-fhkb0-3.jpg",
     "/media/botiga/tlf-ven-fhkb0-4.jpg",
-    "/media/botiga/tlf-ven-fhkb0-5.jpg"
+    "/media/botiga/tlf-ven-fhkb0-5.jpg",
+    "/media/botiga/tlf-ven-fhkb0-6.jpg"
    ],
    "name": "Bateria externa Vention",
    "offer": true,
@@ -191,7 +195,8 @@
       "/media/botiga/tlf-ven-fhkb0-2.jpg",
       "/media/botiga/tlf-ven-fhkb0-3.jpg",
       "/media/botiga/tlf-ven-fhkb0-4.jpg",
-      "/media/botiga/tlf-ven-fhkb0-5.jpg"
+      "/media/botiga/tlf-ven-fhkb0-5.jpg",
+      "/media/botiga/tlf-ven-fhkb0-6.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -223,7 +228,8 @@
       "/media/botiga/tlf-ven-fkfh0-2.jpg",
       "/media/botiga/tlf-ven-fkfh0-3.jpg",
       "/media/botiga/tlf-ven-fkfh0-4.jpg",
-      "/media/botiga/tlf-ven-fkfh0-5.jpg"
+      "/media/botiga/tlf-ven-fkfh0-5.jpg",
+      "/media/botiga/tlf-ven-fkfh0-6.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -253,7 +259,8 @@
    "images": [
     "/media/botiga/acc-hp-1e7d7aa.jpg",
     "/media/botiga/acc-hp-1e7d7aa-2.jpg",
-    "/media/botiga/acc-hp-1e7d7aa-3.jpg"
+    "/media/botiga/acc-hp-1e7d7aa-3.jpg",
+    "/media/botiga/acc-hp-1e7d7aa-4.jpg"
    ],
    "name": "Bossa HP Prelude per a portàtils de 15,6\"",
    "offer": false,
@@ -273,7 +280,8 @@
      "images": [
       "/media/botiga/acc-hp-1e7d7aa.jpg",
       "/media/botiga/acc-hp-1e7d7aa-2.jpg",
-      "/media/botiga/acc-hp-1e7d7aa-3.jpg"
+      "/media/botiga/acc-hp-1e7d7aa-3.jpg",
+      "/media/botiga/acc-hp-1e7d7aa-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -303,7 +311,8 @@
      "images": [
       "/media/botiga/acc-hp-1e7d6ut.jpg",
       "/media/botiga/acc-hp-1e7d6ut-2.jpg",
-      "/media/botiga/acc-hp-1e7d6ut-3.jpg"
+      "/media/botiga/acc-hp-1e7d6ut-3.jpg",
+      "/media/botiga/acc-hp-1e7d6ut-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -331,7 +340,8 @@
    "category": "cables",
    "featured": false,
    "images": [
-    "/media/botiga/net-ven-ibehf.jpg"
+    "/media/botiga/net-ven-ibehf.jpg",
+    "/media/botiga/net-ven-ibehf-2.jpg"
    ],
    "name": "Cable de xarxa RJ45 Cat.6 Vention",
    "offer": true,
@@ -349,7 +359,8 @@
      "ean": "6922794749047",
      "featured": false,
      "images": [
-      "/media/botiga/net-ven-ibehf.jpg"
+      "/media/botiga/net-ven-ibehf.jpg",
+      "/media/botiga/net-ven-ibehf-2.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -377,7 +388,8 @@
      "ean": "6922794749061",
      "featured": false,
      "images": [
-      "/media/botiga/net-ven-ibehh.jpg"
+      "/media/botiga/net-ven-ibehh.jpg",
+      "/media/botiga/net-ven-ibehh-2.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -407,7 +419,8 @@
      "images": [
       "/media/botiga/net-ven-ibebj.jpg",
       "/media/botiga/net-ven-ibebj-2.jpg",
-      "/media/botiga/net-ven-ibebj-3.jpg"
+      "/media/botiga/net-ven-ibebj-3.jpg",
+      "/media/botiga/net-ven-ibebj-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -439,7 +452,8 @@
     "/media/botiga/net-ven-aacbg-2.jpg",
     "/media/botiga/net-ven-aacbg-3.jpg",
     "/media/botiga/net-ven-aacbg-4.jpg",
-    "/media/botiga/net-ven-aacbg-5.jpg"
+    "/media/botiga/net-ven-aacbg-5.jpg",
+    "/media/botiga/net-ven-aacbg-6.jpg"
    ],
    "name": "Cable HDMI 2.0 4K Vention",
    "offer": false,
@@ -461,7 +475,8 @@
       "/media/botiga/net-ven-aacbg-2.jpg",
       "/media/botiga/net-ven-aacbg-3.jpg",
       "/media/botiga/net-ven-aacbg-4.jpg",
-      "/media/botiga/net-ven-aacbg-5.jpg"
+      "/media/botiga/net-ven-aacbg-5.jpg",
+      "/media/botiga/net-ven-aacbg-6.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -492,7 +507,8 @@
       "/media/botiga/net-ven-aacbh.jpg",
       "/media/botiga/net-ven-aacbh-2.jpg",
       "/media/botiga/net-ven-aacbh-3.jpg",
-      "/media/botiga/net-ven-aacbh-4.jpg"
+      "/media/botiga/net-ven-aacbh-4.jpg",
+      "/media/botiga/net-ven-aacbh-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -521,7 +537,8 @@
    "featured": false,
    "images": [
     "/media/botiga/net-ven-cthbf.jpg",
-    "/media/botiga/net-ven-cthbf-2.jpg"
+    "/media/botiga/net-ven-cthbf-2.jpg",
+    "/media/botiga/net-ven-cthbf-3.jpg"
    ],
    "name": "Cable USB-C Vention",
    "offer": false,
@@ -540,7 +557,8 @@
      "featured": false,
      "images": [
       "/media/botiga/net-ven-cthbf.jpg",
-      "/media/botiga/net-ven-cthbf-2.jpg"
+      "/media/botiga/net-ven-cthbf-2.jpg",
+      "/media/botiga/net-ven-cthbf-3.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -569,7 +587,8 @@
      "featured": false,
      "images": [
       "/media/botiga/net-ven-trcwf.jpg",
-      "/media/botiga/net-ven-trcwf-2.jpg"
+      "/media/botiga/net-ven-trcwf-2.jpg",
+      "/media/botiga/net-ven-trcwf-3.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -600,7 +619,8 @@
     "/media/botiga/net-tpl-tapotc70.jpg",
     "/media/botiga/net-tpl-tapotc70-2.jpg",
     "/media/botiga/net-tpl-tapotc70-3.jpg",
-    "/media/botiga/net-tpl-tapotc70-4.jpg"
+    "/media/botiga/net-tpl-tapotc70-4.jpg",
+    "/media/botiga/net-tpl-tapotc70-5.jpg"
    ],
    "name": "Càmera de vigilància Wi-Fi TP-Link Tapo",
    "offer": false,
@@ -621,7 +641,8 @@
       "/media/botiga/net-tpl-tapotc70.jpg",
       "/media/botiga/net-tpl-tapotc70-2.jpg",
       "/media/botiga/net-tpl-tapotc70-3.jpg",
-      "/media/botiga/net-tpl-tapotc70-4.jpg"
+      "/media/botiga/net-tpl-tapotc70-4.jpg",
+      "/media/botiga/net-tpl-tapotc70-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -651,7 +672,8 @@
      "images": [
       "/media/botiga/net-tpl-tapotc71.jpg",
       "/media/botiga/net-tpl-tapotc71-2.jpg",
-      "/media/botiga/net-tpl-tapotc71-3.jpg"
+      "/media/botiga/net-tpl-tapotc71-3.jpg",
+      "/media/botiga/net-tpl-tapotc71-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -681,7 +703,8 @@
    "images": [
     "/media/botiga/net-ais-a1100537.jpg",
     "/media/botiga/net-ais-a1100537-2.jpg",
-    "/media/botiga/net-ais-a1100537-3.jpg"
+    "/media/botiga/net-ais-a1100537-3.jpg",
+    "/media/botiga/net-ais-a1100537-4.jpg"
    ],
    "name": "Carregador de paret Aisens",
    "offer": true,
@@ -701,7 +724,8 @@
      "images": [
       "/media/botiga/net-ais-a1100537.jpg",
       "/media/botiga/net-ais-a1100537-2.jpg",
-      "/media/botiga/net-ais-a1100537-3.jpg"
+      "/media/botiga/net-ais-a1100537-3.jpg",
+      "/media/botiga/net-ais-a1100537-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -733,7 +757,8 @@
       "/media/botiga/net-ais-a1100854-2.jpg",
       "/media/botiga/net-ais-a1100854-3.jpg",
       "/media/botiga/net-ais-a1100854-4.jpg",
-      "/media/botiga/net-ais-a1100854-5.jpg"
+      "/media/botiga/net-ais-a1100854-5.jpg",
+      "/media/botiga/net-ais-a1100854-6.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -763,7 +788,8 @@
      "images": [
       "/media/botiga/net-ais-a1101025.jpg",
       "/media/botiga/net-ais-a1101025-2.jpg",
-      "/media/botiga/net-ais-a1101025-3.jpg"
+      "/media/botiga/net-ais-a1101025-3.jpg",
+      "/media/botiga/net-ais-a1101025-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -791,7 +817,8 @@
    "category": "tinta-i-toner",
    "featured": false,
    "images": [
-    "/media/botiga/tin-can-8286b001.jpg"
+    "/media/botiga/tin-can-8286b001.jpg",
+    "/media/botiga/tin-can-8286b001-2.jpg"
    ],
    "name": "Cartutx de tinta Canon PG-545 i CL-546",
    "offer": true,
@@ -809,7 +836,8 @@
      "ean": "4960999974507",
      "featured": false,
      "images": [
-      "/media/botiga/tin-can-8287b001.jpg"
+      "/media/botiga/tin-can-8287b001.jpg",
+      "/media/botiga/tin-can-8287b001-2.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -837,7 +865,8 @@
      "ean": "4960999974514",
      "featured": false,
      "images": [
-      "/media/botiga/tin-can-8288b001.jpg"
+      "/media/botiga/tin-can-8288b001.jpg",
+      "/media/botiga/tin-can-8288b001-2.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -865,7 +894,8 @@
      "ean": "4960999974491",
      "featured": false,
      "images": [
-      "/media/botiga/tin-can-8286b001.jpg"
+      "/media/botiga/tin-can-8286b001.jpg",
+      "/media/botiga/tin-can-8286b001-2.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -1631,7 +1661,8 @@
    "featured": false,
    "images": [
     "/media/botiga/ssd-kin-snv3s500.jpg",
-    "/media/botiga/ssd-kin-snv3s500-2.jpg"
+    "/media/botiga/ssd-kin-snv3s500-2.jpg",
+    "/media/botiga/ssd-kin-snv3s500-3.jpg"
    ],
    "name": "Disc SSD Kingston NV3 M.2 NVMe",
    "offer": false,
@@ -1650,7 +1681,8 @@
      "featured": false,
      "images": [
       "/media/botiga/ssd-kin-snv3s500.jpg",
-      "/media/botiga/ssd-kin-snv3s500-2.jpg"
+      "/media/botiga/ssd-kin-snv3s500-2.jpg",
+      "/media/botiga/ssd-kin-snv3s500-3.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -1679,7 +1711,8 @@
      "featured": false,
      "images": [
       "/media/botiga/ssd-kin-snv3s100.jpg",
-      "/media/botiga/ssd-kin-snv3s100-2.jpg"
+      "/media/botiga/ssd-kin-snv3s100-2.jpg",
+      "/media/botiga/ssd-kin-snv3s100-3.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -1711,7 +1744,8 @@
     "/media/botiga/per-log-92000451-2.jpg",
     "/media/botiga/per-log-92000451-3.jpg",
     "/media/botiga/per-log-92000451-4.jpg",
-    "/media/botiga/per-log-92000451-5.jpg"
+    "/media/botiga/per-log-92000451-5.jpg",
+    "/media/botiga/per-log-92000451-6.jpg"
    ],
    "name": "Kit de teclat i ratolí sense fil Logitech",
    "offer": false,
@@ -1733,7 +1767,8 @@
       "/media/botiga/per-log-92000451-2.jpg",
       "/media/botiga/per-log-92000451-3.jpg",
       "/media/botiga/per-log-92000451-4.jpg",
-      "/media/botiga/per-log-92000451-5.jpg"
+      "/media/botiga/per-log-92000451-5.jpg",
+      "/media/botiga/per-log-92000451-6.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -1765,7 +1800,8 @@
       "/media/botiga/per-log-92000791-2.jpg",
       "/media/botiga/per-log-92000791-3.jpg",
       "/media/botiga/per-log-92000791-4.jpg",
-      "/media/botiga/per-log-92000791-5.jpg"
+      "/media/botiga/per-log-92000791-5.jpg",
+      "/media/botiga/per-log-92000791-6.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -1961,7 +1997,8 @@
     "/media/botiga/per-log-91000442.jpg",
     "/media/botiga/per-log-91000442-2.jpg",
     "/media/botiga/per-log-91000442-3.jpg",
-    "/media/botiga/per-log-91000442-4.jpg"
+    "/media/botiga/per-log-91000442-4.jpg",
+    "/media/botiga/per-log-91000442-5.jpg"
    ],
    "name": "Ratolí sense fil Logitech",
    "offer": false,
@@ -1982,7 +2019,8 @@
       "/media/botiga/per-log-91000442.jpg",
       "/media/botiga/per-log-91000442-2.jpg",
       "/media/botiga/per-log-91000442-3.jpg",
-      "/media/botiga/per-log-91000442-4.jpg"
+      "/media/botiga/per-log-91000442-4.jpg",
+      "/media/botiga/per-log-91000442-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2013,7 +2051,8 @@
       "/media/botiga/per-log-91000223.jpg",
       "/media/botiga/per-log-91000223-2.jpg",
       "/media/botiga/per-log-91000223-3.jpg",
-      "/media/botiga/per-log-91000223-4.jpg"
+      "/media/botiga/per-log-91000223-4.jpg",
+      "/media/botiga/per-log-91000223-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2045,7 +2084,8 @@
       "/media/botiga/per-log-91000590-2.jpg",
       "/media/botiga/per-log-91000590-3.jpg",
       "/media/botiga/per-log-91000590-4.jpg",
-      "/media/botiga/per-log-91000590-5.jpg"
+      "/media/botiga/per-log-91000590-5.jpg",
+      "/media/botiga/per-log-91000590-6.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2077,7 +2117,8 @@
     "/media/botiga/net-tpl-tlwa850r-2.jpg",
     "/media/botiga/net-tpl-tlwa850r-3.jpg",
     "/media/botiga/net-tpl-tlwa850r-4.jpg",
-    "/media/botiga/net-tpl-tlwa850r-5.jpg"
+    "/media/botiga/net-tpl-tlwa850r-5.jpg",
+    "/media/botiga/net-tpl-tlwa850r-6.jpg"
    ],
    "name": "Repetidor Wi-Fi TP-Link",
    "offer": false,
@@ -2099,7 +2140,8 @@
       "/media/botiga/net-tpl-tlwa850r-2.jpg",
       "/media/botiga/net-tpl-tlwa850r-3.jpg",
       "/media/botiga/net-tpl-tlwa850r-4.jpg",
-      "/media/botiga/net-tpl-tlwa850r-5.jpg"
+      "/media/botiga/net-tpl-tlwa850r-5.jpg",
+      "/media/botiga/net-tpl-tlwa850r-6.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2130,7 +2172,8 @@
       "/media/botiga/net-tpl-re200.jpg",
       "/media/botiga/net-tpl-re200-2.jpg",
       "/media/botiga/net-tpl-re200-3.jpg",
-      "/media/botiga/net-tpl-re200-4.jpg"
+      "/media/botiga/net-tpl-re200-4.jpg",
+      "/media/botiga/net-tpl-re200-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2240,7 +2283,8 @@
     "/media/botiga/psu-sal-662af000-2.jpg",
     "/media/botiga/psu-sal-662af000-2-2.jpg",
     "/media/botiga/psu-sal-662af000-2-3.jpg",
-    "/media/botiga/psu-sal-662af000-2-4.jpg"
+    "/media/botiga/psu-sal-662af000-2-4.jpg",
+    "/media/botiga/psu-sal-662af000-2-5.jpg"
    ],
    "name": "SAI Salicru SPS ONE",
    "offer": true,
@@ -2261,7 +2305,8 @@
       "/media/botiga/psu-sal-662af000-2.jpg",
       "/media/botiga/psu-sal-662af000-2-2.jpg",
       "/media/botiga/psu-sal-662af000-2-3.jpg",
-      "/media/botiga/psu-sal-662af000-2-4.jpg"
+      "/media/botiga/psu-sal-662af000-2-4.jpg",
+      "/media/botiga/psu-sal-662af000-2-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2292,7 +2337,8 @@
       "/media/botiga/psu-sal-662af000.jpg",
       "/media/botiga/psu-sal-662af000-2.jpg",
       "/media/botiga/psu-sal-662af000-3.jpg",
-      "/media/botiga/psu-sal-662af000-4.jpg"
+      "/media/botiga/psu-sal-662af000-4.jpg",
+      "/media/botiga/psu-sal-662af000-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2324,7 +2370,8 @@
     "/media/botiga/net-tpl-ls1005gv-2.jpg",
     "/media/botiga/net-tpl-ls1005gv-3.jpg",
     "/media/botiga/net-tpl-ls1005gv-4.jpg",
-    "/media/botiga/net-tpl-ls1005gv-5.jpg"
+    "/media/botiga/net-tpl-ls1005gv-5.jpg",
+    "/media/botiga/net-tpl-ls1005gv-6.jpg"
    ],
    "name": "Switch Gigabit TP-Link",
    "offer": false,
@@ -2346,7 +2393,8 @@
       "/media/botiga/net-tpl-ls1005gv-2.jpg",
       "/media/botiga/net-tpl-ls1005gv-3.jpg",
       "/media/botiga/net-tpl-ls1005gv-4.jpg",
-      "/media/botiga/net-tpl-ls1005gv-5.jpg"
+      "/media/botiga/net-tpl-ls1005gv-5.jpg",
+      "/media/botiga/net-tpl-ls1005gv-6.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2377,7 +2425,8 @@
       "/media/botiga/net-tpl-ls1008gv.jpg",
       "/media/botiga/net-tpl-ls1008gv-2.jpg",
       "/media/botiga/net-tpl-ls1008gv-3.jpg",
-      "/media/botiga/net-tpl-ls1008gv-4.jpg"
+      "/media/botiga/net-tpl-ls1008gv-4.jpg",
+      "/media/botiga/net-tpl-ls1008gv-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2407,7 +2456,8 @@
    "images": [
     "/media/botiga/ext-kin-sdcs364g.jpg",
     "/media/botiga/ext-kin-sdcs364g-2.jpg",
-    "/media/botiga/ext-kin-sdcs364g-3.jpg"
+    "/media/botiga/ext-kin-sdcs364g-3.jpg",
+    "/media/botiga/ext-kin-sdcs364g-4.jpg"
    ],
    "name": "Targeta microSD Kingston Canvas Select Plus",
    "offer": false,
@@ -2427,7 +2477,8 @@
      "images": [
       "/media/botiga/ext-kin-sdcs364g.jpg",
       "/media/botiga/ext-kin-sdcs364g-2.jpg",
-      "/media/botiga/ext-kin-sdcs364g-3.jpg"
+      "/media/botiga/ext-kin-sdcs364g-3.jpg",
+      "/media/botiga/ext-kin-sdcs364g-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2457,7 +2508,8 @@
      "images": [
       "/media/botiga/ext-kin-sdcs3128.jpg",
       "/media/botiga/ext-kin-sdcs3128-2.jpg",
-      "/media/botiga/ext-kin-sdcs3128-3.jpg"
+      "/media/botiga/ext-kin-sdcs3128-3.jpg",
+      "/media/botiga/ext-kin-sdcs3128-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2492,7 +2544,8 @@
     "/media/botiga/net-ais-asch1pd6.jpg",
     "/media/botiga/net-ais-asch1pd6-2.jpg",
     "/media/botiga/net-ais-asch1pd6-3.jpg",
-    "/media/botiga/net-ais-asch1pd6-4.jpg"
+    "/media/botiga/net-ais-asch1pd6-4.jpg",
+    "/media/botiga/net-ais-asch1pd6-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2522,7 +2575,8 @@
     "/media/botiga/net-ais-a1060399.jpg",
     "/media/botiga/net-ais-a1060399-2.jpg",
     "/media/botiga/net-ais-a1060399-3.jpg",
-    "/media/botiga/net-ais-a1060399-4.jpg"
+    "/media/botiga/net-ais-a1060399-4.jpg",
+    "/media/botiga/net-ais-a1060399-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2552,7 +2606,8 @@
     "/media/botiga/net-tpl-tlwn823n.jpg",
     "/media/botiga/net-tpl-tlwn823n-2.jpg",
     "/media/botiga/net-tpl-tlwn823n-3.jpg",
-    "/media/botiga/net-tpl-tlwn823n-4.jpg"
+    "/media/botiga/net-tpl-tlwn823n-4.jpg",
+    "/media/botiga/net-tpl-tlwn823n-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2582,7 +2637,8 @@
     "/media/botiga/acc-hid-spbl1000.jpg",
     "/media/botiga/acc-hid-spbl1000-2.jpg",
     "/media/botiga/acc-hid-spbl1000-3.jpg",
-    "/media/botiga/acc-hid-spbl1000-4.jpg"
+    "/media/botiga/acc-hid-spbl1000-4.jpg",
+    "/media/botiga/acc-hid-spbl1000-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2612,7 +2668,8 @@
     "/media/botiga/acc-ven-nbwb0ph.jpg",
     "/media/botiga/acc-ven-nbwb0ph-2.jpg",
     "/media/botiga/acc-ven-nbwb0ph-3.jpg",
-    "/media/botiga/acc-ven-nbwb0ph-4.jpg"
+    "/media/botiga/acc-ven-nbwb0ph-4.jpg",
+    "/media/botiga/acc-ven-nbwb0ph-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2643,7 +2700,8 @@
     "/media/botiga/acc-ven-nbvw0-2.jpg",
     "/media/botiga/acc-ven-nbvw0-3.jpg",
     "/media/botiga/acc-ven-nbvw0-4.jpg",
-    "/media/botiga/acc-ven-nbvw0-5.jpg"
+    "/media/botiga/acc-ven-nbvw0-5.jpg",
+    "/media/botiga/acc-ven-nbvw0-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2674,7 +2732,8 @@
     "/media/botiga/acc-zte-eb2201-2.jpg",
     "/media/botiga/acc-zte-eb2201-3.jpg",
     "/media/botiga/acc-zte-eb2201-4.jpg",
-    "/media/botiga/acc-zte-eb2201-5.jpg"
+    "/media/botiga/acc-zte-eb2201-5.jpg",
+    "/media/botiga/acc-zte-eb2201-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2704,7 +2763,8 @@
     "/media/botiga/acc-phi-taue100b.jpg",
     "/media/botiga/acc-phi-taue100b-2.jpg",
     "/media/botiga/acc-phi-taue100b-3.jpg",
-    "/media/botiga/acc-phi-taue100b-4.jpg"
+    "/media/botiga/acc-phi-taue100b-4.jpg",
+    "/media/botiga/acc-phi-taue100b-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2732,7 +2792,8 @@
    "featured": false,
    "images": [
     "/media/botiga/acc-son-mdrex15a.jpg",
-    "/media/botiga/acc-son-mdrex15a-2.jpg"
+    "/media/botiga/acc-son-mdrex15a-2.jpg",
+    "/media/botiga/acc-son-mdrex15a-3.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2759,7 +2820,8 @@
    "ean": "4549292192025",
    "featured": false,
    "images": [
-    "/media/botiga/tin-can-5224b001.jpg"
+    "/media/botiga/tin-can-5224b001.jpg",
+    "/media/botiga/tin-can-5224b001-2.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2789,7 +2851,8 @@
     "/media/botiga/ext-tos-hdtp310e.jpg",
     "/media/botiga/ext-tos-hdtp310e-2.jpg",
     "/media/botiga/ext-tos-hdtp310e-3.jpg",
-    "/media/botiga/ext-tos-hdtp310e-4.jpg"
+    "/media/botiga/ext-tos-hdtp310e-4.jpg",
+    "/media/botiga/ext-tos-hdtp310e-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2818,7 +2881,8 @@
    "images": [
     "/media/botiga/ext-wes-wdbuzg00.jpg",
     "/media/botiga/ext-wes-wdbuzg00-2.jpg",
-    "/media/botiga/ext-wes-wdbuzg00-3.jpg"
+    "/media/botiga/ext-wes-wdbuzg00-3.jpg",
+    "/media/botiga/ext-wes-wdbuzg00-4.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2848,7 +2912,8 @@
     "/media/botiga/ssd-apa-ap512gas.jpg",
     "/media/botiga/ssd-apa-ap512gas-2.jpg",
     "/media/botiga/ssd-apa-ap512gas-3.jpg",
-    "/media/botiga/ssd-apa-ap512gas-4.jpg"
+    "/media/botiga/ssd-apa-ap512gas-4.jpg",
+    "/media/botiga/ssd-apa-ap512gas-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -2878,7 +2943,8 @@
     "/media/botiga/net-ais-asuc6p01.jpg",
     "/media/botiga/net-ais-asuc6p01-2.jpg",
     "/media/botiga/net-ais-asuc6p01-3.jpg",
-    "/media/botiga/net-ais-asuc6p01-4.jpg"
+    "/media/botiga/net-ais-asuc6p01-4.jpg",
+    "/media/botiga/net-ais-asuc6p01-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3143,7 +3209,8 @@
     "/media/botiga/lcd-aoc-24b31h-2.jpg",
     "/media/botiga/lcd-aoc-24b31h-3.jpg",
     "/media/botiga/lcd-aoc-24b31h-4.jpg",
-    "/media/botiga/lcd-aoc-24b31h-5.jpg"
+    "/media/botiga/lcd-aoc-24b31h-5.jpg",
+    "/media/botiga/lcd-aoc-24b31h-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3174,7 +3241,8 @@
     "/media/botiga/lcd-asu-90lm0bj0-2.jpg",
     "/media/botiga/lcd-asu-90lm0bj0-3.jpg",
     "/media/botiga/lcd-asu-90lm0bj0-4.jpg",
-    "/media/botiga/lcd-asu-90lm0bj0-5.jpg"
+    "/media/botiga/lcd-asu-90lm0bj0-5.jpg",
+    "/media/botiga/lcd-asu-90lm0bj0-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3205,7 +3273,8 @@
     "/media/botiga/lcd-phi-271v8aw0-2.jpg",
     "/media/botiga/lcd-phi-271v8aw0-3.jpg",
     "/media/botiga/lcd-phi-271v8aw0-4.jpg",
-    "/media/botiga/lcd-phi-271v8aw0-5.jpg"
+    "/media/botiga/lcd-phi-271v8aw0-5.jpg",
+    "/media/botiga/lcd-phi-271v8aw0-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3236,7 +3305,8 @@
     "/media/botiga/lcd-phi-24e2n111-2.jpg",
     "/media/botiga/lcd-phi-24e2n111-3.jpg",
     "/media/botiga/lcd-phi-24e2n111-4.jpg",
-    "/media/botiga/lcd-phi-24e2n111-5.jpg"
+    "/media/botiga/lcd-phi-24e2n111-5.jpg",
+    "/media/botiga/lcd-phi-24e2n111-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3267,7 +3337,8 @@
     "/media/botiga/imp-can-7181c006-2.jpg",
     "/media/botiga/imp-can-7181c006-3.jpg",
     "/media/botiga/imp-can-7181c006-4.jpg",
-    "/media/botiga/imp-can-7181c006-5.jpg"
+    "/media/botiga/imp-can-7181c006-5.jpg",
+    "/media/botiga/imp-can-7181c006-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3298,7 +3369,8 @@
     "/media/botiga/imp-can-6258c006-2.jpg",
     "/media/botiga/imp-can-6258c006-3.jpg",
     "/media/botiga/imp-can-6258c006-4.jpg",
-    "/media/botiga/imp-can-6258c006-5.jpg"
+    "/media/botiga/imp-can-6258c006-5.jpg",
+    "/media/botiga/imp-can-6258c006-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3329,7 +3401,8 @@
     "/media/botiga/pc-asu-90pt03xa-2.jpg",
     "/media/botiga/pc-asu-90pt03xa-3.jpg",
     "/media/botiga/pc-asu-90pt03xa-4.jpg",
-    "/media/botiga/pc-asu-90pt03xa-5.jpg"
+    "/media/botiga/pc-asu-90pt03xa-5.jpg",
+    "/media/botiga/pc-asu-90pt03xa-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3359,7 +3432,8 @@
     "/media/botiga/pc-hp-db9r0ea.jpg",
     "/media/botiga/pc-hp-db9r0ea-2.jpg",
     "/media/botiga/pc-hp-db9r0ea-3.jpg",
-    "/media/botiga/pc-hp-db9r0ea-4.jpg"
+    "/media/botiga/pc-hp-db9r0ea-4.jpg",
+    "/media/botiga/pc-hp-db9r0ea-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3389,7 +3463,8 @@
     "/media/botiga/pc-asu-90pf05r1.jpg",
     "/media/botiga/pc-asu-90pf05r1-2.jpg",
     "/media/botiga/pc-asu-90pf05r1-3.jpg",
-    "/media/botiga/pc-asu-90pf05r1-4.jpg"
+    "/media/botiga/pc-asu-90pf05r1-4.jpg",
+    "/media/botiga/pc-asu-90pf05r1-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3418,7 +3493,8 @@
    "images": [
     "/media/botiga/pc-hp-b70ykat.jpg",
     "/media/botiga/pc-hp-b70ykat-2.jpg",
-    "/media/botiga/pc-hp-b70ykat-3.jpg"
+    "/media/botiga/pc-hp-b70ykat-3.jpg",
+    "/media/botiga/pc-hp-b70ykat-4.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3449,7 +3525,8 @@
     "/media/botiga/por-asu-90nb19l1-2.jpg",
     "/media/botiga/por-asu-90nb19l1-3.jpg",
     "/media/botiga/por-asu-90nb19l1-4.jpg",
-    "/media/botiga/por-asu-90nb19l1-5.jpg"
+    "/media/botiga/por-asu-90nb19l1-5.jpg",
+    "/media/botiga/por-asu-90nb19l1-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3480,7 +3557,8 @@
     "/media/botiga/por-asu-90nb17i2-2.jpg",
     "/media/botiga/por-asu-90nb17i2-3.jpg",
     "/media/botiga/por-asu-90nb17i2-4.jpg",
-    "/media/botiga/por-asu-90nb17i2-5.jpg"
+    "/media/botiga/por-asu-90nb17i2-5.jpg",
+    "/media/botiga/por-asu-90nb17i2-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3511,7 +3589,8 @@
     "/media/botiga/por-hp-d93wbet-2.jpg",
     "/media/botiga/por-hp-d93wbet-3.jpg",
     "/media/botiga/por-hp-d93wbet-4.jpg",
-    "/media/botiga/por-hp-d93wbet-5.jpg"
+    "/media/botiga/por-hp-d93wbet-5.jpg",
+    "/media/botiga/por-hp-d93wbet-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3542,7 +3621,8 @@
     "/media/botiga/por-hp-d18blea-2.jpg",
     "/media/botiga/por-hp-d18blea-3.jpg",
     "/media/botiga/por-hp-d18blea-4.jpg",
-    "/media/botiga/por-hp-d18blea-5.jpg"
+    "/media/botiga/por-hp-d18blea-5.jpg",
+    "/media/botiga/por-hp-d18blea-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3573,7 +3653,8 @@
     "/media/botiga/por-len-21l5002g-2.jpg",
     "/media/botiga/por-len-21l5002g-3.jpg",
     "/media/botiga/por-len-21l5002g-4.jpg",
-    "/media/botiga/por-len-21l5002g-5.jpg"
+    "/media/botiga/por-len-21l5002g-5.jpg",
+    "/media/botiga/por-len-21l5002g-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3604,7 +3685,8 @@
     "/media/botiga/por-len-83m4001n-2.jpg",
     "/media/botiga/por-len-83m4001n-3.jpg",
     "/media/botiga/por-len-83m4001n-4.jpg",
-    "/media/botiga/por-len-83m4001n-5.jpg"
+    "/media/botiga/por-len-83m4001n-5.jpg",
+    "/media/botiga/por-len-83m4001n-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3635,7 +3717,8 @@
     "/media/botiga/por-sam-np754xgj-2.jpg",
     "/media/botiga/por-sam-np754xgj-3.jpg",
     "/media/botiga/por-sam-np754xgj-4.jpg",
-    "/media/botiga/por-sam-np754xgj-5.jpg"
+    "/media/botiga/por-sam-np754xgj-5.jpg",
+    "/media/botiga/por-sam-np754xgj-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3666,7 +3749,8 @@
     "/media/botiga/per-hp-265a9a6-2.jpg",
     "/media/botiga/per-hp-265a9a6-3.jpg",
     "/media/botiga/per-hp-265a9a6-4.jpg",
-    "/media/botiga/per-hp-265a9a6-5.jpg"
+    "/media/botiga/per-hp-265a9a6-5.jpg",
+    "/media/botiga/per-hp-265a9a6-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3697,7 +3781,8 @@
     "/media/botiga/per-log-91000335-2.jpg",
     "/media/botiga/per-log-91000335-3.jpg",
     "/media/botiga/per-log-91000335-4.jpg",
-    "/media/botiga/per-log-91000335-5.jpg"
+    "/media/botiga/per-log-91000335-5.jpg",
+    "/media/botiga/per-log-91000335-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3726,7 +3811,8 @@
    "images": [
     "/media/botiga/psu-ais-a1540534.jpg",
     "/media/botiga/psu-ais-a1540534-2.jpg",
-    "/media/botiga/psu-ais-a1540534-3.jpg"
+    "/media/botiga/psu-ais-a1540534-3.jpg",
+    "/media/botiga/psu-ais-a1540534-4.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3757,7 +3843,8 @@
     "/media/botiga/psu-pha-bns1520-2.jpg",
     "/media/botiga/psu-pha-bns1520-3.jpg",
     "/media/botiga/psu-pha-bns1520-4.jpg",
-    "/media/botiga/psu-pha-bns1520-5.jpg"
+    "/media/botiga/psu-pha-bns1520-5.jpg",
+    "/media/botiga/psu-pha-bns1520-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3784,7 +3871,8 @@
    "ean": "195950643701",
    "featured": false,
    "images": [
-    "/media/botiga/tlf-app-mg6k4qla.jpg"
+    "/media/botiga/tlf-app-mg6k4qla.jpg",
+    "/media/botiga/tlf-app-mg6k4qla-2.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3815,7 +3903,8 @@
     "/media/botiga/tlf-mot-708gb256-2.jpg",
     "/media/botiga/tlf-mot-708gb256-3.jpg",
     "/media/botiga/tlf-mot-708gb256-4.jpg",
-    "/media/botiga/tlf-mot-708gb256-5.jpg"
+    "/media/botiga/tlf-mot-708gb256-5.jpg",
+    "/media/botiga/tlf-mot-708gb256-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3846,7 +3935,8 @@
     "/media/botiga/tlf-mot-pb9w0005-2.jpg",
     "/media/botiga/tlf-mot-pb9w0005-3.jpg",
     "/media/botiga/tlf-mot-pb9w0005-4.jpg",
-    "/media/botiga/tlf-mot-pb9w0005-5.jpg"
+    "/media/botiga/tlf-mot-pb9w0005-5.jpg",
+    "/media/botiga/tlf-mot-pb9w0005-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3877,7 +3967,8 @@
     "/media/botiga/tlf-ule-ulearx12-2.jpg",
     "/media/botiga/tlf-ule-ulearx12-3.jpg",
     "/media/botiga/tlf-ule-ulearx12-4.jpg",
-    "/media/botiga/tlf-ule-ulearx12-5.jpg"
+    "/media/botiga/tlf-ule-ulearx12-5.jpg",
+    "/media/botiga/tlf-ule-ulearx12-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3908,7 +3999,8 @@
     "/media/botiga/tlf-sam-sma175fz-2.jpg",
     "/media/botiga/tlf-sam-sma175fz-3.jpg",
     "/media/botiga/tlf-sam-sma175fz-4.jpg",
-    "/media/botiga/tlf-sam-sma175fz-5.jpg"
+    "/media/botiga/tlf-sam-sma175fz-5.jpg",
+    "/media/botiga/tlf-sam-sma175fz-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3939,7 +4031,8 @@
     "/media/botiga/tlf-sam-sma276bz-2.jpg",
     "/media/botiga/tlf-sam-sma276bz-3.jpg",
     "/media/botiga/tlf-sam-sma276bz-4.jpg",
-    "/media/botiga/tlf-sam-sma276bz-5.jpg"
+    "/media/botiga/tlf-sam-sma276bz-5.jpg",
+    "/media/botiga/tlf-sam-sma276bz-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3970,7 +4063,8 @@
     "/media/botiga/tlf-sam-sms942bz-2.jpg",
     "/media/botiga/tlf-sam-sms942bz-3.jpg",
     "/media/botiga/tlf-sam-sms942bz-4.jpg",
-    "/media/botiga/tlf-sam-sms942bz-5.jpg"
+    "/media/botiga/tlf-sam-sms942bz-5.jpg",
+    "/media/botiga/tlf-sam-sms942bz-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4001,7 +4095,8 @@
     "/media/botiga/tlf-sam-sms741bz-2.jpg",
     "/media/botiga/tlf-sam-sms741bz-3.jpg",
     "/media/botiga/tlf-sam-sms741bz-4.jpg",
-    "/media/botiga/tlf-sam-sms741bz-5.jpg"
+    "/media/botiga/tlf-sam-sms741bz-5.jpg",
+    "/media/botiga/tlf-sam-sms741bz-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4032,7 +4127,8 @@
     "/media/botiga/tlf-xia-mzb0nome-2.jpg",
     "/media/botiga/tlf-xia-mzb0nome-3.jpg",
     "/media/botiga/tlf-xia-mzb0nome-4.jpg",
-    "/media/botiga/tlf-xia-mzb0nome-5.jpg"
+    "/media/botiga/tlf-xia-mzb0nome-5.jpg",
+    "/media/botiga/tlf-xia-mzb0nome-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4063,7 +4159,8 @@
     "/media/botiga/tlf-xia-mzb0pmie-2.jpg",
     "/media/botiga/tlf-xia-mzb0pmie-3.jpg",
     "/media/botiga/tlf-xia-mzb0pmie-4.jpg",
-    "/media/botiga/tlf-xia-mzb0pmie-5.jpg"
+    "/media/botiga/tlf-xia-mzb0pmie-5.jpg",
+    "/media/botiga/tlf-xia-mzb0pmie-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4094,7 +4191,8 @@
     "/media/botiga/tlf-xia-mzb0n5ue-2.jpg",
     "/media/botiga/tlf-xia-mzb0n5ue-3.jpg",
     "/media/botiga/tlf-xia-mzb0n5ue-4.jpg",
-    "/media/botiga/tlf-xia-mzb0n5ue-5.jpg"
+    "/media/botiga/tlf-xia-mzb0n5ue-5.jpg",
+    "/media/botiga/tlf-xia-mzb0n5ue-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4125,7 +4223,8 @@
     "/media/botiga/por-len-zafr0399-2.jpg",
     "/media/botiga/por-len-zafr0399-3.jpg",
     "/media/botiga/por-len-zafr0399-4.jpg",
-    "/media/botiga/por-len-zafr0399-5.jpg"
+    "/media/botiga/por-len-zafr0399-5.jpg",
+    "/media/botiga/por-len-zafr0399-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4156,7 +4255,8 @@
     "/media/botiga/por-sam-smx230nz-2.jpg",
     "/media/botiga/por-sam-smx230nz-3.jpg",
     "/media/botiga/por-sam-smx230nz-4.jpg",
-    "/media/botiga/por-sam-smx230nz-5.jpg"
+    "/media/botiga/por-sam-smx230nz-5.jpg",
+    "/media/botiga/por-sam-smx230nz-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4187,7 +4287,8 @@
     "/media/botiga/por-xia-vhu7197e-2.jpg",
     "/media/botiga/por-xia-vhu7197e-3.jpg",
     "/media/botiga/por-xia-vhu7197e-4.jpg",
-    "/media/botiga/por-xia-vhu7197e-5.jpg"
+    "/media/botiga/por-xia-vhu7197e-5.jpg",
+    "/media/botiga/por-xia-vhu7197e-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4218,7 +4319,8 @@
     "/media/botiga/per-log-92000249-2.jpg",
     "/media/botiga/per-log-92000249-3.jpg",
     "/media/botiga/per-log-92000249-4.jpg",
-    "/media/botiga/per-log-92000249-5.jpg"
+    "/media/botiga/per-log-92000249-5.jpg",
+    "/media/botiga/per-log-92000249-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4276,7 +4378,8 @@
    "ean": "095205894462",
    "featured": false,
    "images": [
-    "/media/botiga/tin-xer-006r0370.jpg"
+    "/media/botiga/tin-xer-006r0370.jpg",
+    "/media/botiga/tin-xer-006r0370-2.jpg"
    ],
    "kind": "product",
    "layout": "page",
