@@ -8,10 +8,6 @@
   "es": "/es/articulos/"
  },
  {
-  "ca": "/botiga/portatil-lenovo-v15-g4-amn-ryzen-3-7320u-8-gb-ram-512-gb-ssd-15-6-windows-11.html",
-  "es": "/es/tienda/portatil-lenovo-v15-g4-amn-ryzen-3-7320u-8-gb-ram-512-gb-ssd-15-6-windows-11.html"
- },
- {
   "ca": "/botiga/adaptador-wi-fi-usb-tp-link-tl-wn823n-300-mbps.html",
   "es": "/es/tienda/adaptador-wi-fi-usb-tp-link-tl-wn823n-300-mbps.html"
  },
@@ -30,10 +26,6 @@
  {
   "ca": "/botiga/auriculars-bluetooth-zte-buds-2-negres.html",
   "es": "/es/tienda/auriculars-bluetooth-zte-buds-2-negres.html"
- },
- {
-  "ca": "/botiga/auriculars-sense-fil-sony-wh-ch520-negres.html",
-  "es": "/es/tienda/auriculars-sense-fil-sony-wh-ch520-negres.html"
  },
  {
   "ca": "/botiga/auriculars-amb-cable-philips-taue100-negres.html",
@@ -88,12 +80,12 @@
   "es": "/es/tienda/hub-usb-3-0-aisens-de-4-ports.html"
  },
  {
-  "ca": "/botiga/camera-web-iggual-quick-view-wc1080-full-hd.html",
-  "es": "/es/tienda/camera-web-iggual-quick-view-wc1080-full-hd.html"
+  "ca": "/botiga/mini-pc-iggual-teseracto-intel-core-i5-8-gb-ram-256-gb-ssd-windows-11-pro.html",
+  "es": "/es/tienda/mini-pc-iggual-teseracto-intel-core-i5-8-gb-ram-256-gb-ssd-windows-11-pro.html"
  },
  {
-  "ca": "/botiga/intenso-3503480-lapiz-usb-2-0-basic-32gb.html",
-  "es": "/es/tienda/intenso-3503480-lapiz-usb-2-0-basic-32gb.html"
+  "ca": "/botiga/camera-web-iggual-quick-view-wc1080-full-hd.html",
+  "es": "/es/tienda/camera-web-iggual-quick-view-wc1080-full-hd.html"
  },
  {
   "ca": "/botiga/disc-ssd-kingston-a400-480-gb-sata-iii-2-5.html",
@@ -128,8 +120,48 @@
   "es": "/es/tienda/impressora-multifuncio-fotografica-canon-pixma-ts7750i-wi-fi-blanca.html"
  },
  {
+  "ca": "/botiga/ordinador-all-in-one-asus-v400-intel-core-3-8-gb-ram-512-gb-ssd-23-8-sense-siste.html",
+  "es": "/es/tienda/ordinador-all-in-one-asus-v400-intel-core-3-8-gb-ram-512-gb-ssd-23-8-sense-siste.html"
+ },
+ {
+  "ca": "/botiga/ordinador-all-in-one-hp-27-intel-core-i5-16-gb-ram-512-gb-ssd-27-sense-sistema-o.html",
+  "es": "/es/tienda/ordinador-all-in-one-hp-27-intel-core-i5-16-gb-ram-512-gb-ssd-27-sense-sistema-o.html"
+ },
+ {
+  "ca": "/botiga/ordinador-de-sobretaula-asus-v500-intel-core-5-8-gb-ram-512-gb-ssd-sense-sistema.html",
+  "es": "/es/tienda/ordinador-de-sobretaula-asus-v500-intel-core-5-8-gb-ram-512-gb-ssd-sense-sistema.html"
+ },
+ {
+  "ca": "/botiga/mini-pc-hp-pro-mini-400-g9-intel-core-i5-8-gb-ram-256-gb-ssd-windows-11-pro.html",
+  "es": "/es/tienda/mini-pc-hp-pro-mini-400-g9-intel-core-i5-8-gb-ram-256-gb-ssd-windows-11-pro.html"
+ },
+ {
+  "ca": "/botiga/portatil-asus-vivobook-15-amd-ryzen-7-8-gb-ram-512-gb-ssd-15-6-windows-11.html",
+  "es": "/es/tienda/portatil-asus-vivobook-15-amd-ryzen-7-8-gb-ram-512-gb-ssd-15-6-windows-11.html"
+ },
+ {
   "ca": "/botiga/portatil-asus-vivobook-15-intel-core-3-8-gb-ram-256-gb-ssd-15-6-sense-sistema-op.html",
   "es": "/es/tienda/portatil-asus-vivobook-15-intel-core-3-8-gb-ram-256-gb-ssd-15-6-sense-sistema-op.html"
+ },
+ {
+  "ca": "/botiga/portatil-hp-elitebook-8-g1i-intel-core-ultra-5-16-gb-ram-512-gb-ssd-14-windows-1.html",
+  "es": "/es/tienda/portatil-hp-elitebook-8-g1i-intel-core-ultra-5-16-gb-ram-512-gb-ssd-14-windows-1.html"
+ },
+ {
+  "ca": "/botiga/portatil-hp-omnibook-3-amd-ryzen-5-16-gb-ram-512-gb-ssd-16-windows-11.html",
+  "es": "/es/tienda/portatil-hp-omnibook-3-amd-ryzen-5-16-gb-ram-512-gb-ssd-16-windows-11.html"
+ },
+ {
+  "ca": "/botiga/portatil-lenovo-thinkpad-l14-gen-5-amd-ryzen-5-pro-16-gb-ram-512-gb-ssd-14-windo.html",
+  "es": "/es/tienda/portatil-lenovo-thinkpad-l14-gen-5-amd-ryzen-5-pro-16-gb-ram-512-gb-ssd-14-windo.html"
+ },
+ {
+  "ca": "/botiga/portatil-lenovo-v15-g6-intel-n100-8-gb-ram-256-gb-ssd-15-6-windows-11.html",
+  "es": "/es/tienda/portatil-lenovo-v15-g6-intel-n100-8-gb-ram-256-gb-ssd-15-6-windows-11.html"
+ },
+ {
+  "ca": "/botiga/portatil-samsung-galaxy-book4-intel-core-i5-16-gb-ram-512-gb-ssd-15-6-windows-11.html",
+  "es": "/es/tienda/portatil-samsung-galaxy-book4-intel-core-i5-16-gb-ram-512-gb-ssd-15-6-windows-11.html"
  },
  {
   "ca": "/botiga/ratoli-amb-cable-hp-125-negre.html",
@@ -148,8 +180,40 @@
   "es": "/es/tienda/regleta-phasak-de-8-endolls-amb-interruptor-i-cable-de-3-m.html"
  },
  {
+  "ca": "/botiga/mobil-apple-iphone-17-256-gb-6-3-5g-blanc.html",
+  "es": "/es/tienda/mobil-apple-iphone-17-256-gb-6-3-5g-blanc.html"
+ },
+ {
+  "ca": "/botiga/mobil-motorola-edge-70-fusion-8-gb-256-gb-6-78-5g-negre.html",
+  "es": "/es/tienda/mobil-motorola-edge-70-fusion-8-gb-256-gb-6-78-5g-negre.html"
+ },
+ {
+  "ca": "/botiga/mobil-motorola-moto-g06-4-gb-64-gb-6-88-blau.html",
+  "es": "/es/tienda/mobil-motorola-moto-g06-4-gb-64-gb-6-88-blau.html"
+ },
+ {
+  "ca": "/botiga/mobil-resistent-ulefone-armor-x12-pro-4-gb-64-gb-5-45-negre.html",
+  "es": "/es/tienda/mobil-resistent-ulefone-armor-x12-pro-4-gb-64-gb-5-45-negre.html"
+ },
+ {
   "ca": "/botiga/mobil-samsung-galaxy-a17-4-gb-128-gb-6-7-negre.html",
   "es": "/es/tienda/mobil-samsung-galaxy-a17-4-gb-128-gb-6-7-negre.html"
+ },
+ {
+  "ca": "/botiga/mobil-samsung-galaxy-a27-8-gb-256-gb-6-7-5g-negre.html",
+  "es": "/es/tienda/mobil-samsung-galaxy-a27-8-gb-256-gb-6-7-5g-negre.html"
+ },
+ {
+  "ca": "/botiga/mobil-samsung-galaxy-s26-12-gb-512-gb-6-3-5g-negre.html",
+  "es": "/es/tienda/mobil-samsung-galaxy-s26-12-gb-512-gb-6-3-5g-negre.html"
+ },
+ {
+  "ca": "/botiga/mobil-samsung-galaxy-s26-fe-8-gb-128-gb-6-7-5g-negre.html",
+  "es": "/es/tienda/mobil-samsung-galaxy-s26-fe-8-gb-128-gb-6-7-5g-negre.html"
+ },
+ {
+  "ca": "/botiga/mobil-xiaomi-17t-12-gb-512-gb-6-59-5g-negre.html",
+  "es": "/es/tienda/mobil-xiaomi-17t-12-gb-512-gb-6-59-5g-negre.html"
  },
  {
   "ca": "/botiga/mobil-xiaomi-redmi-17-4-gb-128-gb-6-9-blau.html",
@@ -160,16 +224,16 @@
   "es": "/es/tienda/mobil-xiaomi-redmi-a7-pro-4-gb-64-gb-6-9-negre.html"
  },
  {
+  "ca": "/botiga/tauleta-lenovo-idea-tab-11-8-gb-256-gb-gris-amb-llapis-tab-pen.html",
+  "es": "/es/tienda/tauleta-lenovo-idea-tab-11-8-gb-256-gb-gris-amb-llapis-tab-pen.html"
+ },
+ {
   "ca": "/botiga/tauleta-samsung-galaxy-tab-a11-11-6-gb-128-gb-gris.html",
   "es": "/es/tienda/tauleta-samsung-galaxy-tab-a11-11-6-gb-128-gb-gris.html"
  },
  {
   "ca": "/botiga/tauleta-xiaomi-redmi-pad-2-11-4-gb-256-gb-gris-grafit.html",
   "es": "/es/tienda/tauleta-xiaomi-redmi-pad-2-11-4-gb-256-gb-gris-grafit.html"
- },
- {
-  "ca": "/botiga/tech-one-tech-basic-pendrive-16gb-usb-2-0-negro.html",
-  "es": "/es/tienda/tech-one-tech-basic-pendrive-16gb-usb-2-0-negro.html"
  },
  {
   "ca": "/botiga/teclat-amb-cable-logitech-k120.html",
