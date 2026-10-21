@@ -7,16 +7,22 @@
    "slug": "accessoris"
   },
   {
-   "count": 3,
+   "count": 12,
    "layout": "page",
-   "name": "Discs SSD",
-   "slug": "discs-ssd"
+   "name": "Cables",
+   "slug": "cables"
   },
   {
    "count": 4,
    "layout": "page",
-   "name": "Emmagatzematge extern",
-   "slug": "emmagatzematge-extern"
+   "name": "Discs durs externs",
+   "slug": "discs-durs-externs"
+  },
+  {
+   "count": 3,
+   "layout": "page",
+   "name": "Discs SSD",
+   "slug": "discs-ssd"
   },
   {
    "count": 3,
@@ -27,8 +33,8 @@
   {
    "count": 3,
    "layout": "page",
-   "name": "Impresores",
-   "slug": "impresores"
+   "name": "Impressores",
+   "slug": "impressores"
   },
   {
    "count": 6,
@@ -45,8 +51,8 @@
   {
    "count": 11,
    "layout": "page",
-   "name": "Portàtils i equips",
-   "slug": "portatils-i-equips"
+   "name": "Portàtils",
+   "slug": "portatils"
   },
   {
    "count": 6,
@@ -57,31 +63,25 @@
   {
    "count": 12,
    "layout": "page",
-   "name": "Telèfons",
-   "slug": "telefons"
+   "name": "Telèfons mòbils",
+   "slug": "telefons-mobils"
   },
   {
    "count": 11,
    "layout": "page",
    "name": "Tinta i tòner",
    "slug": "tinta-i-toner"
-  },
-  {
-   "count": 12,
-   "layout": "page",
-   "name": "Xarxa i cablejat",
-   "slug": "xarxa-i-cablejat"
   }
  ],
  "count": 86,
  "currency": "EUR",
- "generated_at": "2026-10-21 16:48:29",
+ "generated_at": "2026-10-21 20:39:28",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
    "brand": "LOGITECH",
    "category": "accessoris",
-   "featured": false,
+   "featured": true,
    "images": [
     "/media/botiga/acc-log-98100047.jpg",
     "/media/botiga/acc-log-98100047-2.jpg",
@@ -133,7 +133,7 @@
      "brand": "LOGITECH",
      "category": "accessoris",
      "ean": "5099206008441",
-     "featured": false,
+     "featured": true,
      "images": [
       "/media/botiga/acc-log-98100010.jpg",
       "/media/botiga/acc-log-98100010-2.jpg",
@@ -153,7 +153,7 @@
      "slug": "auriculars-amb-microfon-logitech-pc-960-usb",
      "summary": "Auriculars de diadema Logitech amb micròfon i connexió USB per a videotrucades i teletreball.",
      "unit": "u",
-     "updated_at": "2026-10-20 23:39:27",
+     "updated_at": "2026-10-21 16:56:20",
      "variant": "PC 960",
      "vat_pct": 21
     }
@@ -162,7 +162,7 @@
   {
    "body": "Bateries externes Vention per no quedar-te mai sense bateria. La de **10000 mAh** és de butxaca i ideal per al mòbil; la de **20000 mAh i 165 W** pot carregar també portàtils USB-C i inclou cable USB-C.",
    "brand": "VENTION",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "featured": false,
    "images": [
     "/media/botiga/tlf-ven-fhkb0.jpg",
@@ -183,7 +183,7 @@
      "availability": "on_order",
      "body": "La bateria externa Vention FHKB0 de 10000 mAh permet carregar el mòbil diverses vegades amb càrrega ràpida de fins a 22,5 W. Mida de butxaca, perfecta per portar a la motxilla o la bossa. Color negre.",
      "brand": "VENTION",
-     "category": "telefons",
+     "category": "telefons-mobils",
      "ean": "6922794781559",
      "featured": false,
      "images": [
@@ -215,7 +215,7 @@
      "availability": "on_order",
      "body": "La bateria externa Vention FKFH0 té 20000 mAh de capacitat i una potència de fins a 165 W, suficient per carregar portàtils USB-C a més de mòbils i tauletes. Inclou cable USB-C. Ideal per a viatges i jornades llargues fora de casa. Color gris.",
      "brand": "VENTION",
-     "category": "telefons",
+     "category": "telefons-mobils",
      "ean": "6922794791206",
      "featured": false,
      "images": [
@@ -328,7 +328,7 @@
   {
    "body": "Cables de xarxa RJ45 de categoria 6 UTP de Vention per connectar ordinadors, consoles, televisors i routers amb connexió **Gigabit** estable. Tria la longitud que necessites.",
    "brand": "VENTION",
-   "category": "xarxa-i-cablejat",
+   "category": "cables",
    "featured": false,
    "images": [
     "/media/botiga/net-ven-ibehf.jpg"
@@ -345,7 +345,7 @@
      "availability": "on_order",
      "body": "Cable de xarxa RJ45 de categoria 6 UTP de Vention per connectar ordinadors, consoles, televisors i routers amb connexió Gigabit estable. Longitud d'1 metre. Color gris.",
      "brand": "VENTION",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "6922794749047",
      "featured": false,
      "images": [
@@ -373,7 +373,7 @@
      "availability": "on_order",
      "body": "Cable de xarxa RJ45 de categoria 6 UTP de Vention per connectar ordinadors, consoles, televisors i routers amb connexió Gigabit estable. Longitud de 2 metres. Color gris.",
      "brand": "VENTION",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "6922794749061",
      "featured": false,
      "images": [
@@ -384,8 +384,8 @@
      "model": "IBEHH",
      "name": "Cable de xarxa RJ45 Cat.6 UTP Vention 2 m",
      "offer": false,
-     "price": 1.23,
-     "price_with_vat": 1.49,
+     "price": 1.65,
+     "price_with_vat": 2,
      "published_at": "2026-10-20 22:34:46",
      "pvpr": null,
      "pvpr_with_vat": null,
@@ -393,7 +393,7 @@
      "slug": "cable-de-xarxa-rj45-cat-6-utp-vention-2-m",
      "summary": "Cable de xarxa Ethernet Cat.6 UTP Vention de 2 metres, color gris.",
      "unit": "u",
-     "updated_at": "2026-10-20 23:39:27",
+     "updated_at": "2026-10-21 16:56:20",
      "variant": "2 m",
      "vat_pct": 21
     },
@@ -401,7 +401,7 @@
      "availability": "on_order",
      "body": "Cable de xarxa RJ45 de categoria 6 UTP de Vention per portar la connexió del router a un altre punt de la casa o l'oficina amb velocitat Gigabit. Longitud de 5 metres. Color negre.",
      "brand": "VENTION",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "6922794741089",
      "featured": false,
      "images": [
@@ -432,8 +432,8 @@
   {
    "body": "Cables HDMI 2.0 de Vention per connectar ordinadors, consoles, descodificadors i reproductors a televisors i monitors. Admeten resolucions **4K** i porten imatge i so digital per un sol cable.",
    "brand": "VENTION",
-   "category": "xarxa-i-cablejat",
-   "featured": false,
+   "category": "cables",
+   "featured": true,
    "images": [
     "/media/botiga/net-ven-aacbg.jpg",
     "/media/botiga/net-ven-aacbg-2.jpg",
@@ -453,9 +453,9 @@
      "availability": "on_order",
      "body": "Cable HDMI 2.0 de Vention per connectar ordinadors, consoles i reproductors a televisors i monitors, amb imatge 4K i so digital per un sol cable. Longitud d'1,5 metres, ideal per a connexions properes. Color negre.",
      "brand": "VENTION",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "6922794732650",
-     "featured": false,
+     "featured": true,
      "images": [
       "/media/botiga/net-ven-aacbg.jpg",
       "/media/botiga/net-ven-aacbg-2.jpg",
@@ -477,7 +477,7 @@
      "slug": "cable-hdmi-2-0-4k-vention-1-5-m",
      "summary": "Cable HDMI mascle a mascle Vention d'1,5 metres, compatible amb 4K.",
      "unit": "u",
-     "updated_at": "2026-10-20 23:39:27",
+     "updated_at": "2026-10-21 16:56:20",
      "variant": "1,5 m",
      "vat_pct": 21
     },
@@ -485,7 +485,7 @@
      "availability": "on_order",
      "body": "Cable HDMI 2.0 de Vention per connectar ordinadors, consoles, descodificadors i reproductors a televisors i monitors. Admet resolucions 4K i transmet imatge i so digital per un sol cable. Longitud de 2 metres. Color negre.",
      "brand": "VENTION",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "6922794732667",
      "featured": false,
      "images": [
@@ -517,7 +517,7 @@
   {
    "body": "Cables Vention d'1 metre per carregar i passar dades de mòbils, tauletes, auriculars i altres dispositius USB-C. Tria el connector de l'altre extrem segons el carregador o l'ordinador: **USB-A** (el clàssic) o **USB-C** (fins a 60 W).",
    "brand": "VENTION",
-   "category": "xarxa-i-cablejat",
+   "category": "cables",
    "featured": false,
    "images": [
     "/media/botiga/net-ven-cthbf.jpg",
@@ -535,7 +535,7 @@
      "availability": "on_order",
      "body": "Cable Vention amb connector USB-A a un extrem i USB-C a l'altre, per carregar i passar dades de mòbils, tauletes, auriculars i altres dispositius USB-C. Transferència USB 2.0 de fins a 480 Mbps. Longitud d'1 metre. Color negre.",
      "brand": "VENTION",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "6922794767478",
      "featured": false,
      "images": [
@@ -564,7 +564,7 @@
      "availability": "on_order",
      "body": "Cable Vention USB-C a USB-C per carregar mòbils, tauletes i portàtils compatibles amb potències de fins a 60 W (3 A) i passar dades a 480 Mbps. Longitud d'1 metre. Color blanc.",
      "brand": "VENTION",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "6922794783348",
      "featured": false,
      "images": [
@@ -594,7 +594,7 @@
   {
    "body": "Càmeres de vigilància d'interior TP-Link Tapo que es connecten al Wi-Fi i es controlen des de l'aplicació Tapo del mòbil. Amb **visió nocturna**, per veure en directe la casa o el negoci des de qualsevol lloc.",
    "brand": "TP-LINK",
-   "category": "xarxa-i-cablejat",
+   "category": "cables",
    "featured": false,
    "images": [
     "/media/botiga/net-tpl-tapotc70.jpg",
@@ -614,7 +614,7 @@
      "availability": "on_order",
      "body": "La TP-Link Tapo TC70 és una càmera de vigilància d'interior que es connecta al Wi-Fi i es controla des de l'aplicació Tapo del mòbil. Té visió nocturna i permet veure la casa en directe des de qualsevol lloc. Ideal per vigilar la llar, la botiga o els animals.",
      "brand": "TP-LINK",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "4897098681718",
      "featured": false,
      "images": [
@@ -645,7 +645,7 @@
      "availability": "on_order",
      "body": "La TP-Link Tapo TC71 és una càmera de vigilància d'interior amb connexió Wi-Fi, visió nocturna i control des de l'aplicació Tapo. Permet veure en directe què passa a casa o al negoci des del mòbil.",
      "brand": "TP-LINK",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "4895252502497",
      "featured": false,
      "images": [
@@ -676,7 +676,7 @@
   {
    "body": "Carregadors de paret Aisens compactes per carregar mòbils, tauletes, auriculars i rellotges. Els de **20 W** permeten càrrega ràpida en mòbils compatibles, i el model GaN té dos ports per carregar dos aparells alhora. El cable no s'inclou.",
    "brand": "AISENS",
-   "category": "xarxa-i-cablejat",
+   "category": "cables",
    "featured": false,
    "images": [
     "/media/botiga/net-ais-a1100537.jpg",
@@ -685,8 +685,8 @@
    ],
    "name": "Carregador de paret Aisens",
    "offer": true,
-   "price_from": 3.71,
-   "price_from_with_vat": 4.49,
+   "price_from": 3.3,
+   "price_from_with_vat": 3.99,
    "slug": "carregador-de-paret-aisens",
    "summary": "Carregadors de paret Aisens de 10,5 W i 20 W, amb sortida USB-A i USB-C.",
    "updated_at": "2026-10-20 23:08:36",
@@ -695,7 +695,7 @@
      "availability": "on_order",
      "body": "Carregador de paret Aisens amb un port USB-C de 20 W, suficient per carregar ràpidament mòbils i tauletes compatibles. Mida compacta per endur-se'l de viatge. El cable no s'inclou.",
      "brand": "AISENS",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "8436574706147",
      "featured": false,
      "images": [
@@ -708,8 +708,8 @@
      "model": "A1100537",
      "name": "Carregador de paret USB-C Aisens 20 W",
      "offer": false,
-     "price": 3.71,
-     "price_with_vat": 4.49,
+     "price": 3.3,
+     "price_with_vat": 3.99,
      "published_at": "2026-10-20 22:34:46",
      "pvpr": null,
      "pvpr_with_vat": null,
@@ -717,7 +717,7 @@
      "slug": "carregador-de-paret-usb-c-aisens-20-w",
      "summary": "Carregador de paret amb sortida USB-C de 20 W, per a càrrega ràpida del mòbil.",
      "unit": "u",
-     "updated_at": "2026-10-20 23:39:27",
+     "updated_at": "2026-10-21 16:56:20",
      "variant": "20 W USB-C",
      "vat_pct": 21
     },
@@ -725,7 +725,7 @@
      "availability": "on_order",
      "body": "Carregador de paret Aisens amb un port USB-A de 10,5 W per carregar mòbils, auriculars, rellotges i altres petits dispositius. Senzill i compacte. El cable no s'inclou.",
      "brand": "AISENS",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "8436574709926",
      "featured": false,
      "images": [
@@ -757,7 +757,7 @@
      "availability": "on_order",
      "body": "Carregador de paret Aisens amb tecnologia GaN, més petit i eficient, amb un port USB-C i un port USB-A i una potència total de 20 W. Permet carregar el mòbil i un altre dispositiu alhora. El cable no s'inclou. Color blanc.",
      "brand": "AISENS",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "8435739905012",
      "featured": false,
      "images": [
@@ -1452,7 +1452,7 @@
    "body": "El cartutx de tinta HP 301 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAquest model està disponible en versions originals i compatibles, segons l'opció seleccionada. Abans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP.\r\n\r\n### Sobre els cartutxos compatibles\r\n\r\nEls cartutxos compatibles no són productes originals del fabricant de la impressora. Tanmateix, són productes seleccionats i recomanats per nosaltres perquè oferim alternatives que considerem de qualitat i adequades per a l'ús habitual. La compatibilitat depèn del model d'impressora; comprova-la abans de fer la compra.",
    "brand": "KARKEMIS",
    "category": "tinta-i-toner",
-   "featured": true,
+   "featured": false,
    "images": [
     "/media/botiga/tin-kar-10050249.jpg"
    ],
@@ -1526,7 +1526,7 @@
      "brand": "KARKEMIS",
      "category": "tinta-i-toner",
      "ean": "8436033433485",
-     "featured": true,
+     "featured": false,
      "images": [
       "/media/botiga/tin-kar-10050068.jpg"
      ],
@@ -1544,7 +1544,7 @@
      "slug": "cartucho-de-tinta-reciclado-karkemis-hp-n-301-xl-alta-capacidad-multipack-negro",
      "summary": "Pack de dos cartutxos reciclats Karkemis d'alta capacitat, negre i tricolor, alternativa als HP 301XL.",
      "unit": "u",
-     "updated_at": "2026-10-20 23:39:27",
+     "updated_at": "2026-10-21 16:56:20",
      "variant": "Multipack XL (negre + tricolor)",
      "vat_pct": 21
     }
@@ -1790,7 +1790,7 @@
   {
    "body": "Pendrives Kingston DataTraveler Exodia amb connexió **USB 3.2**, molt més ràpids que els USB 2.0 a l'hora de copiar fitxers grans. Tenen tapa protectora i anella per penjar-los del clauer.",
    "brand": "KINGSTON",
-   "category": "emmagatzematge-extern",
+   "category": "discs-durs-externs",
    "featured": true,
    "images": [
     "/media/botiga/ext-kin-dtxs64gb.jpg",
@@ -1808,9 +1808,9 @@
      "availability": "on_order",
      "body": "Pendrive Kingston DataTraveler Exodia S de 64 GB amb connexió USB 3.2 Gen 1, per guardar i transportar fitxers amb rapidesa. La tapa giratòria protegeix el connector i no es perd.",
      "brand": "KINGSTON",
-     "category": "emmagatzematge-extern",
+     "category": "discs-durs-externs",
      "ean": "740617348651",
-     "featured": false,
+     "featured": true,
      "images": [
       "/media/botiga/ext-kin-dtxs64gb.jpg",
       "/media/botiga/ext-kin-dtxs64gb-2.jpg"
@@ -1829,7 +1829,7 @@
      "slug": "pendrive-64gb-kingston-datatraveler-exodia-s-usb-3-2",
      "summary": "Memòria USB Kingston de 64 GB amb connexió USB 3.2 i tapa giratòria.",
      "unit": "u",
-     "updated_at": "2026-10-20 23:39:27",
+     "updated_at": "2026-10-21 16:56:20",
      "variant": "64 GB",
      "vat_pct": 21
     },
@@ -1837,7 +1837,7 @@
      "availability": "on_order",
      "body": "Pendrive Kingston DataTraveler Exodia Gen2 de 128 GB amb connexió USB 3.2 Gen 1, per copiar fitxers grans molt més de pressa que amb un USB 2.0. Tapa protectora i anella per penjar-lo del clauer.",
      "brand": "KINGSTON",
-     "category": "emmagatzematge-extern",
+     "category": "discs-durs-externs",
      "ean": "740617353846",
      "featured": true,
      "images": [
@@ -1869,7 +1869,7 @@
   {
    "body": "L'HP 250R G10 és un portàtil de 15,6 polzades fiable per a la feina, els estudis i l'ús domèstic, amb disc SSD de 512 GB.\n\n- **Core 3, 8 GB, Windows 11**: llest per fer servir.\n- **Core 5, 16 GB, sense sistema operatiu**: més potència per a la multitasca.",
    "brand": "HP",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "featured": false,
    "images": [
     "/media/botiga/por-hp-d31vvat.jpg",
@@ -1890,7 +1890,7 @@
      "availability": "on_order",
      "body": "L'HP 250R G10 amb Intel Core 3 100U, 8 GB de RAM i SSD de 512 GB arriba amb Windows 11 instal·lat i llest per fer servir. Pantalla de 15,6 polzades. Ideal per a estudiants, ús domèstic i oficina.",
      "brand": "HP",
-     "category": "portatils-i-equips",
+     "category": "portatils",
      "ean": "199896416771",
      "featured": false,
      "images": [
@@ -1922,7 +1922,7 @@
      "availability": "on_order",
      "body": "L'HP 250R G10 combina un processador Intel Core 5 120U amb 16 GB de RAM i un SSD de 512 GB, prou potència per a la feina, els estudis i la multitasca. Pantalla de 15,6 polzades. Es ven sense sistema operatiu: el podem lliurar instal·lat i configurat a la botiga.",
      "brand": "HP",
-     "category": "portatils-i-equips",
+     "category": "portatils",
      "ean": "199896416795",
      "featured": false,
      "images": [
@@ -1956,7 +1956,7 @@
    "body": "Ratolins sense fil Logitech que funcionen en endollar el receptor USB, sense instal·lar res, amb una resolució de fins a 1000 DPI.\n\n- **M171**: compacte i ambidextre.\n- **M185**: petit i lleuger, ideal per al portàtil.\n- **M190**: de mida completa, més còmode per a jornades llargues.",
    "brand": "LOGITECH",
    "category": "teclats-i-ratolins",
-   "featured": false,
+   "featured": true,
    "images": [
     "/media/botiga/per-log-91000442.jpg",
     "/media/botiga/per-log-91000442-2.jpg",
@@ -2008,7 +2008,7 @@
      "brand": "LOGITECH",
      "category": "teclats-i-ratolins",
      "ean": "5099206027282",
-     "featured": false,
+     "featured": true,
      "images": [
       "/media/botiga/per-log-91000223.jpg",
       "/media/botiga/per-log-91000223-2.jpg",
@@ -2029,7 +2029,7 @@
      "slug": "ratoli-sense-fil-logitech-m185-gris",
      "summary": "Ratolí sense fil Logitech de mida compacta, amb receptor USB i fins a 1000 DPI.",
      "unit": "u",
-     "updated_at": "2026-10-20 23:39:27",
+     "updated_at": "2026-10-21 16:56:20",
      "variant": "M185",
      "vat_pct": 21
     },
@@ -2070,7 +2070,7 @@
   {
    "body": "Repetidors Wi-Fi TP-Link per portar la connexió sense fil a les habitacions on no arriba bé. S'endollen a la paret i es configuren en pocs minuts.\n\n- **TL-WA850RE**: 300 Mbps, banda de 2,4 GHz.\n- **RE200**: doble banda (2,4 i 5 GHz), fins a 750 Mbps.",
    "brand": "TP-LINK",
-   "category": "xarxa-i-cablejat",
+   "category": "cables",
    "featured": false,
    "images": [
     "/media/botiga/net-tpl-tlwa850r.jpg",
@@ -2091,7 +2091,7 @@
      "availability": "on_order",
      "body": "El TP-Link TL-WA850RE amplia la cobertura del Wi-Fi de casa fins a les zones on no arriba bé el senyal. S'endolla directament a la paret i es configura en pocs minuts amb el botó WPS. Velocitat de fins a 300 Mbps i port Ethernet per connectar un aparell per cable.",
      "brand": "TP-LINK",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "6935364070199",
      "featured": false,
      "images": [
@@ -2123,7 +2123,7 @@
      "availability": "on_order",
      "body": "El TP-Link RE200 amplia el Wi-Fi de casa en les bandes de 2,4 i 5 GHz, amb una velocitat combinada de fins a 750 Mbps. S'endolla a la paret, es configura fàcilment i té port Ethernet per connectar un televisor o una consola per cable.",
      "brand": "TP-LINK",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "6935364071295",
      "featured": false,
      "images": [
@@ -2155,7 +2155,7 @@
   {
    "body": "Routers Mesh **Wi-Fi 6** TP-Link per tenir una connexió sense fil ràpida i estable a tota la casa. Es poden combinar amb més unitats Mesh per ampliar la cobertura amb una sola xarxa.",
    "brand": "TP-LINK",
-   "category": "xarxa-i-cablejat",
+   "category": "cables",
    "featured": false,
    "images": [
     "/media/botiga/net-tpl-hx1411pa.jpg",
@@ -2175,7 +2175,7 @@
      "availability": "on_order",
      "body": "El TP-Link HX141 és un router Mesh Wi-Fi 6 AX1500 que ofereix una connexió sense fil més ràpida i estable que els routers antics. Es pot combinar amb altres unitats Mesh per cobrir tota la casa amb una sola xarxa. Paquet d'una unitat.",
      "brand": "TP-LINK",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "4895252503906",
      "featured": false,
      "images": [
@@ -2204,7 +2204,7 @@
      "availability": "on_order",
      "body": "El TP-Link HX520 és un router Mesh Wi-Fi 6 AX3000 per tenir bona cobertura sense fil a tota la casa. Té 3 ports Gigabit i es pot combinar amb altres unitats Mesh per ampliar la cobertura amb una sola xarxa. Paquet d'una unitat.",
      "brand": "TP-LINK",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "1210002603270",
      "featured": false,
      "images": [
@@ -2289,7 +2289,10 @@
      "ean": "8436584870197",
      "featured": false,
      "images": [
-      "/media/botiga/psu-sal-662af000-2.jpg"
+      "/media/botiga/psu-sal-662af000.jpg",
+      "/media/botiga/psu-sal-662af000-2.jpg",
+      "/media/botiga/psu-sal-662af000-3.jpg",
+      "/media/botiga/psu-sal-662af000-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2314,7 +2317,7 @@
   {
    "body": "Switchs de sobretaula TP-Link amb ports **Gigabit** 10/100/1000 per connectar per cable ordinadors, consoles, televisors i impressores. Funcionen en endollar-los, sense configuració.",
    "brand": "TP-LINK",
-   "category": "xarxa-i-cablejat",
+   "category": "cables",
    "featured": false,
    "images": [
     "/media/botiga/net-tpl-ls1005gv.jpg",
@@ -2335,7 +2338,7 @@
      "availability": "on_order",
      "body": "El TP-Link LS1005G és un switch compacte amb 5 ports Gigabit 10/100/1000 per ampliar les preses de xarxa del router. Funciona en endollar-lo, sense configuració, i ocupa molt poc espai a l'escriptori o darrere la tele.",
      "brand": "TP-LINK",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "1210002616157",
      "featured": false,
      "images": [
@@ -2367,7 +2370,7 @@
      "availability": "on_order",
      "body": "El TP-Link LS1008G és un switch de sobretaula amb 8 ports Gigabit 10/100/1000 per connectar per cable ordinadors, consoles, televisors i impressores. Funciona en endollar-lo, sense configuració. Ideal per a casa, despatxos i petites oficines.",
      "brand": "TP-LINK",
-     "category": "xarxa-i-cablejat",
+     "category": "cables",
      "ean": "1210002616195",
      "featured": false,
      "images": [
@@ -2399,7 +2402,7 @@
   {
    "body": "Targetes microSDXC Kingston Canvas Select Plus de classe 10 per ampliar la memòria de mòbils, tauletes, càmeres i consoles portàtils. Inclouen **adaptador SD** per fer-les servir en càmeres i ordinadors.",
    "brand": "KINGSTON",
-   "category": "emmagatzematge-extern",
+   "category": "discs-durs-externs",
    "featured": false,
    "images": [
     "/media/botiga/ext-kin-sdcs364g.jpg",
@@ -2418,7 +2421,7 @@
      "availability": "on_order",
      "body": "La Kingston Canvas Select Plus de 64 GB és una targeta microSDXC de classe 10 amb velocitats de lectura de fins a 100 MB/s, perfecta per a fotos, vídeos i aplicacions del mòbil o la tauleta. Inclou adaptador SD per fer-la servir en càmeres i ordinadors.",
      "brand": "KINGSTON",
-     "category": "emmagatzematge-extern",
+     "category": "discs-durs-externs",
      "ean": "740617348408",
      "featured": false,
      "images": [
@@ -2448,7 +2451,7 @@
      "availability": "on_order",
      "body": "La Kingston Canvas Select Plus de 128 GB és una targeta microSDXC de classe 10 amb velocitats de lectura de fins a 150 MB/s. És ideal per ampliar l'emmagatzematge de mòbils, tauletes, càmeres i consoles portàtils. Inclou adaptador SD per fer-la servir en càmeres i ordinadors.",
      "brand": "KINGSTON",
-     "category": "emmagatzematge-extern",
+     "category": "discs-durs-externs",
      "ean": "740617348453",
      "featured": false,
      "images": [
@@ -2480,9 +2483,69 @@
  "products": [
   {
    "availability": "on_order",
+   "body": "Carregador Aisens amb sortida USB-C Power Delivery de 65 W, que ajusta automàticament el voltatge entre 5 i 20 V segons el dispositiu. Serveix per a portàtils que es carreguen per USB-C, així com per a tauletes i mòbils. Color negre.",
+   "brand": "AISENS",
+   "category": "cables",
+   "ean": "8436574707946",
+   "featured": true,
+   "images": [
+    "/media/botiga/net-ais-asch1pd6.jpg",
+    "/media/botiga/net-ais-asch1pd6-2.jpg",
+    "/media/botiga/net-ais-asch1pd6-3.jpg",
+    "/media/botiga/net-ais-asch1pd6-4.jpg"
+   ],
+   "kind": "product",
+   "layout": "page",
+   "model": "ASCH1PD65DBK",
+   "name": "Carregador universal per a portàtil Aisens USB-C 65 W",
+   "offer": false,
+   "price": 30.16,
+   "price_with_vat": 36.49,
+   "published_at": "2026-10-20 22:34:46",
+   "pvpr": 33.05,
+   "pvpr_with_vat": 39.99,
+   "ref": "NET-AIS-ASCH1PD6",
+   "slug": "carregador-universal-per-a-portatil-aisens-usb-c-65-w",
+   "summary": "Carregador USB-C de 65 W per a portàtils, tauletes i mòbils, amb voltatge automàtic.",
+   "unit": "u",
+   "updated_at": "2026-10-21 16:56:20",
+   "vat_pct": 21
+  },
+  {
+   "availability": "on_order",
+   "body": "Hub USB 3.0 d'Aisens que multiplica un port USB de l'ordinador en quatre, per connectar alhora llapis USB, discos externs, ratolí, teclat i impressora. Velocitat USB 3.0 i funcionament sense instal·lació.",
+   "brand": "AISENS",
+   "category": "cables",
+   "ean": "8436574704112",
+   "featured": true,
+   "images": [
+    "/media/botiga/net-ais-a1060399.jpg",
+    "/media/botiga/net-ais-a1060399-2.jpg",
+    "/media/botiga/net-ais-a1060399-3.jpg",
+    "/media/botiga/net-ais-a1060399-4.jpg"
+   ],
+   "kind": "product",
+   "layout": "page",
+   "model": "A1060399",
+   "name": "Hub USB 3.0 Aisens de 4 ports",
+   "offer": true,
+   "price": 7.02,
+   "price_with_vat": 8.49,
+   "published_at": "2026-10-20 22:34:46",
+   "pvpr": 12.39,
+   "pvpr_with_vat": 14.99,
+   "ref": "NET-AIS-A1060399",
+   "slug": "hub-usb-3-0-aisens-de-4-ports",
+   "summary": "Concentrador USB 3.0 Aisens que converteix un port USB en quatre.",
+   "unit": "u",
+   "updated_at": "2026-10-21 16:56:20",
+   "vat_pct": 21
+  },
+  {
+   "availability": "on_order",
    "body": "El TP-Link TL-WN823N és un adaptador Wi-Fi USB de mida mini que afegeix connexió sense fil de fins a 300 Mbps a ordinadors de sobretaula o portàtils amb la Wi-Fi espatllada. Es connecta a un port USB i, gràcies a la seva mida, es pot deixar sempre posat.",
    "brand": "TP-LINK",
-   "category": "xarxa-i-cablejat",
+   "category": "cables",
    "ean": "6935364050696",
    "featured": false,
    "images": [
@@ -2690,36 +2753,6 @@
   },
   {
    "availability": "on_order",
-   "body": "Carregador Aisens amb sortida USB-C Power Delivery de 65 W, que ajusta automàticament el voltatge entre 5 i 20 V segons el dispositiu. Serveix per a portàtils que es carreguen per USB-C, així com per a tauletes i mòbils. Color negre.",
-   "brand": "AISENS",
-   "category": "xarxa-i-cablejat",
-   "ean": "8436574707946",
-   "featured": false,
-   "images": [
-    "/media/botiga/net-ais-asch1pd6.jpg",
-    "/media/botiga/net-ais-asch1pd6-2.jpg",
-    "/media/botiga/net-ais-asch1pd6-3.jpg",
-    "/media/botiga/net-ais-asch1pd6-4.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "ASCH1PD65DBK",
-   "name": "Carregador universal per a portàtil Aisens USB-C 65 W",
-   "offer": false,
-   "price": 30.16,
-   "price_with_vat": 36.49,
-   "published_at": "2026-10-20 22:34:46",
-   "pvpr": 33.05,
-   "pvpr_with_vat": 39.99,
-   "ref": "NET-AIS-ASCH1PD6",
-   "slug": "carregador-universal-per-a-portatil-aisens-usb-c-65-w",
-   "summary": "Carregador USB-C de 65 W per a portàtils, tauletes i mòbils, amb voltatge automàtic.",
-   "unit": "u",
-   "updated_at": "2026-10-20 23:39:27",
-   "vat_pct": 21
-  },
-  {
-   "availability": "on_order",
    "body": "Cartutx de tinta original Canon PG-540L de color negre, amb més tinta que el PG-540 estàndard. Compatible amb impressores Canon PIXMA que fan servir cartutxos 540. Consulta el model de la teva impressora abans de comprar.",
    "brand": "CANON",
    "category": "tinta-i-toner",
@@ -2749,7 +2782,7 @@
    "availability": "on_order",
    "body": "El Toshiba Canvio Ready de 1 TB és un disc dur extern de 2,5\" amb connexió USB 3.2, llest per fer servir en endollar-lo. Ideal per guardar còpies de seguretat, fotos i documents. S'alimenta pel cable USB, sense necessitat d'endoll. Color negre.",
    "brand": "TOSHIBA",
-   "category": "emmagatzematge-extern",
+   "category": "discs-durs-externs",
    "ean": "4260557511381",
    "featured": false,
    "images": [
@@ -2779,7 +2812,7 @@
    "availability": "on_order",
    "body": "El WD Elements Portable de 1 TB és un disc dur extern de 2,5\" per fer còpies de seguretat i portar a sobre fotos, documents i vídeos. Connexió USB 3.0, alimentat pel mateix cable, sense endoll. Compacte i fàcil de fer servir amb Windows.",
    "brand": "WESTERN DIGITAL",
-   "category": "emmagatzematge-extern",
+   "category": "discs-durs-externs",
    "ean": "718037855448",
    "featured": false,
    "images": [
@@ -2838,7 +2871,7 @@
    "availability": "on_order",
    "body": "La docking Aisens ASUC-6P019 converteix el port USB-C del portàtil en una sortida HDMI 4K, tres ports USB, una presa de xarxa RJ45 i un port USB-C Power Delivery per carregar el portàtil mentre la fas servir. Ideal per connectar monitor, teclat, ratolí i xarxa amb un sol cable. Color gris.",
    "brand": "AISENS",
-   "category": "xarxa-i-cablejat",
+   "category": "cables",
    "ean": "8435739901748",
    "featured": false,
    "images": [
@@ -2898,7 +2931,7 @@
    "availability": "on_order",
    "body": "L'Epson Expression Home XP-2200 imprimeix, copia i escaneja, i es connecta per Wi-Fi per imprimir des de l'ordinador o el mòbil. Fa servir cartutxos de tinta individuals Epson 604, de manera que només canvies el color que s'acaba. Compacta i ideal per a casa.",
    "brand": "Epson",
-   "category": "impresores",
+   "category": "impressores",
    "ean": "8715946702780",
    "featured": false,
    "images": [
@@ -2971,36 +3004,6 @@
    "ref": "TIN-HP-W1420A",
    "slug": "toner-hp-142a-negre",
    "summary": "Tòner original HP 142A negre per a impressores làser HP LaserJet.",
-   "unit": "u",
-   "updated_at": "2026-10-20 23:39:27",
-   "vat_pct": 21
-  },
-  {
-   "availability": "on_order",
-   "body": "Hub USB 3.0 d'Aisens que multiplica un port USB de l'ordinador en quatre, per connectar alhora llapis USB, discos externs, ratolí, teclat i impressora. Velocitat USB 3.0 i funcionament sense instal·lació.",
-   "brand": "AISENS",
-   "category": "xarxa-i-cablejat",
-   "ean": "8436574704112",
-   "featured": false,
-   "images": [
-    "/media/botiga/net-ais-a1060399.jpg",
-    "/media/botiga/net-ais-a1060399-2.jpg",
-    "/media/botiga/net-ais-a1060399-3.jpg",
-    "/media/botiga/net-ais-a1060399-4.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "A1060399",
-   "name": "Hub USB 3.0 Aisens de 4 ports",
-   "offer": true,
-   "price": 7.02,
-   "price_with_vat": 8.49,
-   "published_at": "2026-10-20 22:34:46",
-   "pvpr": 12.39,
-   "pvpr_with_vat": 14.99,
-   "ref": "NET-AIS-A1060399",
-   "slug": "hub-usb-3-0-aisens-de-4-ports",
-   "summary": "Concentrador USB 3.0 Aisens que converteix un port USB en quatre.",
    "unit": "u",
    "updated_at": "2026-10-20 23:39:27",
    "vat_pct": 21
@@ -3256,7 +3259,7 @@
    "availability": "on_order",
    "body": "La Canon PIXMA TS4150i imprimeix, copia i escaneja, i es connecta per Wi-Fi per imprimir des de l'ordinador o el mòbil. Fa impressió automàtica a doble cara per estalviar paper. Ideal per a casa i estudiants. Color blanc.",
    "brand": "CANON",
-   "category": "impresores",
+   "category": "impressores",
    "ean": "4549292248067",
    "featured": false,
    "images": [
@@ -3287,7 +3290,7 @@
    "availability": "on_order",
    "body": "La Canon PIXMA TS7750i és una multifunció pensada per imprimir fotos amb molt bona qualitat i també documents. Imprimeix, copia i escaneja, té connexió Wi-Fi per imprimir des del mòbil i fa impressió automàtica a doble cara. Color blanc.",
    "brand": "CANON",
-   "category": "impresores",
+   "category": "impressores",
    "ean": "4549292221411",
    "featured": false,
    "images": [
@@ -3438,7 +3441,7 @@
    "availability": "on_order",
    "body": "L'Asus VivoBook 15 porta un processador AMD Ryzen 7 7840HS d'alt rendiment, amb gràfics integrats Radeon, 8 GB de RAM i un SSD de 512 GB. Ideal per a qui necessita més potència per a programes exigents, edició lleugera o multitasca. Pantalla de 15,6 polzades i Windows 11.",
    "brand": "ASUS",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "ean": "4711636653770",
    "featured": false,
    "images": [
@@ -3469,7 +3472,7 @@
    "availability": "on_order",
    "body": "L'Asus VivoBook 15 X1504MA té un processador Intel Core 3 304, 8 GB de RAM i un disc SSD de 256 GB, i una pantalla de 15,6 polzades. És una opció econòmica per a estudis, ofimàtica i navegació. Es ven sense sistema operatiu: el podem lliurar instal·lat i configurat a la botiga.",
    "brand": "ASUS",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "ean": "4711636671101",
    "featured": false,
    "images": [
@@ -3500,7 +3503,7 @@
    "availability": "on_order",
    "body": "L'HP EliteBook 8 G1i és un portàtil d'empresa de gamma alta amb processador Intel Core Ultra 5 226V, 16 GB de RAM, SSD de 512 GB i pantalla de 14 polzades. Inclou Windows 11 Pro i les funcions de seguretat HP Wolf Pro Security. Lleuger i pensat per treballar fora de l'oficina.",
    "brand": "HP",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "ean": "821844605493",
    "featured": false,
    "images": [
@@ -3531,7 +3534,7 @@
    "availability": "on_order",
    "body": "L'HP OmniBook 3 combina una pantalla gran de 16 polzades amb un processador AMD Ryzen 5, 16 GB de RAM i un SSD de 512 GB. És una bona opció per treballar amb diverses finestres obertes, estudiar i fer servir a casa. Arriba amb Windows 11 instal·lat.",
    "brand": "HP",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "ean": "199896112536",
    "featured": false,
    "images": [
@@ -3562,7 +3565,7 @@
    "availability": "on_order",
    "body": "El Lenovo ThinkPad L14 Gen 5 és un portàtil professional pensat per a empreses i autònoms: processador AMD Ryzen 5 PRO 7535U, 16 GB de RAM, SSD de 512 GB, pantalla de 14 polzades i Windows 11 Pro. Compacte, resistent i amb el teclat característic dels ThinkPad.",
    "brand": "LENOVO",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "ean": "198154724085",
    "featured": false,
    "images": [
@@ -3593,7 +3596,7 @@
    "availability": "on_order",
    "body": "El Lenovo V15 G6 és un portàtil senzill i econòmic per a ofimàtica, navegació, classes en línia i videotrucades. Té un processador Intel N100, 8 GB de RAM, un SSD de 256 GB i pantalla Full HD de 15,6 polzades. Arriba amb Windows 11 instal·lat i llest per fer servir.",
    "brand": "LENOVO",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "ean": "199272592235",
    "featured": false,
    "images": [
@@ -3624,7 +3627,7 @@
    "availability": "on_order",
    "body": "El Samsung Galaxy Book4 té un processador Intel Core i5-1335U, 16 GB de RAM i un SSD de 512 GB, amb pantalla de 15,6 polzades i Windows 11 Pro. Un portàtil fiable i elegant per a la feina i l'ús diari, que s'integra bé amb els mòbils i tauletes Samsung Galaxy.",
    "brand": "SAMSUNG",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "ean": "8806095768267",
    "featured": false,
    "images": [
@@ -3761,8 +3764,8 @@
    "model": "BNS1520",
    "name": "Regleta Phasak de 8 endolls amb interruptor i cable de 3 m",
    "offer": false,
-   "price": 26.85,
-   "price_with_vat": 32.49,
+   "price": 23.13,
+   "price_with_vat": 27.99,
    "published_at": "2026-10-20 22:34:46",
    "pvpr": null,
    "pvpr_with_vat": null,
@@ -3770,14 +3773,14 @@
    "slug": "regleta-phasak-de-8-endolls-amb-interruptor-i-cable-de-3-m",
    "summary": "Base múltiple Phasak de 8 preses amb interruptor i cable llarg de 3 metres.",
    "unit": "u",
-   "updated_at": "2026-10-20 23:39:27",
+   "updated_at": "2026-10-21 16:56:20",
    "vat_pct": 21
   },
   {
    "availability": "on_order",
    "body": "L'Apple iPhone 17 té una pantalla de 6,3 polzades, connexió 5G i 256 GB d'emmagatzematge. El mòbil actual d'Apple, amb iOS i tot l'ecosistema de serveis d'Apple. Color blanc.",
    "brand": "APPLE",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "195950643701",
    "featured": false,
    "images": [
@@ -3804,7 +3807,7 @@
    "availability": "on_order",
    "body": "El Motorola Edge 70 Fusion ofereix connexió 5G, una pantalla de 6,78 polzades, 8 GB de RAM i 256 GB d'emmagatzematge. Un mòbil de gamma mitjana amb disseny cuidat i bones prestacions per al dia a dia. Color negre.",
    "brand": "MOTOROLA",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "840493611037",
    "featured": false,
    "images": [
@@ -3835,7 +3838,7 @@
    "availability": "on_order",
    "body": "El Motorola Moto G06 és un mòbil econòmic amb pantalla gran de 6,88 polzades, 4 GB de RAM i 64 GB d'emmagatzematge. Una bona opció com a primer mòbil o per a qui vol un telèfon senzill per a trucades, missatges i xarxes socials. Color blau.",
    "brand": "MOTOROLA",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "840493601885",
    "featured": false,
    "images": [
@@ -3866,7 +3869,7 @@
    "availability": "on_order",
    "body": "L'Ulefone Armor X12 Pro és un mòbil robust preparat per a cops, pols i aigua, ideal per treballar al camp, a l'obra o al taller. Té pantalla de 5,45 polzades, 4 GB de RAM i 64 GB d'emmagatzematge. Color negre.",
    "brand": "ULEFONE",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "6937748735427",
    "featured": false,
    "images": [
@@ -3897,7 +3900,7 @@
    "availability": "on_order",
    "body": "El Samsung Galaxy A17 té una pantalla de 6,7 polzades, 4 GB de RAM i 128 GB d'emmagatzematge per a fotos, aplicacions i vídeos. Un mòbil equilibrat per al dia a dia d'una marca de confiança. Color negre.",
    "brand": "SAMSUNG",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "8806097651000",
    "featured": false,
    "images": [
@@ -3928,7 +3931,7 @@
    "availability": "on_order",
    "body": "El Samsung Galaxy A27 és un mòbil de gamma mitjana amb connexió 5G, pantalla de 6,7 polzades, 8 GB de RAM i 256 GB d'emmagatzematge per a fotos, vídeos i aplicacions. Un equilibri molt bo entre prestacions i preu. Color negre.",
    "brand": "SAMSUNG",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "8806099353445",
    "featured": false,
    "images": [
@@ -3959,7 +3962,7 @@
    "availability": "on_order",
    "body": "El Samsung Galaxy S26 és el mòbil de gamma alta de Samsung en mida compacta: pantalla de 6,3 polzades, connexió 5G, 12 GB de RAM i 512 GB d'emmagatzematge. Color negre.",
    "brand": "SAMSUNG",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "8806097827436",
    "featured": false,
    "images": [
@@ -3990,7 +3993,7 @@
    "availability": "on_order",
    "body": "El Samsung Galaxy S26 FE porta les característiques de la gamma Galaxy S a un preu més assequible: pantalla de 6,7 polzades, connexió 5G, 8 GB de RAM i 128 GB d'emmagatzematge. Color negre grafit.",
    "brand": "SAMSUNG",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "8806099395414",
    "featured": false,
    "images": [
@@ -4021,7 +4024,7 @@
    "availability": "on_order",
    "body": "El Xiaomi 17T és un mòbil de gamma alta amb connexió 5G, pantalla de 6,59 polzades, 12 GB de RAM i 512 GB d'emmagatzematge, espai de sobres per a fotos, vídeos i aplicacions. Color negre.",
    "brand": "XIAOMI",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "6932554447939",
    "featured": false,
    "images": [
@@ -4052,7 +4055,7 @@
    "availability": "on_order",
    "body": "El Xiaomi Redmi 17 ofereix una pantalla gran de 6,9 polzades, 4 GB de RAM i 128 GB d'emmagatzematge a un preu molt ajustat. Un mòbil complet per al dia a dia. Color blau.",
    "brand": "XIAOMI",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "6939093017906",
    "featured": false,
    "images": [
@@ -4083,7 +4086,7 @@
    "availability": "on_order",
    "body": "El Xiaomi Redmi A7 Pro és un mòbil econòmic amb pantalla de 6,9 polzades, 4 GB de RAM i 64 GB d'emmagatzematge. Ideal com a primer mòbil o per a qui vol un telèfon senzill per a trucades, missatges i xarxes socials. Color negre.",
    "brand": "XIAOMI",
-   "category": "telefons",
+   "category": "telefons-mobils",
    "ean": "6932554493271",
    "featured": false,
    "images": [
@@ -4114,7 +4117,7 @@
    "availability": "on_order",
    "body": "La Lenovo Idea Tab té una pantalla d'11 polzades amb resolució 2,5K, 8 GB de RAM i 256 GB d'emmagatzematge, i inclou el llapis digital Lenovo Tab Pen per prendre notes i dibuixar. Ideal per estudiar, llegir i veure sèries. Color gris.",
    "brand": "LENOVO",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "ean": "0198157039148",
    "featured": false,
    "images": [
@@ -4145,7 +4148,7 @@
    "availability": "on_order",
    "body": "La Samsung Galaxy Tab A11+ té una pantalla d'11 polzades, processador de vuit nuclis, 6 GB de RAM i 128 GB d'emmagatzematge. Perfecta per veure sèries, llegir, estudiar i fer videotrucades. Color gris.",
    "brand": "SAMSUNG",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "ean": "8806097855040",
    "featured": false,
    "images": [
@@ -4176,7 +4179,7 @@
    "availability": "on_order",
    "body": "La Xiaomi Redmi Pad 2 té una pantalla d'11 polzades, processador de vuit nuclis, 4 GB de RAM i 256 GB d'emmagatzematge per guardar fotos, vídeos i aplicacions. Ideal per a l'oci, l'estudi i les videotrucades. Color gris grafit.",
    "brand": "XIAOMI",
-   "category": "portatils-i-equips",
+   "category": "portatils",
    "ean": "6932554450960",
    "featured": false,
    "images": [
