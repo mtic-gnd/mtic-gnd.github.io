@@ -43,7 +43,7 @@
    "slug": "ordinadors-sobretaula"
   },
   {
-   "count": 4,
+   "count": 5,
    "layout": "page",
    "name": "Pantalles",
    "slug": "pantalles"
@@ -73,9 +73,9 @@
    "slug": "tinta-i-toner"
   }
  ],
- "count": 86,
+ "count": 87,
  "currency": "EUR",
- "generated_at": "2026-10-22 03:32:11",
+ "generated_at": "2026-10-22 09:35:38",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2593,6 +2593,36 @@
    "summary": "Concentrador USB 3.0 Aisens que converteix un port USB en quatre.",
    "unit": "u",
    "updated_at": "2026-10-21 16:56:20",
+   "vat_pct": 21
+  },
+  {
+   "availability": "on_order",
+   "body": null,
+   "brand": "NILOX",
+   "category": "pantalles",
+   "ean": "8431775035935",
+   "featured": true,
+   "images": [
+    "/media/botiga/lcd-nil-nxm24crv.jpg",
+    "/media/botiga/lcd-nil-nxm24crv-2.jpg",
+    "/media/botiga/lcd-nil-nxm24crv-3.jpg",
+    "/media/botiga/lcd-nil-nxm24crv-4.jpg"
+   ],
+   "kind": "product",
+   "layout": "page",
+   "model": "NXM24CRV2001",
+   "name": "Nilox NXM24CRV2001 24\" VA Full HD 200 Hz",
+   "offer": true,
+   "price": 57.85,
+   "price_with_vat": 70,
+   "published_at": "2026-10-22 09:02:00",
+   "pvpr": 68.59,
+   "pvpr_with_vat": 82.99,
+   "ref": "LCD-NIL-NXM24CRV",
+   "slug": "nilox-nxm24crv2001-monitor-24-va200hz-hdmi-dp-curv",
+   "summary": "Monitor corbat de 24\" Full HD amb 200 Hz i 1 ms, ideal per jugar i treballar amb fluïdesa.",
+   "unit": "u",
+   "updated_at": "2026-10-22 09:11:49",
    "vat_pct": 21
   },
   {
