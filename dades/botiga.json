@@ -49,7 +49,7 @@
    "slug": "pantalles"
   },
   {
-   "count": 11,
+   "count": 12,
    "layout": "page",
    "name": "Portàtils",
    "slug": "portatils"
@@ -73,9 +73,9 @@
    "slug": "tinta-i-toner"
   }
  ],
- "count": 87,
+ "count": 88,
  "currency": "EUR",
- "generated_at": "2026-10-22 15:48:13",
+ "generated_at": "2026-10-22 20:33:09",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2689,6 +2689,38 @@
   },
   {
    "availability": "on_order",
+   "body": "Portàtil Asus Vivobook 15 amb processador Intel Core 5 120U, 16 GB de RAM i un SSD de 512 GB, amb pantalla de 15,6 polzades. És una bona opció per treballar, estudiar i per a l'ús de cada dia. Es ven sense sistema operatiu: te'l podem lliurar amb el sistema instal·lat i configurat a la botiga.",
+   "brand": "Asus",
+   "category": "portatils",
+   "ean": "4711636718868",
+   "featured": false,
+   "images": [
+    "/media/botiga/por-asu-90nb13y2.jpg",
+    "/media/botiga/por-asu-90nb13y2-2.jpg",
+    "/media/botiga/por-asu-90nb13y2-3.jpg",
+    "/media/botiga/por-asu-90nb13y2-4.jpg",
+    "/media/botiga/por-asu-90nb13y2-5.jpg",
+    "/media/botiga/por-asu-90nb13y2-6.jpg"
+   ],
+   "kind": "product",
+   "layout": "page",
+   "model": "90NB13Y2M03N00",
+   "name": "Portàtil Asus Vivobook 15 X1504VA Intel Core 5 120U 16 GB RAM 512 GB SSD 15,6\" sense sistema operatiu",
+   "offer": true,
+   "price": 504.12,
+   "price_with_vat": 609.99,
+   "published_at": "2026-10-22 16:20:26",
+   "pvpr": 538,
+   "pvpr_with_vat": 650.98,
+   "ref": "POR-ASU-90NB13Y2",
+   "slug": "portatil-asus-vivobook-15-x1504va-intel-core-5-120u-16-gb-ram-512-gb-ssd-15-6-se",
+   "summary": "Portàtil de 15,6\" amb Core 5 i 16 GB de RAM, àgil per treballar i estudiar.",
+   "unit": "u",
+   "updated_at": "2026-10-22 16:20:26",
+   "vat_pct": 21
+  },
+  {
+   "availability": "on_order",
    "body": "Els Vention Echo Clip A11 Pro tenen un disseny obert de clip que s'aguanta a l'orella sense entrar al conducte auditiu, de manera que pots seguir escoltant l'entorn. Connexió Bluetooth, estoig de càrrega i fins a 6 hores d'autonomia per càrrega. Color negre.",
    "brand": "VENTION",
    "category": "accessoris",
@@ -2871,7 +2903,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "El Toshiba Canvio Ready de 1 TB és un disc dur extern de 2,5\" amb connexió USB 3.2, llest per fer servir en endollar-lo. Ideal per guardar còpies de seguretat, fotos i documents. S'alimenta pel cable USB, sense necessitat d'endoll. Color negre.",
    "brand": "TOSHIBA",
    "category": "discs-durs-externs",
