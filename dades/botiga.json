@@ -75,7 +75,7 @@
  ],
  "count": 88,
  "currency": "EUR",
- "generated_at": "2026-10-22 20:33:09",
+ "generated_at": "2026-10-23 00:20:42",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2910,11 +2910,7 @@
    "ean": "4260557511381",
    "featured": false,
    "images": [
-    "/media/botiga/ext-tos-hdtp310e.jpg",
-    "/media/botiga/ext-tos-hdtp310e-2.jpg",
-    "/media/botiga/ext-tos-hdtp310e-3.jpg",
-    "/media/botiga/ext-tos-hdtp310e-4.jpg",
-    "/media/botiga/ext-tos-hdtp310e-5.jpg"
+    "/media/botiga/ext-tos-hdtp310e.jpg"
    ],
    "kind": "product",
    "layout": "page",
