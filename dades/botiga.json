@@ -75,7 +75,7 @@
  ],
  "count": 89,
  "currency": "EUR",
- "generated_at": "2026-10-23 15:26:53",
+ "generated_at": "2026-10-23 20:21:32",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -1956,14 +1956,18 @@
      "vat_pct": 21
     },
     {
-     "availability": "unknown",
+     "availability": "on_order",
      "body": "L'HP 250R G10 combina un processador Intel Core 5 120U amb 16 GB de RAM i un SSD de 512 GB, prou potència per a la feina, els estudis i la multitasca. Pantalla de 15,6 polzades. Es ven sense sistema operatiu: el podem lliurar instal·lat i configurat a la botiga.",
      "brand": "HP",
      "category": "portatils",
      "ean": "199896416795",
      "featured": false,
      "images": [
-      "/media/botiga/por-hp-d31vwat.jpg"
+      "/media/botiga/por-hp-d31vwat.jpg",
+      "/media/botiga/por-hp-d31vwat-2.jpg",
+      "/media/botiga/por-hp-d31vwat-3.jpg",
+      "/media/botiga/por-hp-d31vwat-4.jpg",
+      "/media/botiga/por-hp-d31vwat-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2593,7 +2597,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": null,
    "brand": "NILOX",
    "category": "pantalles",
@@ -3263,7 +3267,9 @@
     "/media/botiga/acc-log-96000159.jpg",
     "/media/botiga/acc-log-96000159-2.jpg",
     "/media/botiga/acc-log-96000159-3.jpg",
-    "/media/botiga/acc-log-96000159-4.jpg"
+    "/media/botiga/acc-log-96000159-4.jpg",
+    "/media/botiga/acc-log-96000159-5.jpg",
+    "/media/botiga/acc-log-96000159-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
