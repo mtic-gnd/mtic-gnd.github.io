@@ -49,7 +49,7 @@
    "slug": "pantalles"
   },
   {
-   "count": 12,
+   "count": 13,
    "layout": "page",
    "name": "Portàtils",
    "slug": "portatils"
@@ -73,9 +73,9 @@
    "slug": "tinta-i-toner"
   }
  ],
- "count": 88,
+ "count": 89,
  "currency": "EUR",
- "generated_at": "2026-10-23 03:31:18",
+ "generated_at": "2026-10-23 09:32:11",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2685,6 +2685,38 @@
    "summary": "Altaveu portàtil Bluetooth Hiditec de 5 W, compacte i amb bateria recarregable.",
    "unit": "u",
    "updated_at": "2026-10-20 23:39:27",
+   "vat_pct": 21
+  },
+  {
+   "availability": "on_order",
+   "body": "Portàtil Asus ExpertBook P3, de la gamma per a empreses, amb processador Intel Core Ultra 5 225H, 16 GB de RAM i un SSD de 512 GB. La pantalla de 16 polzades té resolució 1920 × 1200, i porta Thunderbolt 4, HDMI i port de xarxa RJ-45. Pesa 1,77 kg. Es ven sense sistema operatiu: te'l podem lliurar amb el sistema instal·lat i configurat a la botiga.",
+   "brand": "Asus Business",
+   "category": "portatils",
+   "ean": "4711636621199",
+   "featured": false,
+   "images": [
+    "/media/botiga/por-asu-p3606cca.jpg",
+    "/media/botiga/por-asu-p3606cca-2.jpg",
+    "/media/botiga/por-asu-p3606cca-3.jpg",
+    "/media/botiga/por-asu-p3606cca-4.jpg",
+    "/media/botiga/por-asu-p3606cca-5.jpg",
+    "/media/botiga/por-asu-p3606cca-6.jpg"
+   ],
+   "kind": "product",
+   "layout": "page",
+   "model": "P3606CCAMB0370",
+   "name": "Portàtil Asus ExpertBook P3 Intel Core Ultra 5 225H 16 GB RAM 512 GB SSD 16\" sense sistema operatiu",
+   "offer": true,
+   "price": 619.83,
+   "price_with_vat": 749.99,
+   "published_at": "2026-10-23 09:17:41",
+   "pvpr": null,
+   "pvpr_with_vat": null,
+   "ref": "POR-ASU-P3606CCA",
+   "slug": "portatil-asus-expertbook-p3-intel-core-ultra-5-225h-16-gb-ram-512-gb-ssd-16-sens",
+   "summary": "Portàtil professional de 16\" amb Core Ultra 5, 16 GB de RAM i Thunderbolt 4, ideal per a l'empresa.",
+   "unit": "u",
+   "updated_at": "2026-10-23 09:21:32",
    "vat_pct": 21
   },
   {
