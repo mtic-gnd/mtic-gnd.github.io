@@ -75,7 +75,7 @@
  ],
  "count": 89,
  "currency": "EUR",
- "generated_at": "2026-10-24 02:42:02",
+ "generated_at": "2026-10-24 07:53:29",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2597,7 +2597,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
+   "availability": "on_order",
    "body": null,
    "brand": "NILOX",
    "category": "pantalles",
