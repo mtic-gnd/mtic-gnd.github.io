@@ -75,7 +75,7 @@
  ],
  "count": 88,
  "currency": "EUR",
- "generated_at": "2026-10-26 17:48:57",
+ "generated_at": "2026-10-26 20:19:30",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -1597,15 +1597,13 @@
    "updated_at": "2026-10-26 17:48:32",
    "variants": [
     {
-     "availability": "on_order",
+     "availability": "unknown",
      "body": "Cartutx de tinta reciclat Karkemis de color negre i alta capacitat que substitueix l'original HP 301XL. Ideal per imprimir textos i documents a un cost per pàgina més baix. Compatible amb HP DeskJet de les sèries 1000, 2000 i 3000, HP ENVY 4500 i 5530 i HP OfficeJet 2620 i 4630, entre d'altres. Consulta el model de la teva impressora abans de comprar.",
      "brand": "KARKEMIS",
      "category": "tinta-i-toner",
      "ean": "8436033438350",
      "featured": false,
-     "images": [
-      "/media/botiga/tin-kar-10050249.jpg"
-     ],
+     "images": [],
      "kind": "product",
      "layout": "page",
      "model": "10050249",
@@ -1983,7 +1981,8 @@
       "/media/botiga/ext-kin-dtxg2128.jpg",
       "/media/botiga/ext-kin-dtxg2128-2.jpg",
       "/media/botiga/ext-kin-dtxg2128-3.jpg",
-      "/media/botiga/ext-kin-dtxg2128-4.jpg"
+      "/media/botiga/ext-kin-dtxg2128-4.jpg",
+      "/media/botiga/ext-kin-dtxg2128-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
