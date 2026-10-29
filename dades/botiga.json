@@ -75,7 +75,7 @@
  ],
  "count": 88,
  "currency": "EUR",
- "generated_at": "2026-10-29 15:19:18",
+ "generated_at": "2026-10-29 21:17:39",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -3019,7 +3019,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "La docking Aisens ASUC-6P019 converteix el port USB-C del portàtil en una sortida HDMI 4K, tres ports USB, una presa de xarxa RJ45 i un port USB-C Power Delivery per carregar el portàtil mentre la fas servir. Ideal per connectar monitor, teclat, ratolí i xarxa amb un sol cable. Color gris.",
    "brand": "AISENS",
    "category": "cables",
