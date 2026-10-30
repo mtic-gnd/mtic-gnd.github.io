@@ -75,7 +75,7 @@
  ],
  "count": 88,
  "currency": "EUR",
- "generated_at": "2026-10-30 15:08:08",
+ "generated_at": "2026-10-30 20:22:15",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -4299,19 +4299,14 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "La Lenovo Idea Tab té una pantalla d'11 polzades amb resolució 2,5K, 8 GB de RAM i 256 GB d'emmagatzematge, i inclou el llapis digital Lenovo Tab Pen per prendre notes i dibuixar. Ideal per estudiar, llegir i veure sèries. Color gris.",
    "brand": "LENOVO",
    "category": "portatils",
    "ean": "0198157039148",
    "featured": false,
    "images": [
-    "/media/botiga/por-len-zafr0399.jpg",
-    "/media/botiga/por-len-zafr0399-2.jpg",
-    "/media/botiga/por-len-zafr0399-3.jpg",
-    "/media/botiga/por-len-zafr0399-4.jpg",
-    "/media/botiga/por-len-zafr0399-5.jpg",
-    "/media/botiga/por-len-zafr0399-6.jpg"
+    "/media/botiga/por-len-zafr0399.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4438,7 +4433,8 @@
     "/media/botiga/per-ngs-cocoakit-2.jpg",
     "/media/botiga/per-ngs-cocoakit-3.jpg",
     "/media/botiga/per-ngs-cocoakit-4.jpg",
-    "/media/botiga/per-ngs-cocoakit-5.jpg"
+    "/media/botiga/per-ngs-cocoakit-5.jpg",
+    "/media/botiga/per-ngs-cocoakit-6.jpg"
    ],
    "kind": "product",
    "layout": "page",
