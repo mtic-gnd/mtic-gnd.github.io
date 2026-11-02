@@ -75,7 +75,7 @@
  ],
  "count": 88,
  "currency": "EUR",
- "generated_at": "2026-11-02 09:59:39",
+ "generated_at": "2026-11-02 10:05:17",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -129,6 +129,38 @@
     },
     {
      "availability": "on_order",
+     "body": "Els Logitech H340 ofereixen so digital clar per USB i un micròfon amb cancel·lació de soroll que es pot girar quan no es fa servir. La diadema ajustable i els coixinets acolchats els fan còmodes per a jornades llargues de videotrucades. Color negre.",
+     "brand": "LOGITECH",
+     "category": "accessoris",
+     "ean": "5099206038844",
+     "featured": false,
+     "images": [
+      "/media/botiga/acc-log-98100047.jpg",
+      "/media/botiga/acc-log-98100047-2.jpg",
+      "/media/botiga/acc-log-98100047-3.jpg",
+      "/media/botiga/acc-log-98100047-4.jpg",
+      "/media/botiga/acc-log-98100047-5.jpg"
+     ],
+     "kind": "product",
+     "layout": "page",
+     "model": "981000475",
+     "name": "Auriculars amb micròfon Logitech H340 USB",
+     "offer": false,
+     "price": 18.59,
+     "price_with_vat": 22.49,
+     "published_at": "2026-10-20 22:34:46",
+     "pvpr": null,
+     "pvpr_with_vat": null,
+     "ref": "ACC-LOG-98100047",
+     "slug": "auriculars-amb-microfon-logitech-h340-usb",
+     "summary": "Auriculars USB Logitech amb micròfon amb cancel·lació de soroll, còmodes per a hores de feina.",
+     "unit": "u",
+     "updated_at": "2026-11-02 10:04:51",
+     "variant": "H340",
+     "vat_pct": 21
+    },
+    {
+     "availability": "on_order",
      "body": "Auriculars Logitech H390 amb micròfon i connexió USB, pensats per a videotrucades, classes en línia i teletreball.",
      "brand": "Logitech",
      "category": "accessoris",
@@ -156,7 +188,7 @@
      "slug": "auriculars-amb-microfon-logitech-h390-usb",
      "summary": "Auriculars de diadema Logitech amb micròfon i connexió USB per a videotrucades.",
      "unit": "u",
-     "updated_at": "2026-11-02 09:58:59",
+     "updated_at": "2026-11-02 10:04:17",
      "variant": "H390",
      "vat_pct": 21
     }
@@ -244,7 +276,7 @@
      "slug": "bateria-externa-vention-10000-mah-22-5-w-blanca",
      "summary": "Powerbank Vention de 10000 mAh amb càrrega de 22,5 W, en color blanc.",
      "unit": "u",
-     "updated_at": "2026-11-02 09:58:59",
+     "updated_at": "2026-11-02 10:04:17",
      "variant": "10000 mAh 22,5 W Blanca",
      "vat_pct": 21
     },
@@ -957,12 +989,41 @@
    ],
    "name": "Cartutx de tinta Canon PG-545 i CL-546",
    "offer": true,
-   "price_from": 19.41,
-   "price_from_with_vat": 23.49,
+   "price_from": 15.28,
+   "price_from_with_vat": 18.49,
    "slug": "cartutx-de-tinta-canon-pg-545-cl-546",
    "summary": "Cartutxos de tinta originals Canon PG-545 i CL-546 per a impressores PIXMA.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
+    {
+     "availability": "on_order",
+     "body": "Cartutx de tinta original Canon PG-545 de color negre i capacitat estàndard per imprimir textos i documents. Compatible amb impressores Canon PIXMA que fan servir cartutxos 545. Consulta el model de la teva impressora abans de comprar.",
+     "brand": "CANON",
+     "category": "tinta-i-toner",
+     "ean": "4960999974507",
+     "featured": false,
+     "images": [
+      "/media/botiga/tin-can-8287b001.jpg",
+      "/media/botiga/tin-can-8287b001-2.jpg"
+     ],
+     "kind": "product",
+     "layout": "page",
+     "model": "8287B001",
+     "name": "Cartutx de tinta Canon PG-545 Negre",
+     "offer": false,
+     "price": 15.28,
+     "price_with_vat": 18.49,
+     "published_at": "2026-10-20 22:34:46",
+     "pvpr": null,
+     "pvpr_with_vat": null,
+     "ref": "TIN-CAN-8287B001",
+     "slug": "cartutx-de-tinta-canon-pg-545-negre",
+     "summary": "Cartutx de tinta original Canon PG-545 negre de capacitat estàndard.",
+     "unit": "u",
+     "updated_at": "2026-11-02 10:04:32",
+     "variant": "Negre",
+     "vat_pct": 21
+    },
     {
      "availability": "on_order",
      "body": "Cartutx de tinta original Canon CL-546XL tricolor (cian, magenta i groc) d'alta capacitat, per imprimir més pàgines en color. Compatible amb impressores Canon PIXMA que fan servir cartutxos 546. Consulta el model de la teva impressora abans de comprar.",
@@ -1598,7 +1659,7 @@
    "price_from_with_vat": 16,
    "slug": "cartutx-de-tinta-reciclat-karkemis-hp-301",
    "summary": "Cartutx de tinta HP 301 per imprimir documents, textos i treballs amb bona qualitat d'impressió.",
-   "updated_at": "2026-11-02 09:58:59",
+   "updated_at": "2026-11-02 10:04:17",
    "variants": [
     {
      "availability": "on_order",
@@ -3013,7 +3074,7 @@
    "slug": "multipack-d-ampolles-de-tinta-epson-ecotank-104-de-4-colors",
    "summary": "Pack de quatre ampolles de tinta Epson EcoTank 104.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:38",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -3069,7 +3130,7 @@
    "slug": "toner-hp-106a-negre",
    "summary": "Tòner original HP 106A negre per a impressores làser HP.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:38",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -3277,7 +3338,7 @@
    "slug": "monitor-aoc-24b3ha2-de-23-8-full-hd-amb-altaveus",
    "summary": "Monitor AOC de 23,8\" Full HD multimèdia, senzill per a casa i oficina.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:37",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -3340,7 +3401,7 @@
    "slug": "monitor-asus-va249hg-de-23-8-full-hd-120-hz",
    "summary": "Monitor Asus de 23,8\" IPS Full HD, 120 Hz i 1 ms, per a casa, l'oficina i el joc.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:37",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -3592,7 +3653,7 @@
    "slug": "portatil-asus-vivobook-15-amd-ryzen-7-8-gb-ram-512-gb-ssd-15-6-windows-11",
    "summary": "Portàtil Asus de 15,6\" amb AMD Ryzen 7 7840HS, 8 GB de RAM, SSD de 512 GB i Windows 11.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:38",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -3720,7 +3781,7 @@
    "slug": "portatil-lenovo-thinkpad-l14-gen-5-amd-ryzen-5-pro-16-gb-ram-512-gb-ssd-14-windo",
    "summary": "Portàtil professional Lenovo ThinkPad de 14\" amb Ryzen 5 PRO, 16 GB, SSD de 512 GB i Windows 11 Pro.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:38",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -3938,7 +3999,7 @@
    "slug": "mobil-apple-iphone-17-256-gb-6-3-5g-blanc",
    "summary": "iPhone 17 d'Apple amb pantalla de 6,3\", connexió 5G i 256 GB d'emmagatzematge.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:38",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -4226,7 +4287,7 @@
    "slug": "mobil-xiaomi-redmi-a7-pro-4-gb-64-gb-6-9-negre",
    "summary": "Smartphone Xiaomi amb pantalla gran de 6,9\", 4 GB de RAM i 64 GB d'emmagatzematge.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:38",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -4257,7 +4318,7 @@
    "slug": "tauleta-lenovo-idea-tab-11-8-gb-128-gb-gris-amb-llapis-tab-pen",
    "summary": "Tauleta Lenovo d'11\" amb 8 GB de RAM, 128 GB i llapis digital inclòs.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:38",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -4381,7 +4442,7 @@
    "slug": "kit-de-teclat-i-ratoli-hp-combo-225",
    "summary": "Kit de teclat i ratolí HP 225 per a l'ordinador de sobretaula.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:38",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -4437,7 +4498,7 @@
    "slug": "toner-brother-tn-2420-negre-alta-capacitat",
    "summary": "Tòner original Brother TN-2420 negre d'alta capacitat.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:38",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
@@ -4469,7 +4530,7 @@
    "slug": "mobil-xiaomi-17t-12-gb-256-gb-6-59-5g-blau",
    "summary": "Smartphone Xiaomi amb 5G, pantalla AMOLED de 6,59\", 12 GB de RAM i 256 GB.",
    "unit": "u",
-   "updated_at": "2026-11-02 09:58:38",
+   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   }
  ]
