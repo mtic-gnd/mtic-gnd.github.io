@@ -75,7 +75,7 @@
  ],
  "count": 88,
  "currency": "EUR",
- "generated_at": "2026-11-02 10:05:17",
+ "generated_at": "2026-11-02 16:52:06",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -201,11 +201,11 @@
    "featured": false,
    "images": [
     "/media/botiga/tlf-ven-fhkb0.jpg",
-    "/media/botiga/tlf-ven-fhkb0-2.jpg",
-    "/media/botiga/tlf-ven-fhkb0-3.jpg",
-    "/media/botiga/tlf-ven-fhkb0-4.jpg",
-    "/media/botiga/tlf-ven-fhkb0-5.jpg",
-    "/media/botiga/tlf-ven-fhkb0-6.jpg"
+    "/media/botiga/tlf-ven-fhkw0.jpg",
+    "/media/botiga/tlf-ven-fhkw0-2.jpg",
+    "/media/botiga/tlf-ven-fhkw0-3.jpg",
+    "/media/botiga/tlf-ven-fhkw0-4.jpg",
+    "/media/botiga/tlf-ven-fhkw0-5.jpg"
    ],
    "name": "Bateria externa Vention",
    "offer": true,
@@ -216,19 +216,14 @@
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
-     "availability": "on_order",
+     "availability": "unknown",
      "body": "La bateria externa Vention FHKB0 de 10000 mAh permet carregar el mòbil diverses vegades amb càrrega ràpida de fins a 22,5 W. Mida de butxaca, perfecta per portar a la motxilla o la bossa. Color negre.",
      "brand": "VENTION",
      "category": "telefons-mobils",
      "ean": "6922794781559",
      "featured": false,
      "images": [
-      "/media/botiga/tlf-ven-fhkb0.jpg",
-      "/media/botiga/tlf-ven-fhkb0-2.jpg",
-      "/media/botiga/tlf-ven-fhkb0-3.jpg",
-      "/media/botiga/tlf-ven-fhkb0-4.jpg",
-      "/media/botiga/tlf-ven-fhkb0-5.jpg",
-      "/media/botiga/tlf-ven-fhkb0-6.jpg"
+      "/media/botiga/tlf-ven-fhkb0.jpg"
      ],
      "kind": "product",
      "layout": "page",
