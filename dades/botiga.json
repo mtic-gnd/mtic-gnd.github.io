@@ -75,7 +75,7 @@
  ],
  "count": 88,
  "currency": "EUR",
- "generated_at": "2026-11-03 16:07:01",
+ "generated_at": "2026-11-03 21:59:11",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2156,7 +2156,7 @@
      "vat_pct": 21
     },
     {
-     "availability": "on_order",
+     "availability": "unknown",
      "body": "El Logitech M185 és un dels ratolins sense fil més venuts: petit, lleuger i fàcil de portar amb el portàtil. Es connecta amb un receptor USB i comença a funcionar en endollar-lo, sense programari. Resolució de fins a 1000 DPI, adequada per a ofimàtica i navegació. Color gris.",
      "brand": "LOGITECH",
      "category": "teclats-i-ratolins",
@@ -3596,17 +3596,14 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "L'HP Pro Mini 400 G9 és un ordinador professional de mida molt reduïda, que es pot col·locar darrere del monitor. Porta un processador Intel Core i5-14500T, 8 GB de RAM, un SSD de 256 GB i Windows 11 Pro. Ideal per a llocs de treball d'oficina i empreses.",
    "brand": "HP",
    "category": "ordinadors-sobretaula",
    "ean": "199485673417",
    "featured": false,
    "images": [
-    "/media/botiga/pc-hp-b70ykat.jpg",
-    "/media/botiga/pc-hp-b70ykat-2.jpg",
-    "/media/botiga/pc-hp-b70ykat-3.jpg",
-    "/media/botiga/pc-hp-b70ykat-4.jpg"
+    "/media/botiga/pc-hp-b70ykat.jpg"
    ],
    "kind": "product",
    "layout": "page",
