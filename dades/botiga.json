@@ -75,7 +75,7 @@
  ],
  "count": 88,
  "currency": "EUR",
- "generated_at": "2026-11-03 07:46:27",
+ "generated_at": "2026-11-03 16:07:01",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -1938,7 +1938,10 @@
    "featured": true,
    "images": [
     "/media/botiga/ext-kin-dtxs64gb.jpg",
-    "/media/botiga/ext-kin-dtxs64gb-2.jpg"
+    "/media/botiga/ext-kin-dtxs64gb-2.jpg",
+    "/media/botiga/ext-kin-dtxs64gb-3.jpg",
+    "/media/botiga/ext-kin-dtxs64gb-4.jpg",
+    "/media/botiga/ext-kin-dtxs64gb-5.jpg"
    ],
    "name": "Pendrive Kingston DataTraveler Exodia",
    "offer": true,
@@ -1957,7 +1960,10 @@
      "featured": true,
      "images": [
       "/media/botiga/ext-kin-dtxs64gb.jpg",
-      "/media/botiga/ext-kin-dtxs64gb-2.jpg"
+      "/media/botiga/ext-kin-dtxs64gb-2.jpg",
+      "/media/botiga/ext-kin-dtxs64gb-3.jpg",
+      "/media/botiga/ext-kin-dtxs64gb-4.jpg",
+      "/media/botiga/ext-kin-dtxs64gb-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -3780,19 +3786,14 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "El Lenovo V15 G6 és un portàtil senzill i econòmic per a ofimàtica, navegació, classes en línia i videotrucades. Té un processador Intel N100, 8 GB de RAM, un SSD de 256 GB i pantalla Full HD de 15,6 polzades. Arriba amb Windows 11 instal·lat i llest per fer servir.",
    "brand": "LENOVO",
    "category": "portatils",
    "ean": "199272592235",
    "featured": false,
    "images": [
-    "/media/botiga/por-len-83m4001n.jpg",
-    "/media/botiga/por-len-83m4001n-2.jpg",
-    "/media/botiga/por-len-83m4001n-3.jpg",
-    "/media/botiga/por-len-83m4001n-4.jpg",
-    "/media/botiga/por-len-83m4001n-5.jpg",
-    "/media/botiga/por-len-83m4001n-6.jpg"
+    "/media/botiga/por-len-83m4001n.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -4030,7 +4031,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "El Motorola Moto G06 és un mòbil econòmic amb pantalla gran de 6,88 polzades, 4 GB de RAM i 64 GB d'emmagatzematge. Una bona opció com a primer mòbil o per a qui vol un telèfon senzill per a trucades, missatges i xarxes socials. Color blau.",
    "brand": "MOTOROLA",
    "category": "telefons-mobils",
