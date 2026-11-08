@@ -38,6 +38,7 @@ jobs:
       - name: Genera les pàgines
         env:
           MTIC_API: ${{ vars.MTIC_API }}
+          MTIC_ORDERS: ${{ vars.MTIC_ORDERS }}
           MTIC_TOKEN: ${{ secrets.MTIC_TOKEN }}
           # Només si la porta de generació va darrere de Cloudflare Access.
           # Si els secrets no hi són, no s'envia res i no molesten.
