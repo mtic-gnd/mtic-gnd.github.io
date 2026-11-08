@@ -75,7 +75,7 @@
  ],
  "count": 88,
  "currency": "EUR",
- "generated_at": "2026-11-03 21:59:11",
+ "generated_at": "2026-11-08 19:25:42",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -160,7 +160,7 @@
      "vat_pct": 21
     },
     {
-     "availability": "on_order",
+     "availability": "unknown",
      "body": "Auriculars Logitech H390 amb micròfon i connexió USB, pensats per a videotrucades, classes en línia i teletreball.",
      "brand": "Logitech",
      "category": "accessoris",
@@ -201,11 +201,11 @@
    "featured": false,
    "images": [
     "/media/botiga/tlf-ven-fhkb0.jpg",
-    "/media/botiga/tlf-ven-fhkw0.jpg",
-    "/media/botiga/tlf-ven-fhkw0-2.jpg",
-    "/media/botiga/tlf-ven-fhkw0-3.jpg",
-    "/media/botiga/tlf-ven-fhkw0-4.jpg",
-    "/media/botiga/tlf-ven-fhkw0-5.jpg"
+    "/media/botiga/tlf-ven-fhkb0-2.jpg",
+    "/media/botiga/tlf-ven-fhkb0-3.jpg",
+    "/media/botiga/tlf-ven-fhkb0-4.jpg",
+    "/media/botiga/tlf-ven-fhkb0-5.jpg",
+    "/media/botiga/tlf-ven-fhkb0-6.jpg"
    ],
    "name": "Bateria externa Vention",
    "offer": true,
@@ -216,14 +216,19 @@
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
-     "availability": "unknown",
+     "availability": "on_order",
      "body": "La bateria externa Vention FHKB0 de 10000 mAh permet carregar el mòbil diverses vegades amb càrrega ràpida de fins a 22,5 W. Mida de butxaca, perfecta per portar a la motxilla o la bossa. Color negre.",
      "brand": "VENTION",
      "category": "telefons-mobils",
      "ean": "6922794781559",
      "featured": false,
      "images": [
-      "/media/botiga/tlf-ven-fhkb0.jpg"
+      "/media/botiga/tlf-ven-fhkb0.jpg",
+      "/media/botiga/tlf-ven-fhkb0-2.jpg",
+      "/media/botiga/tlf-ven-fhkb0-3.jpg",
+      "/media/botiga/tlf-ven-fhkb0-4.jpg",
+      "/media/botiga/tlf-ven-fhkb0-5.jpg",
+      "/media/botiga/tlf-ven-fhkb0-6.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -3719,19 +3724,14 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "L'HP OmniBook 3 combina una pantalla gran de 16 polzades amb un processador AMD Ryzen 5, 16 GB de RAM i un SSD de 512 GB. És una bona opció per treballar amb diverses finestres obertes, estudiar i fer servir a casa. Arriba amb Windows 11 instal·lat.",
    "brand": "HP",
    "category": "portatils",
    "ean": "199896112536",
    "featured": false,
    "images": [
-    "/media/botiga/por-hp-d18blea.jpg",
-    "/media/botiga/por-hp-d18blea-2.jpg",
-    "/media/botiga/por-hp-d18blea-3.jpg",
-    "/media/botiga/por-hp-d18blea-4.jpg",
-    "/media/botiga/por-hp-d18blea-5.jpg",
-    "/media/botiga/por-hp-d18blea-6.jpg"
+    "/media/botiga/por-hp-d18blea.jpg"
    ],
    "kind": "product",
    "layout": "page",
@@ -3968,7 +3968,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "L'Apple iPhone 17 té una pantalla de 6,3 polzades, connexió 5G i 256 GB d'emmagatzematge. El mòbil actual d'Apple, amb iOS i tot l'ecosistema de serveis d'Apple. Color blanc.",
    "brand": "APPLE",
    "category": "telefons-mobils",
@@ -4028,7 +4028,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
+   "availability": "on_order",
    "body": "El Motorola Moto G06 és un mòbil econòmic amb pantalla gran de 6,88 polzades, 4 GB de RAM i 64 GB d'emmagatzematge. Una bona opció com a primer mòbil o per a qui vol un telèfon senzill per a trucades, missatges i xarxes socials. Color blau.",
    "brand": "MOTOROLA",
    "category": "telefons-mobils",
