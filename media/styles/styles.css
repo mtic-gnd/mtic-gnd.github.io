@@ -519,7 +519,10 @@ a.article-botiga:hover { border-color: var(--violeta); }
     position: fixed; right: 1rem; bottom: 9.5rem; z-index: 31; width: min(26rem, calc(100vw - 2rem));
     background: #fff; border: 1px solid var(--linia); border-radius: var(--radi);
     box-shadow: 0 16px 40px rgba(0,0,0,.18); overflow: hidden;
+    /* Amb el formulari d'enviar la comanda a dins, el panell ha de cabre */
+    display: flex; flex-direction: column; max-height: calc(100vh - 11.5rem);
 }
+.carro-panell .linies { flex: 1 1 auto; min-height: 0; }
 .carro-panell .cap, .carro-panell .peu {
     display: flex; align-items: center; gap: .75rem; padding: .9rem 1rem;
 }
@@ -539,8 +542,32 @@ a.article-botiga:hover { border-color: var(--violeta); }
     width: 28px; height: 28px; border: 1px solid var(--linia); background: #fff;
     border-radius: .4rem; cursor: pointer; font: inherit; line-height: 1; color: var(--text);
 }
-.carro-panell .peu { border-top: 1px solid var(--linia); }
+/*
+ * El peu del carro NO es el peu de la pagina.
+ *
+ * Les dues coses es diuen `.peu`, i la regla general de `.peu` —la del peu
+ * del lloc— el pinta de negre. Dins del carro aixo feia una franja negra
+ * amb el boto de WhatsApp a sobre, sense que ningu ho hagues demanat.
+ * Aqui es torna al fons del panell.
+ */
+.carro-panell .peu {
+    border-top: 1px solid var(--linia);
+    background: #fff; color: var(--text); font-size: 1rem;
+}
 .carro-panell .peu .boto { flex: 1; text-align: center; }
+
+/* Enviar la comanda directament a la botiga. Nomes hi es si esta activat. */
+.carro-envia {
+    display: grid; gap: .5rem; padding: .9rem 1rem;
+    border-top: 1px solid var(--linia); background: var(--fons-suau, #fafafa);
+}
+.carro-envia input, .carro-envia textarea {
+    width: 100%; padding: .55rem .7rem; font: inherit; color: var(--text);
+    border: 1px solid var(--linia); border-radius: .5rem; background: #fff;
+}
+.carro-envia textarea { resize: vertical; }
+.carro-envia .boto { text-align: center; }
+.carro-envia .avis { margin: 0; font-size: .85rem; color: var(--text-suau); }
 
 @media (max-width: 560px) {
     .carro-boto { bottom: 5rem; }
@@ -577,3 +604,21 @@ a.article-botiga:hover { border-color: var(--violeta); }
 .tria select:focus-visible { outline: 3px solid var(--violeta); outline-offset: 2px; }
 
 .producte-dades .abans[hidden] { display: none; }
+
+/* El botó de WhatsApp, quan l'enviament a la botiga ha fallat.
+   La comanda no s'ha perdut i el camí segueix sent aquest: val més que es
+   vegi de seguida que no pas que algú es pensi que ha de tornar a escriure-ho
+   tot. */
+.carro-panell .boto.destacat {
+  animation: carro-batec 1.2s ease-in-out 2;
+  box-shadow: 0 0 0 3px rgba(37, 211, 102, .35);
+}
+
+@keyframes carro-batec {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.03); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carro-panell .boto.destacat { animation: none; }
+}

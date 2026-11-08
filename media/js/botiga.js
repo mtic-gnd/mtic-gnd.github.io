@@ -17,6 +17,16 @@
     var meta = document.querySelector('meta[name="mtic-api"]');
     var API = meta ? meta.content.replace(/\/$/, '') : '';
 
+    /*
+     * Si la pagina diu que es pot enviar la comanda a l'ERP (fase 8).
+     *
+     * El senyal l'escriu el generador nomes amb MTIC_ORDERS=1, i de serie no
+     * hi es: el carro acaba en un missatge de WhatsApp, com sempre. Si el
+     * senyal hi es pero l'ERP contesta que no, el carro se'n torna al de
+     * sempre sense dir res a ningu.
+     */
+    var COMANDES = Boolean(document.querySelector('meta[name="mtic-orders"]')) && Boolean(API);
+
     function diners(valor) {
         return valor.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
     }
@@ -141,14 +151,24 @@
             demanar: 'Demana-ho per WhatsApp', buidar: 'Buida el carro',
             treu: 'Treu-ho', tanca: 'Tanca', obre: 'La teva comanda',
             salutacio: 'Hola, aquesta és la comanda que voldria fer:',
-            afegit: 'Afegit'
+            afegit: 'Afegit',
+            enviar: 'Envia-la a la botiga', nom: 'El teu nom', contacte: 'Correu o telèfon',
+            comentari: 'Alguna cosa més? (opcional)',
+            enviant: 'Enviant…', fet: 'Rebuda! T\'escric de seguida.',
+            falla: 'No s\'ha pogut enviar. La teva comanda segueix aquí: demana-la per WhatsApp amb el botó de sota.',
+            cal_nom: 'Posa-hi el teu nom i una manera de contestar-te.'
         },
         es: {
             titol: 'Tu pedido', buit: 'Todavía no has puesto nada.',
             demanar: 'Pídelo por WhatsApp', buidar: 'Vacía el carrito',
             treu: 'Quítalo', tanca: 'Cerrar', obre: 'Tu pedido',
             salutacio: 'Hola, este es el pedido que querría hacer:',
-            afegit: 'Añadido'
+            afegit: 'Añadido',
+            enviar: 'Envíalo a la tienda', nom: 'Tu nombre', contacte: 'Correo o teléfono',
+            comentari: '¿Algo más? (opcional)',
+            enviant: 'Enviando…', fet: '¡Recibido! Te escribo enseguida.',
+            falla: 'No se ha podido enviar. Tu pedido sigue aquí: pídelo por WhatsApp con el botón de abajo.',
+            cal_nom: 'Pon tu nombre y una manera de contestarte.'
         }
     };
 
@@ -199,6 +219,7 @@
             panell.innerHTML = '<div class="cap"><strong>' + t.titol + '</strong>'
                 + '<button type="button" class="tanca" aria-label="' + t.tanca + '">&times;</button></div>'
                 + '<div class="linies" data-carro-linies></div>'
+                + formulari()
                 + '<div class="peu"><a class="boto" data-carro-whatsapp>' + t.demanar + '</a>'
                 + '<button type="button" class="boto-linia" data-carro-buida>' + t.buidar + '</button></div>';
 
@@ -212,6 +233,14 @@
                 desa();
             });
 
+            var form = panell.querySelector('[data-carro-form]');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    envia(form);
+                });
+            }
+
             panell.addEventListener('click', function (e) {
                 var fila = e.target.closest('[data-linia]');
                 if (!fila) return;
@@ -224,6 +253,138 @@
                 if (e.target.closest('[data-treu]')) linia.qty = 0;
                 linies = linies.filter(function (l) { return l.qty > 0; });
                 desa();
+            });
+        }
+
+        /*
+         * El formulari d'enviar la comanda a l'ERP.
+         *
+         * Nomes surt si la pagina porta el senyal. El camp `confirma` es
+         * l'esquer: a la pantalla no es veu i una persona no l'omple mai;
+         * si arriba ple, el servidor contesta que si i no desa res.
+         */
+        function formulari() {
+            if (!COMANDES) return '';
+            return '<form class="carro-envia" data-carro-form novalidate>'
+                + '<input name="nom" required autocomplete="name" placeholder="' + t.nom + '">'
+                + '<input name="contacte" required autocomplete="email" placeholder="' + t.contacte + '">'
+                + '<textarea name="notes" rows="2" placeholder="' + t.comentari + '"></textarea>'
+                + '<input name="confirma" tabindex="-1" autocomplete="off" aria-hidden="true"'
+                + ' style="position:absolute;left:-9999px;width:1px;height:1px">'
+                + '<button type="submit" class="boto">' + t.enviar + '</button>'
+                + '<p class="avis" data-carro-avis hidden></p>'
+                + '</form>';
+        }
+
+        /*
+         * LA CLAU D'AQUEST ENVIAMENT.
+         *
+         * El navegador envia la comanda i espera resposta. Si la connexio es
+         * talla just despres d'enviar-la —un mobil que canvia d'antena, una
+         * pestanya que es tanca—, qui ho ha enviat no sap si ha arribat i
+         * torna a premer. Sense clau, aixo son dues comandes iguals i algu
+         * les ha de comparar a ma.
+         *
+         * Neix un sol cop per carro i es torna a enviar a cada intent. Quan
+         * la comanda arriba de debo, s'oblida: el carro seguent n'estrena
+         * una altra.
+         *
+         * No diu res de ningu: es un numero a l'atzar que neix i mor amb un
+         * carro.
+         */
+        var CLAU_ENVIAMENT = 'mtic-carro-enviament';
+
+        function clauEnviament() {
+            var clau = null;
+            try { clau = window.localStorage.getItem(CLAU_ENVIAMENT); } catch (e) { clau = null; }
+            if (clau) return clau;
+
+            clau = (Date.now().toString(36) + Math.random().toString(36).slice(2, 10));
+            try { window.localStorage.setItem(CLAU_ENVIAMENT, clau); } catch (e) { /* res */ }
+            return clau;
+        }
+
+        function oblidaClau() {
+            try { window.localStorage.removeItem(CLAU_ENVIAMENT); } catch (e) { /* res */ }
+        }
+
+        /** Que s'envia: nomes referencies i quantitats. El preu el posa l'ERP. */
+        function paquet(form) {
+            var contacte = String(form.contacte.value || '').trim();
+            var ambArrova = contacte.indexOf('@') > 0;
+            return {
+                name: String(form.nom.value || '').trim(),
+                email: ambArrova ? contacte : '',
+                phone: ambArrova ? '' : contacte,
+                notes: String(form.notes.value || '').trim(),
+                confirma: String(form.confirma.value || ''),
+                idem_key: clauEnviament(),
+                locale: document.documentElement.lang === 'es' ? 'es' : 'ca',
+                lines: linies.map(function (l) {
+                    return { ref: l.ref, name: l.nom, qty: l.qty, price: l.preu };
+                })
+            };
+        }
+
+        function envia(form) {
+            var avis = form.querySelector('[data-carro-avis]');
+            var boto = form.querySelector('button[type="submit"]');
+            var dades = paquet(form);
+
+            var mostra = function (text) {
+                avis.textContent = text;
+                avis.hidden = false;
+            };
+
+            if (!dades.name || (!dades.email && !dades.phone)) return mostra(t.cal_nom);
+            if (!dades.lines.length) return mostra(t.buit);
+
+            boto.disabled = true;
+            mostra(t.enviant);
+
+            /*
+             * NOMES ES DIU «REBUDA» SI L'ERP HO HA DIT.
+             *
+             * Ni amb un error de xarxa, ni amb un 500, ni amb una resposta
+             * que no es pot llegir. Dir que una comanda ha arribat quan no se
+             * sap es la pitjor manera de perdre-la: qui l'ha feta se'n va
+             * tranquil i no la reclama mai.
+             *
+             * I MENTRE NO ES SAP, EL CARRO NO ES TOCA. Nomes es buida quan hi
+             * ha un codi de comanda a la ma.
+             */
+            return fetch(API + '/api/public/comanda', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(dades)
+            }).then(function (r) {
+                return r.json().catch(function () { return {}; }).then(function (cos) {
+                    return { ok: r.ok, status: r.status, cos: cos || {} };
+                });
+            }).then(function (resposta) {
+                if (!resposta.ok || !resposta.cos.ok || !resposta.cos.code) {
+                    // El servidor pot tenir alguna cosa a dir (massa seguides, per exemple)
+                    throw new Error(resposta.cos.error || String(resposta.status));
+                }
+
+                mostra(t.fet);
+                linies = [];
+                desa();
+                oblidaClau();
+                form.reset();
+            }).catch(function (error) {
+                /*
+                 * El carro es queda tal com estava i el boto de WhatsApp
+                 * segueix sent-hi, a sota: la comanda no es perd, nomes no ha
+                 * anat per aqui.
+                 */
+                mostra((error && error.message && error.message.length > 3
+                    ? error.message + ' '
+                    : '') + t.falla);
+                var wa = panell.querySelector('[data-carro-whatsapp]');
+                if (wa) wa.classList.add('destacat');
+            }).then(function () {
+                boto.disabled = false;
             });
         }
 
@@ -273,7 +434,20 @@
                 var ref = boto.dataset.ref;
                 var linia = linies.filter(function (l) { return l.ref === ref; })[0];
                 if (linia) linia.qty += 1;
-                else linies.push({ ref: ref, nom: boto.dataset.nom, qty: 1 });
+                else {
+                    /*
+                     * El preu que ell veu, desat amb la linia.
+                     * Nomes serveix per poder-li dir «ha canviat» quan la
+                     * comanda arribi a l'ERP: alla el preu es torna a
+                     * llegir del cataleg i aquest no es fa servir mai.
+                     */
+                    linies.push({
+                        ref: ref,
+                        nom: boto.dataset.nom,
+                        qty: 1,
+                        preu: Number(boto.dataset.preu) || null
+                    });
+                }
                 desa();
 
                 // Un senyal curt: s'ha afegit i el carro ja ho diu

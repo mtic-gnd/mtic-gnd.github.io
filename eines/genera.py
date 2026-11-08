@@ -68,6 +68,20 @@ def adreca_de(nom, defecte):
 #   api.mtic.cat/api/build/*   només aquest programa, amb la clau
 API = adreca_de("MTIC_API", "https://api.mtic.cat")
 TOKEN = os.environ.get("MTIC_TOKEN", "")
+
+# ------------------------------------------- enviar la comanda a l'ERP (fase 8)
+#
+# APAGAT DE SÈRIE. El carro de la botiga acaba en un missatge de WhatsApp, i
+# això funciona i no es toca. Amb MTIC_ORDERS=1 les pàgines porten un senyal
+# (`<meta name="mtic-orders">`) i el carro ofereix, A MÉS, enviar la comanda
+# directament a l'ERP.
+#
+# Per què apagat: fins que algú no ho decideixi, les pàgines publicades han de
+# sortir exactament iguals. La comprovació del generador al CI ho vigila.
+#
+# L'ERP també ho ha de tenir obert pel seu costat (WEB_ORDERS=1): si la
+# pàgina ho ofereix i l'ERP diu que no, el carro se'n torna al de sempre.
+COMANDES = (os.environ.get("MTIC_ORDERS") or "").strip() in ("1", "true", "True")
 TEMPS_ESPERA = 60
 MIDA_MAXIMA_FOTO = 6 * 1024 * 1024
 
@@ -174,6 +188,37 @@ ESTAT = {
 }
 
 
+def aplica_textos(canvis):
+    """
+    Els textos que s'han canviat des de l'ERP (fase 13).
+
+    NOMÉS ELS CANVIS. El diccionari de dalt segueix sent el valor de sèrie,
+    i això és el que algú ha decidit canviar des de la pantalla de l'ERP.
+    Amb cap canvi, les pàgines surten exactament iguals que abans.
+
+    Per què així i no portant tots els textos de l'ERP: perquè aquest
+    programa ha de seguir funcionant sol. Amb la llista sencera a l'altra
+    banda, generar amb --local —que és com es comprova al CI— deixaria la
+    botiga sense cap paraula.
+
+    Una clau que aquí no existeix s'ignora i es diu per pantalla: val més
+    avisar que publicar una frase que no es fa servir enlloc.
+    """
+    if not canvis:
+        return
+    for idioma, frases in (canvis or {}).items():
+        if idioma not in T:
+            print(f"  ! idioma desconegut als textos de l'ERP, s'ignora: {idioma}")
+            continue
+        for clau, valor in (frases or {}).items():
+            if clau not in T[idioma]:
+                print(f"  ! text desconegut, s'ignora: {idioma}.{clau}")
+                continue
+            if not isinstance(valor, str) or not valor.strip():
+                continue
+            T[idioma][clau] = valor
+
+
 # ------------------------------------------------------------- utilitats
 
 def ordenable(text):
@@ -264,8 +309,17 @@ def explica_error(e, ruta):
     ]))
 
 
-def demana(ruta):
-    """Una crida a l'ERP amb la clau de generació."""
+def demana(ruta, obligatoria=True):
+    """
+    Una crida a l'ERP amb la clau de generació.
+
+    Amb `obligatoria=False`, un 404 vol dir «aquest ERP encara no ho té» i es
+    torna buit en comptes de parar-ho tot. Fa falta per als textos: l'ERP de
+    producció va per una versió que no publica `/api/build/textos`, i sense
+    això el generador nou no li podria demanar el catàleg —que sí que té— pel
+    camí d'una ruta que no existeix. Qualsevol altre error segueix parant la
+    generació: val més no publicar que publicar a mitges.
+    """
     if not TOKEN:
         sys.exit("Falta MTIC_TOKEN: sense clau, l'ERP no dona el catàleg.")
     peticio = urllib.request.Request(f"{API}{ruta}", headers=capcaleres())
@@ -273,6 +327,9 @@ def demana(ruta):
         with urllib.request.urlopen(peticio, timeout=TEMPS_ESPERA) as resposta:
             return json.loads(resposta.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
+        if e.code == 404 and not obligatoria:
+            print(f"  · l'ERP no publica {ruta}: es fan servir els textos de sèrie")
+            return None
         sys.exit(explica_error(e, ruta))
     except OSError as e:
         sys.exit(f"No s'ha pogut parlar amb l'ERP ({e})")
@@ -298,6 +355,21 @@ def desa_json(nom, dades):
     with open(os.path.join(DADES, nom), "w", encoding="utf-8") as f:
         json.dump(dades, f, ensure_ascii=False, indent=1, sort_keys=True)
         f.write("\n")
+
+
+def llegeix_json_si_hi_es(nom):
+    """
+    El mateix, però sense petar si no hi és.
+
+    Els textos canviats són opcionals: una botiga que no n'ha canviat cap no
+    té el fitxer, i això no és un error. El catàleg i els articles sí que
+    són obligatoris i segueixen petant.
+    """
+    cami = os.path.join(DADES, nom)
+    if not os.path.exists(cami):
+        return None
+    with open(cami, encoding="utf-8") as f:
+        return json.load(f)
 
 
 def llegeix_json(nom):
@@ -390,6 +462,16 @@ def baixa_foto(url, nom):
 
 # ----------------------------------------------------------------- pàgina
 
+def senyal_comandes():
+    """
+    El senyal que diu al carro que pot enviar la comanda a l'ERP.
+
+    Apagat, no escriu res: ni un espai. Les pàgines han de sortir byte a byte
+    iguals mentre ningú no obri la porta, i això ho comprova el CI.
+    """
+    return '\n    <meta name="mtic-orders" content="1">' if COMANDES else ""
+
+
 def pagina(idioma, url, url_altre, titol, descripcio, cos, seccio="serveis",
            imatge=None, dades_extra="", classe=""):
     """
@@ -415,7 +497,7 @@ def pagina(idioma, url, url_altre, titol, descripcio, cos, seccio="serveis",
     <link rel="canonical" href="{DOMINI}{url}">
     {idiomes}
     <meta name="theme-color" content="#5e17eb">
-    <meta name="mtic-api" content="{API}">
+    <meta name="mtic-api" content="{API}">{senyal_comandes()}
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="{DOMINI}{url}">
@@ -1092,8 +1174,12 @@ def main():
 
     if local:
         cataleg, articles = llegeix_json("botiga.json"), llegeix_json("articles.json")
+        textos = llegeix_json_si_hi_es("textos.json") or {}
     else:
         cataleg, articles = demana("/api/build/cataleg"), demana("/api/build/articles")
+        textos = demana("/api/build/textos", obligatoria=False)
+
+    aplica_textos((textos or {}).get("texts"))
 
     # El que tingui una adreça rara no es dibuixa: vegeu slug_segur()
     for nom, llista, clau in (("producte", cataleg["products"], "slug"),
@@ -1159,6 +1245,7 @@ def main():
     if not local:
         desa_json("botiga.json", cataleg)
         desa_json("articles.json", articles)
+        desa_json("textos.json", textos)
 
     canvis = []
     pagines = []          # per al sitemap: (url_ca, url_es)
