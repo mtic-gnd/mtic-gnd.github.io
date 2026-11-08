@@ -37,7 +37,7 @@
    "slug": "impressores"
   },
   {
-   "count": 6,
+   "count": 5,
    "layout": "page",
    "name": "Ordinadors sobretaula",
    "slug": "ordinadors-sobretaula"
@@ -49,7 +49,7 @@
    "slug": "pantalles"
   },
   {
-   "count": 12,
+   "count": 10,
    "layout": "page",
    "name": "Portàtils",
    "slug": "portatils"
@@ -61,7 +61,7 @@
    "slug": "teclats-i-ratolins"
   },
   {
-   "count": 12,
+   "count": 11,
    "layout": "page",
    "name": "Telèfons mòbils",
    "slug": "telefons-mobils"
@@ -73,13 +73,13 @@
    "slug": "tinta-i-toner"
   }
  ],
- "count": 88,
+ "count": 84,
  "currency": "EUR",
- "generated_at": "2026-11-08 19:35:29",
+ "generated_at": "2026-11-08 20:41:18",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
-   "brand": null,
+   "brand": "LOGITECH",
    "category": "accessoris",
    "featured": false,
    "images": [
@@ -157,39 +157,6 @@
      "unit": "u",
      "updated_at": "2026-11-02 10:04:51",
      "variant": "H340",
-     "vat_pct": 21
-    },
-    {
-     "availability": "unknown",
-     "body": "Auriculars Logitech H390 amb micròfon i connexió USB, pensats per a videotrucades, classes en línia i teletreball.",
-     "brand": "Logitech",
-     "category": "accessoris",
-     "ean": "5099206030015",
-     "featured": false,
-     "images": [
-      "/media/botiga/acc-log-98100040.jpg",
-      "/media/botiga/acc-log-98100040-2.jpg",
-      "/media/botiga/acc-log-98100040-3.jpg",
-      "/media/botiga/acc-log-98100040-4.jpg",
-      "/media/botiga/acc-log-98100040-5.jpg",
-      "/media/botiga/acc-log-98100040-6.jpg"
-     ],
-     "kind": "product",
-     "layout": "page",
-     "model": "981000406",
-     "name": "Auriculars amb micròfon Logitech H390 USB",
-     "offer": false,
-     "price": 21.07,
-     "price_with_vat": 25.49,
-     "published_at": "2026-11-02 09:58:17",
-     "pvpr": null,
-     "pvpr_with_vat": null,
-     "ref": "ACC-LOG-98100040",
-     "slug": "auriculars-amb-microfon-logitech-h390-usb",
-     "summary": "Auriculars de diadema Logitech amb micròfon i connexió USB per a videotrucades.",
-     "unit": "u",
-     "updated_at": "2026-11-02 10:04:17",
-     "variant": "H390",
      "vat_pct": 21
     }
    ]
@@ -2161,38 +2128,6 @@
      "vat_pct": 21
     },
     {
-     "availability": "unknown",
-     "body": "El Logitech M185 és un dels ratolins sense fil més venuts: petit, lleuger i fàcil de portar amb el portàtil. Es connecta amb un receptor USB i comença a funcionar en endollar-lo, sense programari. Resolució de fins a 1000 DPI, adequada per a ofimàtica i navegació. Color gris.",
-     "brand": "LOGITECH",
-     "category": "teclats-i-ratolins",
-     "ean": "5099206027282",
-     "featured": false,
-     "images": [
-      "/media/botiga/per-log-91000223.jpg",
-      "/media/botiga/per-log-91000223-2.jpg",
-      "/media/botiga/per-log-91000223-3.jpg",
-      "/media/botiga/per-log-91000223-4.jpg",
-      "/media/botiga/per-log-91000223-5.jpg"
-     ],
-     "kind": "product",
-     "layout": "page",
-     "model": "910002238",
-     "name": "Ratolí sense fil Logitech M185 Gris",
-     "offer": false,
-     "price": 10.32,
-     "price_with_vat": 12.49,
-     "published_at": "2026-10-20 22:34:46",
-     "pvpr": null,
-     "pvpr_with_vat": null,
-     "ref": "PER-LOG-91000223",
-     "slug": "ratoli-sense-fil-logitech-m185-gris",
-     "summary": "Ratolí sense fil Logitech de mida compacta, amb receptor USB i fins a 1000 DPI.",
-     "unit": "u",
-     "updated_at": "2026-11-02 09:58:25",
-     "variant": "M185",
-     "vat_pct": 21
-    },
-    {
      "availability": "on_order",
      "body": "El Logitech M190 ofereix una forma gran i corbada que omple la mà i fa més còmodes les jornades llargues davant l'ordinador. Connexió sense fil amb receptor USB, llest per fer servir en endollar-lo, i resolució de fins a 1000 DPI. Color gris.",
      "brand": "LOGITECH",
@@ -3601,33 +3536,6 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
-   "body": "L'HP Pro Mini 400 G9 és un ordinador professional de mida molt reduïda, que es pot col·locar darrere del monitor. Porta un processador Intel Core i5-14500T, 8 GB de RAM, un SSD de 256 GB i Windows 11 Pro. Ideal per a llocs de treball d'oficina i empreses.",
-   "brand": "HP",
-   "category": "ordinadors-sobretaula",
-   "ean": "199485673417",
-   "featured": false,
-   "images": [
-    "/media/botiga/pc-hp-b70ykat.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "B70YKAT",
-   "name": "Mini PC HP Pro Mini 400 G9 Intel Core i5 8 GB RAM 256 GB SSD Windows 11 Pro",
-   "offer": false,
-   "price": 698.75,
-   "price_with_vat": 845.49,
-   "published_at": "2026-10-21 16:42:33",
-   "pvpr": null,
-   "pvpr_with_vat": null,
-   "ref": "PC-HP-B70YKAT",
-   "slug": "mini-pc-hp-pro-mini-400-g9-intel-core-i5-8-gb-ram-256-gb-ssd-windows-11-pro",
-   "summary": "Mini PC professional HP amb Intel Core i5-14500T, 8 GB de RAM, SSD de 256 GB i Windows 11 Pro.",
-   "unit": "u",
-   "updated_at": "2026-10-26 17:47:48",
-   "vat_pct": 21
-  },
-  {
    "availability": "on_order",
    "body": "L'Asus VivoBook 15 porta un processador AMD Ryzen 7 7840HS d'alt rendiment, amb gràfics integrats Radeon, 8 GB de RAM i un SSD de 512 GB. Ideal per a qui necessita més potència per a programes exigents, edició lleugera o multitasca. Pantalla de 15,6 polzades i Windows 11.",
    "brand": "ASUS",
@@ -3724,33 +3632,6 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
-   "body": "L'HP OmniBook 3 combina una pantalla gran de 16 polzades amb un processador AMD Ryzen 5, 16 GB de RAM i un SSD de 512 GB. És una bona opció per treballar amb diverses finestres obertes, estudiar i fer servir a casa. Arriba amb Windows 11 instal·lat.",
-   "brand": "HP",
-   "category": "portatils",
-   "ean": "199896112536",
-   "featured": false,
-   "images": [
-    "/media/botiga/por-hp-d18blea.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "D18BLEA",
-   "name": "Portàtil HP OmniBook 3 AMD Ryzen 5 16 GB RAM 512 GB SSD 16\" Windows 11",
-   "offer": false,
-   "price": 574.37,
-   "price_with_vat": 694.99,
-   "published_at": "2026-10-21 16:42:33",
-   "pvpr": null,
-   "pvpr_with_vat": null,
-   "ref": "POR-HP-D18BLEA",
-   "slug": "portatil-hp-omnibook-3-amd-ryzen-5-16-gb-ram-512-gb-ssd-16-windows-11",
-   "summary": "Portàtil HP de 16\" amb AMD Ryzen 5, 16 GB de RAM, SSD de 512 GB i Windows 11.",
-   "unit": "u",
-   "updated_at": "2026-10-21 16:42:33",
-   "vat_pct": 21
-  },
-  {
    "availability": "on_order",
    "body": "El Lenovo ThinkPad L14 Gen 5 és un portàtil professional pensat per a empreses i autònoms: processador AMD Ryzen 5 PRO 7535U, 16 GB de RAM, SSD de 512 GB, pantalla de 14 polzades i Windows 11 Pro. Compacte, resistent i amb el teclat característic dels ThinkPad.",
    "brand": "LENOVO",
@@ -3780,33 +3661,6 @@
    "summary": "Portàtil professional Lenovo ThinkPad de 14\" amb Ryzen 5 PRO, 16 GB, SSD de 512 GB i Windows 11 Pro.",
    "unit": "u",
    "updated_at": "2026-11-02 10:00:36",
-   "vat_pct": 21
-  },
-  {
-   "availability": "unknown",
-   "body": "El Lenovo V15 G6 és un portàtil senzill i econòmic per a ofimàtica, navegació, classes en línia i videotrucades. Té un processador Intel N100, 8 GB de RAM, un SSD de 256 GB i pantalla Full HD de 15,6 polzades. Arriba amb Windows 11 instal·lat i llest per fer servir.",
-   "brand": "LENOVO",
-   "category": "portatils",
-   "ean": "199272592235",
-   "featured": false,
-   "images": [
-    "/media/botiga/por-len-83m4001n.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "83M4001NSP",
-   "name": "Portàtil Lenovo V15 G6 Intel N100 8 GB RAM 256 GB SSD 15,6\" Windows 11",
-   "offer": false,
-   "price": 372.72,
-   "price_with_vat": 450.99,
-   "published_at": "2026-10-21 16:42:33",
-   "pvpr": null,
-   "pvpr_with_vat": null,
-   "ref": "POR-LEN-83M4001N",
-   "slug": "portatil-lenovo-v15-g6-intel-n100-8-gb-ram-256-gb-ssd-15-6-windows-11",
-   "summary": "Portàtil Lenovo de 15,6\" amb Intel N100, 8 GB de RAM, SSD de 256 GB i Windows 11.",
-   "unit": "u",
-   "updated_at": "2026-10-21 16:42:33",
    "vat_pct": 21
   },
   {
@@ -3965,34 +3819,6 @@
    "summary": "Base múltiple Phasak de 8 preses amb interruptor i cable llarg de 3 metres.",
    "unit": "u",
    "updated_at": "2026-10-26 17:47:48",
-   "vat_pct": 21
-  },
-  {
-   "availability": "unknown",
-   "body": "L'Apple iPhone 17 té una pantalla de 6,3 polzades, connexió 5G i 256 GB d'emmagatzematge. El mòbil actual d'Apple, amb iOS i tot l'ecosistema de serveis d'Apple. Color blanc.",
-   "brand": "APPLE",
-   "category": "telefons-mobils",
-   "ean": "195950643701",
-   "featured": false,
-   "images": [
-    "/media/botiga/tlf-app-mg6k4qla.jpg",
-    "/media/botiga/tlf-app-mg6k4qla-2.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "MG6K4QLA",
-   "name": "Mòbil Apple iPhone 17 256 GB 6,3\" 5G Blanc",
-   "offer": false,
-   "price": 952.47,
-   "price_with_vat": 1152.49,
-   "published_at": "2026-10-21 16:42:33",
-   "pvpr": null,
-   "pvpr_with_vat": null,
-   "ref": "TLF-APP-MG6K4QLA",
-   "slug": "mobil-apple-iphone-17-256-gb-6-3-5g-blanc",
-   "summary": "iPhone 17 d'Apple amb pantalla de 6,3\", connexió 5G i 256 GB d'emmagatzematge.",
-   "unit": "u",
-   "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
   },
   {
