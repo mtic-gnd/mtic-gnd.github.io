@@ -75,7 +75,7 @@
  ],
  "count": 84,
  "currency": "EUR",
- "generated_at": "2026-11-09 07:27:43",
+ "generated_at": "2026-11-09 18:29:01",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -1424,7 +1424,7 @@
      "vat_pct": 21
     },
     {
-     "availability": "on_order",
+     "availability": "unknown",
      "body": "Cartutx de tinta original HP 305 de color negre, amb un rendiment aproximat de 120 pàgines, per imprimir textos i documents. Compatible amb HP DeskJet 2300, 2700 i Plus 4100, i HP ENVY 6000 i ENVY Pro 6400, entre d'altres. Consulta el model de la teva impressora abans de comprar.",
      "brand": "HP",
      "category": "tinta-i-toner",
@@ -1740,7 +1740,9 @@
    "images": [
     "/media/botiga/ssd-kin-snv3s500.jpg",
     "/media/botiga/ssd-kin-snv3s500-2.jpg",
-    "/media/botiga/ssd-kin-snv3s500-3.jpg"
+    "/media/botiga/ssd-kin-snv3s500-3.jpg",
+    "/media/botiga/ssd-kin-snv3s500-4.jpg",
+    "/media/botiga/ssd-kin-snv3s500-5.jpg"
    ],
    "name": "Disc SSD Kingston NV3 M.2 NVMe",
    "offer": false,
@@ -1760,7 +1762,9 @@
      "images": [
       "/media/botiga/ssd-kin-snv3s500.jpg",
       "/media/botiga/ssd-kin-snv3s500-2.jpg",
-      "/media/botiga/ssd-kin-snv3s500-3.jpg"
+      "/media/botiga/ssd-kin-snv3s500-3.jpg",
+      "/media/botiga/ssd-kin-snv3s500-4.jpg",
+      "/media/botiga/ssd-kin-snv3s500-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -3886,19 +3890,14 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "L'Ulefone Armor X12 Pro és un mòbil robust preparat per a cops, pols i aigua, ideal per treballar al camp, a l'obra o al taller. Té pantalla de 5,45 polzades, 4 GB de RAM i 64 GB d'emmagatzematge. Color negre.",
    "brand": "ULEFONE",
    "category": "telefons-mobils",
    "ean": "6937748735427",
    "featured": false,
    "images": [
-    "/media/botiga/tlf-ule-ulearx12.jpg",
-    "/media/botiga/tlf-ule-ulearx12-2.jpg",
-    "/media/botiga/tlf-ule-ulearx12-3.jpg",
-    "/media/botiga/tlf-ule-ulearx12-4.jpg",
-    "/media/botiga/tlf-ule-ulearx12-5.jpg",
-    "/media/botiga/tlf-ule-ulearx12-6.jpg"
+    "/media/botiga/tlf-ule-ulearx12.jpg"
    ],
    "kind": "product",
    "layout": "page",
