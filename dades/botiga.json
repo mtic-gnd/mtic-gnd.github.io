@@ -61,7 +61,7 @@
    "slug": "teclats-i-ratolins"
   },
   {
-   "count": 11,
+   "count": 10,
    "layout": "page",
    "name": "Telèfons mòbils",
    "slug": "telefons-mobils"
@@ -73,9 +73,9 @@
    "slug": "tinta-i-toner"
   }
  ],
- "count": 84,
+ "count": 83,
  "currency": "EUR",
- "generated_at": "2026-11-09 18:29:01",
+ "generated_at": "2026-11-09 20:00:30",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -1383,7 +1383,6 @@
    "images": [
     "/media/botiga/tin-hp-6zd17ae.jpg",
     "/media/botiga/tin-hp-3ym60ae.jpg",
-    "/media/botiga/tin-hp-3ym61ae.jpg",
     "/media/botiga/tin-hp-3ym63ae.jpg",
     "/media/botiga/tin-hp-3ym62ae.jpg"
    ],
@@ -1421,34 +1420,6 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Color",
-     "vat_pct": 21
-    },
-    {
-     "availability": "unknown",
-     "body": "Cartutx de tinta original HP 305 de color negre, amb un rendiment aproximat de 120 pàgines, per imprimir textos i documents. Compatible amb HP DeskJet 2300, 2700 i Plus 4100, i HP ENVY 6000 i ENVY Pro 6400, entre d'altres. Consulta el model de la teva impressora abans de comprar.",
-     "brand": "HP",
-     "category": "tinta-i-toner",
-     "ean": "199764686992",
-     "featured": false,
-     "images": [
-      "/media/botiga/tin-hp-3ym61ae.jpg"
-     ],
-     "kind": "product",
-     "layout": "page",
-     "model": "3YM61AE",
-     "name": "Cartutx de tinta HP 305 Negre",
-     "offer": false,
-     "price": 12.39,
-     "price_with_vat": 14.99,
-     "published_at": "2026-10-19 17:47:41",
-     "pvpr": null,
-     "pvpr_with_vat": null,
-     "ref": "TIN-HP-3YM61AE",
-     "slug": "hp-cartucho-305-negro",
-     "summary": "Cartutx de tinta original HP 305 negre.",
-     "unit": "u",
-     "updated_at": "2026-10-26 17:48:32",
-     "variant": "Negre",
      "vat_pct": 21
     },
     {
@@ -1700,34 +1671,6 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "Color XL",
-     "vat_pct": 21
-    },
-    {
-     "availability": "on_order",
-     "body": "Cartutx de tinta reciclat Karkemis de color negre i alta capacitat que substitueix l'original HP 305XL. Ideal per imprimir textos i documents a un cost per pàgina més baix. Compatible amb HP DeskJet 2300, 2700 i Plus 4100, i HP ENVY 6000 i ENVY Pro 6400, entre d'altres. Consulta el model de la teva impressora abans de comprar.",
-     "brand": "KARKEMIS",
-     "category": "tinta-i-toner",
-     "ean": "8435634600210",
-     "featured": false,
-     "images": [
-      "/media/botiga/tin-kar-10050513.jpg"
-     ],
-     "kind": "product",
-     "layout": "page",
-     "model": "10050513",
-     "name": "Cartutx de tinta reciclat Karkemis HP 305XL Negre",
-     "offer": false,
-     "price": 15.7,
-     "price_with_vat": 19,
-     "published_at": "2026-10-19 17:47:41",
-     "pvpr": null,
-     "pvpr_with_vat": null,
-     "ref": "TIN-KAR-10050513",
-     "slug": "cartucho-de-tinta-reciclado-karkemis-hp-n-305-xl-alta-capacidad-negro",
-     "summary": "Cartutx reciclat Karkemis d'alta capacitat, negre, alternativa a l'HP 305XL.",
-     "unit": "u",
-     "updated_at": "2026-10-20 23:39:27",
-     "variant": "Negre XL",
      "vat_pct": 21
     }
    ]
@@ -3887,33 +3830,6 @@
    "summary": "Smartphone Motorola amb pantalla de 6,88\", 4 GB de RAM i 64 GB d'emmagatzematge.",
    "unit": "u",
    "updated_at": "2026-10-26 17:47:48",
-   "vat_pct": 21
-  },
-  {
-   "availability": "unknown",
-   "body": "L'Ulefone Armor X12 Pro és un mòbil robust preparat per a cops, pols i aigua, ideal per treballar al camp, a l'obra o al taller. Té pantalla de 5,45 polzades, 4 GB de RAM i 64 GB d'emmagatzematge. Color negre.",
-   "brand": "ULEFONE",
-   "category": "telefons-mobils",
-   "ean": "6937748735427",
-   "featured": false,
-   "images": [
-    "/media/botiga/tlf-ule-ulearx12.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "ULEARX12PROB",
-   "name": "Mòbil resistent Ulefone Armor X12 Pro 4 GB 64 GB 5,45\" Negre",
-   "offer": false,
-   "price": 127.68,
-   "price_with_vat": 154.49,
-   "published_at": "2026-10-21 16:42:33",
-   "pvpr": null,
-   "pvpr_with_vat": null,
-   "ref": "TLF-ULE-ULEARX12",
-   "slug": "mobil-resistent-ulefone-armor-x12-pro-4-gb-64-gb-5-45-negre",
-   "summary": "Smartphone resistent Ulefone de 5,45\" amb 4 GB de RAM i 64 GB, pensat per a la feina al camp o a l'obra.",
-   "unit": "u",
-   "updated_at": "2026-10-21 16:42:33",
    "vat_pct": 21
   },
   {
