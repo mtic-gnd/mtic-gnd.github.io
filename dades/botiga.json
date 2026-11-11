@@ -75,7 +75,7 @@
  ],
  "count": 83,
  "currency": "EUR",
- "generated_at": "2026-11-11 07:18:49",
+ "generated_at": "2026-11-11 16:11:37",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2164,18 +2164,14 @@
      "vat_pct": 21
     },
     {
-     "availability": "on_order",
+     "availability": "unknown",
      "body": "El TP-Link RE200 amplia el Wi-Fi de casa en les bandes de 2,4 i 5 GHz, amb una velocitat combinada de fins a 750 Mbps. S'endolla a la paret, es configura fàcilment i té port Ethernet per connectar un televisor o una consola per cable.",
      "brand": "TP-LINK",
      "category": "cables",
      "ean": "6935364071295",
      "featured": false,
      "images": [
-      "/media/botiga/net-tpl-re200.jpg",
-      "/media/botiga/net-tpl-re200-2.jpg",
-      "/media/botiga/net-tpl-re200-3.jpg",
-      "/media/botiga/net-tpl-re200-4.jpg",
-      "/media/botiga/net-tpl-re200-5.jpg"
+      "/media/botiga/net-tpl-re200.jpg"
      ],
      "kind": "product",
      "layout": "page",
