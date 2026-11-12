@@ -75,7 +75,7 @@
  ],
  "count": 83,
  "currency": "EUR",
- "generated_at": "2026-11-12 03:58:56",
+ "generated_at": "2026-11-12 12:08:31",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -3801,7 +3801,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "El Motorola Moto G06 és un mòbil econòmic amb pantalla gran de 6,88 polzades, 4 GB de RAM i 64 GB d'emmagatzematge. Una bona opció com a primer mòbil o per a qui vol un telèfon senzill per a trucades, missatges i xarxes socials. Color blau.",
    "brand": "MOTOROLA",
    "category": "telefons-mobils",
