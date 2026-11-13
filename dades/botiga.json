@@ -75,7 +75,7 @@
  ],
  "count": 83,
  "currency": "EUR",
- "generated_at": "2026-11-13 08:57:39",
+ "generated_at": "2026-11-13 17:23:40",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -580,7 +580,7 @@
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
-     "availability": "on_order",
+     "availability": "unknown",
      "body": "Cable Vention USB-C a USB-C per carregar mòbils, tauletes i portàtils compatibles amb potències de fins a 60 W (3 A) i passar dades a 480 Mbps. Longitud d'1 metre. Color blanc.",
      "brand": "VENTION",
      "category": "cables",
@@ -2962,7 +2962,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "L'Epson Expression Home XP-2200 imprimeix, copia i escaneja, i es connecta per Wi-Fi per imprimir des de l'ordinador o el mòbil. Fa servir cartutxos de tinta individuals Epson 604, de manera que només canvies el color que s'acaba. Compacta i ideal per a casa.",
    "brand": "Epson",
    "category": "impressores",
