@@ -75,7 +75,7 @@
  ],
  "count": 83,
  "currency": "EUR",
- "generated_at": "2026-11-13 23:37:21",
+ "generated_at": "2026-11-14 04:15:19",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -580,7 +580,7 @@
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
-     "availability": "unknown",
+     "availability": "on_order",
      "body": "Cable Vention USB-C a USB-C per carregar mòbils, tauletes i portàtils compatibles amb potències de fins a 60 W (3 A) i passar dades a 480 Mbps. Longitud d'1 metre. Color blanc.",
      "brand": "VENTION",
      "category": "cables",
