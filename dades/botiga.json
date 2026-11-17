@@ -75,7 +75,7 @@
  ],
  "count": 83,
  "currency": "EUR",
- "generated_at": "2026-11-17 14:25:56",
+ "generated_at": "2026-11-17 23:23:34",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2171,7 +2171,11 @@
      "ean": "6935364071295",
      "featured": false,
      "images": [
-      "/media/botiga/net-tpl-re200.jpg"
+      "/media/botiga/net-tpl-re200.jpg",
+      "/media/botiga/net-tpl-re200-2.jpg",
+      "/media/botiga/net-tpl-re200-3.jpg",
+      "/media/botiga/net-tpl-re200-4.jpg",
+      "/media/botiga/net-tpl-re200-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2566,7 +2570,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
+   "availability": "on_order",
    "body": "Hub USB 3.0 d'Aisens que multiplica un port USB de l'ordinador en quatre, per connectar alhora llapis USB, discos externs, ratolí, teclat i impressora. Velocitat USB 3.0 i funcionament sense instal·lació.",
    "brand": "AISENS",
    "category": "cables",
@@ -2659,7 +2663,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "Els Vention Echo Clip A11 Pro tenen un disseny obert de clip que s'aguanta a l'orella sense entrar al conducte auditiu, de manera que pots seguir escoltant l'entorn. Connexió Bluetooth, estoig de càrrega i fins a 6 hores d'autonomia per càrrega. Color negre.",
    "brand": "VENTION",
    "category": "accessoris",
