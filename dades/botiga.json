@@ -75,7 +75,7 @@
  ],
  "count": 83,
  "currency": "EUR",
- "generated_at": "2026-11-16 21:28:54",
+ "generated_at": "2026-11-17 04:53:28",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -1993,14 +1993,18 @@
      "vat_pct": 21
     },
     {
-     "availability": "unknown",
+     "availability": "on_order",
      "body": "L'HP 250R G10 combina un processador Intel Core 5 120U amb 16 GB de RAM i un SSD de 512 GB, prou potència per a la feina, els estudis i la multitasca. Pantalla de 15,6 polzades. Es ven sense sistema operatiu: el podem lliurar instal·lat i configurat a la botiga.",
      "brand": "HP",
      "category": "portatils",
      "ean": "199896416795",
      "featured": false,
      "images": [
-      "/media/botiga/por-hp-d31vwat.jpg"
+      "/media/botiga/por-hp-d31vwat.jpg",
+      "/media/botiga/por-hp-d31vwat-2.jpg",
+      "/media/botiga/por-hp-d31vwat-3.jpg",
+      "/media/botiga/por-hp-d31vwat-4.jpg",
+      "/media/botiga/por-hp-d31vwat-5.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -2566,7 +2570,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
+   "availability": "on_order",
    "body": "Hub USB 3.0 d'Aisens que multiplica un port USB de l'ordinador en quatre, per connectar alhora llapis USB, discos externs, ratolí, teclat i impressora. Velocitat USB 3.0 i funcionament sense instal·lació.",
    "brand": "AISENS",
    "category": "cables",
@@ -2659,7 +2663,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
+   "availability": "on_order",
    "body": "Els Vention Echo Clip A11 Pro tenen un disseny obert de clip que s'aguanta a l'orella sense entrar al conducte auditiu, de manera que pots seguir escoltant l'entorn. Connexió Bluetooth, estoig de càrrega i fins a 6 hores d'autonomia per càrrega. Color negre.",
    "brand": "VENTION",
    "category": "accessoris",
@@ -4228,7 +4232,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
+   "availability": "on_order",
    "body": "Mòbil Xiaomi 17T amb connexió 5G, pantalla AMOLED de 6,59 polzades, 12 GB de RAM i 256 GB d'emmagatzematge. Color blau.",
    "brand": "XIAOMI",
    "category": "telefons-mobils",
