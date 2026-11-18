@@ -75,7 +75,7 @@
  ],
  "count": 83,
  "currency": "EUR",
- "generated_at": "2026-11-18 14:57:53",
+ "generated_at": "2026-11-18 22:56:27",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2570,7 +2570,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "Hub USB 3.0 d'Aisens que multiplica un port USB de l'ordinador en quatre, per connectar alhora llapis USB, discos externs, ratolí, teclat i impressora. Velocitat USB 3.0 i funcionament sense instal·lació.",
    "brand": "AISENS",
    "category": "cables",
@@ -4233,7 +4233,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
+   "availability": "on_order",
    "body": "Mòbil Xiaomi 17T amb connexió 5G, pantalla AMOLED de 6,59 polzades, 12 GB de RAM i 256 GB d'emmagatzematge. Color blau.",
    "brand": "XIAOMI",
    "category": "telefons-mobils",
