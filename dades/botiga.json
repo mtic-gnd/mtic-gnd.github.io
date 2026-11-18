@@ -75,7 +75,7 @@
  ],
  "count": 83,
  "currency": "EUR",
- "generated_at": "2026-11-18 05:20:28",
+ "generated_at": "2026-11-18 14:57:53",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2663,7 +2663,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "Els Vention Echo Clip A11 Pro tenen un disseny obert de clip que s'aguanta a l'orella sense entrar al conducte auditiu, de manera que pots seguir escoltant l'entorn. Connexió Bluetooth, estoig de càrrega i fins a 6 hores d'autonomia per càrrega. Color negre.",
    "brand": "VENTION",
    "category": "accessoris",
@@ -2858,7 +2858,8 @@
     "/media/botiga/ext-wes-wdbuzg00.jpg",
     "/media/botiga/ext-wes-wdbuzg00-2.jpg",
     "/media/botiga/ext-wes-wdbuzg00-3.jpg",
-    "/media/botiga/ext-wes-wdbuzg00-4.jpg"
+    "/media/botiga/ext-wes-wdbuzg00-4.jpg",
+    "/media/botiga/ext-wes-wdbuzg00-5.jpg"
    ],
    "kind": "product",
    "layout": "page",
