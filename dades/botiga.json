@@ -1,7 +1,7 @@
 {
  "categories": [
   {
-   "count": 11,
+   "count": 10,
    "layout": "page",
    "name": "Accessoris",
    "slug": "accessoris"
@@ -31,7 +31,7 @@
    "slug": "fonts-d-alimentacio"
   },
   {
-   "count": 3,
+   "count": 2,
    "layout": "page",
    "name": "Impressores",
    "slug": "impressores"
@@ -49,7 +49,7 @@
    "slug": "pantalles"
   },
   {
-   "count": 10,
+   "count": 9,
    "layout": "page",
    "name": "Portàtils",
    "slug": "portatils"
@@ -61,7 +61,7 @@
    "slug": "teclats-i-ratolins"
   },
   {
-   "count": 10,
+   "count": 9,
    "layout": "page",
    "name": "Telèfons mòbils",
    "slug": "telefons-mobils"
@@ -73,9 +73,9 @@
    "slug": "tinta-i-toner"
   }
  ],
- "count": 83,
+ "count": 79,
  "currency": "EUR",
- "generated_at": "2026-11-19 04:27:32",
+ "generated_at": "2026-11-19 12:32:02",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -571,48 +571,18 @@
    "category": "cables",
    "featured": false,
    "images": [
-    "/media/botiga/net-ven-trcwf.jpg",
-    "/media/botiga/net-ven-trcwf-2.jpg",
-    "/media/botiga/net-ven-trcwf-3.jpg"
+    "/media/botiga/net-ven-cthbf.jpg",
+    "/media/botiga/net-ven-cthbf-2.jpg",
+    "/media/botiga/net-ven-cthbf-3.jpg"
    ],
    "name": "Cable USB-C Vention",
-   "offer": true,
-   "price_from": 1.65,
-   "price_from_with_vat": 2,
+   "offer": false,
+   "price_from": 2.47,
+   "price_from_with_vat": 2.99,
    "slug": "cable-usb-c-vention",
    "summary": "Cables de càrrega i dades USB-C Vention d'1 metre, amb connector USB-A o USB-C.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
-    {
-     "availability": "unknown",
-     "body": "Cable Vention USB-C a USB-C per carregar mòbils, tauletes i portàtils compatibles amb potències de fins a 60 W (3 A) i passar dades a 480 Mbps. Longitud d'1 metre. Color blanc.",
-     "brand": "VENTION",
-     "category": "cables",
-     "ean": "6922794783348",
-     "featured": false,
-     "images": [
-      "/media/botiga/net-ven-trcwf.jpg",
-      "/media/botiga/net-ven-trcwf-2.jpg",
-      "/media/botiga/net-ven-trcwf-3.jpg"
-     ],
-     "kind": "product",
-     "layout": "page",
-     "model": "TRCWF",
-     "name": "Cable USB-C a USB-C Vention 60 W 1 m",
-     "offer": true,
-     "price": 1.65,
-     "price_with_vat": 2,
-     "published_at": "2026-10-20 22:34:46",
-     "pvpr": 2.47,
-     "pvpr_with_vat": 2.99,
-     "ref": "NET-VEN-TRCWF",
-     "slug": "cable-usb-c-a-usb-c-vention-60-w-1-m",
-     "summary": "Cable USB-C a USB-C Vention d'1 metre amb càrrega de fins a 60 W.",
-     "unit": "u",
-     "updated_at": "2026-11-02 09:58:25",
-     "variant": "USB-C a USB-C 60 W",
-     "vat_pct": 21
-    },
     {
      "availability": "on_order",
      "body": "Cable Vention amb connector USB-A a un extrem i USB-C a l'altre, per carregar i passar dades de mòbils, tauletes, auriculars i altres dispositius USB-C. Transferència USB 2.0 de fins a 480 Mbps. Longitud d'1 metre. Color negre.",
@@ -1991,34 +1961,6 @@
      "updated_at": "2026-10-21 16:42:38",
      "variant": "Core 3, 8 GB, Windows 11",
      "vat_pct": 21
-    },
-    {
-     "availability": "unknown",
-     "body": "L'HP 250R G10 combina un processador Intel Core 5 120U amb 16 GB de RAM i un SSD de 512 GB, prou potència per a la feina, els estudis i la multitasca. Pantalla de 15,6 polzades. Es ven sense sistema operatiu: el podem lliurar instal·lat i configurat a la botiga.",
-     "brand": "HP",
-     "category": "portatils",
-     "ean": "199896416795",
-     "featured": false,
-     "images": [
-      "/media/botiga/por-hp-d31vwat.jpg"
-     ],
-     "kind": "product",
-     "layout": "page",
-     "model": "D31VWAT",
-     "name": "Portàtil HP 250R G10 Intel Core 5 16 GB RAM 512 GB SSD 15,6\" sense sistema operatiu",
-     "offer": false,
-     "price": 521.07,
-     "price_with_vat": 630.49,
-     "published_at": "2026-10-20 22:34:46",
-     "pvpr": null,
-     "pvpr_with_vat": null,
-     "ref": "POR-HP-D31VWAT",
-     "slug": "portatil-hp-250r-g10-intel-core-5-16-gb-ram-512-gb-ssd-15-6-sense-sistema-operat",
-     "summary": "Portàtil HP de 15,6\" amb Intel Core 5 120U, 16 GB de RAM i SSD de 512 GB, sense sistema operatiu.",
-     "unit": "u",
-     "updated_at": "2026-10-21 16:42:38",
-     "variant": "Core 5, 16 GB, sense sistema operatiu",
-     "vat_pct": 21
     }
    ]
   },
@@ -2161,38 +2103,6 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "300 Mbps",
-     "vat_pct": 21
-    },
-    {
-     "availability": "unknown",
-     "body": "El TP-Link RE200 amplia el Wi-Fi de casa en les bandes de 2,4 i 5 GHz, amb una velocitat combinada de fins a 750 Mbps. S'endolla a la paret, es configura fàcilment i té port Ethernet per connectar un televisor o una consola per cable.",
-     "brand": "TP-LINK",
-     "category": "cables",
-     "ean": "6935364071295",
-     "featured": false,
-     "images": [
-      "/media/botiga/net-tpl-re200.jpg",
-      "/media/botiga/net-tpl-re200-2.jpg",
-      "/media/botiga/net-tpl-re200-3.jpg",
-      "/media/botiga/net-tpl-re200-4.jpg",
-      "/media/botiga/net-tpl-re200-5.jpg"
-     ],
-     "kind": "product",
-     "layout": "page",
-     "model": "RE200",
-     "name": "Repetidor Wi-Fi TP-Link RE200 AC750 de doble banda",
-     "offer": false,
-     "price": 23.96,
-     "price_with_vat": 28.99,
-     "published_at": "2026-10-20 22:34:46",
-     "pvpr": null,
-     "pvpr_with_vat": null,
-     "ref": "NET-TPL-RE200",
-     "slug": "repetidor-wi-fi-tp-link-re200-ac750-de-doble-banda",
-     "summary": "Amplificador Wi-Fi TP-Link de doble banda fins a 750 Mbps, amb 3 antenes internes.",
-     "unit": "u",
-     "updated_at": "2026-11-02 09:58:25",
-     "variant": "750 Mbps doble banda",
      "vat_pct": 21
     }
    ]
@@ -2663,37 +2573,6 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
-   "body": "Els Vention Echo Clip A11 Pro tenen un disseny obert de clip que s'aguanta a l'orella sense entrar al conducte auditiu, de manera que pots seguir escoltant l'entorn. Connexió Bluetooth, estoig de càrrega i fins a 6 hores d'autonomia per càrrega. Color negre.",
-   "brand": "VENTION",
-   "category": "accessoris",
-   "ean": "6922794798977",
-   "featured": false,
-   "images": [
-    "/media/botiga/acc-ven-nbwb0ph.jpg",
-    "/media/botiga/acc-ven-nbwb0ph-2.jpg",
-    "/media/botiga/acc-ven-nbwb0ph-3.jpg",
-    "/media/botiga/acc-ven-nbwb0ph-4.jpg",
-    "/media/botiga/acc-ven-nbwb0ph-5.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "NBWB0PH",
-   "name": "Auriculars Bluetooth Vention Echo Clip A11 Pro Negres",
-   "offer": false,
-   "price": 20.65,
-   "price_with_vat": 24.99,
-   "published_at": "2026-10-20 22:34:46",
-   "pvpr": null,
-   "pvpr_with_vat": null,
-   "ref": "ACC-VEN-NBWB0PH",
-   "slug": "auriculars-bluetooth-vention-echo-clip-a11-pro-negres",
-   "summary": "Auriculars sense fil Vention de tipus clip amb estoig de càrrega i fins a 6 hores d'autonomia.",
-   "unit": "u",
-   "updated_at": "2026-11-02 09:58:25",
-   "vat_pct": 21
-  },
-  {
    "availability": "on_order",
    "body": "Els Vention Echo Lite E11 són uns auriculars Bluetooth totalment sense fil amb estoig de càrrega, ideals per al dia a dia. Fins a 6 hores d'autonomia per càrrega, emparellament senzill amb el mòbil i disseny lleuger. Color blanc.",
    "brand": "VENTION",
@@ -2964,33 +2843,6 @@
    "summary": "Pack de quatre ampolles de tinta Epson EcoTank 104.",
    "unit": "u",
    "updated_at": "2026-11-02 10:00:36",
-   "vat_pct": 21
-  },
-  {
-   "availability": "unknown",
-   "body": "L'Epson Expression Home XP-2200 imprimeix, copia i escaneja, i es connecta per Wi-Fi per imprimir des de l'ordinador o el mòbil. Fa servir cartutxos de tinta individuals Epson 604, de manera que només canvies el color que s'acaba. Compacta i ideal per a casa.",
-   "brand": "Epson",
-   "category": "impressores",
-   "ean": "8715946702780",
-   "featured": false,
-   "images": [
-    "/media/botiga/eps-c11ck674.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "C11CK67403",
-   "name": "Impressora multifunció Epson Expression Home XP-2200 Wi-Fi",
-   "offer": false,
-   "price": 54.12,
-   "price_with_vat": 65.49,
-   "published_at": "2026-10-18 21:21:10",
-   "pvpr": null,
-   "pvpr_with_vat": null,
-   "ref": "EPS-C11CK674",
-   "slug": "epson-multifuncion-expression-home-xp-2200-wifi",
-   "summary": "Multifunció de tinta Epson amb Wi-Fi: imprimeix, copia i escaneja.",
-   "unit": "u",
-   "updated_at": "2026-10-21 16:42:38",
    "vat_pct": 21
   },
   {
@@ -3802,38 +3654,6 @@
    "vat_pct": 21
   },
   {
-   "availability": "unknown",
-   "body": "El Motorola Moto G06 és un mòbil econòmic amb pantalla gran de 6,88 polzades, 4 GB de RAM i 64 GB d'emmagatzematge. Una bona opció com a primer mòbil o per a qui vol un telèfon senzill per a trucades, missatges i xarxes socials. Color blau.",
-   "brand": "MOTOROLA",
-   "category": "telefons-mobils",
-   "ean": "840493601885",
-   "featured": false,
-   "images": [
-    "/media/botiga/tlf-mot-pb9w0005.jpg",
-    "/media/botiga/tlf-mot-pb9w0005-2.jpg",
-    "/media/botiga/tlf-mot-pb9w0005-3.jpg",
-    "/media/botiga/tlf-mot-pb9w0005-4.jpg",
-    "/media/botiga/tlf-mot-pb9w0005-5.jpg",
-    "/media/botiga/tlf-mot-pb9w0005-6.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "PB9W0005PL",
-   "name": "Mòbil Motorola Moto G06 4 GB 64 GB 6,88\" Blau",
-   "offer": false,
-   "price": 116.93,
-   "price_with_vat": 141.49,
-   "published_at": "2026-10-21 16:42:33",
-   "pvpr": null,
-   "pvpr_with_vat": null,
-   "ref": "TLF-MOT-PB9W0005",
-   "slug": "mobil-motorola-moto-g06-4-gb-64-gb-6-88-blau",
-   "summary": "Smartphone Motorola amb pantalla de 6,88\", 4 GB de RAM i 64 GB d'emmagatzematge.",
-   "unit": "u",
-   "updated_at": "2026-10-26 17:47:48",
-   "vat_pct": 21
-  },
-  {
    "availability": "on_order",
    "body": "El Samsung Galaxy A17 té una pantalla de 6,7 polzades, 4 GB de RAM i 128 GB d'emmagatzematge per a fotos, aplicacions i vídeos. Un mòbil equilibrat per al dia a dia d'una marca de confiança. Color negre.",
    "brand": "SAMSUNG",
@@ -4021,33 +3841,6 @@
    "ref": "TLF-XIA-MZB0N5UE",
    "slug": "mobil-xiaomi-redmi-a7-pro-4-gb-64-gb-6-9-negre",
    "summary": "Smartphone Xiaomi amb pantalla gran de 6,9\", 4 GB de RAM i 64 GB d'emmagatzematge.",
-   "unit": "u",
-   "updated_at": "2026-11-02 10:00:36",
-   "vat_pct": 21
-  },
-  {
-   "availability": "unknown",
-   "body": "Tauleta Lenovo Idea Tab d'11 polzades amb 8 GB de RAM i 128 GB d'emmagatzematge. Inclou el llapis Lenovo Tab Pen.",
-   "brand": "LENOVO",
-   "category": "portatils",
-   "ean": "198157039827",
-   "featured": false,
-   "images": [
-    "/media/botiga/por-len-zafr0389.jpg"
-   ],
-   "kind": "product",
-   "layout": "page",
-   "model": "ZAFR0389ES",
-   "name": "Tauleta Lenovo Idea Tab 11\" 8 GB 128 GB Gris amb llapis Tab Pen",
-   "offer": true,
-   "price": 172.72,
-   "price_with_vat": 208.99,
-   "published_at": "2026-11-02 09:58:17",
-   "pvpr": 205.79,
-   "pvpr_with_vat": 249.01,
-   "ref": "POR-LEN-ZAFR0389",
-   "slug": "tauleta-lenovo-idea-tab-11-8-gb-128-gb-gris-amb-llapis-tab-pen",
-   "summary": "Tauleta Lenovo d'11\" amb 8 GB de RAM, 128 GB i llapis digital inclòs.",
    "unit": "u",
    "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
