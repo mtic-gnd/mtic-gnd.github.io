@@ -75,7 +75,7 @@
  ],
  "count": 79,
  "currency": "EUR",
- "generated_at": "2026-11-19 12:32:02",
+ "generated_at": "2026-11-19 14:05:55",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -3814,7 +3814,7 @@
    "vat_pct": 21
   },
   {
-   "availability": "on_order",
+   "availability": "unknown",
    "body": "El Xiaomi Redmi A7 Pro és un mòbil econòmic amb pantalla de 6,9 polzades, 4 GB de RAM i 64 GB d'emmagatzematge. Ideal com a primer mòbil o per a qui vol un telèfon senzill per a trucades, missatges i xarxes socials. Color negre.",
    "brand": "XIAOMI",
    "category": "telefons-mobils",
