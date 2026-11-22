@@ -30,7 +30,7 @@ import sys
 
 ARREL = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMINI = "https://mtic.cat"
-VERSIO = "202611222200"
+VERSIO = "202611222230"
 MAPS = "https://www.google.com/maps?cid=5369165064477127583"
 INSTAGRAM = "https://www.instagram.com/mtic.gandesa/"
 TEL = "+34711550872"
