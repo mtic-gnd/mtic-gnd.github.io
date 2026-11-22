@@ -69,7 +69,7 @@ TXT = {
         "sobre": ("/sobre-nosaltres.html", "Sobre nosaltres"), "contacte": ("/contacte.html", "Contacte"),
         "altre_idioma": ("es", "Castellano"), "marca_aria": "mtic, anar a l'inici",
         "obre_menu": "Obre el menú", "nav_aria": "Navegació principal",
-        "descripcio": "Reparació i venda d'ordinadors, manteniment informàtic i desenvolupament web a Gandesa i tota la Terra Alta.",
+        "descripcio": "Reparació i venda d'ordinadors, manteniment informàtic i desenvolupament web a Gandesa, la Terra Alta i les Terres de l'Ebre.",
         "contacte_t": "Contacte", "horari": "Dilluns a divendres, 9:00–19:00",
         "taller": "Taller a Gandesa, amb cita prèvia",
         "serveis_t": "Serveis",
@@ -93,7 +93,7 @@ TXT = {
         "sobre": ("/es/sobre-nosotros.html", "Sobre nosotros"), "contacte": ("/es/contacto.html", "Contacto"),
         "altre_idioma": ("ca", "Català"), "marca_aria": "mtic, ir al inicio",
         "obre_menu": "Abrir el menú", "nav_aria": "Navegación principal",
-        "descripcio": "Reparación y venta de ordenadores, mantenimiento informático y desarrollo web en Gandesa y toda la Terra Alta.",
+        "descripcio": "Reparación y venta de ordenadores, mantenimiento informático y desarrollo web en Gandesa, la Terra Alta y las Terres de l'Ebre.",
         "contacte_t": "Contacto", "horari": "Lunes a viernes, 9:00–19:00",
         "taller": "Taller en Gandesa, con cita previa",
         "serveis_t": "Servicios",
@@ -198,6 +198,10 @@ def peu(idioma):
 def bloc_comu():
     return (
         "<!-- comú:inici · generat per eines/web.py, no l'editis a mà -->\n"
+        # Si algú hi entra per http://, cap a https://. La configuració bona és
+        # «Enforce HTTPS» a GitHub Pages; això és la xarxa de seguretat, perquè
+        # Search Console ensenyava http://mtic.cat/ com una pàgina a part.
+        "    <script>if(location.protocol==='http:'&&/(^|\\.)mtic\\.cat$/.test(location.hostname))location.replace('https://'+location.host+location.pathname+location.search+location.hash)</script>\n"
         f'    <link rel="icon" href="/media/favicon/favicon.ico?v=20260918" sizes="any">\n'
         f'    <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png?v=20260918" sizes="96x96">\n'
         f'    <link rel="apple-touch-icon" href="/media/favicon/apple-touch-icon.png?v=20260918">\n'
