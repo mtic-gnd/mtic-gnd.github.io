@@ -30,7 +30,7 @@ import sys
 
 ARREL = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMINI = "https://mtic.cat"
-VERSIO = "202611221930"
+VERSIO = "202611222230"
 MAPS = "https://www.google.com/maps?cid=5369165064477127583"
 INSTAGRAM = "https://www.instagram.com/mtic.gandesa/"
 TEL = "+34711550872"
@@ -57,6 +57,8 @@ PARELLES = [
 ]
 # Pàgines sense parella
 SOLES = [("/404.html", "ca", None)]
+# Pàgines en anglès: (url, parella ca/es de la qual són la versió anglesa)
+ANGLES = {"/": "/en/"}
 
 ICONA_TEL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>'
 ICONA_MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
@@ -85,6 +87,33 @@ TXT = {
         "legal": [("/avis-legal.html", "Avís legal"), ("/privacitat.html", "Privacitat"),
                   ("/cookies.html", "Galetes"), ("/termes.html", "Termes i condicions")],
         "config_cookies": "Configura les galetes",
+    },
+    # Una sola pàgina en anglès (/en/), per a qui busca «computer repair» a
+    # prop: els enllaços de dins van a les pàgines en castellà, que són les
+    # que un estranger entén més fàcilment.
+    "en": {
+        "inici": ("/en/", "Home"), "serveis": ("/es/servicios.html", "Services"),
+        "botiga": ("/es/tienda/", "Shop"), "deca": ("https://deca.mtic.cat", "DeCA"),
+        "articles": ("/es/articulos/", "Articles"),
+        "sobre": ("/es/sobre-nosotros.html", "About"), "contacte": ("/es/contacto.html", "Contact"),
+        "altre_idioma": ("ca", "Català"), "marca_aria": "mtic, go to home page",
+        "obre_menu": "Open menu", "nav_aria": "Main navigation",
+        "descripcio": "Computer and laptop repair and sales, IT maintenance and web development in Gandesa, the Terra Alta and the Terres de l'Ebre.",
+        "contacte_t": "Contact", "horari": "Monday to Friday, 9:00–19:00",
+        "taller": "Workshop in Gandesa, by appointment",
+        "serveis_t": "Services",
+        "serveis_llista": [
+            ("/es/reparacion-ordenadores.html", "Computer repair"),
+            ("/es/recuperacion-datos.html", "Data recovery"),
+            ("/es/venta-ordenadores.html", "Computer sales"),
+            ("/es/mantenimiento-informatico.html", "IT maintenance"),
+            ("/es/redes-wifi.html", "Networks and WiFi"),
+            ("/es/paginas-web.html", "Websites"),
+        ],
+        "fitxa": "Google listing", "drets": "mtic, Serveis Informàtics i Digitals. Gandesa, Tarragona, Spain.",
+        "legal": [("/es/aviso-legal.html", "Legal notice"), ("/es/privacidad.html", "Privacy"),
+                  ("/es/cookies.html", "Cookies"), ("/es/terminos.html", "Terms")],
+        "config_cookies": "Cookie settings",
     },
     "es": {
         "inici": ("/es/", "Inicio"), "serveis": ("/es/servicios.html", "Servicios"),
@@ -151,6 +180,8 @@ def capcalera(idioma, seccio, url_altre):
 
 def peu(idioma):
     t = TXT[idioma]
+    angles = ('                    <li><a href="/en/" hreflang="en" lang="en">In English</a></li>\n'
+              if idioma != "en" else "")
     serveis = "\n".join(f'                    <li><a href="{h}">{n}</a></li>' for h, n in t["serveis_llista"])
     legal = "\n".join(f'                <a href="{h}">{n}</a>' for h, n in t["legal"])
     return (
@@ -183,6 +214,7 @@ def peu(idioma):
         f'                    <li><a href="{t["contacte"][0]}">{t["contacte"][1]}</a></li>\n'
         f'                    <li><a href="{MAPS}" target="_blank" rel="noopener">{t["fitxa"]}</a></li>\n'
         f'                    <li><a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram</a></li>\n'
+        f'{angles}'
         '                </ul>\n'
         '            </div>\n'
         '            <div class="legal">\n'
@@ -215,10 +247,13 @@ def bloc_comu():
 
 
 def bloc_idiomes(url_ca, url_es):
+    en = (f'    <link rel="alternate" hreflang="en" href="{DOMINI}{ANGLES[url_ca]}">\n'
+          if url_ca in ANGLES else "")
     return (
         "<!-- idiomes:inici -->\n"
         f'    <link rel="alternate" hreflang="ca" href="{DOMINI}{url_ca}">\n'
         f'    <link rel="alternate" hreflang="es" href="{DOMINI}{url_es}">\n'
+        + en +
         f'    <link rel="alternate" hreflang="x-default" href="{DOMINI}{url_ca}">\n'
         "    <!-- idiomes:fi -->"
     )
@@ -311,6 +346,7 @@ def entrada_sitemap(url, ca, es):
     if ca and es:
         linies += [f'    <xhtml:link rel="alternate" hreflang="ca" href="{DOMINI}{ca}"/>',
                    f'    <xhtml:link rel="alternate" hreflang="es" href="{DOMINI}{es}"/>',
+                   *([f'    <xhtml:link rel="alternate" hreflang="en" href="{DOMINI}{ANGLES[ca]}"/>'] if ca in ANGLES else []),
                    f'    <xhtml:link rel="alternate" hreflang="x-default" href="{DOMINI}{ca}"/>']
     linies.append("  </url>")
     return linies
@@ -325,6 +361,10 @@ def sitemap():
                 continue
             url = (ca, es)[idx]
             linies += entrada_sitemap(url, ca, es)
+
+    for ca, en in ANGLES.items():
+        es = next(p[1] for p in PARELLES if p[0] == ca)
+        linies += entrada_sitemap(en, ca, es)
 
     for ca, es in pagines_generades():
         for url in (ca, es):
@@ -345,6 +385,10 @@ def main():
                 sys.exit(f"Falta el fitxer {cami} (és a PARELLES)")
             if actualitza(cami, idioma, seccio, altre, (ca, es)):
                 canvis.append(os.path.relpath(cami, ARREL))
+    for ca, en in ANGLES.items():
+        es = next(p[1] for p in PARELLES if p[0] == ca)
+        if actualitza(fitxer(en), "en", "inici", ca, (ca, es)):
+            canvis.append(os.path.relpath(fitxer(en), ARREL))
     for url, idioma, seccio in SOLES:
         cami = fitxer(url)
         altre = "/es/" if idioma == "ca" else "/"
