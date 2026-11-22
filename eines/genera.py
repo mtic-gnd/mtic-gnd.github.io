@@ -1059,7 +1059,9 @@ def fitxa_article(idioma, post):
         schema["image"] = post["cover_image"]
 
     portada = (f'<figure class="portada-article"><img src="{esc(post["cover_image"])}" '
-               f'alt="{esc(post["title"])}" loading="eager"></figure>'
+               # La mida és la de les portades (1200×630): el navegador reserva
+               # l'espai abans que arribi la imatge i la pàgina no salta
+               f'alt="{esc(post["title"])}" width="1200" height="630" loading="eager"></figure>'
                if post.get("cover_image") else "")
 
     cos = f"""        <section class="cap-pagina">

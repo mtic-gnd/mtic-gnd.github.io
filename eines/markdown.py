@@ -121,6 +121,18 @@ def a_html(text):
     """Markdown -> HTML. Torna una cadena amb els blocs un per línia."""
     linies = str(text or "").replace("\r\n", "\n").split("\n")
     sortida = []
+    # El títol més gran que fa servir l'article és el seu h2, sigui # o ##:
+    # si l'article comença pels ##, no hi pot haver un salt de h1 a h3
+    dins_codi = False
+    nivells = []
+    for l in linies:
+        if l.strip().startswith("```"):
+            dins_codi = not dins_codi
+        elif not dins_codi:
+            t = RE_TITOL.match(l.rstrip())
+            if t:
+                nivells.append(len(t.group(1)))
+    desplacament = 2 - min(nivells) if nivells else 1
     paragraf = []
     llista = None          # 'ul' | 'ol' | None
     cita = []
@@ -193,8 +205,8 @@ def a_html(text):
         titol = RE_TITOL.match(net)
         if titol:
             tanca_tot()
-            # Un article ja porta el seu <h1>: el # de dins comença a h2
-            nivell = min(len(titol.group(1)) + 1, 5)
+            # Un article ja porta el seu <h1>: el títol més gran de dins és h2
+            nivell = min(len(titol.group(1)) + desplacament, 6)
             sortida.append(f"<h{nivell}>{en_linia(titol.group(2).strip())}</h{nivell}>")
             continue
 

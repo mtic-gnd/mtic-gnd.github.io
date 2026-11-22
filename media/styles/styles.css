@@ -182,6 +182,7 @@ p { max-width: 68ch; }
 .servei li { margin-bottom: .3rem; }
 .servei.destacat { background: var(--violeta); border-color: var(--violeta); color: #e9e0ff; }
 .servei.destacat h2 { color: #fff; }
+.servei.destacat ul { color: #e9e0ff; }
 .servei.destacat .icona { background: rgba(255,255,255,.15); color: #fff; }
 
 /* ---------- Ressenyes ---------- */
@@ -472,7 +473,7 @@ a.article-botiga:hover { border-color: var(--violeta); }
 .fitxa-article p { color: var(--text-suau); }
 .fitxa-article .llegir { margin-top: auto; color: var(--violeta); font-weight: 600; }
 .data-article { color: var(--text-suau); margin-top: .75rem; }
-.portada-article img { width: 100%; max-height: 420px; object-fit: cover; border-radius: var(--radi); margin-bottom: 2.5rem; }
+.portada-article img { width: 100%; height: auto; max-height: 420px; object-fit: cover; border-radius: var(--radi); margin-bottom: 2.5rem; }
 .text-llarg blockquote {
     border-left: 3px solid var(--violeta); padding-left: 1.25rem; margin: 1.5rem 0; color: var(--text-suau);
 }
