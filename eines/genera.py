@@ -188,6 +188,65 @@ ESTAT = {
     "unknown": "preguntar",
 }
 
+"""
+La disponibilitat que es diu a Google.
+
+«PreOrder» vol dir un producte que encara no ha sortit al mercat, i aquí el
+fèiem servir per a tot el que no era a la botiga: un tòner HP que el majorista
+porta en dos dies no és cap llançament. «BackOrder» és el que és: es pot
+demanar i arriba més tard. El que no sabem, no ho diem.
+"""
+SCHEMA_ESTAT = {
+    "in_stock": "https://schema.org/InStock",
+    "on_order": "https://schema.org/BackOrder",
+}
+
+
+def disponibilitat_schema(estat):
+    return SCHEMA_ESTAT.get(estat)
+
+
+# El venedor és el negoci de la fitxa de Google de la portada (mateix @id)
+VENEDOR = {"@type": "LocalBusiness", "@id": f"{DOMINI}/#negoci", "name": "mtic"}
+
+# Qui escriu els articles. La pàgina «Sobre nosaltres» és on es presenta.
+AUTOR = {"@type": "Person", "name": "Manel Clúa", "url": f"{DOMINI}/sobre-nosaltres.html"}
+EDITOR = {"@type": "Organization", "@id": f"{DOMINI}/#negoci", "name": "mtic",
+          "logo": {"@type": "ImageObject", "url": f"{DOMINI}/media/images/logo.png"}}
+
+
+def crida_article(idioma):
+    """
+    El quadre del final de cada article: d'un article sobre el DeCA o sobre
+    una estafa, cap als serveis i el contacte. Per a qui llegeix, el pas
+    següent; per a Google, els enllaços que diuen què fem i on.
+    """
+    if idioma == "ca":
+        return ('<aside class="crida-article"><p><strong>mtic</strong> · Serveis informàtics a Gandesa, la Terra Alta '
+                "i les Terres de l'Ebre: <a href=\"/reparacio-ordinadors.html\">reparació d'ordinadors</a>, "
+                '<a href="/recuperacio-dades.html">recuperació de dades</a>, '
+                '<a href="/manteniment-informatic.html">manteniment per a empreses</a> i '
+                '<a href="/pagines-web.html">pàgines web</a>. '
+                '<a href="/contacte.html">Contacta amb nosaltres</a> o truca al <a href="tel:+34711550872">711 55 08 72</a>.</p></aside>')
+    return ('<aside class="crida-article"><p><strong>mtic</strong> · Servicios informáticos en Gandesa, la Terra Alta '
+            "y las Terres de l'Ebre: <a href=\"/es/reparacion-ordenadores.html\">reparación de ordenadores</a>, "
+            '<a href="/es/recuperacion-datos.html">recuperación de datos</a>, '
+            '<a href="/es/mantenimiento-informatico.html">mantenimiento para empresas</a> y '
+            '<a href="/es/paginas-web.html">páginas web</a>. '
+            '<a href="/es/contacto.html">Contacta con nosotros</a> o llama al <a href="tel:+34711550872">711 55 08 72</a>.</p></aside>')
+
+
+def molles_ld(molles):
+    """Les molles de pa en dades estructurades: [(nom, url), ...]."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": n, "name": nom, "item": f"{DOMINI}{url}"}
+            for n, (nom, url) in enumerate(molles, start=1)
+        ],
+    }
+
 
 def aplica_textos(canvis):
     """
@@ -247,7 +306,15 @@ def json_ld(dades):
     tres caràcters escapats en \uXXXX el JSON continua sent el mateix i ja no
     hi ha manera de sortir-ne.
     """
-    brut = json.dumps(dades, ensure_ascii=False, indent=1)
+    # Un camp sense valor no es diu (una disponibilitat que no sabem, per exemple)
+    def neteja(x):
+        if isinstance(x, dict):
+            return {k: neteja(v) for k, v in x.items() if v is not None}
+        if isinstance(x, list):
+            return [neteja(v) for v in x]
+        return x
+
+    brut = json.dumps(neteja(dades), ensure_ascii=False, indent=1)
     return brut.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
 
 
@@ -662,9 +729,8 @@ def fitxa_producte(idioma, producte, categories, fotos):
             "url": f"{DOMINI}{url}",
             "priceCurrency": "EUR",
             "price": f"{preu:.2f}",
-            "availability": "https://schema.org/InStock" if producte.get("availability") == "in_stock"
-                            else "https://schema.org/PreOrder",
-            "seller": {"@type": "LocalBusiness", "name": "mtic"},
+            "availability": disponibilitat_schema(producte.get("availability")),
+            "seller": VENEDOR,
         },
     }
     schema = {k: v for k, v in schema.items() if v is not None}
@@ -707,7 +773,11 @@ def fitxa_producte(idioma, producte, categories, fotos):
         </div>
     </section>"""
 
-    extra = ('    <script type="application/ld+json">\n' + json_ld(schema) + "\n    </script>\n")
+    molles = molles_ld([(t["inici"], "/" if idioma == "ca" else "/es/"),
+                        ("Botiga" if idioma == "ca" else "Tienda", RUTES["botiga"][idioma]),
+                        (producte["name"], url)])
+    extra = ('    <script type="application/ld+json">\n' + json_ld(schema) + "\n    </script>\n"
+             '    <script type="application/ld+json">\n' + json_ld(molles) + "\n    </script>\n")
     return url, pagina(idioma, url, url_altre,
                        f"{producte['name']} · mtic",
                        producte.get("summary") or f"{producte['name']}. {t['botiga_descripcio']}",
@@ -845,9 +915,8 @@ def fitxa_familia(idioma, familia, categories, fotos, fotos_per_ref):
                 "url": f"{DOMINI}{url}",
                 "priceCurrency": "EUR",
                 "price": f"{v['price_with_vat']:.2f}",
-                "availability": "https://schema.org/InStock" if v.get("availability") == "in_stock"
-                                else "https://schema.org/PreOrder",
-                "seller": {"@type": "LocalBusiness", "name": "mtic"},
+                "availability": disponibilitat_schema(v.get("availability")),
+                "seller": VENEDOR,
             },
         } for v in familia["variants"]],
     }
@@ -906,7 +975,11 @@ def fitxa_familia(idioma, familia, categories, fotos, fotos_per_ref):
         </div>
     </section>"""
 
-    extra = ('    <script type="application/ld+json">\n' + json_ld(schema) + "\n    </script>\n")
+    molles = molles_ld([(t["inici"], "/" if idioma == "ca" else "/es/"),
+                        ("Botiga" if idioma == "ca" else "Tienda", RUTES["botiga"][idioma]),
+                        (nom, url)])
+    extra = ('    <script type="application/ld+json">\n' + json_ld(schema) + "\n    </script>\n"
+             '    <script type="application/ld+json">\n' + json_ld(molles) + "\n    </script>\n")
     return url, pagina(idioma, url, url_altre,
                        f"{nom} · mtic",
                        familia.get("summary") or f"{nom}. {t['botiga_descripcio']}",
@@ -1113,8 +1186,8 @@ def fitxa_article(idioma, post):
         "dateModified": (post.get("updated_at") or data)[:10],
         "inLanguage": idioma,
         "mainEntityOfPage": f"{DOMINI}{url}",
-        "author": {"@type": "Organization", "name": "mtic"},
-        "publisher": {"@type": "Organization", "name": "mtic"},
+        "author": AUTOR,
+        "publisher": EDITOR,
     }
     if post.get("cover_image"):
         schema["image"] = post["cover_image"]
@@ -1142,11 +1215,16 @@ def fitxa_article(idioma, post):
             <article class="text-llarg">
 {cos_html}
             </article>
+            {crida_article(idioma)}
             <p><a href="{RUTES['articles'][idioma]}">← {t['tornar_articles']}</a></p>
         </div>
     </section>"""
 
-    extra = ('    <script type="application/ld+json">\n' + json_ld(schema) + "\n    </script>\n")
+    molles = molles_ld([(t["inici"], "/" if idioma == "ca" else "/es/"),
+                        ("Articles" if idioma == "ca" else "Artículos", RUTES["articles"][idioma]),
+                        (post["title"], url)])
+    extra = ('    <script type="application/ld+json">\n' + json_ld(schema) + "\n    </script>\n"
+             '    <script type="application/ld+json">\n' + json_ld(molles) + "\n    </script>\n")
     return url, pagina(idioma, url, url_altre, f"{post['title']} · mtic", resum, cos,
                        seccio="articles", imatge=post.get("cover_image"), dades_extra=extra)
 

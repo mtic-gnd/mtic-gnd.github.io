@@ -473,6 +473,8 @@ a.article-botiga:hover { border-color: var(--violeta); }
 .fitxa-article p { color: var(--text-suau); }
 .fitxa-article .llegir { margin-top: auto; color: var(--violeta); font-weight: 600; }
 .data-article { color: var(--text-suau); margin-top: .75rem; }
+.crida-article { max-width: 46rem; margin: 2.5rem 0 1.5rem; padding: 1.25rem 1.5rem; border: 1px solid var(--linia); border-left: 4px solid var(--violeta); border-radius: var(--radi); background: var(--superficie); }
+.crida-article p { margin: 0; }
 .portada-article img { width: 100%; height: auto; max-height: 420px; object-fit: cover; border-radius: var(--radi); margin-bottom: 2.5rem; }
 .text-llarg blockquote {
     border-left: 3px solid var(--violeta); padding-left: 1.25rem; margin: 1.5rem 0; color: var(--text-suau);
