@@ -4,12 +4,12 @@ mtic · el tros de markdown que fem servir als articles.
 
 No és un markdown sencer i no ho vol ser: és el que s'escriu de debò en un
 article del blog —títols, paràgrafs, negreta, cursiva, enllaços, imatges,
-llistes, cites i codi— i prou. Sense dependències, com la resta del
+llistes, cites, codi i taules— i prou. Sense dependències, com la resta del
 repositori.
 
 Tot el text s'escapa ABANS de posar-hi format, així que un article no pot
-portar HTML a dins ni per error ni a posta. Si algun dia cal una taula o un
-vídeo, s'afegeix aquí i es veu a totes les pàgines alhora.
+portar HTML a dins ni per error ni a posta. Si algun dia cal un vídeo o
+qualsevol altra cosa, s'afegeix aquí i es veu a totes les pàgines alhora.
 """
 import html
 import re
@@ -67,6 +67,54 @@ RE_TITOL = re.compile(r"^(#{1,4})\s+(.*)$")
 RE_LLISTA = re.compile(r"^[-*]\s+(.*)$")
 RE_NUMERADA = re.compile(r"^\d+[.)]\s+(.*)$")
 RE_CITA = re.compile(r"^>\s?(.*)$")
+# La fila que separa la capçalera del cos: |---|:---:|---:|
+RE_SEPARADOR = re.compile(r"^\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)*\|?$")
+
+
+def _celes(linia):
+    """Una fila «| a | b |» -> ['a', 'b']. Un «\\|» és una barra dins la cel·la."""
+    linia = linia.strip()
+    if linia.startswith("|"):
+        linia = linia[1:]
+    if linia.endswith("|") and not linia.endswith("\\|"):
+        linia = linia[:-1]
+    trossos = re.split(r"(?<!\\)\|", linia)
+    return [t.strip().replace("\\|", "|") for t in trossos]
+
+
+def _taula(files):
+    """Les files d'una taula -> HTML, o None si no ho és de debò.
+
+    Perquè sigui taula cal la capçalera i, just a sota, la fila de guions.
+    Si no hi és, aquelles línies eren text normal que començava per «|».
+    """
+    if len(files) < 2 or not RE_SEPARADOR.match(files[1].strip()):
+        return None
+    cap = _celes(files[0])
+    alineacions = []
+    for sep in _celes(files[1]):
+        if sep.startswith(":") and sep.endswith(":"):
+            alineacions.append("center")
+        elif sep.endswith(":"):
+            alineacions.append("right")
+        else:
+            alineacions.append(None)
+    n = len(cap)
+
+    def cel(etiqueta, text, i):
+        al = alineacions[i] if i < len(alineacions) else None
+        estil = f' style="text-align:{al}"' if al else ""
+        return f"<{etiqueta}{estil}>{en_linia(text)}</{etiqueta}>"
+
+    out = ['<div class="taula"><table>', "<thead><tr>"
+           + "".join(cel("th", c, i) for i, c in enumerate(cap)) + "</tr></thead>", "<tbody>"]
+    for fila in files[2:]:
+        cels = _celes(fila)
+        # Ni més ni menys columnes que la capçalera: les que falten, buides
+        cels = (cels + [""] * n)[:n]
+        out.append("<tr>" + "".join(cel("td", c, i) for i, c in enumerate(cels)) + "</tr>")
+    out.append("</tbody></table></div>")
+    return "\n".join(out)
 
 
 def a_html(text):
@@ -76,6 +124,7 @@ def a_html(text):
     paragraf = []
     llista = None          # 'ul' | 'ol' | None
     cita = []
+    taula = []             # files seguides que comencen per «|»
     codi = None            # llista de línies dins d'un bloc ```
 
     def tanca_paragraf():
@@ -96,7 +145,18 @@ def a_html(text):
             sortida.append(f"<blockquote><p>{en_linia(' '.join(cita))}</p></blockquote>")
             cita = []
 
+    def tanca_taula():
+        nonlocal taula
+        if taula:
+            feta = _taula(taula)
+            if feta:
+                sortida.append(feta)
+            else:
+                paragraf.extend(f.strip() for f in taula)
+            taula = []
+
     def tanca_tot():
+        tanca_taula()
         tanca_paragraf()
         tanca_llista()
         tanca_cita()
@@ -120,6 +180,15 @@ def a_html(text):
         if not net.strip():
             tanca_tot()
             continue
+
+        if net.strip().startswith("|"):
+            if not taula:
+                tanca_paragraf()
+                tanca_llista()
+                tanca_cita()
+            taula.append(net)
+            continue
+        tanca_taula()
 
         titol = RE_TITOL.match(net)
         if titol:

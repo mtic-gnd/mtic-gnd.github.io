@@ -30,7 +30,7 @@ import sys
 
 ARREL = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMINI = "https://mtic.cat"
-VERSIO = "202610182014"
+VERSIO = "202611221930"
 MAPS = "https://www.google.com/maps?cid=5369165064477127583"
 INSTAGRAM = "https://www.instagram.com/mtic.gandesa/"
 TEL = "+34711550872"
@@ -64,7 +64,8 @@ ICONA_MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-
 TXT = {
     "ca": {
         "inici": ("/", "Inici"), "serveis": ("/serveis.html", "Serveis"),
-        "botiga": ("/botiga/", "Botiga"), "articles": ("/articles/", "Articles"),
+        "botiga": ("/botiga/", "Botiga"), "deca": ("https://deca.mtic.cat", "DeCA"),
+        "articles": ("/articles/", "Articles"),
         "sobre": ("/sobre-nosaltres.html", "Sobre nosaltres"), "contacte": ("/contacte.html", "Contacte"),
         "altre_idioma": ("es", "Castellano"), "marca_aria": "mtic, anar a l'inici",
         "obre_menu": "Obre el menú", "nav_aria": "Navegació principal",
@@ -87,7 +88,8 @@ TXT = {
     },
     "es": {
         "inici": ("/es/", "Inicio"), "serveis": ("/es/servicios.html", "Servicios"),
-        "botiga": ("/es/tienda/", "Tienda"), "articles": ("/es/articulos/", "Artículos"),
+        "botiga": ("/es/tienda/", "Tienda"), "deca": ("https://deca.mtic.cat", "DeCA"),
+        "articles": ("/es/articulos/", "Artículos"),
         "sobre": ("/es/sobre-nosotros.html", "Sobre nosotros"), "contacte": ("/es/contacto.html", "Contacto"),
         "altre_idioma": ("ca", "Català"), "marca_aria": "mtic, ir al inicio",
         "obre_menu": "Abrir el menú", "nav_aria": "Navegación principal",
@@ -121,7 +123,7 @@ def fitxer(url):
 def capcalera(idioma, seccio, url_altre):
     t = TXT[idioma]
     enllacos = []
-    for clau in ("inici", "serveis", "botiga", "articles", "sobre", "contacte"):
+    for clau in ("inici", "serveis", "botiga", "deca", "articles", "sobre", "contacte"):
         href, nom = t[clau]
         actual = ' aria-current="page"' if clau == seccio else ""
         enllacos.append(f'                <a href="{href}"{actual}>{nom}</a>')

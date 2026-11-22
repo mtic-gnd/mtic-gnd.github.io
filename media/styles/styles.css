@@ -349,7 +349,13 @@ p { max-width: 68ch; }
     .peu .container > div:first-child { grid-column: 1 / -1; }
     .sobre figure { max-width: 420px; }
 }
-@media (max-width: 760px) {
+/* El menú: amb set enllaços, l'idioma i el telèfon, per sota d'uns 1080px ja
+   no hi cap en una línia i la capçalera es partia en dues. Llavors, hamburguesa. */
+@media (max-width: 1240px) {
+    .menu { gap: .15rem; }
+    .menu a { padding: .5rem .6rem; }
+}
+@media (max-width: 1080px) {
     .menu-obre { display: block; }
     .menu {
         display: none; position: absolute; left: 0; right: 0; top: 100%;
@@ -360,6 +366,8 @@ p { max-width: 68ch; }
     .menu.obert { display: flex; }
     .menu a { padding: .85rem .5rem; border-bottom: 1px solid var(--linia); border-radius: 0; }
     .menu .boto { margin: 1rem 0 0; border-radius: 10px; border-bottom: 0; }
+}
+@media (max-width: 760px) {
     .marca img { height: 34px; }
     .botons > a { flex: 1 1 auto; }
 }
@@ -372,6 +380,9 @@ p { max-width: 68ch; }
 .text-llarg table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: .95rem; }
 .text-llarg th, .text-llarg td { text-align: left; vertical-align: top; padding: .6rem .75rem; border-bottom: 1px solid var(--linia); }
 .text-llarg th { color: var(--negre); background: var(--superficie); }
+/* Les taules dels articles: en un mòbil estret, es fan lliscar i no trenquen la pàgina */
+.text-llarg .taula { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0 1.5rem; }
+.text-llarg .taula table { margin: 0; min-width: 28rem; }
 
 /* Treballs recents (fotos del taller) */
 .seccio.treballs-seccio { padding-top: 0; }
