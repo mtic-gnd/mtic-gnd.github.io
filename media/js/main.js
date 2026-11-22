@@ -6,7 +6,19 @@
     var CLAU_COOKIES = "mtic-cookies"; // "si" | "no"
     var ES = (document.documentElement.lang || "ca").indexOf("es") === 0;
 
-    var T = ES ? {
+    var EN = (document.documentElement.lang || "").indexOf("en") === 0;
+    var T = EN ? {
+        avis: "We use Google Analytics cookies to see how the website is used and improve it. They are only turned on if you accept them.",
+        mesInfo: "More information",
+        urlCookies: "/es/cookies.html",
+        acceptar: "Accept",
+        rebutjar: "Reject",
+        etiqueta: "Cookie notice",
+        hola: "Hello mtic! I'm ",
+        consulta: "Question about: ",
+        telefon: "My phone: ",
+        assumpte: "Website enquiry"
+    } : ES ? {
         avis: "Usamos cookies de Google Analytics para saber cómo se usa la web y mejorarla. Solo se activan si las aceptas.",
         mesInfo: "Más información",
         urlCookies: "/es/cookies.html",

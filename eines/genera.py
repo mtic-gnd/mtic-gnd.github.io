@@ -23,6 +23,7 @@ trencarien el dia que ells canviïn l'adreça.
     MTIC_API=https://api.mtic.cat MTIC_TOKEN=... python3 eines/genera.py
     python3 eines/genera.py --local        (reaprofita dades/*.json, sense xarxa)
 """
+import copy
 import datetime
 import html
 import json
@@ -473,7 +474,7 @@ def senyal_comandes():
 
 
 def pagina(idioma, url, url_altre, titol, descripcio, cos, seccio="serveis",
-           imatge=None, dades_extra="", classe=""):
+           imatge=None, dades_extra="", classe="", parella=True, canonica=None):
     """
     El motlle de totes les pàgines que genera aquest programa.
 
@@ -485,7 +486,7 @@ def pagina(idioma, url, url_altre, titol, descripcio, cos, seccio="serveis",
     # l'altre idioma seria dir que és el mateix contingut, i no ho és.
     idiomes = (web.bloc_idiomes(url if idioma == "ca" else url_altre,
                                 url_altre if idioma == "ca" else url)
-               if url_altre else "")
+               if url_altre and parella else "")
     return f"""<!DOCTYPE html>
 <html lang="{idioma}">
 <head>
@@ -494,7 +495,7 @@ def pagina(idioma, url, url_altre, titol, descripcio, cos, seccio="serveis",
     <title>{esc(titol)}</title>
     <meta name="description" content="{esc(descripcio)}">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{DOMINI}{url}">
+    <link rel="canonical" href="{DOMINI}{canonica or url}">
     {idiomes}
     <meta name="theme-color" content="#5e17eb">
     <meta name="mtic-api" content="{API}">{senyal_comandes()}
@@ -558,6 +559,64 @@ def gtin(ean):
     """
     digits = re.sub(r"\D", "", str(ean or ""))
     return {8: "gtin8", 12: "gtin12", 13: "gtin13", 14: "gtin14"}.get(len(digits)), digits
+
+
+# ------------------------------------------------------ botiga en castellà
+
+CAMPS_ES = ("name", "summary", "body")
+
+
+def te_castella(cosa):
+    """
+    Si una fitxa de la botiga té el seu text en castellà.
+
+    L'ERP pot enviar `name_es`, `summary_es` i `body_es`. Compta com a
+    traduïda quan té el nom i, dels textos que té en català, també el
+    castellà: una pàgina a mitges, amb el títol en castellà i la descripció
+    en català, és el que no volem ensenyar a Google com a versió /es/.
+    """
+    if not (cosa.get("name_es") or "").strip():
+        return False
+    return all((cosa.get(f"{c}_es") or "").strip() for c in ("summary", "body") if (cosa.get(c) or "").strip())
+
+
+def en_castella(cosa):
+    """Una còpia amb els textos en castellà on n'hi ha; on no, els catalans."""
+    copia = dict(cosa)
+    for camp in CAMPS_ES:
+        valor = (cosa.get(f"{camp}_es") or "").strip()
+        if valor:
+            copia[camp] = valor
+    if "variants" in cosa:
+        copia["variants"] = [en_castella(v) for v in cosa["variants"]]
+    return copia
+
+
+def cataleg_castella(cataleg):
+    """
+    El catàleg tal com s'ha d'ensenyar a /es/tienda/.
+
+    Cada producte i cada família porten `_traduit`: si és fals, la pàgina en
+    castellà seria la catalana amb un altre `lang`. Aquella pàgina continua
+    existint (qui hi entra des del menú la troba), però diu a Google que la
+    bona és la catalana i no entra al sitemap.
+    """
+    es = copy.deepcopy(cataleg)
+    for llista_ca, llista_es in ((cataleg["products"], es["products"]), (cataleg.get("groups", []), es.get("groups", []))):
+        for i, cosa in enumerate(llista_ca):
+            traduit = te_castella(cosa)
+            cosa["_traduit"] = traduit
+            llista_es[i] = en_castella(cosa)
+            llista_es[i]["_traduit"] = traduit
+    es["categories"] = [en_castella(c) for c in es.get("categories", [])]
+    return es
+
+
+def parella_botiga(idioma, cosa, url_altre):
+    """hreflang i canònica d'una fitxa de la botiga segons si està traduïda."""
+    if cosa.get("_traduit", True):
+        return {"parella": True, "canonica": None}
+    return {"parella": False, "canonica": url_altre if idioma == "es" else None}
 
 
 def fitxa_producte(idioma, producte, categories, fotos):
@@ -652,7 +711,8 @@ def fitxa_producte(idioma, producte, categories, fotos):
     return url, pagina(idioma, url, url_altre,
                        f"{producte['name']} · mtic",
                        producte.get("summary") or f"{producte['name']}. {t['botiga_descripcio']}",
-                       cos, seccio="botiga", imatge=fotos[0] if fotos else None, dades_extra=extra)
+                       cos, seccio="botiga", imatge=fotos[0] if fotos else None, dades_extra=extra,
+                       **parella_botiga(idioma, producte, url_altre))
 
 
 def etiqueta_variant(nom_familia, variant):
@@ -850,7 +910,8 @@ def fitxa_familia(idioma, familia, categories, fotos, fotos_per_ref):
     return url, pagina(idioma, url, url_altre,
                        f"{nom} · mtic",
                        familia.get("summary") or f"{nom}. {t['botiga_descripcio']}",
-                       cos, seccio="botiga", imatge=vistes[0] if vistes else None, dades_extra=extra)
+                       cos, seccio="botiga", imatge=vistes[0] if vistes else None, dades_extra=extra,
+                       **parella_botiga(idioma, familia, url_altre))
 
 
 def preu_html(producte, classe="preu"):
@@ -1251,8 +1312,11 @@ def main():
     pagines = []          # per al sitemap: (url_ca, url_es)
     esperades = set()     # el que ha d'existir; la resta, fora
 
+    cataleg_es = cataleg_castella(cataleg)
+    per_idioma = {"ca": cataleg, "es": cataleg_es}
+
     for idioma in ("ca", "es"):
-        url, text = index_botiga(idioma, cataleg, fotos_per_ref, fotos_per_familia)
+        url, text = index_botiga(idioma, per_idioma[idioma], fotos_per_ref, fotos_per_familia)
         if escriu(url, text):
             canvis.append(url)
         url, text = index_articles(idioma, [p for p in articles["posts"] if p["lang"] == idioma])
@@ -1263,30 +1327,33 @@ def main():
     pagines.append((RUTES["articles"]["ca"], RUTES["articles"]["es"]))
 
     categories = {c["slug"]: c for c in cataleg["categories"]}
-    for producte in cataleg["products"]:
+    categories_per_idioma = {i: {c["slug"]: c for c in per_idioma[i]["categories"]} for i in ("ca", "es")}
+    for n, producte in enumerate(cataleg["products"]):
         if (categories.get(producte.get("category")) or {}).get("layout", "page") != "page":
             continue          # els que només són una fila del llistat no tenen fitxa
         urls = {}
         for idioma in ("ca", "es"):
-            url, text = fitxa_producte(idioma, producte, categories, fotos_per_ref.get(producte["ref"], []))
+            p = per_idioma[idioma]["products"][n]
+            url, text = fitxa_producte(idioma, p, categories_per_idioma[idioma], fotos_per_ref.get(producte["ref"], []))
             urls[idioma] = url
             esperades.add(url)
             if escriu(url, text):
                 canvis.append(url)
-        pagines.append((urls["ca"], urls["es"]))
+        # Sense traducció, al sitemap només hi va la catalana
+        pagines.append((urls["ca"], urls["es"] if producte["_traduit"] else None))
 
     # Les pàgines de família
-    for familia in cataleg["groups"]:
+    for n, familia in enumerate(cataleg["groups"]):
         urls = {}
         for idioma in ("ca", "es"):
-            url, text = fitxa_familia(idioma, familia, categories,
+            url, text = fitxa_familia(idioma, per_idioma[idioma]["groups"][n], categories_per_idioma[idioma],
                                       fotos_per_familia.get(familia["slug"], []),
                                       fotos_per_ref)
             urls[idioma] = url
             esperades.add(url)
             if escriu(url, text):
                 canvis.append(url)
-        pagines.append((urls["ca"], urls["es"]))
+        pagines.append((urls["ca"], urls["es"] if familia["_traduit"] else None))
 
     for post in articles["posts"]:
         url, text = fitxa_article(post["lang"], post)
