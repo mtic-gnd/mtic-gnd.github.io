@@ -563,7 +563,7 @@ def gtin(ean):
 
 # ------------------------------------------------------ botiga en castellà
 
-CAMPS_ES = ("name", "summary", "body")
+CAMPS_ES = ("name", "summary", "body", "variant")
 
 
 def te_castella(cosa):
