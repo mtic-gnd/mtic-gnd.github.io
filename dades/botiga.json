@@ -87,7 +87,7 @@
  ],
  "count": 79,
  "currency": "EUR",
- "generated_at": "2026-11-23 01:53:03",
+ "generated_at": "2026-11-23 10:04:25",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2991,6 +2991,7 @@
   {
    "availability": "on_order",
    "body": "El mini PC iggual Teseracto cap a qualsevol racó: amb processador Intel Core i5-1235U, 8 GB de RAM i SSD de 256 GB és prou potent per a l'oficina, la botiga o com a ordinador de casa. Té dues sortides HDMI per connectar dos monitors i arriba amb Windows 11 Pro.",
+   "body_es": "El mini PC iggual Teseracto hacia cualquier rincón: con procesador Intel Core i5-1235U, 8 GB de RAM y SSD de 256 GB es bastante potente para la oficina, la tienda o como ordenador de casa. Tiene dos salidas HDMI para conectar dos monitores y llega con Windows 11 Pro.",
    "brand": "iggual",
    "category": "ordinadors-sobretaula",
    "ean": "8435364320945",
@@ -3004,6 +3005,7 @@
    "layout": "page",
    "model": "IGG320945",
    "name": "Mini PC iggual Teseracto Intel Core i5 8 GB RAM 256 GB SSD Windows 11 Pro",
+   "name_es": "Mini PC iggual Teseracto Intel Core i5 8 GB RAM 256 GB SSD Windows 11 Pro",
    "offer": false,
    "price": 519.01,
    "price_with_vat": 628,
@@ -3013,6 +3015,7 @@
    "ref": "PC-IGG-IGG32094",
    "slug": "mini-pc-iggual-teseracto-intel-core-i5-8-gb-ram-256-gb-ssd-windows-11-pro",
    "summary": "Mini PC iggual amb Intel Core i5-1235U, 8 GB de RAM, SSD de 256 GB, dues sortides HDMI i Windows 11 Pro.",
+   "summary_es": "Mini PC iggual con Intel Core i5-1235U, 8 GB de RAM, SSD de 256 GB, dos salidas HDMI y Windows 11 Pro.",
    "unit": "u",
    "updated_at": "2026-10-26 17:47:48",
    "vat_pct": 21
@@ -3020,6 +3023,7 @@
   {
    "availability": "on_order",
    "body": "La iggual WC1080 Quick View és una càmera web Full HD 1080p per a videotrucades, teletreball i classes en línia. S'endolla per USB i funciona sense instal·lar controladors. Una opció econòmica per afegir càmera a un ordinador de sobretaula.",
+   "body_es": "La iggual WC1080 Quick View es una cámara web Full HD 1080p para videotrucades, teletrabajo y clases en linea. Se enchufa por USB y funciona sin instalar controladores. Una opción económica para añadir cámara a un ordenador de sobremesa.",
    "brand": "iggual",
    "category": "accessoris",
    "ean": "8435364317167",
@@ -3034,6 +3038,7 @@
    "layout": "page",
    "model": "IGG317167",
    "name": "Càmera web iggual Quick View WC1080 Full HD",
+   "name_es": "Cámara web iggual Quick View WC1080 Full HD",
    "offer": false,
    "price": 14.87,
    "price_with_vat": 17.99,
@@ -3043,6 +3048,7 @@
    "ref": "ACC-IGG-IGG31716",
    "slug": "camera-web-iggual-quick-view-wc1080-full-hd",
    "summary": "Webcam USB Full HD 1080p iggual, senzilla i econòmica.",
+   "summary_es": "Webcam USB Full HD 1080p iggual, sencilla y económica.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3050,6 +3056,7 @@
   {
    "availability": "on_order",
    "body": "El Kingston A400 de 480 GB és un disc SSD de 2,5 polzades amb interfície SATA III, molt més ràpid que un disc dur convencional. Ideal per renovar portàtils i ordinadors de sobretaula i notar la diferència des de la primera arrencada.",
+   "body_es": "El Kingston A400 de 480 GB es un disco SSD de 2,5 pulgadas con interfaz SATA III, mucho más rápido que un disco duro convencional. Ideal para renovar portátiles y ordenadores de sobremesa y notar la diferencia desde el primer arranque.",
    "brand": "Kingston",
    "category": "discs-ssd",
    "ean": "740617263442",
@@ -3066,6 +3073,7 @@
    "layout": "page",
    "model": "SA400S37480G",
    "name": "Disc SSD Kingston A400 480 GB SATA III 2,5\"",
+   "name_es": "Disco SSD Kingston A400 480 GB SATA III 2,5\"",
    "offer": false,
    "price": 81.81,
    "price_with_vat": 98.99,
@@ -3075,6 +3083,7 @@
    "ref": "SSD-KIN-SA400S37",
    "slug": "disc-ssd-kingston-a400-480-gb-sata-iii-2-5",
    "summary": "SSD de 2,5\" SATA III Kingston A400 de 480 GB, fiable i ràpid.",
+   "summary_es": "SSD de 2,5\" SATA III Kingston A400 de 480 GB, fiable y rápido.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3082,6 +3091,7 @@
   {
    "availability": "on_order",
    "body": "La Logitech Brio 105 grava en Full HD 1080p i millora automàticament la il·luminació perquè es vegi bé en videotrucades i classes en línia. Incorpora micròfon i es connecta per USB sense instal·lar res. Compatible amb les aplicacions de videoconferència habituals.",
+   "body_es": "La Logitech Brio 105 graba en Full HD 1080p y mejora automáticamente la iluminación porque se vea bien en videotrucades y clases en linea. Incorpora micrófono y se conecta por USB sin instalar nada. Compatible con las aplicaciones de videoconferencia habituales.",
    "brand": "Logitech",
    "category": "accessoris",
    "ean": "5099206112520",
@@ -3098,6 +3108,7 @@
    "layout": "page",
    "model": "960001592",
    "name": "Càmera web Logitech Brio 105 Full HD",
+   "name_es": "Cámara web Logitech Brio 105 Full HD",
    "offer": false,
    "price": 23.96,
    "price_with_vat": 28.99,
@@ -3107,6 +3118,7 @@
    "ref": "ACC-LOG-96000159",
    "slug": "camera-web-logitech-brio-105-full-hd",
    "summary": "Webcam Logitech Brio 105 Full HD 1080p amb micròfon, per a videotrucades de qualitat.",
+   "summary_es": "Webcam Logitech Brio 105 Full HD 1080p con micrófono, para videotrucades de calidad.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3114,6 +3126,7 @@
   {
    "availability": "on_order",
    "body": "Monitor AOC de 23,8 polzades amb resolució Full HD i funció multimèdia. Una opció senzilla per a l'oficina i per a casa.",
+   "body_es": "Monitor AOC de 23,8 pulgadas con resolución Full HD y función multimedia. Una opción sencilla para la oficina y para casa.",
    "brand": "AOC",
    "category": "pantalles",
    "ean": "4038986151481",
@@ -3129,6 +3142,7 @@
    "layout": "page",
    "model": "24B3HA2",
    "name": "Monitor AOC 24B3HA2 de 23,8\" Full HD amb altaveus",
+   "name_es": "Monitor AOC 24B3HA2 de 23,8\" Full HD con altavoces",
    "offer": false,
    "price": 73.13,
    "price_with_vat": 88.49,
@@ -3138,6 +3152,7 @@
    "ref": "LCD-AOC-24B3HA2",
    "slug": "monitor-aoc-24b3ha2-de-23-8-full-hd-amb-altaveus",
    "summary": "Monitor AOC de 23,8\" Full HD multimèdia, senzill per a casa i oficina.",
+   "summary_es": "Monitor AOC de 23,8\" Full HD multimedia, sencillo para casa y oficina.",
    "unit": "u",
    "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
@@ -3145,6 +3160,7 @@
   {
    "availability": "on_order",
    "body": "L'Asus TUF Gaming VG279QE5A és un monitor de 27 polzades amb panell IPS Full HD, freqüència de 144 Hz i temps de resposta d'1 ms per jugar amb moviments fluids. Incorpora altaveus. També és una bona opció per treballar amb una pantalla gran. Color negre.",
+   "body_es": "El Asus TUF Gaming VG279QE5A es un monitor de 27 pulgadas con panel IPS Full HD, frecuencia de 144 Hz y tiempo de respuesta de 1 ms para jugar con movimientos fluidos. Incorpora altavoces. También es una buena opción para trabajar con una gran pantalla. Color negro.",
    "brand": "ASUS",
    "category": "pantalles",
    "ean": "4711387871508",
@@ -3161,6 +3177,7 @@
    "layout": "page",
    "model": "90LM0BJ0B01171",
    "name": "Monitor gaming Asus TUF VG279QE5A de 27\" Full HD 144 Hz",
+   "name_es": "Monitor gaming Asus TUF VG279QE5A de 27\" Full HD 144 Hz",
    "offer": false,
    "price": 89.66,
    "price_with_vat": 108.49,
@@ -3170,6 +3187,7 @@
    "ref": "LCD-ASU-90LM0BJ0",
    "slug": "monitor-gaming-asus-tuf-vg279qe5a-de-27-full-hd-144-hz",
    "summary": "Monitor gaming Asus de 27\" IPS Full HD, 144 Hz i 1 ms, amb altaveus integrats.",
+   "summary_es": "Monitor gaming Asus de 27\" IPS Full HD, 144 Hz y 1 ms, con altavoces integrados.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3177,6 +3195,7 @@
   {
    "availability": "on_order",
    "body": "Monitor Asus de 23,8 polzades amb panell IPS i resolució Full HD. Amb 120 Hz i 1 ms de resposta, va bé tant per treballar com per jugar.",
+   "body_es": "Monitor Asus de 23,8 pulgadas con panel IPS y resolución QQ1QQ. Con 120 Hz y 1 ms de respuesta, va bien tanto para trabajar como para jugar.",
    "brand": "ASUS",
    "category": "pantalles",
    "ean": "4711387795163",
@@ -3192,6 +3211,7 @@
    "layout": "page",
    "model": "90LM02W0B01171",
    "name": "Monitor Asus VA249HG de 23,8\" Full HD 120 Hz",
+   "name_es": "Monitor Asus VA249HG de 23,8\" Full HD 120 Hz",
    "offer": false,
    "price": 75.2,
    "price_with_vat": 90.99,
@@ -3201,6 +3221,7 @@
    "ref": "LCD-ASU-90LM02W0",
    "slug": "monitor-asus-va249hg-de-23-8-full-hd-120-hz",
    "summary": "Monitor Asus de 23,8\" IPS Full HD, 120 Hz i 1 ms, per a casa, l'oficina i el joc.",
+   "summary_es": "Monitor Asus de 23,8\" IPS Full HD, 120 Hz y 1 ms, para casa, la oficina y el juego.",
    "unit": "u",
    "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
@@ -3208,6 +3229,7 @@
   {
    "availability": "on_order",
    "body": "El Philips 271V8AW és un monitor de 27 polzades amb resolució Full HD i altaveus integrats, pensat per treballar, estudiar i veure contingut amb una pantalla gran. El seu acabat blanc encaixa en espais de casa i oficines de disseny clar.",
+   "body_es": "El Philips 271V8AW es un monitor de 27 pulgadas con resolución Full HD y altavoces integrados, pensado para trabajar, estudiar y ver contenido con una gran pantalla. Su acabado blanco encaja en espacios de casa y oficinas de diseño claro.",
    "brand": "PHILIPS",
    "category": "pantalles",
    "ean": "8712581804398",
@@ -3224,6 +3246,7 @@
    "layout": "page",
    "model": "271V8AW00",
    "name": "Monitor Philips 271V8AW de 27\" Full HD Blanc",
+   "name_es": "Monitor Philips 271V8AW de 27\" Full HD Blanco",
    "offer": false,
    "price": 98.34,
    "price_with_vat": 118.99,
@@ -3233,6 +3256,7 @@
    "ref": "LCD-PHI-271V8AW0",
    "slug": "monitor-philips-271v8aw-de-27-full-hd-blanc",
    "summary": "Monitor Philips de 27\" Full HD amb altaveus integrats, en color blanc.",
+   "summary_es": "Monitor Philips de 27\" Full HD con altavoces integrados, en color blanco.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3240,6 +3264,7 @@
   {
    "availability": "on_order",
    "body": "La Canon PIXMA TS4150i imprimeix, copia i escaneja, i es connecta per Wi-Fi per imprimir des de l'ordinador o el mòbil. Fa impressió automàtica a doble cara per estalviar paper. Ideal per a casa i estudiants. Color blanc.",
+   "body_es": "La Canon PIXMA TS4150i imprime, copia y escanea, y se conecta por Wi-Fi para imprimir desde el ordenador o el móvil. Hace impresión automática a doble cara para ahorrar papel. Ideal para casa y estudiantes. Color blanco.",
    "brand": "CANON",
    "category": "impressores",
    "ean": "4549292248067",
@@ -3256,6 +3281,7 @@
    "layout": "page",
    "model": "7181C006",
    "name": "Impressora multifunció Canon PIXMA TS4150i Wi-Fi Blanca",
+   "name_es": "Impresora multifunción Canon PIXMA TS4150i Wi-Fi Blanca",
    "offer": false,
    "price": 45.86,
    "price_with_vat": 55.49,
@@ -3265,6 +3291,7 @@
    "ref": "IMP-CAN-7181C006",
    "slug": "impressora-multifuncio-canon-pixma-ts4150i-wi-fi-blanca",
    "summary": "Multifunció de tinta Canon amb Wi-Fi i impressió a doble cara: imprimeix, copia i escaneja.",
+   "summary_es": "Multifunción de tinta Canon con Wi-Fi e impresión a doble cara: imprime, copia y escanea.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3272,6 +3299,7 @@
   {
    "availability": "on_order",
    "body": "La Canon PIXMA TS7750i és una multifunció pensada per imprimir fotos amb molt bona qualitat i també documents. Imprimeix, copia i escaneja, té connexió Wi-Fi per imprimir des del mòbil i fa impressió automàtica a doble cara. Color blanc.",
+   "body_es": "La Canon PIXMA TS7750i es una multifunción pensada para imprimir fotos con muy buena calidad y también documentos. Imprime, copia y escanea, tiene conexión Wi-Fi para imprimir desde el móvil y hace impresión automática a doble cara. Color blanco.",
    "brand": "CANON",
    "category": "impressores",
    "ean": "4549292221411",
@@ -3288,6 +3316,7 @@
    "layout": "page",
    "model": "6258C006",
    "name": "Impressora multifunció fotogràfica Canon PIXMA TS7750i Wi-Fi Blanca",
+   "name_es": "Impresora multifunción fotográfica Canon PIXMA TS7750i Wi-Fi Blanca",
    "offer": false,
    "price": 93.38,
    "price_with_vat": 112.99,
@@ -3297,6 +3326,7 @@
    "ref": "IMP-CAN-6258C006",
    "slug": "impressora-multifuncio-fotografica-canon-pixma-ts7750i-wi-fi-blanca",
    "summary": "Multifunció fotogràfica Canon amb Wi-Fi i doble cara, per a documents i fotos de qualitat.",
+   "summary_es": "Multifunción fotográfica Canon con Wi-Fi y doble cara, para documentos y fotos de calidad.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3304,6 +3334,7 @@
   {
    "availability": "on_order",
    "body": "L'Asus V400 és un ordinador tot en un amb pantalla de 23,8 polzades que integra tot l'equip a la pantalla: menys cables i més espai a l'escriptori. Porta un processador Intel Core 3 100U, 8 GB de RAM i un SSD de 512 GB, prou per a ofimàtica, navegació i videotrucades. Es pot lliurar amb el sistema operatiu instal·lat i configurat a la botiga.",
+   "body_es": "El Asus V400 es un ordenador todo en uno con pantalla de 23,8 pulgadas que integra todo el equipo a la pantalla: menos cables y más espacio al escritorio. Lleva un procesador Intel Core 3 100U, 8 GB de RAM y un SSD de 512 GB, bastante para ofimática, navegación y videotrucades. Se puede librar con el sistema operativo instalado y configurado en la tienda.",
    "brand": "ASUS",
    "category": "ordinadors-sobretaula",
    "ean": "4711636483179",
@@ -3320,6 +3351,7 @@
    "layout": "page",
    "model": "90PT03XAM091W0",
    "name": "Ordinador All in One Asus V400 Intel Core 3 8 GB RAM 512 GB SSD 23,8\" sense sistema operatiu",
+   "name_es": "Ordenador All in One Asus V400 Intel Core 3 8 GB RAM 512 GB SSD 23,8\" sin sistema operativo",
    "offer": false,
    "price": 501.65,
    "price_with_vat": 607,
@@ -3329,6 +3361,7 @@
    "ref": "PC-ASU-90PT03XA",
    "slug": "ordinador-all-in-one-asus-v400-intel-core-3-8-gb-ram-512-gb-ssd-23-8-sense-siste",
    "summary": "Tot en un Asus de 23,8\" amb Intel Core 3 100U, 8 GB de RAM i SSD de 512 GB, sense sistema operatiu.",
+   "summary_es": "Todo en un Asus de 23,8\" con Intel Core 3 100U, 8 GB de RAM y SSD de 512 GB, sin sistema operativo.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3336,6 +3369,7 @@
   {
    "availability": "on_order",
    "body": "L'HP 27-cr0118ns és un ordinador tot en un amb pantalla Full HD de 27 polzades, processador Intel Core i5-1334U, 16 GB de RAM i SSD de 512 GB. Inclou teclat i ratolí sense fil HP, i té càmera amb tapa de privacitat per a videotrucades. Ve sense Windows (FreeDOS). Es pot lliurar amb el sistema operatiu instal·lat i configurat a la botiga.",
+   "body_es": "El HP 27-cr0118ns es un ordenador todo en uno con pantalla Full HD de 27 pulgadas, procesador Intel Core i5-1334U, 16 GB de RAM y SSD de 512 GB. Incluye teclado y ratón inalámbrico HP, y tiene cámara con tapa de privacidad para videotrucades. Viene sin Windows (FreeDOS). Se puede librar con el sistema operativo instalado y configurado en la tienda.",
    "brand": "HP",
    "category": "ordinadors-sobretaula",
    "ean": "821844832189",
@@ -3351,6 +3385,7 @@
    "layout": "page",
    "model": "DB9R0EA",
    "name": "Ordinador All in One HP 27 Intel Core i5 16 GB RAM 512 GB SSD 27\" sense sistema operatiu",
+   "name_es": "Ordenador All in One HP 27 Intel Core i5 16 GB RAM 512 GB SSD 27\" sin sistema operativo",
    "offer": false,
    "price": 724.37,
    "price_with_vat": 876.49,
@@ -3360,6 +3395,7 @@
    "ref": "PC-HP-DB9R0EA",
    "slug": "ordinador-all-in-one-hp-27-intel-core-i5-16-gb-ram-512-gb-ssd-27-sense-sistema-o",
    "summary": "Tot en un HP de 27\" amb Intel Core i5-1334U, 16 GB de RAM i SSD de 512 GB, amb teclat i ratolí sense fil.",
+   "summary_es": "Todo en un HP de 27\" con Intel Core i5-1334U, 16 GB de RAM y SSD de 512 GB, con teclado y ratón inalámbrico.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3367,6 +3403,7 @@
   {
    "availability": "on_order",
    "body": "L'Asus V500 és un ordinador de sobretaula en format mini torre amb processador Intel Core 5 210H, 8 GB de RAM i un SSD de 512 GB. Ocupa poc espai i és ideal per a casa, la botiga o l'oficina. Es pot lliurar amb el sistema operatiu instal·lat i configurat a la botiga.",
+   "body_es": "El Asus V500 es un ordenador de sobremesa en formato mini torre con procesador Intel Core 5 210H, 8 GB de RAM y un SSD de 512 GB. Ocupa poco espacio y es ideal para casa, la tienda o la oficina. Se puede librar con el sistema operativo instalado y configurado en la tienda.",
    "brand": "ASUS",
    "category": "ordinadors-sobretaula",
    "ean": "4711636561204",
@@ -3382,6 +3419,7 @@
    "layout": "page",
    "model": "90PF05R1M01PE0",
    "name": "Ordinador de sobretaula Asus V500 Intel Core 5 8 GB RAM 512 GB SSD sense sistema operatiu",
+   "name_es": "Ordenador de sobremesa Asus V500 Intel Core 5 8 GB RAM 512 GB SSD sin sistema operativo",
    "offer": false,
    "price": 477.68,
    "price_with_vat": 577.99,
@@ -3391,6 +3429,7 @@
    "ref": "PC-ASU-90PF05R1",
    "slug": "ordinador-de-sobretaula-asus-v500-intel-core-5-8-gb-ram-512-gb-ssd-sense-sistema",
    "summary": "PC torre compacte Asus amb Intel Core 5 210H, 8 GB de RAM i SSD de 512 GB, sense sistema operatiu.",
+   "summary_es": "PC torre compacto Asus con Intel Core 5 210H, 8 GB de RAM y SSD de 512 GB, sin sistema operativo.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3398,6 +3437,7 @@
   {
    "availability": "on_order",
    "body": "L'Asus VivoBook 15 porta un processador AMD Ryzen 7 7840HS d'alt rendiment, amb gràfics integrats Radeon, 8 GB de RAM i un SSD de 512 GB. Ideal per a qui necessita més potència per a programes exigents, edició lleugera o multitasca. Pantalla de 15,6 polzades i Windows 11.",
+   "body_es": "El Asus VivoBook 15 puerta un procesador AMD Ryzen 7 7840HS de alto rendimiento, con gráficos integrados Radeon, 8 GB de RAM y un SSD de 512 GB. Ideal para quien necesita más potencia para programas exigentes, edición ligera o multitasca. Pantalla de 15,6 pulgadas y Windows 11.",
    "brand": "ASUS",
    "category": "portatils",
    "ean": "4711636653770",
@@ -3414,6 +3454,7 @@
    "layout": "page",
    "model": "90NB19L1M004U0",
    "name": "Portàtil Asus VivoBook 15 AMD Ryzen 7 8 GB RAM 512 GB SSD 15,6\" Windows 11",
+   "name_es": "Portátil Asus VivoBook 15 AMD Ryzen 7 8 GB RAM 512 GB SSD 15,6\" Windows 11",
    "offer": false,
    "price": 625.61,
    "price_with_vat": 756.99,
@@ -3423,6 +3464,7 @@
    "ref": "POR-ASU-90NB19L1",
    "slug": "portatil-asus-vivobook-15-amd-ryzen-7-8-gb-ram-512-gb-ssd-15-6-windows-11",
    "summary": "Portàtil Asus de 15,6\" amb AMD Ryzen 7 7840HS, 8 GB de RAM, SSD de 512 GB i Windows 11.",
+   "summary_es": "Portátil Asus de 15,6\" con AMD Ryzen 7 7840HS, 8 GB de RAM, SSD de 512 GB y Windows 11.",
    "unit": "u",
    "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
@@ -3430,6 +3472,7 @@
   {
    "availability": "on_order",
    "body": "L'Asus VivoBook 15 X1504MA té un processador Intel Core 3 304, 8 GB de RAM i un disc SSD de 256 GB, i una pantalla de 15,6 polzades. És una opció econòmica per a estudis, ofimàtica i navegació. Es ven sense sistema operatiu: el podem lliurar instal·lat i configurat a la botiga.",
+   "body_es": "El Asus VivoBook 15 X1504MA tiene un procesador Intel Core 3 304, 8 GB de RAM y un disco SSD de 256 GB, y una pantalla de 15,6 pulgadas. Es una opción económica para estudios, ofimática y navegación. Se vende sin sistema operativo: lo podemos librar instalado y configurado en la tienda.",
    "brand": "ASUS",
    "category": "portatils",
    "ean": "4711636671101",
@@ -3446,6 +3489,7 @@
    "layout": "page",
    "model": "90NB17I2M01EZ0",
    "name": "Portàtil Asus VivoBook 15 Intel Core 3 8 GB RAM 256 GB SSD 15,6\" sense sistema operatiu",
+   "name_es": "Portátil Asus VivoBook 15 Intel Core 3 8 GB RAM 256 GB SSD 15,6\" sin sistema operativo",
    "offer": false,
    "price": 381.81,
    "price_with_vat": 461.99,
@@ -3455,6 +3499,7 @@
    "ref": "POR-ASU-90NB17I2",
    "slug": "portatil-asus-vivobook-15-intel-core-3-8-gb-ram-256-gb-ssd-15-6-sense-sistema-op",
    "summary": "Portàtil Asus de 15,6\" amb Intel Core 3, 8 GB de RAM i SSD de 256 GB, sense sistema operatiu.",
+   "summary_es": "Portátil Asus de 15,6\" con Intel Core 3, 8 GB de RAM y SSD de 256 GB, sin sistema operativo.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3462,6 +3507,7 @@
   {
    "availability": "on_order",
    "body": "L'HP EliteBook 8 G1i és un portàtil d'empresa de gamma alta amb processador Intel Core Ultra 5 226V, 16 GB de RAM, SSD de 512 GB i pantalla de 14 polzades. Inclou Windows 11 Pro i les funcions de seguretat HP Wolf Pro Security. Lleuger i pensat per treballar fora de l'oficina.",
+   "body_es": "El HP EliteBook 8 G1i es un portátil de empresa de gamma alta con procesador Intel Core Ultra 5 226V, 16 GB de RAM, SSD de 512 GB y pantalla de 14 pulgadas. Incluye Windows 11 Pro y las funciones de seguridad HP Wolf Pro Security. Ligero y pensado para trabajar fuera de la oficina.",
    "brand": "HP",
    "category": "portatils",
    "ean": "821844605493",
@@ -3478,6 +3524,7 @@
    "layout": "page",
    "model": "D93WBET",
    "name": "Portàtil HP EliteBook 8 G1i Intel Core Ultra 5 16 GB RAM 512 GB SSD 14\" Windows 11 Pro",
+   "name_es": "Portátil HP EliteBook 8 G1i Intel Core Ultra 5 16 GB RAM 512 GB SSD 14\" Windows 11 Pro",
    "offer": false,
    "price": 947.93,
    "price_with_vat": 1147,
@@ -3487,6 +3534,7 @@
    "ref": "POR-HP-D93WBET",
    "slug": "portatil-hp-elitebook-8-g1i-intel-core-ultra-5-16-gb-ram-512-gb-ssd-14-windows-1",
    "summary": "Portàtil professional HP EliteBook de 14\" amb Intel Core Ultra 5, 16 GB, SSD de 512 GB i Windows 11 Pro.",
+   "summary_es": "Portátil profesional HP EliteBook de 14\" con Intel Core Ultra 5, 16 GB, SSD de 512 GB y Windows 11 Pro.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -3494,6 +3542,7 @@
   {
    "availability": "on_order",
    "body": "El Lenovo ThinkPad L14 Gen 5 és un portàtil professional pensat per a empreses i autònoms: processador AMD Ryzen 5 PRO 7535U, 16 GB de RAM, SSD de 512 GB, pantalla de 14 polzades i Windows 11 Pro. Compacte, resistent i amb el teclat característic dels ThinkPad.",
+   "body_es": "El Lenovo ThinkPad L14 Gen 5 es un portátil profesional pensado para empresas y autónomos: procesador AMD Ryzen 5 PRO 7535U, 16 GB de RAM, SSD de 512 GB, pantalla de 14 pulgadas y Windows 11 Pro. Compacte, resistente y con el teclado característico de los ThinkPad.",
    "brand": "LENOVO",
    "category": "portatils",
    "ean": "198154724085",
@@ -3510,6 +3559,7 @@
    "layout": "page",
    "model": "21L5002GSP",
    "name": "Portàtil Lenovo ThinkPad L14 Gen 5 AMD Ryzen 5 PRO 16 GB RAM 512 GB SSD 14\" Windows 11 Pro",
+   "name_es": "Portátil Lenovo ThinkPad L14 Gen 5 AMD Ryzen 5 PRO 16 GB RAM 512 GB SSD 14\" Windows 11 Pro",
    "offer": false,
    "price": 648.75,
    "price_with_vat": 784.99,
@@ -3519,6 +3569,7 @@
    "ref": "POR-LEN-21L5002G",
    "slug": "portatil-lenovo-thinkpad-l14-gen-5-amd-ryzen-5-pro-16-gb-ram-512-gb-ssd-14-windo",
    "summary": "Portàtil professional Lenovo ThinkPad de 14\" amb Ryzen 5 PRO, 16 GB, SSD de 512 GB i Windows 11 Pro.",
+   "summary_es": "Portátil profesional Lenovo ThinkPad de 14\" con Ryzen 5 PRO, 16 GB, SSD de 512 GB y Windows 11 Pro.",
    "unit": "u",
    "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
@@ -3526,6 +3577,7 @@
   {
    "availability": "on_order",
    "body": "El Samsung Galaxy Book4 té un processador Intel Core i5-1335U, 16 GB de RAM i un SSD de 512 GB, amb pantalla de 15,6 polzades i Windows 11 Pro. Un portàtil fiable i elegant per a la feina i l'ús diari, que s'integra bé amb els mòbils i tauletes Samsung Galaxy.",
+   "body_es": "El Samsung Galaxy Book4 tiene un procesador Intel Core i5-1335U, 16 GB de RAM y un SSD de 512 GB, con pantalla de 15,6 pulgadas y Windows 11 Pro. Un portátil fiable y elegante para el trabajo y el uso diario, que se integra bien con los móviles y tabletas Samsung Galaxy.",
    "brand": "SAMSUNG",
    "category": "portatils",
    "ean": "8806095768267",
@@ -3542,6 +3594,7 @@
    "layout": "page",
    "model": "NP754XGJKG2ES",
    "name": "Portàtil Samsung Galaxy Book4 Intel Core i5 16 GB RAM 512 GB SSD 15,6\" Windows 11 Pro",
+   "name_es": "Portátil Samsung Galaxy Book4 Intel Core i5 16 GB RAM 512 GB SSD 15,6\" Windows 11 Pro",
    "offer": false,
    "price": 676.03,
    "price_with_vat": 818,
@@ -3551,6 +3604,7 @@
    "ref": "POR-SAM-NP754XGJ",
    "slug": "portatil-samsung-galaxy-book4-intel-core-i5-16-gb-ram-512-gb-ssd-15-6-windows-11",
    "summary": "Portàtil Samsung de 15,6\" amb Intel Core i5, 16 GB de RAM, SSD de 512 GB i Windows 11 Pro.",
+   "summary_es": "Portátil Samsung de 15,6\" con Intel Core i5, 16 GB de RAM, SSD de 512 GB y Windows 11 Pro.",
    "unit": "u",
    "updated_at": "2026-10-26 17:47:48",
    "vat_pct": 21
@@ -3558,6 +3612,7 @@
   {
    "availability": "on_order",
    "body": "El ratolí HP 125 combina un disseny ergonòmic i simètric amb un sensor òptic de fins a 1200 DPI per moure's amb precisió pels documents i el navegador. Connexió USB amb cable, sense instal·lació. Color negre. Format bulk, sense caixa comercial.",
+   "body_es": "El ratón HP 125 combina un diseño ergonómico y simétrico con un sensor óptico de hasta 1200 DPI para mover con precisión por los documentos y el navegador. Conexión USB con cable, sin instalación. Color negro. Formato bulk, sin caja comercial.",
    "brand": "HP",
    "category": "teclats-i-ratolins",
    "ean": "27537001",
@@ -3574,6 +3629,7 @@
    "layout": "page",
    "model": "265A9A6",
    "name": "Ratolí amb cable HP 125 Negre",
+   "name_es": "Ratón con cable HP 125 Negro",
    "offer": false,
    "price": 12.39,
    "price_with_vat": 14.99,
@@ -3583,6 +3639,7 @@
    "ref": "PER-HP-265A9A6",
    "slug": "ratoli-amb-cable-hp-125-negre",
    "summary": "Ratolí amb cable USB HP de 1200 DPI, còmode i resistent per a la feina diària.",
+   "summary_es": "Ratón con cable USB HP de 1200 DPI, cómodo y resistente para el trabajo diario.",
    "unit": "u",
    "updated_at": "2026-10-26 17:47:48",
    "vat_pct": 21
