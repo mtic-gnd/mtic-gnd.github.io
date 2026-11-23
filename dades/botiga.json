@@ -4,78 +4,90 @@
    "count": 10,
    "layout": "page",
    "name": "Accessoris",
+   "name_es": "Accesorios",
    "slug": "accessoris"
   },
   {
    "count": 11,
    "layout": "page",
    "name": "Cables",
+   "name_es": "Cables",
    "slug": "cables"
   },
   {
    "count": 3,
    "layout": "page",
    "name": "Discs durs externs",
+   "name_es": "Discos duros externos",
    "slug": "discs-durs-externs"
   },
   {
    "count": 3,
    "layout": "page",
    "name": "Discs SSD",
+   "name_es": "Discos SSD",
    "slug": "discs-ssd"
   },
   {
    "count": 3,
    "layout": "page",
    "name": "Fonts d'alimentació",
+   "name_es": "Fuentes de alimentación",
    "slug": "fonts-d-alimentacio"
   },
   {
    "count": 2,
    "layout": "page",
    "name": "Impressores",
+   "name_es": "Impresoras",
    "slug": "impressores"
   },
   {
    "count": 5,
    "layout": "page",
    "name": "Ordinadors sobretaula",
+   "name_es": "Ordenadores sobremesa",
    "slug": "ordinadors-sobretaula"
   },
   {
    "count": 4,
    "layout": "page",
    "name": "Pantalles",
+   "name_es": "Pantallas",
    "slug": "pantalles"
   },
   {
    "count": 9,
    "layout": "page",
    "name": "Portàtils",
+   "name_es": "Portátiles",
    "slug": "portatils"
   },
   {
    "count": 6,
    "layout": "page",
    "name": "Teclats i ratolins",
+   "name_es": "Teclados y ratones",
    "slug": "teclats-i-ratolins"
   },
   {
    "count": 9,
    "layout": "page",
    "name": "Telèfons mòbils",
+   "name_es": "Teléfonos móviles",
    "slug": "telefons-mobils"
   },
   {
    "count": 14,
    "layout": "page",
    "name": "Tinta i tòner",
+   "name_es": "Tinta y tóner",
    "slug": "tinta-i-toner"
   }
  ],
  "count": 79,
  "currency": "EUR",
- "generated_at": "2026-11-22 20:39:13",
+ "generated_at": "2026-11-23 01:53:03",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2451,6 +2463,7 @@
   {
    "availability": "on_order",
    "body": "Carregador Aisens amb sortida USB-C Power Delivery de 65 W, que ajusta automàticament el voltatge entre 5 i 20 V segons el dispositiu. Serveix per a portàtils que es carreguen per USB-C, així com per a tauletes i mòbils. Color negre.",
+   "body_es": "Cargador Aisens con salida USB-C Power Delivery de 65 W, que ajusta automáticamente el voltaje entre 5 y 20 V según el dispositivo. Sirve para portátiles que se cargan por USB-C, así como para tabletas y móviles. Color negro.",
    "brand": "AISENS",
    "category": "cables",
    "ean": "8436574707946",
@@ -2466,6 +2479,7 @@
    "layout": "page",
    "model": "ASCH1PD65DBK",
    "name": "Carregador universal per a portàtil Aisens USB-C 65 W",
+   "name_es": "Cargador universal para portátil Aisens USB-C 65 W",
    "offer": false,
    "price": 30.58,
    "price_with_vat": 37,
@@ -2475,6 +2489,7 @@
    "ref": "NET-AIS-ASCH1PD6",
    "slug": "carregador-universal-per-a-portatil-aisens-usb-c-65-w",
    "summary": "Carregador USB-C de 65 W per a portàtils, tauletes i mòbils, amb voltatge automàtic.",
+   "summary_es": "Cargador USB-C de 65 W para portátiles, tabletas y móviles, con voltaje automático.",
    "unit": "u",
    "updated_at": "2026-10-26 17:47:48",
    "vat_pct": 21
@@ -2482,6 +2497,7 @@
   {
    "availability": "on_order",
    "body": "Hub USB 3.0 d'Aisens que multiplica un port USB de l'ordinador en quatre, per connectar alhora llapis USB, discos externs, ratolí, teclat i impressora. Velocitat USB 3.0 i funcionament sense instal·lació.",
+   "body_es": "Hub USB 3.0 de Aisens que multiplica un puerto USB del ordenador en cuatro, para conectar a la vez lápiz USB, discos externos, ratón, teclado e impresora. Velocidad USB 3.0 y funcionamiento sin instalación.",
    "brand": "AISENS",
    "category": "cables",
    "ean": "8436574704112",
@@ -2497,6 +2513,7 @@
    "layout": "page",
    "model": "A1060399",
    "name": "Hub USB 3.0 Aisens de 4 ports",
+   "name_es": "Hub USB 3.0 Aisens de 4 puertos",
    "offer": true,
    "price": 9.91,
    "price_with_vat": 11.99,
@@ -2506,6 +2523,7 @@
    "ref": "NET-AIS-A1060399",
    "slug": "hub-usb-3-0-aisens-de-4-ports",
    "summary": "Concentrador USB 3.0 Aisens que converteix un port USB en quatre.",
+   "summary_es": "Concentrador USB 3.0 Aisens que convierte un puerto USB en cuatro.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -2513,6 +2531,7 @@
   {
    "availability": "on_order",
    "body": "El TP-Link TL-WN823N és un adaptador Wi-Fi USB de mida mini que afegeix connexió sense fil de fins a 300 Mbps a ordinadors de sobretaula o portàtils amb la Wi-Fi espatllada. Es connecta a un port USB i, gràcies a la seva mida, es pot deixar sempre posat.",
+   "body_es": "El TP-Link TL-WN823N es un adaptador Wi-Fi USB de medida mini que añade conexión inalámbrica de hasta 300 Mbps a ordenadores de sobremesa o portátiles con la Wi-Fi estropeada. Se conecta a un puerto USB y, gracias a su medida, se puede dejar siempre posado.",
    "brand": "TP-LINK",
    "category": "cables",
    "ean": "6935364050696",
@@ -2528,6 +2547,7 @@
    "layout": "page",
    "model": "TLWN823N",
    "name": "Adaptador Wi-Fi USB TP-Link TL-WN823N 300 Mbps",
+   "name_es": "Adaptador Wi-Fi USB TP-Link TL-WN823N 300 Mbps",
    "offer": false,
    "price": 8.67,
    "price_with_vat": 10.49,
@@ -2537,6 +2557,7 @@
    "ref": "NET-TPL-TLWN823N",
    "slug": "adaptador-wi-fi-usb-tp-link-tl-wn823n-300-mbps",
    "summary": "Adaptador Wi-Fi USB mini TP-Link de fins a 300 Mbps per afegir connexió sense fil a l'ordinador.",
+   "summary_es": "Adaptador Wi-Fi USB mini TP-Link de hasta 300 Mbps para añadir conexión inalámbrica al ordenador.",
    "unit": "u",
    "updated_at": "2026-10-26 17:47:48",
    "vat_pct": 21
@@ -2544,6 +2565,7 @@
   {
    "availability": "on_order",
    "body": "L'Hiditec Urban Rok M és un altaveu portàtil de 5 W amb connexió Bluetooth per reproduir música des del mòbil, la tauleta o l'ordinador. Mida compacta, bateria recarregable i un disseny pensat per endur-se'l a qualsevol lloc.",
+   "body_es": "El Hiditec Urban Rok M es un altavoz portátil de 5 W con conexión Bluetooth para reproducir música desde el móvil, la tableta o el ordenador. Medida compacta, batería recargable y un diseño pensado para llevar a cualquier lugar.",
    "brand": "HIDITEC",
    "category": "accessoris",
    "ean": "8436545692271",
@@ -2559,6 +2581,7 @@
    "layout": "page",
    "model": "SPBL10004",
    "name": "Altaveu Bluetooth Hiditec Urban Rok M 5 W",
+   "name_es": "Altavoz Bluetooth Hiditec Urban Rok M 5 W",
    "offer": false,
    "price": 21.07,
    "price_with_vat": 25.49,
@@ -2568,6 +2591,7 @@
    "ref": "ACC-HID-SPBL1000",
    "slug": "altaveu-bluetooth-hiditec-urban-rok-m-5-w",
    "summary": "Altaveu portàtil Bluetooth Hiditec de 5 W, compacte i amb bateria recarregable.",
+   "summary_es": "Altavoz portátil Bluetooth Hiditec de 5 W, compacto y con batería recargable.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -2575,6 +2599,7 @@
   {
    "availability": "on_order",
    "body": "Els Vention Echo Lite E11 són uns auriculars Bluetooth totalment sense fil amb estoig de càrrega, ideals per al dia a dia. Fins a 6 hores d'autonomia per càrrega, emparellament senzill amb el mòbil i disseny lleuger. Color blanc.",
+   "body_es": "Los Vention Echo Lite E11 son unos auriculares Bluetooth totalmente inalámbrico con estuche de carga, ideales para el día a día. Hasta 6 horas de autonomía por carga, emparellament sencillo con el móvil y diseño ligero. Color blanco.",
    "brand": "VENTION",
    "category": "accessoris",
    "ean": "6922794790186",
@@ -2591,6 +2616,7 @@
    "layout": "page",
    "model": "NBVW0",
    "name": "Auriculars Bluetooth Vention Echo Lite E11 Blancs",
+   "name_es": "Auriculares Bluetooth Vention Echo Lite E11 Blancos",
    "offer": false,
    "price": 14.04,
    "price_with_vat": 16.99,
@@ -2600,6 +2626,7 @@
    "ref": "ACC-VEN-NBVW0",
    "slug": "auriculars-bluetooth-vention-echo-lite-e11-blancs",
    "summary": "Auriculars sense fil Vention amb estoig de càrrega i fins a 6 hores d'autonomia.",
+   "summary_es": "Auriculares inalámbrico Vention con estuche de carga y hasta 6 horas de autonomía.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -2607,6 +2634,7 @@
   {
    "availability": "on_order",
    "body": "Els ZTE Buds 2 són uns auriculars intraurals totalment sense fil amb connexió Bluetooth i estoig de càrrega. Ofereixen fins a 5 hores d'autonomia per càrrega i són lleugers i còmodes per a música, trucades i esport. Color negre.",
+   "body_es": "Los ZTE Buds 2 son unos auriculares intraurals totalmente inalámbrico con conexión Bluetooth y estuche de carga. Ofrecen hasta 5 horas de autonomía por carga y son ligeros y cómodas para música, llamadas y deporte. Color negro.",
    "brand": "ZTE",
    "category": "accessoris",
    "ean": "6902176088261",
@@ -2623,6 +2651,7 @@
    "layout": "page",
    "model": "EB2201",
    "name": "Auriculars Bluetooth ZTE Buds 2 Negres",
+   "name_es": "Auriculares Bluetooth ZTE Buds 2 Negros",
    "offer": false,
    "price": 19,
    "price_with_vat": 22.99,
@@ -2632,6 +2661,7 @@
    "ref": "ACC-ZTE-EB2201",
    "slug": "auriculars-bluetooth-zte-buds-2-negres",
    "summary": "Auriculars sense fil Bluetooth ZTE amb estoig de càrrega i fins a 5 hores d'autonomia.",
+   "summary_es": "Auriculares inalámbrico Bluetooth ZTE con estuche de carga y hasta 5 horas de autonomía.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -2639,6 +2669,7 @@
   {
    "availability": "on_order",
    "body": "Els Philips TAUE100 són uns auriculars intraurals amb cable i connector jack de 3,5 mm, compatibles amb mòbils, tauletes, ordinadors i reproductors. Lleugers i còmodes per a l'ús diari. Color negre.",
+   "body_es": "Los Philips TAUE100 son unos auriculares intraurals con cable y conector jack de 3,5 mm, compatibles con móviles, tabletas, ordenadores y reproductores. Ligeros y cómodas para el uso diario. Color negro.",
    "brand": "PHILIPS",
    "category": "accessoris",
    "ean": "4895229100558",
@@ -2654,6 +2685,7 @@
    "layout": "page",
    "model": "TAUE100BK00",
    "name": "Auriculars amb cable Philips TAUE100 Negres",
+   "name_es": "Auriculares con cable Philips TAUE100 Negros",
    "offer": false,
    "price": 7.02,
    "price_with_vat": 8.49,
@@ -2663,6 +2695,7 @@
    "ref": "ACC-PHI-TAUE100B",
    "slug": "auriculars-amb-cable-philips-taue100-negres",
    "summary": "Auriculars intraurals Philips amb connector jack de 3,5 mm, lleugers i econòmics.",
+   "summary_es": "Auriculares intraurals Philips con conector jack de 3,5 mm, ligeros y económicos.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -2670,6 +2703,7 @@
   {
    "availability": "on_order",
    "body": "Els Sony MDR-EX15AP són uns auriculars intraurals amb cable, jack de 3,5 mm i micròfon integrat per contestar trucades des del mateix cable. So equilibrat, mida compacta i taps de diverses mides inclosos. Color negre.",
+   "body_es": "Los Sony MDR-EX15AP son unos auriculares intraurals con cable, jack de 3,5 mm y micrófono integrado para contestar llamadas desde el mismo cable. Sonido equilibrado, medida compacta y tapones de varias medidas incluidos. Color negro.",
    "brand": "SONY",
    "category": "accessoris",
    "ean": "4905524931235",
@@ -2683,6 +2717,7 @@
    "layout": "page",
    "model": "MDREX15APBCE7",
    "name": "Auriculars amb cable i micròfon Sony MDR-EX15AP Negres",
+   "name_es": "Auriculares con cable y micrófono Sony MDR-EX15AP Negros",
    "offer": false,
    "price": 6.6,
    "price_with_vat": 7.99,
@@ -2692,6 +2727,7 @@
    "ref": "ACC-SON-MDREX15A",
    "slug": "auriculars-amb-cable-i-microfon-sony-mdr-ex15ap-negres",
    "summary": "Auriculars intraurals Sony amb micròfon i jack de 3,5 mm per a música i trucades.",
+   "summary_es": "Auriculares intraurals Sony con micrófono y jack de 3,5 mm para música y llamadas.",
    "unit": "u",
    "updated_at": "2026-10-26 17:47:48",
    "vat_pct": 21
@@ -2699,6 +2735,7 @@
   {
    "availability": "on_order",
    "body": "Portàtil Chromebook Asus Plus CX34 de 14\" amb processador Intel Core 3 100U, 8 GB de RAM i 256 GB d'emmagatzematge. Funciona amb Chrome OS, pensat per a navegar, estudiar i treballar al núvol.",
+   "body_es": "Portátil Chromebook Asus Plus CX34 de 14\" con procesador Intel Core 3 100U, 8 GB de RAM y 256 GB de almacenamiento. Funciona con Chrome OS, pensado para navegar, estudiar y trabajar a la nube.",
    "brand": "ASUS",
    "category": "portatils",
    "ean": "4711636483865",
@@ -2713,6 +2750,7 @@
    "layout": "page",
    "model": "90NX07P1M01US0",
    "name": "Portàtil Chromebook Asus CX34 Intel Core 3 8 GB RAM 256 GB 14\" Chrome OS",
+   "name_es": "Portátil Chromebook Asus CX34 Intel Core 3 8 GB RAM 256 GB 14\" Chrome OS",
    "offer": false,
    "price": 352.89,
    "price_with_vat": 427,
@@ -2722,6 +2760,7 @@
    "ref": "POR-ASU-90NX07P1",
    "slug": "portatil-chromebook-asus-cx34-intel-core-3-8-gb-ram-256-gb-14-chrome-os",
    "summary": "Chromebook Asus de 14\" amb Intel Core 3 100U, 8 GB de RAM, 256 GB i Chrome OS.",
+   "summary_es": "Chromebook Asus de 14\" con Intel Core 3 100U, 8 GB de RAM, 256 GB y Chrome OS.",
    "unit": "u",
    "updated_at": "2026-10-26 17:47:58",
    "vat_pct": 21
@@ -2729,6 +2768,7 @@
   {
    "availability": "on_order",
    "body": "El WD Elements Portable de 1 TB és un disc dur extern de 2,5\" per fer còpies de seguretat i portar a sobre fotos, documents i vídeos. Connexió USB 3.0, alimentat pel mateix cable, sense endoll. Compacte i fàcil de fer servir amb Windows.",
+   "body_es": "El WD Elementos Portable de 1 TB es un disco duro externo de 2,5\" para hacer copias de seguridad y llevar encima fotos, documentos y videos. Conexión USB 3.0, alimentado por el mismo cable, sin enchufe. Compacte y fácil de usar con Windows.",
    "brand": "WESTERN DIGITAL",
    "category": "discs-durs-externs",
    "ean": "718037855448",
@@ -2744,6 +2784,7 @@
    "layout": "page",
    "model": "WDBUZG0010BBKWESN",
    "name": "Disc dur extern WD Elements Portable 1 TB USB 3.0",
+   "name_es": "Disco duro externo WD Elementos Portable 1 TB USB 3.0",
    "offer": false,
    "price": 109.91,
    "price_with_vat": 132.99,
@@ -2753,6 +2794,7 @@
    "ref": "EXT-WES-WDBUZG00",
    "slug": "disc-dur-extern-wd-elements-portable-1-tb-usb-3-0",
    "summary": "Disc dur extern portàtil Western Digital de 1 TB i 2,5\", amb connexió USB 3.0.",
+   "summary_es": "Disco duro externo portátil Western Digital de 1 TB y 2,5\", con conexión USB 3.0.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -2760,6 +2802,7 @@
   {
    "availability": "on_order",
    "body": "L'Apacer AS350X de 512 GB és un disc SSD de 2,5 polzades amb interfície SATA III, la manera més econòmica de fer que un ordinador antic arrenqui i funcioni molt més de pressa. Compatible amb la majoria de portàtils i sobretaules.",
+   "body_es": "El Apacer AS350X de 512 GB es un disco SSD de 2,5 pulgadas con interfaz SATA III, la manera más económica de hacer que un ordenador antiguo arranque y funcione mucho más deprisa. Compatible con la mayoría de portátiles y sobremesas.",
    "brand": "APACER",
    "category": "discs-ssd",
    "ean": "4712389918871",
@@ -2775,6 +2818,7 @@
    "layout": "page",
    "model": "AP512GAS350XR1",
    "name": "Disc SSD Apacer AS350X 512 GB SATA III 2,5\"",
+   "name_es": "Disco SSD Apacer AS350X 512 GB SATA III 2,5\"",
    "offer": false,
    "price": 73.96,
    "price_with_vat": 89.49,
@@ -2784,6 +2828,7 @@
    "ref": "SSD-APA-AP512GAS",
    "slug": "disc-ssd-apacer-as350x-512-gb-sata-iii-2-5",
    "summary": "SSD de 2,5\" SATA III Apacer de 512 GB per accelerar portàtils i ordinadors.",
+   "summary_es": "SSD de 2,5\" SATA III Apacer de 512 GB para acelerar portátiles y ordenadores.",
    "unit": "u",
    "updated_at": "2026-10-21 16:42:38",
    "vat_pct": 21
@@ -2791,6 +2836,7 @@
   {
    "availability": "on_order",
    "body": "L'Energy Sistem Bloom és un altaveu portàtil amb connexió Bluetooth per escoltar música des del mòbil o la tauleta a qualsevol lloc. Bateria recarregable i disseny compacte i lleuger, en un color menta que destaca a qualsevol racó.",
+   "body_es": "Lo Energy Sistem Bloom es un altavoz portátil con conexión Bluetooth para escuchar música desde el móvil o la tableta a cualquier lugar. Batería recargable y diseño compacto y ligero, en un color menta que destaca a cualquier rincón.",
    "brand": "Energy Sistem",
    "category": "accessoris",
    "ean": "8432426458776",
@@ -2805,6 +2851,7 @@
    "layout": "page",
    "model": "458776",
    "name": "Altaveu Bluetooth Energy Sistem Bloom Mint",
+   "name_es": "Altavoz Bluetooth Energy Sistem Bloom Mint",
    "offer": false,
    "price": 22.72,
    "price_with_vat": 27.49,
@@ -2814,6 +2861,7 @@
    "ref": "ACC-ENE-458776",
    "slug": "altaveu-bluetooth-energy-sistem-bloom-mint",
    "summary": "Altaveu portàtil Bluetooth Energy Sistem de disseny compacte, color menta.",
+   "summary_es": "Altavoz portátil Bluetooth Energy Sistem de diseño compacte, color menta.",
    "unit": "u",
    "updated_at": "2026-10-26 17:47:48",
    "vat_pct": 21
@@ -2821,6 +2869,7 @@
   {
    "availability": "on_order",
    "body": "Pack d'ampolles de tinta Epson EcoTank 104 en quatre colors. Consulta el model de la teva impressora abans de comprar.",
+   "body_es": "Pack de botellas de tinta Epson EcoTank 104 en cuatro colores. Consulta el modelo de tu impresora antes de comprar.",
    "brand": "Epson",
    "category": "tinta-i-toner",
    "ean": "8715946684888",
@@ -2832,6 +2881,7 @@
    "layout": "page",
    "model": "C13T00P640",
    "name": "Multipack d'ampolles de tinta Epson EcoTank 104 de 4 colors",
+   "name_es": "Multipack de botellas de tinta Epson EcoTank 104 de 4 colores",
    "offer": false,
    "price": 31.4,
    "price_with_vat": 37.99,
@@ -2841,6 +2891,7 @@
    "ref": "TIN-EPS-C13T00P6",
    "slug": "multipack-d-ampolles-de-tinta-epson-ecotank-104-de-4-colors",
    "summary": "Pack de quatre ampolles de tinta Epson EcoTank 104.",
+   "summary_es": "Pack de cuatro botellas de tinta Epson EcoTank 104.",
    "unit": "u",
    "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
@@ -2848,6 +2899,7 @@
   {
    "availability": "on_order",
    "body": "Tòner original HP 106A de color negre. Consulta el model de la teva impressora abans de comprar.",
+   "body_es": "Tóner original HP 106A de color negro. Consulta el modelo de tu impresora antes de comprar.",
    "brand": "HP",
    "category": "tinta-i-toner",
    "ean": "193424172702",
@@ -2861,6 +2913,7 @@
    "layout": "page",
    "model": "W1106A",
    "name": "Tòner HP 106A Negre",
+   "name_es": "Tóner HP 106A Negro",
    "offer": true,
    "price": 48.34,
    "price_with_vat": 58.49,
@@ -2870,6 +2923,7 @@
    "ref": "TIN-HP-W1106A",
    "slug": "toner-hp-106a-negre",
    "summary": "Tòner original HP 106A negre per a impressores làser HP.",
+   "summary_es": "Tóner original HP 106A negro para impresoras láser HP.",
    "unit": "u",
    "updated_at": "2026-11-02 10:00:36",
    "vat_pct": 21
@@ -2877,6 +2931,7 @@
   {
    "availability": "on_order",
    "body": "Tòner original HP 135A (W1350A) de color negre per a impressores làser HP LaserJet compatibles, com les sèries M209, M211, M234 i M236. Impressió nítida de textos i documents. Consulta el model de la teva impressora abans de comprar.",
+   "body_es": "Tóner original HP 135A (W1350A) de color negro para impresoras láser HP LaserJet compatibles, como las series M209, M211, M234 y M236. Impresión nítida de textos y documentos. Consulta el modelo de tu impresora antes de comprar.",
    "brand": "HP",
    "category": "tinta-i-toner",
    "ean": "194850587269",
@@ -2888,6 +2943,7 @@
    "layout": "page",
    "model": "W1350A",
    "name": "Tòner HP 135A Negre",
+   "name_es": "Tóner HP 135A Negro",
    "offer": false,
    "price": 43.79,
    "price_with_vat": 52.99,
@@ -2897,6 +2953,7 @@
    "ref": "TIN-HP-W1350A",
    "slug": "toner-hp-135a-negre",
    "summary": "Tòner original HP 135A negre per a impressores làser HP LaserJet.",
+   "summary_es": "Tóner original HP 135A negro para impresoras láser HP LaserJet.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
@@ -2904,6 +2961,7 @@
   {
    "availability": "on_order",
    "body": "Tòner original HP 142A (W1420A) de color negre per a impressores làser HP LaserJet compatibles, com les sèries M110 i M140. Impressió nítida de textos i documents. Consulta el model de la teva impressora abans de comprar.",
+   "body_es": "Tóner original HP 142A (W1420A) de color negro para impresoras láser HP LaserJet compatibles, como las series M110 y M140. Impresión nítida de textos y documentos. Consulta el modelo de tu impresora antes de comprar.",
    "brand": "HP",
    "category": "tinta-i-toner",
    "ean": "194850740626",
@@ -2915,6 +2973,7 @@
    "layout": "page",
    "model": "W1420A",
    "name": "Tòner HP 142A Negre",
+   "name_es": "Tóner HP 142A Negro",
    "offer": false,
    "price": 45.03,
    "price_with_vat": 54.49,
@@ -2924,6 +2983,7 @@
    "ref": "TIN-HP-W1420A",
    "slug": "toner-hp-142a-negre",
    "summary": "Tòner original HP 142A negre per a impressores làser HP LaserJet.",
+   "summary_es": "Tóner original HP 142A negro para impresoras láser HP LaserJet.",
    "unit": "u",
    "updated_at": "2026-11-02 09:58:25",
    "vat_pct": 21
