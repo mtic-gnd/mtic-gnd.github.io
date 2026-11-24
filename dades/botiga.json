@@ -87,7 +87,7 @@
  ],
  "count": 79,
  "currency": "EUR",
- "generated_at": "2026-11-23 22:24:16",
+ "generated_at": "2026-11-24 18:43:57",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -187,6 +187,7 @@
   },
   {
    "body": "Bateries externes Vention per no quedar-te mai sense bateria. La de **10000 mAh** és de butxaca i ideal per al mòbil; la de **20000 mAh i 165 W** pot carregar també portàtils USB-C i inclou cable USB-C.",
+   "body_es": "Baterías externas Vention por no quedarte nunca sin batería. La de 10000 mAh** es de bolsillo e ideal para el móvil; la de 20000 mAh y 165 W** puede cargar también portátiles USB-C e incluye cable USB-C.",
    "brand": "VENTION",
    "category": "telefons-mobils",
    "featured": false,
@@ -227,6 +228,7 @@
      "layout": "page",
      "model": "FHKB0",
      "name": "Bateria externa Vention 10000 mAh 22,5 W Negra",
+     "name_es": "Batería externa Vention 10000 mAh 22,5 W Negra",
      "offer": false,
      "price": 11.15,
      "price_with_vat": 13.49,
@@ -239,6 +241,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "10000 mAh 22,5 W",
+     "variant_es": "10000 mAh 22,5 W",
      "vat_pct": 21
     },
     {
@@ -259,6 +262,7 @@
      "layout": "page",
      "model": "FHKW0",
      "name": "Bateria externa Vention 10000 mAh 22,5 W Blanca",
+     "name_es": "Batería externa Vention 10000 mAh 22,5 W Blanca",
      "offer": false,
      "price": 11.15,
      "price_with_vat": 13.49,
@@ -271,6 +275,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 10:04:17",
      "variant": "10000 mAh 22,5 W Blanca",
+     "variant_es": "10000 mAh 22,5 W Blanca",
      "vat_pct": 21
     },
     {
@@ -292,6 +297,7 @@
      "layout": "page",
      "model": "FKFH0",
      "name": "Bateria externa Vention 20000 mAh 165 W amb cable USB-C",
+     "name_es": "Batería externa Vention 20000 mAh 165 W con cable USB-C",
      "offer": true,
      "price": 37.18,
      "price_with_vat": 44.99,
@@ -304,12 +310,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "20000 mAh 165 W",
+     "variant_es": "20000 mAh 165 W",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "La línia HP Prelude protegeix el portàtil de fins a 15,6 polzades en els desplaçaments, amb espai per al carregador, el ratolí i els documents. Tria entre **maletí** o **motxilla**. Color gris.",
+   "body_es": "La línea HP Prelude protege el portátil de hasta 15,6 pulgadas en los desplazamientos, con espacio para el cargador, el ratón y los documentos. Elige entre *maletín** o *mochila**. Color gris.",
    "brand": "HP",
    "category": "accessoris",
    "featured": true,
@@ -320,11 +328,13 @@
     "/media/botiga/acc-hp-1e7d6ut-4.jpg"
    ],
    "name": "Bossa HP Prelude per a portàtils de 15,6\"",
+   "name_es": "Bolsa HP Prelude para portátiles de 15,6\"",
    "offer": true,
    "price_from": 19,
    "price_from_with_vat": 22.99,
    "slug": "bossa-hp-prelude-portatils-15-6",
    "summary": "Maletí o motxilla HP Prelude per a portàtils de fins a 15,6\".",
+   "summary_es": "Maletín o mochila HP Prelude para portátiles de hasta 15,6\".",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -344,6 +354,7 @@
      "layout": "page",
      "model": "1E7D6UT",
      "name": "Motxilla HP Prelude per a portàtils de fins a 15,6\" Gris",
+     "name_es": "Mochila HP Prelude para portátiles de hasta 15,6\" Gris",
      "offer": true,
      "price": 19,
      "price_with_vat": 22.99,
@@ -356,6 +367,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Motxilla",
+     "variant_es": "Mochila",
      "vat_pct": 21
     },
     {
@@ -375,6 +387,7 @@
      "layout": "page",
      "model": "1E7D7AA",
      "name": "Maletí HP Prelude per a portàtils de fins a 15,6\" Gris",
+     "name_es": "Maletín HP Prelude para portátiles de hasta 15,6\" Gris",
      "offer": false,
      "price": 19.83,
      "price_with_vat": 23.99,
@@ -387,12 +400,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Maletí",
+     "variant_es": "Maletín",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Cables de xarxa RJ45 de categoria 6 UTP de Vention per connectar ordinadors, consoles, televisors i routers amb connexió **Gigabit** estable. Tria la longitud que necessites.",
+   "body_es": "Cables de red RJ45 de categoría 6 UTP de Vention para conectar ordenadores, consolas, televisores y routers con conexión *Gigabit** estable. Elige la longitud que necesitas.",
    "brand": "VENTION",
    "category": "cables",
    "featured": false,
@@ -401,11 +416,13 @@
     "/media/botiga/net-ven-ibehf-2.jpg"
    ],
    "name": "Cable de xarxa RJ45 Cat.6 Vention",
+   "name_es": "Cable de red RJ45 Cat.6 Vention",
    "offer": true,
    "price_from": 1.23,
    "price_from_with_vat": 1.49,
    "slug": "cable-de-xarxa-rj45-cat-6-vention",
    "summary": "Cables de xarxa Ethernet Cat.6 UTP Vention d'1, 2 i 5 metres.",
+   "summary_es": "Cables de red Ethernet Cat.6 UTP Vention de 1, 2 y 5 metros.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -423,6 +440,7 @@
      "layout": "page",
      "model": "IBEHF",
      "name": "Cable de xarxa RJ45 Cat.6 UTP Vention 1 m",
+     "name_es": "Cable de red RJ45 Cat.6 UTP Vention 1 m",
      "offer": true,
      "price": 1.23,
      "price_with_vat": 1.49,
@@ -435,6 +453,7 @@
      "unit": "u",
      "updated_at": "2026-10-20 23:39:27",
      "variant": "1 m",
+     "variant_es": "1 m",
      "vat_pct": 21
     },
     {
@@ -452,6 +471,7 @@
      "layout": "page",
      "model": "IBEHH",
      "name": "Cable de xarxa RJ45 Cat.6 UTP Vention 2 m",
+     "name_es": "Cable de red RJ45 Cat.6 UTP Vention 2 m",
      "offer": false,
      "price": 1.65,
      "price_with_vat": 2,
@@ -464,6 +484,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "2 m",
+     "variant_es": "2 m",
      "vat_pct": 21
     },
     {
@@ -483,6 +504,7 @@
      "layout": "page",
      "model": "IBEBJ",
      "name": "Cable de xarxa RJ45 Cat.6 UTP Vention 5 m",
+     "name_es": "Cable de red RJ45 Cat.6 UTP Vention 5 m",
      "offer": false,
      "price": 1.65,
      "price_with_vat": 2,
@@ -495,12 +517,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "5 m",
+     "variant_es": "5 m",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Cables HDMI 2.0 de Vention per connectar ordinadors, consoles, descodificadors i reproductors a televisors i monitors. Admeten resolucions **4K** i porten imatge i so digital per un sol cable.",
+   "body_es": "Cables HDMI 2.0 de Vention para conectar ordenadores, consolas, descodificadores y reproductores a televisores y monitores. Admiten resoluciones 4K** y llevan imagen y sonido digital por un solo cable.",
    "brand": "VENTION",
    "category": "cables",
    "featured": true,
@@ -513,11 +537,13 @@
     "/media/botiga/net-ven-aacbg-6.jpg"
    ],
    "name": "Cable HDMI 2.0 4K Vention",
+   "name_es": "Cable HDMI 2.0 4K Vention",
    "offer": true,
    "price_from": 2.47,
    "price_from_with_vat": 2.99,
    "slug": "cable-hdmi-2-0-4k-vention",
    "summary": "Cables HDMI 2.0 Vention compatibles amb 4K, d'1,5 i 2 metres.",
+   "summary_es": "Cables HDMI 2.0 Vention compatibles con 4K, de 1,5 y 2 metros.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -539,6 +565,7 @@
      "layout": "page",
      "model": "AACBG",
      "name": "Cable HDMI 2.0 4K Vention 1,5 m",
+     "name_es": "Cable HDMI 2.0 4K Vention 1,5 m",
      "offer": true,
      "price": 2.47,
      "price_with_vat": 2.99,
@@ -551,6 +578,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "1,5 m",
+     "variant_es": "1,5 m",
      "vat_pct": 21
     },
     {
@@ -571,6 +599,7 @@
      "layout": "page",
      "model": "AACBH",
      "name": "Cable HDMI 2.0 4K Vention 2 m",
+     "name_es": "Cable HDMI 2.0 4K Vention 2 m",
      "offer": false,
      "price": 4.12,
      "price_with_vat": 4.99,
@@ -583,12 +612,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "2 m",
+     "variant_es": "2 m",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Cables Vention d'1 metre per carregar i passar dades de mòbils, tauletes, auriculars i altres dispositius USB-C. Tria el connector de l'altre extrem segons el carregador o l'ordinador: **USB-A** (el clàssic) o **USB-C** (fins a 60 W).",
+   "body_es": "Cables Vention de 1 metro para cargar y pasar datos de móviles, tabletas, auriculares y otros dispositivos USB-C. Elige el conector del otro extremo según el cargador o el ordenador: **USB-A** (el clásico) o **USB-C** (hasta 60 W).",
    "brand": "VENTION",
    "category": "cables",
    "featured": false,
@@ -598,11 +629,13 @@
     "/media/botiga/net-ven-cthbf-3.jpg"
    ],
    "name": "Cable USB-C Vention",
+   "name_es": "Cable USB-C Vention",
    "offer": false,
    "price_from": 2.47,
    "price_from_with_vat": 2.99,
    "slug": "cable-usb-c-vention",
    "summary": "Cables de càrrega i dades USB-C Vention d'1 metre, amb connector USB-A o USB-C.",
+   "summary_es": "Cables de carga y datos USB-C Vention de 1 metro, con conector USB-A o USB-C.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -621,6 +654,7 @@
      "layout": "page",
      "model": "CTHBF",
      "name": "Cable USB-A a USB-C Vention 1 m",
+     "name_es": "Cable USB-A a USB-C Vention 1 m",
      "offer": false,
      "price": 2.47,
      "price_with_vat": 2.99,
@@ -633,12 +667,14 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "USB-A a USB-C",
+     "variant_es": "USB-A a USB-C",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Càmeres de vigilància d'interior TP-Link Tapo que es connecten al Wi-Fi i es controlen des de l'aplicació Tapo del mòbil. Amb **visió nocturna**, per veure en directe la casa o el negoci des de qualsevol lloc.",
+   "body_es": "Cámaras de vigilancia de interior TP-Link Tapo que se conectan al Wi-Fi y se controlan desde la aplicación Tapo del móvil. Con *visión nocturna**, para ver en directo la casa o el negocio desde cualquier lugar.",
    "brand": "TP-LINK",
    "category": "cables",
    "featured": false,
@@ -650,11 +686,13 @@
     "/media/botiga/net-tpl-tapotc70-5.jpg"
    ],
    "name": "Càmera de vigilància Wi-Fi TP-Link Tapo",
+   "name_es": "Cámara de vigilancia Wi-Fi TP-Link Tapo",
    "offer": false,
    "price_from": 22.31,
    "price_from_with_vat": 27,
    "slug": "camera-de-vigilancia-wi-fi-tp-link-tapo",
    "summary": "Càmeres Wi-Fi d'interior TP-Link Tapo amb visió nocturna i control des de l'app.",
+   "summary_es": "Cámaras Wi-Fi de interior TP-Link Tapo con visión nocturna y control desde la app.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -675,6 +713,7 @@
      "layout": "page",
      "model": "TAPOTC70",
      "name": "Càmera de vigilància Wi-Fi TP-Link Tapo TC70",
+     "name_es": "Cámara de vigilancia Wi-Fi TP-Link Tapo TC70",
      "offer": false,
      "price": 22.31,
      "price_with_vat": 27,
@@ -687,6 +726,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "TC70",
+     "variant_es": "TC70",
      "vat_pct": 21
     },
     {
@@ -706,6 +746,7 @@
      "layout": "page",
      "model": "TAPOTC71",
      "name": "Càmera de vigilància Wi-Fi TP-Link Tapo TC71",
+     "name_es": "Cámara de vigilancia Wi-Fi TP-Link Tapo TC71",
      "offer": false,
      "price": 23.96,
      "price_with_vat": 28.99,
@@ -718,12 +759,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "TC71",
+     "variant_es": "TC71",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Carregadors de paret Aisens compactes per carregar mòbils, tauletes, auriculars i rellotges. Els de **20 W** permeten càrrega ràpida en mòbils compatibles, i el model GaN té dos ports per carregar dos aparells alhora. El cable no s'inclou.",
+   "body_es": "Cargadores de pared Aisens compactes para cargar móviles, tabletas, auriculares y relojes. Los de 20 W** permiten carga rápida en móviles compatibles, y el modelo GaN tiene dos puertos para cargar dos aparatos a la vez. El cable no se incluye.",
    "brand": "AISENS",
    "category": "cables",
    "featured": false,
@@ -734,11 +777,13 @@
     "/media/botiga/net-ais-a1100537-4.jpg"
    ],
    "name": "Carregador de paret Aisens",
+   "name_es": "Cargador de pared Aisens",
    "offer": true,
    "price_from": 4.12,
    "price_from_with_vat": 4.99,
    "slug": "carregador-de-paret-aisens",
    "summary": "Carregadors de paret Aisens de 10,5 W i 20 W, amb sortida USB-A i USB-C.",
+   "summary_es": "Cargadores de pared Aisens de 10,5 W y 20 W, con salida USB-A y USB-C.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -760,6 +805,7 @@
      "layout": "page",
      "model": "A1100854",
      "name": "Carregador de paret USB-A Aisens 10,5 W",
+     "name_es": "Cargador de pared USB-A Aisens 10,5 W",
      "offer": true,
      "price": 4.12,
      "price_with_vat": 4.99,
@@ -772,6 +818,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "10,5 W USB-A",
+     "variant_es": "10,5 W USB-A",
      "vat_pct": 21
     },
     {
@@ -791,6 +838,7 @@
      "layout": "page",
      "model": "A1100537",
      "name": "Carregador de paret USB-C Aisens 20 W",
+     "name_es": "Cargador de pared USB-C Aisens 20 W",
      "offer": true,
      "price": 4.12,
      "price_with_vat": 4.99,
@@ -803,6 +851,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "20 W USB-C",
+     "variant_es": "20 W USB-C",
      "vat_pct": 21
     },
     {
@@ -822,6 +871,7 @@
      "layout": "page",
      "model": "A1101025",
      "name": "Carregador de paret GaN Aisens USB-C + USB-A 20 W Blanc",
+     "name_es": "Cargador de pared GaN Aisens USB-C + USB-A 20 W Blanco",
      "offer": false,
      "price": 9.09,
      "price_with_vat": 11,
@@ -834,12 +884,14 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "20 W GaN USB-C + USB-A",
+     "variant_es": "20 W GaN USB-C + USB-A",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Cartutxos de tinta originals Canon per a les impressores PIXMA que fan servir cartutxos 540 (negre) i 541 (tricolor). El **multipack** porta el PG-540L negre i el CL-541XL tricolor d'alta capacitat, amb paper fotogràfic.\n\nAbans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora.",
+   "body_es": "Cartuchos de tinta originales Canon para las impresoras PIXMA que usan cartuchos 540 (negro) y 541 (tricolor). El **multipack** puerta lo PG-540L negro y lo CL-541XL tricolor de alta capacidad, con papel fotográfico.\n\nAntes de comprarlo, comprueba que sea compatible con el modelo de tu impresora.",
    "brand": "CANON",
    "category": "tinta-i-toner",
    "featured": false,
@@ -847,11 +899,13 @@
     "/media/botiga/tin-can-5227b001.jpg"
    ],
    "name": "Cartutx de tinta Canon PG-540 i CL-541",
+   "name_es": "Cartucho de tinta Canon PG-540 y CL-541",
    "offer": false,
    "price_from": 21.89,
    "price_from_with_vat": 26.49,
    "slug": "cartutx-de-tinta-canon-pg-540-cl-541",
    "summary": "Cartutxos de tinta originals Canon PG-540L i CL-541 per a impressores PIXMA.",
+   "summary_es": "Cartuchos de tinta originales Canon PG-540L y CL-541 para impresoras PIXMA.",
    "updated_at": "2026-10-26 17:48:32",
    "variants": [
     {
@@ -868,6 +922,7 @@
      "layout": "page",
      "model": "5227B001",
      "name": "Cartutx de tinta Canon CL-541 Tricolor",
+     "name_es": "Cartucho de tinta Canon CL-541 Tricolor",
      "offer": false,
      "price": 21.89,
      "price_with_vat": 26.49,
@@ -880,6 +935,7 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:48:32",
      "variant": "Color",
+     "variant_es": "Color",
      "vat_pct": 21
     },
     {
@@ -897,6 +953,7 @@
      "layout": "page",
      "model": "5224B001",
      "name": "Cartutx de tinta Canon PG-540L Negre",
+     "name_es": "Cartucho de tinta Canon PG-540L Negro",
      "offer": false,
      "price": 21.89,
      "price_with_vat": 26.49,
@@ -909,6 +966,7 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:48:32",
      "variant": "Negre",
+     "variant_es": "Negro",
      "vat_pct": 21
     },
     {
@@ -925,6 +983,7 @@
      "layout": "page",
      "model": "5224B012",
      "name": "Multipack Canon PG-540L + CL-541XL Negre + Tricolor amb paper fotogràfic",
+     "name_es": "Multipack Canon PG-540L + CL-541XL Negro + Tricolor con papel fotográfico",
      "offer": false,
      "price": 42.14,
      "price_with_vat": 50.99,
@@ -937,6 +996,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Multipack (negre + color XL)",
+     "variant_es": "Multipack (negro + color XL)",
      "vat_pct": 21
     }
    ]
@@ -985,6 +1045,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 10:04:32",
      "variant": "Negre",
+     "variant_es": "Negro",
      "vat_pct": 21
     },
     {
@@ -1177,6 +1238,7 @@
      "unit": "u",
      "updated_at": "2026-10-20 22:34:46",
      "variant": "Negre",
+     "variant_es": "Negro",
      "vat_pct": 21
     },
     {
@@ -1255,6 +1317,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Negre",
+     "variant_es": "Negro",
      "vat_pct": 21
     },
     {
@@ -1283,6 +1346,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Color",
+     "variant_es": "Color",
      "vat_pct": 21
     },
     {
@@ -1416,6 +1480,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Color",
+     "variant_es": "Color",
      "vat_pct": 21
     },
     {
@@ -1547,6 +1612,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Color",
+     "variant_es": "Color",
      "vat_pct": 21
     },
     {
@@ -1575,6 +1641,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Negre",
+     "variant_es": "Negro",
      "vat_pct": 21
     }
    ]
