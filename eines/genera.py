@@ -225,14 +225,16 @@ def crida_article(idioma):
         return ('<aside class="crida-article"><p><strong>mtic</strong> · Serveis informàtics a Gandesa, la Terra Alta '
                 "i les Terres de l'Ebre: <a href=\"/reparacio-ordinadors.html\">reparació d'ordinadors</a>, "
                 '<a href="/recuperacio-dades.html">recuperació de dades</a>, '
-                '<a href="/manteniment-informatic.html">manteniment per a empreses</a> i '
-                '<a href="/pagines-web.html">pàgines web</a>. '
+                '<a href="/manteniment-informatic.html">manteniment per a empreses</a>, '
+                '<a href="/pagines-web.html">pàgines web</a> i '
+                '<a href="/automatitzacions.html">automatitzacions</a>. '
                 '<a href="/contacte.html">Contacta amb nosaltres</a> o truca al <a href="tel:+34711550872">711 55 08 72</a>.</p></aside>')
     return ('<aside class="crida-article"><p><strong>mtic</strong> · Servicios informáticos en Gandesa, la Terra Alta '
             "y las Terres de l'Ebre: <a href=\"/es/reparacion-ordenadores.html\">reparación de ordenadores</a>, "
             '<a href="/es/recuperacion-datos.html">recuperación de datos</a>, '
-            '<a href="/es/mantenimiento-informatico.html">mantenimiento para empresas</a> y '
-            '<a href="/es/paginas-web.html">páginas web</a>. '
+            '<a href="/es/mantenimiento-informatico.html">mantenimiento para empresas</a>, '
+            '<a href="/es/paginas-web.html">páginas web</a> y '
+            '<a href="/es/automatizaciones.html">automatizaciones</a>. '
             '<a href="/es/contacto.html">Contacta con nosotros</a> o llama al <a href="tel:+34711550872">711 55 08 72</a>.</p></aside>')
 
 
