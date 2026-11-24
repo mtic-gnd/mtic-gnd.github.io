@@ -30,7 +30,7 @@ import sys
 
 ARREL = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMINI = "https://mtic.cat"
-VERSIO = "202611222245"
+VERSIO = "202611241900"
 MAPS = "https://www.google.com/maps?cid=5369165064477127583"
 INSTAGRAM = "https://www.instagram.com/mtic.gandesa/"
 TEL = "+34711550872"
@@ -48,6 +48,7 @@ PARELLES = [
     ("/manteniment-informatic.html", "/es/mantenimiento-informatico.html", "serveis", True),
     ("/xarxes-wifi.html", "/es/redes-wifi.html", "serveis", True),
     ("/pagines-web.html", "/es/paginas-web.html", "serveis", True),
+    ("/automatitzacions.html", "/es/automatizaciones.html", "serveis", True),
     ("/sobre-nosaltres.html", "/es/sobre-nosotros.html", "sobre", True),
     ("/contacte.html", "/es/contacto.html", "contacte", True),
     ("/avis-legal.html", "/es/aviso-legal.html", None, False),
@@ -82,6 +83,7 @@ TXT = {
             ("/manteniment-informatic.html", "Manteniment informàtic"),
             ("/xarxes-wifi.html", "Xarxes i WiFi"),
             ("/pagines-web.html", "Pàgines web"),
+            ("/automatitzacions.html", "Automatitzacions"),
         ],
         "fitxa": "Fitxa de Google", "drets": "mtic, Serveis Informàtics i Digitals. Gandesa, Tarragona.",
         "legal": [("/avis-legal.html", "Avís legal"), ("/privacitat.html", "Privacitat"),
@@ -109,6 +111,7 @@ TXT = {
             ("/es/mantenimiento-informatico.html", "IT maintenance"),
             ("/es/redes-wifi.html", "Networks and WiFi"),
             ("/es/paginas-web.html", "Websites"),
+            ("/es/automatizaciones.html", "Business automation"),
         ],
         "fitxa": "Google listing", "drets": "mtic, Serveis Informàtics i Digitals. Gandesa, Tarragona, Spain.",
         "legal": [("/es/aviso-legal.html", "Legal notice"), ("/es/privacidad.html", "Privacy"),
@@ -133,6 +136,7 @@ TXT = {
             ("/es/mantenimiento-informatico.html", "Mantenimiento informático"),
             ("/es/redes-wifi.html", "Redes y WiFi"),
             ("/es/paginas-web.html", "Páginas web"),
+            ("/es/automatizaciones.html", "Automatizaciones"),
         ],
         "fitxa": "Ficha de Google", "drets": "mtic, Serveis Informàtics i Digitals. Gandesa, Tarragona.",
         "legal": [("/es/aviso-legal.html", "Aviso legal"), ("/es/privacidad.html", "Privacidad"),
