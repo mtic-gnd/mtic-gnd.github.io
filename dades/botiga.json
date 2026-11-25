@@ -87,7 +87,7 @@
  ],
  "count": 79,
  "currency": "EUR",
- "generated_at": "2026-11-25 03:28:24",
+ "generated_at": "2026-11-25 13:54:19",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -1965,6 +1965,7 @@
      "layout": "page",
      "model": "920007919",
      "name": "Kit de teclat i ratolí sense fil Logitech MK235",
+     "name_es": "Kit de teclado y ratón inalámbrico Logitech MK235",
      "offer": false,
      "price": 25.2,
      "price_with_vat": 30.49,
@@ -1977,12 +1978,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "MK235",
+     "variant_es": "MK235",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Pendrives Kingston DataTraveler Exodia amb connexió **USB 3.2**, molt més ràpids que els USB 2.0 a l'hora de copiar fitxers grans. Tenen tapa protectora i anella per penjar-los del clauer.",
+   "body_es": "Pendrives Kingston DataTraveler Exodia con conexión USB 3.2**, mucho más rápidos que los USB 2.0 en la hora de copiar ficheros grandes. Tienen tapa protectora y anilla para colgarlos del llavero.",
    "brand": "KINGSTON",
    "category": "discs-durs-externs",
    "featured": true,
@@ -1994,11 +1997,13 @@
     "/media/botiga/ext-kin-dtxs64gb-5.jpg"
    ],
    "name": "Pendrive Kingston DataTraveler Exodia",
+   "name_es": "Pendrive Kingston DataTraveler Exodia",
    "offer": true,
    "price_from": 7.44,
    "price_from_with_vat": 9,
    "slug": "pendrive-kingston-datatraveler-exodia",
    "summary": "Memòries USB 3.2 Kingston DataTraveler Exodia de 64 i 128 GB.",
+   "summary_es": "Memorias USB 3.2 Kingston DataTraveler Exodia de 64 y 128 GB.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -2019,6 +2024,7 @@
      "layout": "page",
      "model": "DTXS64GB",
      "name": "Pendrive Kingston DataTraveler Exodia S USB 3.2 64 GB",
+     "name_es": "Pendrive Kingston DataTraveler Exodia S USB 3.2 64 GB",
      "offer": false,
      "price": 7.44,
      "price_with_vat": 9,
@@ -2031,6 +2037,7 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "64 GB",
+     "variant_es": "64 GB",
      "vat_pct": 21
     },
     {
@@ -2051,6 +2058,7 @@
      "layout": "page",
      "model": "DTXG2128GB",
      "name": "Pendrive Kingston DataTraveler Exodia Gen2 USB 3.2 128 GB",
+     "name_es": "Pendrive Kingston DataTraveler Exodia Gen2 USB 3.2 128 GB",
      "offer": true,
      "price": 10.74,
      "price_with_vat": 13,
@@ -2063,12 +2071,14 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "128 GB",
+     "variant_es": "128 GB",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "L'HP 250R G10 és un portàtil de 15,6 polzades fiable per a la feina, els estudis i l'ús domèstic, amb disc SSD de 512 GB.\n\n- **Core 3, 8 GB, Windows 11**: llest per fer servir.\n- **Core 5, 16 GB, sense sistema operatiu**: més potència per a la multitasca.",
+   "body_es": "El HP 250R G10 es un portátil de 15,6 pulgadas fiable para el trabajo, los estudios y el uso doméstico, con disco SSD de 512 GB.\n\n- Core 3, 8 GB, Windows 11**: listo para usar.\n- Core 5, 16 GB, sin sistema operativo**: más potencia para la multitasca.",
    "brand": "HP",
    "category": "portatils",
    "featured": false,
@@ -2080,11 +2090,13 @@
     "/media/botiga/por-hp-d31vvat-5.jpg"
    ],
    "name": "Portàtil HP 250R G10",
+   "name_es": "Portátil HP 250R G10",
    "offer": false,
    "price_from": 425.2,
    "price_from_with_vat": 514.49,
    "slug": "portatil-hp-250r-g10",
    "summary": "Portàtil HP de 15,6\" amb Intel Core 3 o Core 5 i SSD de 512 GB.",
+   "summary_es": "Portátil HP de 15,6\" con Intel Core 3 o Core 5 y SSD de 512 GB.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -2105,6 +2117,7 @@
      "layout": "page",
      "model": "D31VVAT",
      "name": "Portàtil HP 250R G10 Intel Core 3 8 GB RAM 512 GB SSD 15,6\" Windows 11",
+     "name_es": "Portátil HP 250R G10 Intel Core 3 8 GB RAM 512 GB SSD 15,6\" Windows 11",
      "offer": false,
      "price": 425.2,
      "price_with_vat": 514.49,
@@ -2117,12 +2130,14 @@
      "unit": "u",
      "updated_at": "2026-10-21 16:42:38",
      "variant": "Core 3, 8 GB, Windows 11",
+     "variant_es": "Core 3, 8 GB, Windows 11",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Ratolins sense fil Logitech que funcionen en endollar el receptor USB, sense instal·lar res, amb una resolució de fins a 1000 DPI.\n\n- **M171**: compacte i ambidextre.\n- **M185**: petit i lleuger, ideal per al portàtil.\n- **M190**: de mida completa, més còmode per a jornades llargues.",
+   "body_es": "Ratones inalámbrico Logitech que funcionan al enchufar el receptor USB, sin instalar nada, con una resolución de hasta 1000 DPI.\n\n- M171**: compacte y ambidextre.\n- M185**: pequeño y ligero, ideal para el portátil.\n- M190**: de medida completa, más cómodo para jornadas largas.",
    "brand": "LOGITECH",
    "category": "teclats-i-ratolins",
    "featured": false,
@@ -2134,11 +2149,13 @@
     "/media/botiga/per-log-91000442-5.jpg"
    ],
    "name": "Ratolí sense fil Logitech",
+   "name_es": "Ratón inalámbrico Logitech",
    "offer": false,
    "price_from": 8.67,
    "price_from_with_vat": 10.49,
    "slug": "ratoli-sense-fil-logitech",
    "summary": "Ratolins sense fil Logitech M171, M185 i M190 amb receptor USB.",
+   "summary_es": "Ratones inalámbrico Logitech M171, M185 y M190 con receptor USB.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -2159,6 +2176,7 @@
      "layout": "page",
      "model": "910004424",
      "name": "Ratolí sense fil Logitech M171 Negre",
+     "name_es": "Ratón inalámbrico Logitech M171 Negro",
      "offer": false,
      "price": 8.67,
      "price_with_vat": 10.49,
@@ -2171,6 +2189,7 @@
      "unit": "u",
      "updated_at": "2026-10-20 23:39:27",
      "variant": "M171",
+     "variant_es": "M171",
      "vat_pct": 21
     },
     {
@@ -2192,6 +2211,7 @@
      "layout": "page",
      "model": "910005906",
      "name": "Ratolí sense fil Logitech M190 Gris",
+     "name_es": "Ratón inalámbrico Logitech M190 Gris",
      "offer": false,
      "price": 10.32,
      "price_with_vat": 12.49,
@@ -2204,12 +2224,14 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "M190",
+     "variant_es": "M190",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Repetidors Wi-Fi TP-Link per portar la connexió sense fil a les habitacions on no arriba bé. S'endollen a la paret i es configuren en pocs minuts.\n\n- **TL-WA850RE**: 300 Mbps, banda de 2,4 GHz.\n- **RE200**: doble banda (2,4 i 5 GHz), fins a 750 Mbps.",
+   "body_es": "Repetidores Wi-Fi TP-Link para llevar la conexión inalámbrica en las habitaciones donde no llega bien. Se enchufan a la pared y se configuran en pocos minutos.\n\n- TL-WA850RE**: 300 Mbps, banda de 2,4 GHz.\n- RE200**: doble banda (2,4 y 5 GHz), hasta 750 Mbps.",
    "brand": "TP-LINK",
    "category": "cables",
    "featured": false,
@@ -2222,11 +2244,13 @@
     "/media/botiga/net-tpl-tlwa850r-6.jpg"
    ],
    "name": "Repetidor Wi-Fi TP-Link",
+   "name_es": "Repetidor Wi-Fi TP-Link",
    "offer": true,
    "price_from": 16.11,
    "price_from_with_vat": 19.49,
    "slug": "repetidor-wi-fi-tp-link",
    "summary": "Amplificadors Wi-Fi TP-Link de 300 i 750 Mbps per arribar a tota la casa.",
+   "summary_es": "Amplificadores Wi-Fi TP-Link de 300 y 750 Mbps para llegar a toda la casa.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -2248,6 +2272,7 @@
      "layout": "page",
      "model": "TLWA850RE",
      "name": "Repetidor Wi-Fi TP-Link TL-WA850RE 300 Mbps",
+     "name_es": "Repetidor Wi-Fi TP-Link TL-WA850RE 300 Mbps",
      "offer": true,
      "price": 16.11,
      "price_with_vat": 19.49,
@@ -2260,12 +2285,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "300 Mbps",
+     "variant_es": "300 Mbps",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Routers Mesh **Wi-Fi 6** TP-Link per tenir una connexió sense fil ràpida i estable a tota la casa. Es poden combinar amb més unitats Mesh per ampliar la cobertura amb una sola xarxa.",
+   "body_es": "Routers Mesh Wi-Fi 6** TP-Link para tener una conexión inalámbrica rápida y establo en toda la casa. Se pueden combinar con más unidades Mesh para ampliar la cobertura con una sola red.",
    "brand": "TP-LINK",
    "category": "cables",
    "featured": false,
@@ -2276,11 +2303,13 @@
     "/media/botiga/net-tpl-hx5201pa-2.jpg"
    ],
    "name": "Router Mesh Wi-Fi 6 TP-Link",
+   "name_es": "Router Mesh Wi-Fi 6 TP-Link",
    "offer": false,
    "price_from": 52.47,
    "price_from_with_vat": 63.49,
    "slug": "router-mesh-wi-fi-6-tp-link",
    "summary": "Routers Mesh Wi-Fi 6 TP-Link AX1500 i AX3000, ampliables amb més unitats.",
+   "summary_es": "Routers Mesh Wi-Fi 6 TP-Link AX1500 y AX3000, ampliables con más unidades.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -2298,6 +2327,7 @@
      "layout": "page",
      "model": "HX1411PACK",
      "name": "Router Mesh Wi-Fi 6 TP-Link HX141 AX1500",
+     "name_es": "Router Mesh Wi-Fi 6 TP-Link HX141 AX1500",
      "offer": false,
      "price": 52.47,
      "price_with_vat": 63.49,
@@ -2310,6 +2340,7 @@
      "unit": "u",
      "updated_at": "2026-10-20 23:39:27",
      "variant": "HX141 AX1500",
+     "variant_es": "HX141 AX1500",
      "vat_pct": 21
     },
     {
@@ -2327,6 +2358,7 @@
      "layout": "page",
      "model": "HX5201PACK",
      "name": "Router Mesh Wi-Fi 6 TP-Link HX520 AX3000",
+     "name_es": "Router Mesh Wi-Fi 6 TP-Link HX520 AX3000",
      "offer": false,
      "price": 72.72,
      "price_with_vat": 87.99,
@@ -2339,12 +2371,14 @@
      "unit": "u",
      "updated_at": "2026-10-20 23:39:27",
      "variant": "HX520 AX3000",
+     "variant_es": "HX520 AX3000",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "SAI Salicru de línia interactiva que protegeixen l'ordinador i el router de talls de llum i pujades de tensió, i donen temps per desar la feina i apagar l'equip amb seguretat. Format torre amb 2 sortides.",
+   "body_es": "SAI Salicru de línea interactiva que protegen el ordenador y lo router de cortes de luz y subidas de tensión, y dan tiempo por desar el trabajo y apagar el equipo con seguridad. Formado torre con 2 salidas.",
    "brand": "SALICRU",
    "category": "fonts-d-alimentacio",
    "featured": false,
@@ -2357,11 +2391,13 @@
     "/media/botiga/psu-sal-662af000-2-6.jpg"
    ],
    "name": "SAI Salicru SPS ONE",
+   "name_es": "SAI Salicru SPS ONE",
    "offer": true,
    "price_from": 62.8,
    "price_from_with_vat": 75.99,
    "slug": "sai-salicru-sps-one",
    "summary": "Sistemes d'alimentació ininterrompuda Salicru de 700 i 900 VA.",
+   "summary_es": "Sistemas de alimentación ininterrumpida Salicru de 700 y 900 VA.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -2383,6 +2419,7 @@
      "layout": "page",
      "model": "662AF000002",
      "name": "SAI Salicru SPS 700 ONE V2 700 VA",
+     "name_es": "SAI Salicru SPS 700 ONE V2 700 VA",
      "offer": true,
      "price": 62.8,
      "price_with_vat": 75.99,
@@ -2395,6 +2432,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "700 VA / 360 W",
+     "variant_es": "700 VA / 360 W",
      "vat_pct": 21
     },
     {
@@ -2415,6 +2453,7 @@
      "layout": "page",
      "model": "662AF000003",
      "name": "SAI Salicru SPS 900 ONE 900 VA",
+     "name_es": "SAI Salicru SPS 900 ONE 900 VA",
      "offer": false,
      "price": 73.13,
      "price_with_vat": 88.49,
@@ -2427,12 +2466,14 @@
      "unit": "u",
      "updated_at": "2026-10-20 23:39:27",
      "variant": "900 VA / 480 W",
+     "variant_es": "900 VA / 480 W",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Switchs de sobretaula TP-Link amb ports **Gigabit** 10/100/1000 per connectar per cable ordinadors, consoles, televisors i impressores. Funcionen en endollar-los, sense configuració.",
+   "body_es": "Switchs de sobremesa TP-Link con puertos *Gigabit** 10/100/1000 para conectar por cable ordenadores, consolas, televisores e impresoras. Funcionan al enchufarlos, sin configuración.",
    "brand": "TP-LINK",
    "category": "cables",
    "featured": false,
@@ -2445,11 +2486,13 @@
     "/media/botiga/net-tpl-ls1005gv-6.jpg"
    ],
    "name": "Switch Gigabit TP-Link",
+   "name_es": "Switch Gigabit TP-Link",
    "offer": false,
    "price_from": 12.39,
    "price_from_with_vat": 14.99,
    "slug": "switch-gigabit-tp-link",
    "summary": "Switchs de sobretaula TP-Link de 5 i 8 ports Gigabit.",
+   "summary_es": "Switchs de sobremesa TP-Link de 5 y 8 puertos Gigabit.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -2471,6 +2514,7 @@
      "layout": "page",
      "model": "LS1005GV2",
      "name": "Switch TP-Link LS1005G de 5 ports Gigabit",
+     "name_es": "Switch TP-Link LS1005G de 5 puertos Gigabit",
      "offer": false,
      "price": 12.39,
      "price_with_vat": 14.99,
@@ -2483,6 +2527,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "5 ports",
+     "variant_es": "5 puertos",
      "vat_pct": 21
     },
     {
@@ -2503,6 +2548,7 @@
      "layout": "page",
      "model": "LS1008GV2",
      "name": "Switch TP-Link LS1008G de 8 ports Gigabit",
+     "name_es": "Switch TP-Link LS1008G de 8 puertos Gigabit",
      "offer": false,
      "price": 16.93,
      "price_with_vat": 20.49,
@@ -2515,12 +2561,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "8 ports",
+     "variant_es": "8 puertos",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Targetes microSDXC Kingston Canvas Select Plus de classe 10 per ampliar la memòria de mòbils, tauletes, càmeres i consoles portàtils. Inclouen **adaptador SD** per fer-les servir en càmeres i ordinadors.",
+   "body_es": "Tarjetas microSDXC Kingston Canvas Select Plus de clase 10 para ampliar la memoria de móviles, tabletas, cámaras y consolas portátiles. Incluyen *adaptador SD** para usarlas en cámaras y ordenadores.",
    "brand": "KINGSTON",
    "category": "discs-durs-externs",
    "featured": false,
@@ -2531,11 +2579,13 @@
     "/media/botiga/ext-kin-sdcs364g-4.jpg"
    ],
    "name": "Targeta microSD Kingston Canvas Select Plus",
+   "name_es": "Tarjeta microSD Kingston Canvas Select Plus",
    "offer": true,
    "price_from": 17.35,
    "price_from_with_vat": 20.99,
    "slug": "targeta-microsd-kingston-canvas-select-plus",
    "summary": "Targetes microSDXC Kingston de 64 i 128 GB amb adaptador SD.",
+   "summary_es": "Tarjetas microSDXC Kingston de 64 y 128 GB con adaptador SD.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -2555,6 +2605,7 @@
      "layout": "page",
      "model": "SDCS364GB",
      "name": "Targeta microSD Kingston Canvas Select Plus 64 GB amb adaptador",
+     "name_es": "Tarjeta microSD Kingston Canvas Select Plus 64 GB con adaptador",
      "offer": false,
      "price": 17.35,
      "price_with_vat": 20.99,
@@ -2567,6 +2618,7 @@
      "unit": "u",
      "updated_at": "2026-10-20 23:39:27",
      "variant": "64 GB",
+     "variant_es": "64 GB",
      "vat_pct": 21
     },
     {
@@ -2587,6 +2639,7 @@
      "layout": "page",
      "model": "SDCS3128GB",
      "name": "Targeta microSD Kingston Canvas Select Plus 128 GB amb adaptador",
+     "name_es": "Tarjeta microSD Kingston Canvas Select Plus 128 GB con adaptador",
      "offer": true,
      "price": 22.72,
      "price_with_vat": 27.49,
@@ -2599,6 +2652,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "128 GB",
+     "variant_es": "128 GB",
      "vat_pct": 21
     }
    ]
