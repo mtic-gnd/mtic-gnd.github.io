@@ -87,7 +87,7 @@
  ],
  "count": 79,
  "currency": "EUR",
- "generated_at": "2026-11-24 18:43:57",
+ "generated_at": "2026-11-25 03:28:24",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -1003,6 +1003,7 @@
   },
   {
    "body": "Cartutxos de tinta originals Canon per a les impressores PIXMA que fan servir cartutxos 545 (negre) i 546 (tricolor). Les versions **XL** imprimeixen més pàgines per cartutx.\n\nAbans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora.",
+   "body_es": "Cartuchos de tinta originales Canon para las impresoras PIXMA que usan cartuchos 545 (negro) y 546 (tricolor). Las versiones **XL** imprimen más páginas por cartucho.\n\nAntes de comprarlo, comprueba que sea compatible con el modelo de tu impresora.",
    "brand": "CANON",
    "category": "tinta-i-toner",
    "featured": false,
@@ -1011,11 +1012,13 @@
     "/media/botiga/tin-can-8286b001-2.jpg"
    ],
    "name": "Cartutx de tinta Canon PG-545 i CL-546",
+   "name_es": "Cartucho de tinta Canon PG-545 y CL-546",
    "offer": true,
    "price_from": 15.28,
    "price_from_with_vat": 18.49,
    "slug": "cartutx-de-tinta-canon-pg-545-cl-546",
    "summary": "Cartutxos de tinta originals Canon PG-545 i CL-546 per a impressores PIXMA.",
+   "summary_es": "Cartuchos de tinta originales Canon PG-545 y CL-546 para impresoras PIXMA.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -1033,6 +1036,7 @@
      "layout": "page",
      "model": "8287B001",
      "name": "Cartutx de tinta Canon PG-545 Negre",
+     "name_es": "Cartucho de tinta Canon PG-545 Negro",
      "offer": false,
      "price": 15.28,
      "price_with_vat": 18.49,
@@ -1063,6 +1067,7 @@
      "layout": "page",
      "model": "8288B001",
      "name": "Cartutx de tinta Canon CL-546XL Tricolor Alta Capacitat",
+     "name_es": "Cartucho de tinta Canon CL-546XL Tricolor Alta Capacidad",
      "offer": true,
      "price": 19.41,
      "price_with_vat": 23.49,
@@ -1075,6 +1080,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Color XL",
+     "variant_es": "Color XL",
      "vat_pct": 21
     },
     {
@@ -1092,6 +1098,7 @@
      "layout": "page",
      "model": "8286B001",
      "name": "Cartutx de tinta Canon PG-545XL Negre Alta Capacitat",
+     "name_es": "Cartucho de tinta Canon PG-545XL Negro Alta Capacidad",
      "offer": false,
      "price": 20.65,
      "price_with_vat": 24.99,
@@ -1104,12 +1111,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Negre XL",
+     "variant_es": "Negro XL",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "El cartutx de tinta Epson 604 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAbans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora Epson.",
+   "body_es": "El cartucho de tinta Epson 604 es ideal para imprimir documentos, trabajos, facturas y textos del día a día. Una solución práctica para casa o la oficina.\r\n\r\nAntes de comprarlo, comprueba que sea compatible con el modelo de tu impresora Epson.",
    "brand": "Epson",
    "category": "tinta-i-toner",
    "featured": false,
@@ -1121,11 +1130,13 @@
     "/media/botiga/tin-eps-c13t10g1.jpg"
    ],
    "name": "Cartutx de tinta Epson 604",
+   "name_es": "Cartucho de tinta Epson 604",
    "offer": false,
    "price_from": 8.67,
    "price_from_with_vat": 10.49,
    "slug": "cartutx-de-tinta-epson-604",
    "summary": "Cartutx de tinta Epson 604 per imprimir documents i textos amb bona qualitat i llegibilitat.",
+   "summary_es": "Cartucho de tinta Epson 604 para imprimir documentos y textos con buena calidad y legibilidad.",
    "updated_at": "2026-10-19 17:27:45",
    "variants": [
     {
@@ -1142,6 +1153,7 @@
      "layout": "page",
      "model": "C13T10G24010",
      "name": "Cartutx de tinta Epson 604 Cian",
+     "name_es": "Cartucho de tinta Epson 604 Cian",
      "offer": false,
      "price": 8.67,
      "price_with_vat": 10.49,
@@ -1154,6 +1166,7 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "Cian",
+     "variant_es": "Cian",
      "vat_pct": 21
     },
     {
@@ -1170,6 +1183,7 @@
      "layout": "page",
      "model": "C13T10G44010",
      "name": "Cartutx de tinta Epson 604 Groc",
+     "name_es": "Cartucho de tinta Epson 604 Amarillo",
      "offer": false,
      "price": 8.67,
      "price_with_vat": 10.49,
@@ -1182,6 +1196,7 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "Groc",
+     "variant_es": "Amarillo",
      "vat_pct": 21
     },
     {
@@ -1198,6 +1213,7 @@
      "layout": "page",
      "model": "C13T10G34010",
      "name": "Cartutx de tinta Epson 604 Magenta",
+     "name_es": "Cartucho de tinta Epson 604 Magenta",
      "offer": false,
      "price": 8.67,
      "price_with_vat": 10.49,
@@ -1210,6 +1226,7 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "Magenta",
+     "variant_es": "Magenta",
      "vat_pct": 21
     },
     {
@@ -1226,6 +1243,7 @@
      "layout": "page",
      "model": "C13T10G14010",
      "name": "Cartutx de tinta Epson 604 Negre",
+     "name_es": "Cartucho de tinta Epson 604 Negro",
      "offer": false,
      "price": 14.87,
      "price_with_vat": 17.99,
@@ -1255,6 +1273,7 @@
      "layout": "page",
      "model": "C13T10G64010",
      "name": "Multipack de cartutxos de tinta Epson 604 Negre + Cian + Magenta + Groc",
+     "name_es": "Multipack de cartuchos de tinta Epson 604 Negro + Cian + Magenta + Amarillo",
      "offer": false,
      "price": 40.9,
      "price_with_vat": 49.49,
@@ -1267,12 +1286,14 @@
      "unit": "u",
      "updated_at": "2026-10-20 23:39:27",
      "variant": "Multipack (groc, cian, magenta i negre)",
+     "variant_es": "Multipack (amarillo, cian, magenta y negro)",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "El cartutx de tinta HP 301 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAquest model està disponible en versions originals i compatibles, segons l'opció seleccionada. Abans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP.",
+   "body_es": "El cartucho de tinta HP 301 es ideal para imprimir documentos, trabajos, facturas y textos del día a día. Una solución práctica para casa o la oficina.\r\n\r\nEste modelo está disponible en versiones originales y compatibles, según la opción seleccionada. Antes de comprarlo, comprueba que sea compatible con el modelo de tu impresora HP.",
    "brand": "HP",
    "category": "tinta-i-toner",
    "featured": false,
@@ -1284,11 +1305,13 @@
     "/media/botiga/tin-hp-ch563ee.jpg"
    ],
    "name": "Cartutx de tinta HP 301",
+   "name_es": "Cartucho de tinta HP 301",
    "offer": false,
    "price_from": 19.41,
    "price_from_with_vat": 23.49,
    "slug": "cartutx-de-tinta-hp-301",
    "summary": "Cartutx de tinta HP 301 per imprimir documents, textos i treballs amb bona qualitat d'impressió.",
+   "summary_es": "Cartucho de tinta HP 301 para imprimir documentos, textos y trabajos con buena calidad de impresión.",
    "updated_at": "2026-10-19 17:28:06",
    "variants": [
     {
@@ -1305,6 +1328,7 @@
      "layout": "page",
      "model": "CH561EE",
      "name": "Cartutx de tinta HP 301 Negre",
+     "name_es": "Cartucho de tinta HP 301 Negro",
      "offer": false,
      "price": 19.41,
      "price_with_vat": 23.49,
@@ -1334,6 +1358,7 @@
      "layout": "page",
      "model": "CH562EE",
      "name": "Cartutx de tinta HP 301 Tricolor",
+     "name_es": "Cartucho de tinta HP 301 Tricolor",
      "offer": false,
      "price": 24.37,
      "price_with_vat": 29.49,
@@ -1363,6 +1388,7 @@
      "layout": "page",
      "model": "CH564EE",
      "name": "Cartutx de tinta HP 301XL Tricolor Alta Capacitat",
+     "name_es": "Cartucho de tinta HP 301XL Tricolor Alta Capacidad",
      "offer": false,
      "price": 40.49,
      "price_with_vat": 48.99,
@@ -1375,6 +1401,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Color XL",
+     "variant_es": "Color XL",
      "vat_pct": 21
     },
     {
@@ -1391,6 +1418,7 @@
      "layout": "page",
      "model": "CH563EE",
      "name": "Cartutx de tinta HP 301XL Negre Alta Capacitat",
+     "name_es": "Cartucho de tinta HP 301XL Negro Alta Capacidad",
      "offer": false,
      "price": 41.31,
      "price_with_vat": 49.99,
@@ -1403,6 +1431,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Negre XL",
+     "variant_es": "Negro XL",
      "vat_pct": 21
     },
     {
@@ -1419,6 +1448,7 @@
      "layout": "page",
      "model": "N9J72AE",
      "name": "Multipack de cartutxos de tinta HP 301 Negre + Tricolor",
+     "name_es": "Multipack de cartuchos de tinta HP 301 Negro + Tricolor",
      "offer": false,
      "price": 42.14,
      "price_with_vat": 50.99,
@@ -1431,12 +1461,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Multipack (negre + color)",
+     "variant_es": "Multipack (negro + color)",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "El cartutx de tinta HP 305 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAquest model està disponible en versions originals i compatibles, segons l'opció seleccionada. Abans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP.",
+   "body_es": "El cartucho de tinta HP 305 es ideal para imprimir documentos, trabajos, facturas y textos del día a día. Una solución práctica para casa o la oficina.\r\n\r\nEste modelo está disponible en versiones originales y compatibles, según la opción seleccionada. Antes de comprarlo, comprueba que sea compatible con el modelo de tu impresora HP.",
    "brand": "HP",
    "category": "tinta-i-toner",
    "featured": false,
@@ -1447,11 +1479,13 @@
     "/media/botiga/tin-hp-3ym62ae.jpg"
    ],
    "name": "Cartutx de tinta HP 305",
+   "name_es": "Cartucho de tinta HP 305",
    "offer": false,
    "price_from": 11.15,
    "price_from_with_vat": 13.49,
    "slug": "cartutx-de-tinta-hp-305",
    "summary": "Cartutx de tinta HP 305 per imprimir documents, textos i treballs amb bona qualitat d'impressió.",
+   "summary_es": "Cartucho de tinta HP 305 para imprimir documentos, textos y trabajos con buena calidad de impresión.",
    "updated_at": "2026-10-26 17:48:32",
    "variants": [
     {
@@ -1468,6 +1502,7 @@
      "layout": "page",
      "model": "3YM60AE",
      "name": "Cartutx de tinta HP 305 Tricolor",
+     "name_es": "Cartucho de tinta HP 305 Tricolor",
      "offer": false,
      "price": 11.15,
      "price_with_vat": 13.49,
@@ -1497,6 +1532,7 @@
      "layout": "page",
      "model": "3YM63AE",
      "name": "Cartutx de tinta HP 305XL Tricolor Alta Capacitat",
+     "name_es": "Cartucho de tinta HP 305XL Tricolor Alta Capacidad",
      "offer": false,
      "price": 20.65,
      "price_with_vat": 24.99,
@@ -1509,6 +1545,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Color XL",
+     "variant_es": "Color XL",
      "vat_pct": 21
     },
     {
@@ -1525,6 +1562,7 @@
      "layout": "page",
      "model": "3YM62AE",
      "name": "Cartutx de tinta HP 305XL Negre Alta Capacitat",
+     "name_es": "Cartucho de tinta HP 305XL Negro Alta Capacidad",
      "offer": false,
      "price": 21.89,
      "price_with_vat": 26.49,
@@ -1537,6 +1575,7 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "Negre XL",
+     "variant_es": "Negro XL",
      "vat_pct": 21
     },
     {
@@ -1553,6 +1592,7 @@
      "layout": "page",
      "model": "6ZD17AE",
      "name": "Multipack de cartutxos de tinta HP 305 Negre + Tricolor",
+     "name_es": "Multipack de cartuchos de tinta HP 305 Negro + Tricolor",
      "offer": false,
      "price": 23.13,
      "price_with_vat": 27.99,
@@ -1565,12 +1605,14 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "Multipack (negre + color)",
+     "variant_es": "Multipack (negro + color)",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Cartutxos de tinta originals HP 308 per imprimir textos, documents i imatges amb la qualitat d'HP.\n\nAbans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora.",
+   "body_es": "Cartuchos de tinta originales HP 308 para imprimir textos, documentos e imágenes con la calidad de HP.\n\nAntes de comprarlo, comprueba que sea compatible con el modelo de tu impresora.",
    "brand": "HP",
    "category": "tinta-i-toner",
    "featured": false,
@@ -1579,11 +1621,13 @@
     "/media/botiga/tin-hp-7fp21uel.jpg"
    ],
    "name": "Cartutx de tinta HP 308",
+   "name_es": "Cartucho de tinta HP 308",
    "offer": false,
    "price_from": 14.87,
    "price_from_with_vat": 17.99,
    "slug": "cartutx-de-tinta-hp-308",
    "summary": "Cartutxos de tinta originals HP 308 en negre i tricolor.",
+   "summary_es": "Cartuchos de tinta originales HP 308 en negro y tricolor.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -1600,6 +1644,7 @@
      "layout": "page",
      "model": "7FP20UELS1",
      "name": "Cartutx de tinta HP 308 Tricolor",
+     "name_es": "Cartucho de tinta HP 308 Tricolor",
      "offer": false,
      "price": 14.87,
      "price_with_vat": 17.99,
@@ -1629,6 +1674,7 @@
      "layout": "page",
      "model": "7FP21UELS1",
      "name": "Cartutx de tinta HP 308 Negre",
+     "name_es": "Cartucho de tinta HP 308 Negro",
      "offer": false,
      "price": 16.93,
      "price_with_vat": 20.49,
@@ -1648,6 +1694,7 @@
   },
   {
    "body": "El cartutx de tinta HP 301 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAquest model està disponible en versions originals i compatibles, segons l'opció seleccionada. Abans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP.\r\n\r\n### Sobre els cartutxos compatibles\r\n\r\nEls cartutxos compatibles no són productes originals del fabricant de la impressora. Tanmateix, són productes seleccionats i recomanats per nosaltres perquè oferim alternatives que considerem de qualitat i adequades per a l'ús habitual. La compatibilitat depèn del model d'impressora; comprova-la abans de fer la compra.",
+   "body_es": "El cartucho de tinta HP 301 es ideal para imprimir documentos, trabajos, facturas y textos del día a día. Una solución práctica para casa o la oficina.\r\n\r\nEste modelo está disponible en versiones originales y compatibles, según la opción seleccionada. Antes de comprarlo, comprueba que sea compatible con el modelo de tu impresora HP.\r\n\r\n### Sobre los cartuchos compatibles\r\n\r\nLos cartuchos compatibles no son productos originales del fabricante de la impresora. Aun así, son productos seleccionados y recomendados por nosotros porque ofrecemos alternativas que consideramos de calidad y adecuadas para el uso habitual. La compatibilidad depende del modelo de impresora; compruébala antes de hacer la compra.",
    "brand": "KARKEMIS",
    "category": "tinta-i-toner",
    "featured": false,
@@ -1655,11 +1702,13 @@
     "/media/botiga/tin-kar-10050250.jpg"
    ],
    "name": "Cartutx de tinta reciclat Karkemis HP 301",
+   "name_es": "Cartucho de tinta reciclado Karkemis HP 301",
    "offer": false,
    "price_from": 13.22,
    "price_from_with_vat": 16,
    "slug": "cartutx-de-tinta-reciclat-karkemis-hp-301",
    "summary": "Cartutx de tinta HP 301 per imprimir documents, textos i treballs amb bona qualitat d'impressió.",
+   "summary_es": "Cartucho de tinta HP 301 para imprimir documentos, textos y trabajos con buena calidad de impresión.",
    "updated_at": "2026-11-02 10:04:17",
    "variants": [
     {
@@ -1676,6 +1725,7 @@
      "layout": "page",
      "model": "10050250",
      "name": "Cartutx de tinta reciclat Karkemis HP 301XL Tricolor",
+     "name_es": "Cartucho de tinta reciclado Karkemis HP 301XL Tricolor",
      "offer": false,
      "price": 13.22,
      "price_with_vat": 16,
@@ -1688,12 +1738,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "Tricolor XL",
+     "variant_es": "Tricolor XL",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "El cartutx de tinta HP 305 és ideal per imprimir documents, treballs, factures i textos del dia a dia. Una solució pràctica per a casa o l'oficina.\r\n\r\nAquest model està disponible en versions originals i compatibles, segons l'opció seleccionada. Abans de comprar-lo, comprova que sigui compatible amb el model de la teva impressora HP.\r\n\r\nSobre els cartutxos compatibles\r\nEls cartutxos compatibles no són productes originals del fabricant de la impressora. Tanmateix, són productes seleccionats i recomanats per nosaltres perquè oferim alternatives que considerem de qualitat i adequades per a l'ús habitual. La compatibilitat depèn del model d'impressora; comprova-la abans de fer la compra.",
+   "body_es": "El cartucho de tinta HP 305 es ideal para imprimir documentos, trabajos, facturas y textos del día a día. Una solución práctica para casa o la oficina.\r\n\r\nEste modelo está disponible en versiones originales y compatibles, según la opción seleccionada. Antes de comprarlo, comprueba que sea compatible con el modelo de tu impresora HP.\r\n\r\nSobre los cartuchos compatibles\r\nLos cartuchos compatibles no son productos originales del fabricante de la impresora. Aun así, son productos seleccionados y recomendados por nosotros porque ofrecemos alternativas que consideramos de calidad y adecuadas para el uso habitual. La compatibilidad depende del modelo de impresora; compruébala antes de hacer la compra.",
    "brand": "KARKEMIS",
    "category": "tinta-i-toner",
    "featured": false,
@@ -1701,11 +1753,13 @@
     "/media/botiga/tin-kar-10050514.jpg"
    ],
    "name": "Cartutx de tinta reciclat Karkemis HP 305",
+   "name_es": "Cartucho de tinta reciclado Karkemis HP 305",
    "offer": false,
    "price_from": 15.7,
    "price_from_with_vat": 19,
    "slug": "cartutx-de-tinta-reciclat-karkemis-hp-305",
    "summary": "Cartutx de tinta HP 305 per imprimir documents, textos i treballs amb bona qualitat d'impressió.",
+   "summary_es": "Cartucho de tinta HP 305 para imprimir documentos, textos y trabajos con buena calidad de impresión.",
    "updated_at": "2026-10-19 18:42:19",
    "variants": [
     {
@@ -1722,6 +1776,7 @@
      "layout": "page",
      "model": "10050514",
      "name": "Cartutx de tinta reciclat Karkemis HP 305XL Tricolor",
+     "name_es": "Cartucho de tinta reciclado Karkemis HP 305XL Tricolor",
      "offer": false,
      "price": 15.7,
      "price_with_vat": 19,
@@ -1734,12 +1789,14 @@
      "unit": "u",
      "updated_at": "2026-10-26 17:47:48",
      "variant": "Color XL",
+     "variant_es": "Color XL",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Unitats SSD Kingston NV3 en format M.2 2280 amb interfície **NVMe PCIe Gen4**, perquè l'ordinador arrenqui i obri els programes en segons. Per actualitzar equips amb ranura M.2 NVMe o muntar-ne un de nou.",
+   "body_es": "Unidades SSD Kingston NV3 en formato M.2 2280 con interfaz NVMe PCIe Gen4**, porque el ordenador arranque y abre los programas en segundos. Para actualizar equipos con ranura M.2 NVMe o montar uno de nuevo.",
    "brand": "KINGSTON",
    "category": "discs-ssd",
    "featured": false,
@@ -1751,11 +1808,13 @@
     "/media/botiga/ssd-kin-snv3s500-5.jpg"
    ],
    "name": "Disc SSD Kingston NV3 M.2 NVMe",
+   "name_es": "Disco SSD Kingston NV3 M.2 NVMe",
    "offer": false,
    "price_from": 84.7,
    "price_from_with_vat": 102.49,
    "slug": "disc-ssd-kingston-nv3-m-2-nvme",
    "summary": "SSD M.2 2280 NVMe PCIe 4.0 Kingston NV3 de 500 GB i 1 TB.",
+   "summary_es": "SSD M.2 2280 NVMe PCIe 4.0 Kingston NV3 de 500 GB y 1 TB.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -1776,6 +1835,7 @@
      "layout": "page",
      "model": "SNV3S500G",
      "name": "Disc SSD Kingston NV3 500 GB M.2 NVMe PCIe 4.0",
+     "name_es": "Disco SSD Kingston NV3 500 GB M.2 NVMe PCIe 4.0",
      "offer": false,
      "price": 84.7,
      "price_with_vat": 102.49,
@@ -1788,6 +1848,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "500 GB",
+     "variant_es": "500 GB",
      "vat_pct": 21
     },
     {
@@ -1808,6 +1869,7 @@
      "layout": "page",
      "model": "SNV3S1000G",
      "name": "Disc SSD Kingston NV3 1 TB M.2 NVMe PCIe 4.0",
+     "name_es": "Disco SSD Kingston NV3 1 TB M.2 NVMe PCIe 4.0",
      "offer": false,
      "price": 130.16,
      "price_with_vat": 157.49,
@@ -1820,12 +1882,14 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "1 TB",
+     "variant_es": "1 TB",
      "vat_pct": 21
     }
    ]
   },
   {
    "body": "Kits de teclat de mida completa i ratolí sense fil Logitech que comparteixen un únic receptor USB. Es connecten en endollar-lo i funcionen a l'instant a casa o a l'oficina.",
+   "body_es": "Kits de teclado de medida completa y ratón inalámbrico Logitech que comparten un único receptor USB. Se conectan al enchufarlo y funcionan al instante a casa o a la oficina.",
    "brand": "LOGITECH",
    "category": "teclats-i-ratolins",
    "featured": false,
@@ -1838,11 +1902,13 @@
     "/media/botiga/per-log-92000451-6.jpg"
    ],
    "name": "Kit de teclat i ratolí sense fil Logitech",
+   "name_es": "Kit de teclado y ratón inalámbrico Logitech",
    "offer": false,
    "price_from": 21.89,
    "price_from_with_vat": 26.49,
    "slug": "kit-de-teclat-i-ratoli-sense-fil-logitech",
    "summary": "Combos de teclat i ratolí sense fil Logitech MK270 i MK235 amb un sol receptor USB.",
+   "summary_es": "Combos de teclado y ratón inalámbrico Logitech MK270 y MK235 con un sol receptor USB.",
    "updated_at": "2026-10-20 23:08:36",
    "variants": [
     {
@@ -1864,6 +1930,7 @@
      "layout": "page",
      "model": "920004513",
      "name": "Kit de teclat i ratolí sense fil Logitech MK270",
+     "name_es": "Kit de teclado y ratón inalámbrico Logitech MK270",
      "offer": false,
      "price": 21.89,
      "price_with_vat": 26.49,
@@ -1876,6 +1943,7 @@
      "unit": "u",
      "updated_at": "2026-11-02 09:58:25",
      "variant": "MK270",
+     "variant_es": "MK270",
      "vat_pct": 21
     },
     {
