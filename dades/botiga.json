@@ -87,7 +87,7 @@
  ],
  "count": 79,
  "currency": "EUR",
- "generated_at": "2026-11-25 13:54:19",
+ "generated_at": "2026-11-25 23:32:07",
  "groups": [
   {
    "body": "Auriculars Logitech amb micròfon i connexió **USB**, pensats per a videotrucades, classes en línia i teletreball. Funcionen sense instal·lar res.",
@@ -2387,8 +2387,8 @@
     "/media/botiga/psu-sal-662af000-2-2.jpg",
     "/media/botiga/psu-sal-662af000-2-3.jpg",
     "/media/botiga/psu-sal-662af000-2-4.jpg",
-    "/media/botiga/psu-sal-662af000-2-5.jpg",
-    "/media/botiga/psu-sal-662af000-2-6.jpg"
+    "/media/botiga/psu-sal-662af000.jpg",
+    "/media/botiga/psu-sal-662af000-2.jpg"
    ],
    "name": "SAI Salicru SPS ONE",
    "name_es": "SAI Salicru SPS ONE",
@@ -2411,9 +2411,7 @@
       "/media/botiga/psu-sal-662af000-2.jpg",
       "/media/botiga/psu-sal-662af000-2-2.jpg",
       "/media/botiga/psu-sal-662af000-2-3.jpg",
-      "/media/botiga/psu-sal-662af000-2-4.jpg",
-      "/media/botiga/psu-sal-662af000-2-5.jpg",
-      "/media/botiga/psu-sal-662af000-2-6.jpg"
+      "/media/botiga/psu-sal-662af000-2-4.jpg"
      ],
      "kind": "product",
      "layout": "page",
@@ -4369,7 +4367,8 @@
    "featured": false,
    "images": [
     "/media/botiga/tin-bro-tn2420.jpg",
-    "/media/botiga/tin-bro-tn2420-2.jpg"
+    "/media/botiga/tin-bro-tn2420-2.jpg",
+    "/media/botiga/tin-bro-tn2420-3.jpg"
    ],
    "kind": "product",
    "layout": "page",
