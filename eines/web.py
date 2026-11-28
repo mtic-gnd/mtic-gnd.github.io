@@ -30,7 +30,7 @@ import sys
 
 ARREL = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMINI = "https://mtic.cat"
-VERSIO = "202611241900"
+VERSIO = "202611281700"
 MAPS = "https://www.google.com/maps?cid=5369165064477127583"
 INSTAGRAM = "https://www.instagram.com/mtic.gandesa/"
 TEL = "+34711550872"
@@ -49,6 +49,7 @@ PARELLES = [
     ("/xarxes-wifi.html", "/es/redes-wifi.html", "serveis", True),
     ("/pagines-web.html", "/es/paginas-web.html", "serveis", True),
     ("/automatitzacions.html", "/es/automatizaciones.html", "serveis", True),
+    ("/projectes.html", "/es/proyectos.html", None, True),
     ("/sobre-nosaltres.html", "/es/sobre-nosotros.html", "sobre", True),
     ("/contacte.html", "/es/contacto.html", "contacte", True),
     ("/avis-legal.html", "/es/aviso-legal.html", None, False),
@@ -69,7 +70,7 @@ TXT = {
         "inici": ("/", "Inici"), "serveis": ("/serveis.html", "Serveis"),
         "botiga": ("/botiga/", "Botiga"), "deca": ("https://deca.mtic.cat", "DeCA"),
         "articles": ("/articles/", "Articles"),
-        "sobre": ("/sobre-nosaltres.html", "Sobre nosaltres"), "contacte": ("/contacte.html", "Contacte"),
+        "sobre": ("/sobre-nosaltres.html", "Sobre nosaltres"), "projectes": ("/projectes.html", "Projectes"), "contacte": ("/contacte.html", "Contacte"),
         "altre_idioma": ("es", "Castellano"), "marca_aria": "mtic, anar a l'inici",
         "obre_menu": "Obre el menú", "nav_aria": "Navegació principal",
         "descripcio": "Reparació i venda d'ordinadors, manteniment informàtic i desenvolupament web a Gandesa, la Terra Alta i les Terres de l'Ebre.",
@@ -97,7 +98,7 @@ TXT = {
         "inici": ("/en/", "Home"), "serveis": ("/es/servicios.html", "Services"),
         "botiga": ("/es/tienda/", "Shop"), "deca": ("https://deca.mtic.cat", "DeCA"),
         "articles": ("/es/articulos/", "Articles"),
-        "sobre": ("/es/sobre-nosotros.html", "About"), "contacte": ("/es/contacto.html", "Contact"),
+        "sobre": ("/es/sobre-nosotros.html", "About"), "projectes": ("/es/proyectos.html", "Projects"), "contacte": ("/es/contacto.html", "Contact"),
         "altre_idioma": ("ca", "Català"), "marca_aria": "mtic, go to home page",
         "obre_menu": "Open menu", "nav_aria": "Main navigation",
         "descripcio": "Computer and laptop repair and sales, IT maintenance and web development in Gandesa, the Terra Alta and the Terres de l'Ebre.",
@@ -122,7 +123,7 @@ TXT = {
         "inici": ("/es/", "Inicio"), "serveis": ("/es/servicios.html", "Servicios"),
         "botiga": ("/es/tienda/", "Tienda"), "deca": ("https://deca.mtic.cat", "DeCA"),
         "articles": ("/es/articulos/", "Artículos"),
-        "sobre": ("/es/sobre-nosotros.html", "Sobre nosotros"), "contacte": ("/es/contacto.html", "Contacto"),
+        "sobre": ("/es/sobre-nosotros.html", "Sobre nosotros"), "projectes": ("/es/proyectos.html", "Proyectos"), "contacte": ("/es/contacto.html", "Contacto"),
         "altre_idioma": ("ca", "Català"), "marca_aria": "mtic, ir al inicio",
         "obre_menu": "Abrir el menú", "nav_aria": "Navegación principal",
         "descripcio": "Reparación y venta de ordenadores, mantenimiento informático y desarrollo web en Gandesa, la Terra Alta y las Terres de l'Ebre.",
@@ -215,6 +216,7 @@ def peu(idioma):
         '                <h2>mtic</h2>\n'
         '                <ul>\n'
         f'                    <li><a href="{t["sobre"][0]}">{t["sobre"][1]}</a></li>\n'
+        f'                    <li><a href="{t["projectes"][0]}">{t["projectes"][1]}</a></li>\n'
         f'                    <li><a href="{t["contacte"][0]}">{t["contacte"][1]}</a></li>\n'
         f'                    <li><a href="{MAPS}" target="_blank" rel="noopener">{t["fitxa"]}</a></li>\n'
         f'                    <li><a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram</a></li>\n'

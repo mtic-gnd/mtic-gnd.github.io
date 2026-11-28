@@ -665,3 +665,31 @@ a.article-botiga:hover { border-color: var(--violeta); }
 
 /* Paraules llargues als títols (p. ex. «Automatitzacions») en mòbils estrets */
 @media (max-width: 420px) { h1 { font-size: 2rem; } }
+
+/* ---------- Projectes ---------- */
+.projectes { display: grid; gap: clamp(3rem, 6vw, 5rem); }
+.projecte { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(1.75rem, 4vw, 3.5rem); align-items: center; }
+.projecte:nth-of-type(even) .projecte-visual, .projecte:nth-of-type(even) .projecte-foto { order: 2; }
+.projecte-visual {
+    aspect-ratio: 4 / 3; border-radius: var(--radi); background: var(--violeta); color: #fff;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .6rem;
+    text-decoration: none; text-align: center; padding: 1.5rem;
+}
+.projecte-visual:hover { color: #fff; background: var(--violeta-fosc); }
+.projecte-visual svg { width: 88px; height: 88px; margin-bottom: .6rem; }
+.projecte-nom { font-size: clamp(1.8rem, 3.4vw, 2.6rem); font-weight: 850; font-stretch: 118%; line-height: 1; letter-spacing: -.015em; }
+.projecte-domini { font-weight: 600; color: #e9e0ff; font-size: 1.05rem; }
+.projecte-foto { display: block; border-radius: var(--radi); overflow: hidden; aspect-ratio: 4 / 3; }
+.projecte-foto img { width: 100%; height: 100%; object-fit: cover; }
+.projecte-sector { font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--violeta); font-stretch: 85%; }
+.projecte-text h2 { margin: .35rem 0 .8rem; }
+.projecte-text ul { margin-top: 1rem; padding-left: 1.1rem; }
+.projecte-text li { margin-bottom: .3rem; }
+.projecte-nota { margin-top: 1rem; font-size: .9rem; color: var(--text-suau); }
+.projecte-boto { margin-top: 1.5rem; }
+.projecte-boto .boto svg { width: 18px; height: 18px; }
+.projectes-peu { border-top: 1px solid var(--linia); padding-top: 2rem; }
+@media (max-width: 900px) {
+    .projecte { grid-template-columns: 1fr; }
+    .projecte:nth-of-type(even) .projecte-visual, .projecte:nth-of-type(even) .projecte-foto { order: 0; }
+}
