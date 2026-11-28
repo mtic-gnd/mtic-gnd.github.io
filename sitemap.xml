@@ -65,6 +65,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/automatitzacions.html"/>
   </url>
   <url>
+    <loc>https://mtic.cat/projectes.html</loc>
+    <lastmod>2026-11-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/projectes.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/proyectos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/projectes.html"/>
+  </url>
+  <url>
     <loc>https://mtic.cat/sobre-nosaltres.html</loc>
     <lastmod>2026-11-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/sobre-nosaltres.html"/>
@@ -141,6 +148,13 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/automatitzacions.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/automatizaciones.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/automatitzacions.html"/>
+  </url>
+  <url>
+    <loc>https://mtic.cat/es/proyectos.html</loc>
+    <lastmod>2026-11-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mtic.cat/projectes.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mtic.cat/es/proyectos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtic.cat/projectes.html"/>
   </url>
   <url>
     <loc>https://mtic.cat/es/sobre-nosotros.html</loc>
